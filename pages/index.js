@@ -1,7 +1,13 @@
 import Layout from '../components/layout'
 import Link from 'next/link'
 import { DefaultSeo } from 'next-seo';
+import TagManager from 'react-gtm-module'
 
+const tagManagerArgs = {
+    gtmId: 'GTM-5PHBJG2'
+}
+
+TagManager.initialize(tagManagerArgs)
 
 
 export default function Home() {
