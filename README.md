@@ -41,12 +41,12 @@
   <h3 align="center">Bimbala website</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    Here you can find the source code of our official website.
     <br />
     <a href="https://github.com/Bimbalacom/Website"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Bimbalacom/Website">View Demo</a>
+    <a href="https://bimbala.com">View Demo</a>
     ·
     <a href="https://github.com/Bimbalacom/Website/issues">Report Bug</a>
     ·
@@ -79,14 +79,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo`, `twitter_handle`, `email`
-
-
 ### Built With
 
-* []()
+* [nextjs](https://nextjs.org/)
 * []()
 * []()
 
