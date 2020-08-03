@@ -16,3 +16,4 @@ export default function FirstPost() {
       </div>
   )
 }
+import withLayout from '../components/footer.js'
