@@ -9352,22 +9352,22 @@ img.flex-fill {
   position: absolute;
   z-index: 0;
   transform: scale(3);
-  -webkit-mask-image: url("../img/blobs/blob-1.svg");
-          mask-image: url("../img/blobs/blob-1.svg");
+  -webkit-mask-image: url("/img/blobs/blob-1.svg");
+          mask-image: url("/img/blobs/blob-1.svg");
   -webkit-mask-size: 100% 100%;
           mask-size: 100% 100%; }
   .blob.blob-2 {
-    -webkit-mask-image: url("../img/blobs/blob-2.svg");
-            mask-image: url("../img/blobs/blob-2.svg"); }
+    -webkit-mask-image: url("/img/blobs/blob-2.svg");
+            mask-image: url("/img/blobs/blob-2.svg"); }
   .blob.blob-3 {
-    -webkit-mask-image: url("../img/blobs/blob-3.svg");
-            mask-image: url("../img/blobs/blob-3.svg"); }
+    -webkit-mask-image: url("/img/blobs/blob-3.svg");
+            mask-image: url("/img/blobs/blob-3.svg"); }
   .blob.blob-4 {
-    -webkit-mask-image: url("../img/blobs/blob-4.svg");
-            mask-image: url("../img/blobs/blob-4.svg"); }
+    -webkit-mask-image: url("/img/blobs/blob-4.svg");
+            mask-image: url("/img/blobs/blob-4.svg"); }
   .blob.blob-5 {
-    -webkit-mask-image: url("../img/blobs/blob-5.svg");
-            mask-image: url("../img/blobs/blob-5.svg"); }
+    -webkit-mask-image: url("/img/blobs/blob-5.svg");
+            mask-image: url("/img/blobs/blob-5.svg"); }
   .blob.top {
     top: -5vw; }
   .blob.bottom {

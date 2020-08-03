@@ -13,17 +13,16 @@ export default function Home() {
                     <div
                         className="row justify-content-center text-center min-vh-40 d-flex flex-column align-items-center">
                         <div className="col-md-10 col-lg-9 col-xl-8" data-aos="fade-up">
-                            <h1 className="display-3">A modular UI Kit for<br />
+                            <h1 className="display-3">A modular Saas for<br />
                                 <mark><span data-typed-text data-loop="true" data-type-speed="90"
-                                            data-strings='["Bootstrap","quick deployment","static sites","rapid development","clever startups"]'></span>
+                                            data-strings='["Support","User feedback","Support integration","user satisfaction","smarter managemenet"]'></span>
                                 </mark></h1>
-                            <p className="lead px-xl-5">Launch your site in style with Jumpstart, a tidy collection of
-                                crafted pages and modular components.</p>
+                            <p className="lead px-xl-5">Grab it now and make your business awesome. About 5M customers are more satisfied after the project became using Bimbala! </p>
                             <div className="d-flex flex-column flex-sm-row mt-4 mt-md-5 justify-content-center"
                                  data-aos="fade-up" data-aos-delay="300">
                                 <a href="#landing-pages" className="btn btn-primary btn-lg mx-sm-2 my-1 my-sm-0"
-                                   data-smooth-scroll>View Demos</a>
-                                <a href="#" className="btn btn-outline-primary btn-lg mx-sm-2 my-1 my-sm-0">Purchase</a>
+                                   data-smooth-scroll>Client area</a>
+                                <a href="#" className="btn btn-outline-primary btn-lg mx-sm-2 my-1 my-sm-0">Pricing</a>
                             </div>
                         </div>
                     </div>
