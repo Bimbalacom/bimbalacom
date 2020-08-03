@@ -82,9 +82,6 @@
 ### Built With
 
 * [nextjs](https://nextjs.org/)
-* []()
-* []()
-
 
 
 <!-- GETTING STARTED -->
@@ -152,7 +149,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle)
 
 Project Link: [https://github.com/Bimbalacom/Website](https://github.com/Bimbalacom/Website)
 
@@ -160,11 +157,6 @@ Project Link: [https://github.com/Bimbalacom/Website](https://github.com/Bimbala
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-
-* []()
-* []()
-* []()
-
 
 
 
