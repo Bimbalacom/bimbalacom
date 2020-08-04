@@ -5,7 +5,7 @@ export default function Navbar(){
         <div className="navbar-container">
             <nav className="navbar navbar-expand-lg navbar-light" data-overlay data-sticky="top">
                 <div className="container">
-                    <a className="navbar-brand navbar-brand-dynamic-color fade-page" href="index.html">
+                    <a className="navbar-brand navbar-brand-dynamic-color fade-page" href="#">
                         <img alt="Jumpstart" data-inject-svg src="/img/logos/jumpstart.svg" />
                     </a>
                     <div className="d-flex align-items-center order-lg-3">
@@ -22,10 +22,22 @@ export default function Navbar(){
                     <div className="collapse navbar-collapse order-3 order-lg-2 justify-content-lg-end"
                          id="navigation-menu">
                         <ul className="navbar-nav my-3 my-lg-0">
+                        <li className="nav-item">
+                                <Link passHref={true} href="https://bimbala.com">
+                                    <a aria-expanded="false" aria-haspopup="true"
+                                       className="nav-link nav-item" role="button">Home</a>
+                                </Link>
+                            </li>
                             <li className="nav-item">
                                 <Link passHref={true} href="/pricing">
                                     <a aria-expanded="false" aria-haspopup="true"
                                        className="nav-link nav-item" role="button">Pricing</a>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link passHref={true} href="/features">
+                                    <a aria-expanded="false" aria-haspopup="true"
+                                       className="nav-link nav-item" role="button">Features</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
