@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { DefaultSeo } from 'next-seo';
 import TagManager from 'react-gtm-module'
 
-const tagManagerArgs = {
+{/*const tagManagerArgs = {
     gtmId: 'GTM-5PHBJG2'
-}
+} */}
 
-TagManager.initialize(tagManagerArgs)
+TagManager.initialize(tagManagerArgs);
 
 
 export default function Home() {
