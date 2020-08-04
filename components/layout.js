@@ -13,9 +13,7 @@ export default class Layout extends React.Component {
 
 
     componentDidMount(){
-        window.addEventListener("load",function(){
-            document.querySelector('body').classList.add('loaded');
-        });
+        document.querySelector('body').classList.add('loaded');
     }
 
     render() {
