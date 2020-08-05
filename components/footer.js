@@ -22,7 +22,7 @@ export default function Footer(){
                   <a href="#" className="nav-link fade-page px-0 py-2">Why us?</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2"></a>
+                  <a href="#" className={"nav-link fade-page px-0 py-2"}/>
                 </li>
               </ul>
             </div>
@@ -36,7 +36,7 @@ export default function Footer(){
                   <a href="#" className="nav-link fade-page px-0 py-2">Customer Reviews</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="/blog/" className="nav-link fade-page px-0 py-2">Blog</a>
+                  <a href={"/blog/"} className="nav-link fade-page px-0 py-2">Blog</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
                   <a href="#" className="nav-link fade-page px-0 py-2">Solutions</a>
@@ -91,17 +91,16 @@ export default function Footer(){
               <h5>Newsletter</h5>
               <div className="card card-body bg-white">
                 <p>Get a bi-weekly digest of great articles</p>
-                <form data-form-email noValidate action="/forms/mailchimp.php">
+                <form data-form-email noValidate action={"/forms/mailchimp.php"}>
                   <div className="d-flex flex-column flex-sm-row form-group">
                     <input className="form-control mr-sm-2 mb-2 mb-sm-0 w-auto flex-grow-1" name="email"
                            placeholder="Email Address" type="email" required/>
                     <button type="submit" className="btn btn-primary btn-loading" data-loading-text="Sending">
                       <span>Go</span>
                     </button>
-                    >
                   </div>
-                  <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible"
-                       data-badge="bottomleft"></div>
+                  <div data-recaptcha data-sitekey={"INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"} data-size="invisible"
+    data-badge="bottomleft"/>
                   <div className="d-none alert alert-success w-100" role="alert" data-success-message>
                     Thanks, a member of our team will be in touch shortly.
                   </div>
@@ -123,8 +122,8 @@ export default function Footer(){
             <div className="col-auto">
               <div className="d-flex flex-column flex-sm-row align-items-center text-small">
                 <div className="text-muted">&copy; 2020 Bimbala Ltd <a
-                    href="privacy-policy/">Privacy Policy</a> and <a
-                    href="terms-of-service/">Terms of Service</a>
+                    href={"privacy-policy/"}>Privacy Policy</a> and <a
+                    href={"terms-of-service/"}>Terms of Service</a>
                 </div>
               </div>
             </div>
@@ -132,32 +131,32 @@ export default function Footer(){
               <ul className="list-unstyled d-flex mb-0">
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/dribbble.svg" alt="Dribbble" className="icon icon-xs bg-white"
-                         data-inject-svg/>
+                    <img src={"/img/icons/social/dribbble.svg"} alt="Dribbble" className="icon icon-xs bg-white"
+                         />
                   </a>
                 </li>
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/twitter.svg" alt="Twitter" className="icon icon-xs bg-white"
-                         data-inject-svg/>
+                    <img src={"/img/icons/social/twitter.svg"} alt="Twitter" className="icon icon-xs bg-white"
+                         />
                   </a>
                 </li>
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/github.svg" alt="Github" className="icon icon-xs bg-white"
-                         data-inject-svg/>
+                    <img src={"/img/icons/social/github.svg"} alt="Github" className="icon icon-xs bg-white"
+                         />
                   </a>
                 </li>
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/facebook.svg" alt="Facebook" className="icon icon-xs bg-white"
-                         data-inject-svg/>
+                    <img src={"/img/icons/social/facebook.svg"} alt="Facebook" className="icon icon-xs bg-white"
+                         />
                   </a>
                 </li>
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/google.svg" alt="Google" className="icon icon-xs bg-white"
-                         data-inject-svg/>
+                    <img src={"/img/icons/social/google.svg"} alt="Google" className="icon icon-xs bg-white"
+                         />
                   </a>
                 </li>
               </ul>

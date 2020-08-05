@@ -18,33 +18,67 @@ export default function Home() {
   return (
     <Layout>
         <div data-overlay className="o-hidden">
-            <section className="pb-0">
+            <section className="bg-primary-3 text-white pb-0 o-hidden">
                 <div className="container">
-                    <div
-                        className="row justify-content-center text-center min-vh-40 d-flex flex-column align-items-center">
-                        <div className="col-md-10 col-lg-9 col-xl-8" data-aos="fade-up">
-                            <h1 className="display-3">A modular Saas for<br />
-                                <mark><span data-typed-text data-loop="true" data-type-speed="90"
-                                            data-strings='["Support","User feedback","Support integration","user satisfaction","smarter managemenet"]'></span>
-                                </mark></h1>
-                            <p className="lead px-xl-5">Grab it now and make your business awesome. About 5M customers are more satisfied after the project became using Bimbala! </p>
-                            <div className="d-flex flex-column flex-sm-row mt-4 mt-md-5 justify-content-center"
-                                 data-aos="fade-up" data-aos-delay="300">
-                                <a href="#landing-pages" className="btn btn-primary btn-lg mx-sm-2 my-1 my-sm-0"
-                                   data-smooth-scroll>Client area</a>
-                                <a href="#" className="btn btn-outline-primary btn-lg mx-sm-2 my-1 my-sm-0">Pricing</a>
+                    <div className="row justify-content-between align-items-center">
+                        <div className="col-xl-5 col-lg-6 text-center text-lg-left mb-4 mb-md-5 mb-lg-0"
+                             data-aos="fade-right">
+                            <h1 className="display-3">A modular Saas for support integration.</h1>
+                            <p className="lead">Grab it now and make your business awesome. About 5M customers are more satisfied after the project became using Bimbala!</p>
+                            <a href="#" className="btn btn-lg btn-primary">Pricing</a>
+                        </div>
+                        <div className="col" data-aos="fade-left" data-aos-delay="250">
+                            <img src={"/img/desktop-app/desktop-app-2.jpg"} alt="Screenshot"
+                                 className="img-fluid rounded shadow-lg border" />
+                        </div>
+                    </div>
+                </div>
+                <div className="w-50 h-50 bottom right position-absolute" data-jarallax-element="50">
+                    <div className="blob blob-2 bg-gradient w-100 h-100"/>
+                </div>
+                <div className="w-50 h-50 bottom right position-absolute" data-jarallax-element="75">
+                    <div className="blob blob-4 bg-white opacity-10 w-100 h-100"/>
+                </div>
+                <div className="divider divider-bottom bg-white"/>
+            </section>
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4 mb-4 mb-md-0">
+                            <div>
+                                <img src={"/img/icons/theme/general/thunder-move.svg"} alt="Lightning icon"
+                                     className="icon bg-primary"  />
+                                    <h5 className="mt-4">Suits Your Style</h5>
+                                    <div>
+                                        Drogon sed ut perspiciatis unde omnis iste error sit voluptatem accusantium
+                                        doloremque laudantium, totam aperiam, eaque Arya.
+                                    </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 mb-4 mb-md-0">
+                            <div>
+                                <img src={"/img/icons/theme/general/bookmark.svg"} alt="Bookmark icon"
+                                     className="icon bg-primary" />
+                                    <h5 className="mt-4">Well Documented</h5>
+                                    <div>
+                                        Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum
+                                        lorem sed risus ultricies Tyrion. Enim blandit volutpat.
+                                    </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 mb-4 mb-md-0">
+                            <div>
+                                <img src={"/img/icons/theme/design/select.svg"} alt="Selection interface icon"
+                                     className="icon bg-primary" />
+                                    <h5 className="mt-4">Highly Customizable</h5>
+                                    <div>
+                                        Eunuch sed blandit libero volutpat sed cras. Cersei quis imperdiet tincidunt
+                                        unuch pulvinar sapien. Habitasse platea Davos vestibulum.
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="position-absolute bottom left w-50 h-50 d-none d-md-block"
-                     data-jarallax-element="-24 48">
-                    <div className="blob bg-gradient w-50 h-100 bottom left"></div>
-                </div>
-                <div className="position-absolute top right w-50 h-50 d-none d-md-block" data-jarallax-element="48">
-                    <div className="blob blob-2 bg-gradient w-50 h-50 top right"></div>
-                </div>
-                <div className="divider divider-bottom bg-primary-3"></div>
             </section>
         </div>
     </Layout>
