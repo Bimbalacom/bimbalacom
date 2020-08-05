@@ -132,31 +132,31 @@ export default function Footer(){
               <ul className="list-unstyled d-flex mb-0">
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/dribbble.svg" alt="Dribbble" className="icon icon-xs bg-white"
+                    <img src="public/img/icons/social/dribbble.svg" alt="Dribbble" className="icon icon-xs bg-white"
                          data-inject-svg/>
                   </a>
                 </li>
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/twitter.svg" alt="Twitter" className="icon icon-xs bg-white"
+                    <img src="public/img/icons/social/twitter.svg" alt="Twitter" className="icon icon-xs bg-white"
                          data-inject-svg/>
                   </a>
                 </li>
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/github.svg" alt="Github" className="icon icon-xs bg-white"
+                    <img src="public/img/icons/social/github.svg" alt="Github" className="icon icon-xs bg-white"
                          data-inject-svg/>
                   </a>
                 </li>
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/facebook.svg" alt="Facebook" className="icon icon-xs bg-white"
+                    <img src="public/img/icons/social/facebook.svg" alt="Facebook" className="icon icon-xs bg-white"
                          data-inject-svg/>
                   </a>
                 </li>
                 <li className="mx-3">
                   <a href="#" className="hover-fade-out">
-                    <img src="assets/img/icons/social/google.svg" alt="Google" className="icon icon-xs bg-white"
+                    <img src="public/img/icons/social/google.svg" alt="Google" className="icon icon-xs bg-white"
                          data-inject-svg/>
                   </a>
                 </li>
