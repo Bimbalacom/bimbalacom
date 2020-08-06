@@ -11,7 +11,7 @@ export default function FirstPost() {
             <div class="card card-body shadow">
               <div class="d-flex flex-column justify-content-between align-items-start pb-4 mb-4 mb-md-5 border-bottom">
                 <div class="mb-3">
-                  <h1 class="mb-2">Terms of Service</h1>
+                  <h1 class="mb-2">Privacy Policy</h1>
                   <div class="lead">Updated Feb 26, 20</div>
                 </div>
                 <a href="javascript:if(window.print)window.print()" class="btn btn-primary">Print Terms</a>

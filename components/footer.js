@@ -10,19 +10,16 @@ export default function Footer(){
                   <a href="#" className="nav-link fade-page px-0 py-2">Demo</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Pricing</a>
+                  <a href="/pricing" className="nav-link fade-page px-0 py-2">Pricing</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Features</a>
+                  <a href="/features" className="nav-link fade-page px-0 py-2">Features</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
                   <a href="#" className="nav-link fade-page px-0 py-2">Integration</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
                   <a href="#" className="nav-link fade-page px-0 py-2">Why us?</a>
-                </li>
-                <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className={"nav-link fade-page px-0 py-2"}/>
                 </li>
               </ul>
             </div>
