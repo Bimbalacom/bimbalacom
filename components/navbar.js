@@ -6,7 +6,7 @@ export default function Navbar(){
             <nav className="navbar navbar-expand-lg navbar-dark" data-sticky="top">
                 <div className="container">
                     <a className="navbar-brand navbar-brand-dynamic-color fade-page" href="/">
-                        <img alt="Jumpstart" src={"assets/img/logos/jumpstart.svg"} />
+                        <img alt="Jumpstart" src={"/img/logos/jumpstart.svg"} />
                     </a>
                     <div className="d-flex align-items-center order-lg-3">
                         <a href="#"
