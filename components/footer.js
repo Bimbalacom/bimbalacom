@@ -121,7 +121,7 @@ export default function Footer(){
               className="row flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between text-center text-lg-left">
             <div className="col-auto">
               <div className="d-flex flex-column flex-sm-row align-items-center text-small">
-                <div className="text-muted">&copy; 2020 Bimbala Ltd <a
+                <div className="text-muted">&copy; 2020 Bimbala Ltd | <a
                     href={"privacy-policy/"}>Privacy Policy</a> and <a
                     href={"terms-of-service/"}>Terms of Service</a>
                 </div>
@@ -129,34 +129,19 @@ export default function Footer(){
             </div>
             <div className="col-auto mt-3 mt-lg-0">
               <ul className="list-unstyled d-flex mb-0">
-                <li className="mx-3">
-                  <a href="#" className="hover-fade-out">
-                    <img src={"/img/icons/social/dribbble.svg"} alt="Dribbble" className="icon icon-xs bg-white"
-                         />
+              <li className="mx-3">
+                  <a href="https://fb.com/bimbalacom" className="hover-fade-out">
+                    <img src={"/img/icons/social/facebook.svg"} alt="Facebook" className="icon icon-xs bg-white"/>
                   </a>
                 </li>
                 <li className="mx-3">
-                  <a href="#" className="hover-fade-out">
-                    <img src={"/img/icons/social/twitter.svg"} alt="Twitter" className="icon icon-xs bg-white"
-                         />
+                  <a href="https://twitter.com/bimbalacom" className="hover-fade-out">
+                    <img src={"/img/icons/social/twitter.svg"} alt="Twitter" className="icon icon-xs bg-white"/>
                   </a>
                 </li>
                 <li className="mx-3">
-                  <a href="#" className="hover-fade-out">
-                    <img src={"/img/icons/social/github.svg"} alt="Github" className="icon icon-xs bg-white"
-                         />
-                  </a>
-                </li>
-                <li className="mx-3">
-                  <a href="#" className="hover-fade-out">
-                    <img src={"/img/icons/social/facebook.svg"} alt="Facebook" className="icon icon-xs bg-white"
-                         />
-                  </a>
-                </li>
-                <li className="mx-3">
-                  <a href="#" className="hover-fade-out">
-                    <img src={"/img/icons/social/google.svg"} alt="Google" className="icon icon-xs bg-white"
-                         />
+                  <a href="https://github.com/bimbalacom" className="hover-fade-out">
+                    <img src={"/img/icons/social/github.svg"} alt="Github" className="icon icon-xs bg-white"/>
                   </a>
                 </li>
               </ul>
