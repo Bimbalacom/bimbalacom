@@ -35,7 +35,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Bimbalacom/Website">
-    <img src="images/shark_logo_big.png" alt="Logo" width="250" height="250">
+    <img src="public/shark_logo_big.png" alt="Logo" width="300" height="250">
   </a>
 
   <h3 align="center">Bimbala website</h3>
