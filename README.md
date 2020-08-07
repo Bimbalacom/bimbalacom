@@ -35,7 +35,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Bimbalacom/Website">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/shark_logo_big.png" alt="Logo" width="250" height="250">
   </a>
 
   <h3 align="center">Bimbala website</h3>
@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Bimbala Screen Shot][product-screenshot]](https://example.com)
 
 ### Built With
 
@@ -149,7 +149,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle)
+Your Name - [@bimbalacom](https://twitter.com/bimbalacom)
 
 Project Link: [https://github.com/Bimbalacom/Website](https://github.com/Bimbalacom/Website)
 
@@ -175,4 +175,4 @@ Project Link: [https://github.com/Bimbalacom/Website](https://github.com/Bimbala
 [license-url]: https://github.com/Bimbalacom/Website/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/
-[product-screenshot]: public/shark_logo_big.png
+[product-screenshot]: public/screenshot.png
