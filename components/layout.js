@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Navbar from "../components/navbar"
 import Footer from '../components/footer'
-import React, {useEffect} from "react";
+import React from "react";
 
 
 export default class Layout extends React.Component {
