@@ -16,10 +16,10 @@ export default function Footer(){
                   <a href="/features" className="nav-link fade-page px-0 py-2">Features</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Integration</a>
+                  <a href="/integrations" className="nav-link fade-page px-0 py-2">Integrations</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Why us?</a>
+                  <a href="/why-us" className="nav-link fade-page px-0 py-2">Why us?</a>
                 </li>
               </ul>
             </div>
@@ -30,19 +30,19 @@ export default function Footer(){
                   <a href="#" className="nav-link fade-page px-0 py-2">Success Stories</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Customer Reviews</a>
+                  <a href={"/customer-reviews"} className="nav-link fade-page px-0 py-2">Customer Reviews</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
                   <a href={"/blog/"} className="nav-link fade-page px-0 py-2">Blog</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Solutions</a>
+                  <a href="/solutions" className="nav-link fade-page px-0 py-2">Solutions</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Partners</a>
+                  <a href="/partners" className="nav-link fade-page px-0 py-2">Partners</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Affiliates</a>
+                  <a href="/affiliates" className="nav-link fade-page px-0 py-2">Affiliates</a>
                 </li>
               </ul>
             </div>
@@ -50,19 +50,19 @@ export default function Footer(){
             <h5>About Us</h5>
               <ul className="nav flex-row flex-md-column">
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Company</a>
+                  <a href="/company" className="nav-link fade-page px-0 py-2">Company</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Team</a>
+                  <a href="/team" className="nav-link fade-page px-0 py-2">Team</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
                   <a href="#" className="nav-link fade-page px-0 py-2">Help Center</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Careers</a>
+                  <a href="/carrers" className="nav-link fade-page px-0 py-2">Careers</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="#" className="nav-link fade-page px-0 py-2">Case Studies</a>
+                  <a href="/case-studies" className="nav-link fade-page px-0 py-2">Case Studies</a>
                 </li>
               </ul>
             </div>
