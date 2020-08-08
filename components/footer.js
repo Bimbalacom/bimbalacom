@@ -59,7 +59,7 @@ export default function Footer(){
                   <a href="#" className="nav-link fade-page px-0 py-2">Help Center</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
-                  <a href="/carrers" className="nav-link fade-page px-0 py-2">Careers</a>
+                  <a href="/careers" className="nav-link fade-page px-0 py-2">Careers</a>
                 </li>
                 <li className="nav-item mr-3 mr-md-0">
                   <a href="/case-studies" className="nav-link fade-page px-0 py-2">Case Studies</a>

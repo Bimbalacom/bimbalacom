@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 export default function FirstPost() {
     return (
     <Layout>
-             <div class="o-hidden" data-overlay>
+    <div class="o-hidden" data-overlay>
       <section class="pb-0">
         <div class="container">
           <div class="row align-items-center justify-content-center justify-content-lg-between text-center text-lg-left">
@@ -16,7 +16,7 @@ export default function FirstPost() {
               <a href="#" class="lead">Meet the crew</a>
             </div>
             <div class="col-md-8 col-lg-6 mt-4 mt-md-5 mt-lg-0 order-lg-1" data-aos="fade-right">
-              <img src="{/img/about-1.jpg}" alt="Image" class="rounded img-fluid shadow-lg"/>
+              <img src="assets/img/about-1.jpg" alt="Image" class="rounded img-fluid shadow-lg"/>
             </div>
           </div>
         </div>
@@ -58,43 +58,76 @@ export default function FirstPost() {
         </div>
       </div>
     </section>
-    <section class="bg-light">
-      <div class="container">
+    
+<div class="container">
         <div class="row section-title justify-content-center text-center">
           <div class="col-md-9 col-lg-8 col-xl-7">
-            <h3 class="display-4">As seen in...</h3>
+            <h3 class="display-4">We glow all the way up</h3>
             <div class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</div>
+            <br/><h5>The team in mostly alphabetical order</h5>
           </div>
         </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-sm-8 col-md-4 mb-5 mb-lg-0">
-            <div class="card card-body bg-secondary mb-4">
-              <img src="assets/img/logos/brand/kyan.svg" alt="Kyan company logo" class="opacity-50 my-4 my-lg-5"/>
-            </div>
-            <div class="px-xl-4">
-              &ldquo;A polished product from a solid performer in the brutal and ever-changing SaaS landscape.&rdquo;
+        <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-11">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="row">
+                  <div class="col-sm-6 text-center mb-5">
+                    <div class="d-flex flex-column align-items-center">
+                      <img src="assets/img/avatars/male-1.jpg" alt="Gabriel Kanev profile image" class="avatar avatar-xl mb-4"/ >
+                      <h5 class="mb-2">Gabriel Kanev</h5>
+                      <div class="mb-3">Co-Founder & loves ducks</div>
+                      <ul class="list-unstyled d-flex mb-0">
+                        <li class="mx-2">
+                          <a href="#" class="hover-fade-out">
+                            <img src="assets/img/icons/social/dribbble.svg" alt="Dribbble" class="icon icon-xs" data-inject-svg/>
+                          </a>
+                        </li>
+                        <li class="mx-2">
+                          <a href="#" class="hover-fade-out">
+                            <img src="assets/img/icons/social/twitter.svg" alt="Twitter" class="icon icon-xs" data-inject-svg />
+                          </a>
+                        </li>
+                        <li class="mx-2">
+                          <a href="#" class="hover-fade-out">
+                            <img src="assets/img/icons/social/github.svg" alt="Github" class="icon icon-xs" data-inject-svg />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 text-center mb-5">
+                    <div class="d-flex flex-column align-items-center">
+                      <img src="assets/img/avatars/1.jpg" alt="Lyuboslav Alexandrov profile image" class="avatar avatar-xl mb-4"/>
+                      <h5 class="mb-2">Lyuboslav Alexandrov</h5>
+                      <div class="mb-3">Co-Founder</div>
+                      <ul class="list-unstyled d-flex mb-0">
+                        <li class="mx-2">
+                          <a href="#" class="hover-fade-out">
+                            <img src="assets/img/icons/social/twitter.svg" alt="Twitter" class="icon icon-xs" data-inject-svg/>
+                          </a>
+                        </li>
+                        <li class="mx-2">
+                          <a href="#" class="hover-fade-out">
+                            <img src="assets/img/icons/social/github.svg" alt="Github" class="icon icon-xs" data-inject-svg/>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-sm-8 col-md-4 mb-5 mb-lg-0">
-            <div class="card card-body bg-secondary mb-4">
-              <img src="assets/img/logos/brand/goldline.svg" alt="Goldline company logo" class="opacity-50 my-4 my-lg-5"/>
-            </div>
-            <div class="px-xl-4">
-              &ldquo;It's clear that the team at Jumpstart have been listening to their customers.&rdquo;
-            </div>
-          </div>
-          <div class="col-sm-8 col-md-4 mb-5 mb-lg-0">
-            <div class="card card-body bg-secondary mb-4">
-              <img src="assets/img/logos/brand/aven.svg" alt="Aven company logo" class="opacity-50 my-4 my-lg-5"/>
-            </div>
-            <div class="px-xl-4">
-              &ldquo;The future is looking bright for this punky young startup. One to watch for sure.&rdquo;
+        </div>
+        <div class="row justify-content-center mt-3 mt-sm-4">
+          <div class="col-auto">
+            <div class="alert bg-secondary">We think you'll fit in here. <a href="/careers">Submit your r&eacute;sum&eacute;</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="bg-primary pb-0 text-white">
+ <section class="bg-primary pb-0 text-white">
       <div class="container">
         <div class="row section-title justify-content-center text-center">
           <div class="col-md-9 col-lg-8 col-xl-7">

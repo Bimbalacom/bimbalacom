@@ -19,7 +19,7 @@ export default class Custom404 extends React.Component {
                                 </div>
                                 <div className="col-12">
                                     <h1>404 - Page Not Found</h1>
-                                    <div className="lead">Whoops, it looks like the page you request wasn't found.</div>
+                                    <div className="lead">Whoops, it looks like the shark ate your desired page.</div>
                                 </div>
                             </div>
                         </div>
