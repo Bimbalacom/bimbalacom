@@ -58,7 +58,7 @@ export default function FirstPost() {
         </div>
       </div>
     </section>
-    
+    <section class="bg-light">
 <div class="container">
         <div class="row section-title justify-content-center text-center">
           <div class="col-md-9 col-lg-8 col-xl-7">
@@ -127,6 +127,7 @@ export default function FirstPost() {
           </div>
         </div>
       </div>
+      </section>
  <section class="bg-primary pb-0 text-white">
       <div class="container">
         <div class="row section-title justify-content-center text-center">

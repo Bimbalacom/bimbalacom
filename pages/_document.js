@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import React from "react";
 
-class MyDocument extends Document {
+class Loader extends Document {
     static async getInitialProps(ctx) {
         const initialProps = await Document.getInitialProps(ctx)
         return { ...initialProps }
@@ -23,4 +23,4 @@ class MyDocument extends Document {
     }
 }
 
-export default MyDocument
+export default Loader
