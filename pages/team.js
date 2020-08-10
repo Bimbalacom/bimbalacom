@@ -16,7 +16,7 @@ export default function FirstPost() {
               <a href="#" class="lead">Meet the crew</a>
             </div>
             <div class="col-md-8 col-lg-6 mt-4 mt-md-5 mt-lg-0 order-lg-1" data-aos="fade-right">
-              <img src="assets/img/about-1.jpg" alt="Image" class="rounded img-fluid shadow-lg"/>
+              <img src="img/about-1.jpg" alt="Image" class="rounded img-fluid shadow-lg"/>
             </div>
           </div>
         </div>
@@ -38,22 +38,22 @@ export default function FirstPost() {
       <div class="o-hidden">
         <div class="highlight-selected" data-flickity='{ "imagesLoaded": true, "wrapAround":true }'>
           <div class="carousel-cell text-center col-9 col-md-7 col-lg-5">
-            <img class="img-fluid rounded" src="assets/img/blog/thumb-3.jpg" alt="blog.3.image"/>
+            <img class="img-fluid rounded" src={"img/blog/thumb-3.jpg"} alt="blog.3.image"/>
           </div>
           <div class="carousel-cell text-center col-9 col-md-7 col-lg-5">
-            <img class="img-fluid rounded" src="assets/img/blog/thumb-4.jpg" alt="blog.4.image"/>
+            <img class="img-fluid rounded" src={"img/blog/thumb-4.jpg"} alt="blog.4.image"/>
           </div>
           <div class="carousel-cell text-center col-9 col-md-7 col-lg-5">
-            <img class="img-fluid rounded" src="assets/img/blog/thumb-5.jpg" alt="blog.5.image"/>
+            <img class="img-fluid rounded" src={"img/blog/thumb-5.jpg"} alt="blog.5.image"/>
           </div>
           <div class="carousel-cell text-center col-9 col-md-7 col-lg-5">
-            <img class="img-fluid rounded" src="assets/img/blog/thumb-8.jpg" alt="blog.6.image"/>
+            <img class="img-fluid rounded" src={"img/blog/thumb-8.jpg"} alt="blog.6.image"/>
           </div>
           <div class="carousel-cell text-center col-9 col-md-7 col-lg-5">
-            <img class="img-fluid rounded" src="assets/img/blog/thumb-6.jpg" alt="blog.7.image"/>
+            <img class="img-fluid rounded" src={"img/blog/thumb-6.jpg"} alt="blog.7.image"/>
           </div>
           <div class="carousel-cell text-center col-9 col-md-7 col-lg-5">
-            <img class="img-fluid rounded" src="assets/img/blog/thumb-7.jpg" alt="blog.8.image"/>
+            <img class="img-fluid rounded" src={"img/blog/thumb-7.jpg"} alt="blog.8.image"/>
           </div>
         </div>
       </div>
@@ -74,23 +74,18 @@ export default function FirstPost() {
                 <div class="row">
                   <div class="col-sm-6 text-center mb-5">
                     <div class="d-flex flex-column align-items-center">
-                      <img src="assets/img/avatars/male-1.jpg" alt="Gabriel Kanev profile image" class="avatar avatar-xl mb-4"/ >
+                      <img src={"img/avatars/male-1.jpg"} alt="Gabriel Kanev profile image" class="avatar avatar-xl mb-4"/ >
                       <h5 class="mb-2">Gabriel Kanev</h5>
                       <div class="mb-3">Co-Founder & loves ducks</div>
                       <ul class="list-unstyled d-flex mb-0">
                         <li class="mx-2">
                           <a href="#" class="hover-fade-out">
-                            <img src="assets/img/icons/social/dribbble.svg" alt="Dribbble" class="icon icon-xs" data-inject-svg/>
+                            <img src="img/icons/social/twitter.svg" alt="Twitter" class="icon icon-xs" data-inject-svg />
                           </a>
                         </li>
                         <li class="mx-2">
                           <a href="#" class="hover-fade-out">
-                            <img src="assets/img/icons/social/twitter.svg" alt="Twitter" class="icon icon-xs" data-inject-svg />
-                          </a>
-                        </li>
-                        <li class="mx-2">
-                          <a href="#" class="hover-fade-out">
-                            <img src="assets/img/icons/social/github.svg" alt="Github" class="icon icon-xs" data-inject-svg />
+                            <img src="img/icons/social/github.svg" alt="Github" class="icon icon-xs" data-inject-svg />
                           </a>
                         </li>
                       </ul>
@@ -98,18 +93,18 @@ export default function FirstPost() {
                   </div>
                   <div class="col-sm-6 text-center mb-5">
                     <div class="d-flex flex-column align-items-center">
-                      <img src="assets/img/avatars/1.jpg" alt="Lyuboslav Alexandrov profile image" class="avatar avatar-xl mb-4"/>
+                      <img src={"img/avatars/1.jpg"} alt="Lyuboslav Alexandrov profile image" class="avatar avatar-xl mb-4"/>
                       <h5 class="mb-2">Lyuboslav Alexandrov</h5>
                       <div class="mb-3">Co-Founder</div>
                       <ul class="list-unstyled d-flex mb-0">
                         <li class="mx-2">
                           <a href="#" class="hover-fade-out">
-                            <img src="assets/img/icons/social/twitter.svg" alt="Twitter" class="icon icon-xs" data-inject-svg/>
+                            <img src="img/icons/social/twitter.svg" alt="Twitter" class="icon icon-xs" data-inject-svg/>
                           </a>
                         </li>
                         <li class="mx-2">
                           <a href="#" class="hover-fade-out">
-                            <img src="assets/img/icons/social/github.svg" alt="Github" class="icon icon-xs" data-inject-svg/>
+                            <img src="img/icons/social/github.svg" alt="Github" class="icon icon-xs" data-inject-svg/>
                           </a>
                         </li>
                       </ul>
@@ -122,7 +117,7 @@ export default function FirstPost() {
         </div>
         <div class="row justify-content-center mt-3 mt-sm-4">
           <div class="col-auto">
-            <div class="alert bg-secondary">We think you'll fit in here. <a href="/careers">Submit your r&eacute;sum&eacute;</a>
+            <div class="alert bg-secondary">We think you'll fit in here. <a href={"/careers"}>Submit your r&eacute;sum&eacute;</a>
             </div>
           </div>
         </div>
@@ -140,19 +135,19 @@ export default function FirstPost() {
           <div class="col-auto">
             <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="assets/img/logos/brand/aven.svg" alt="Aven company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/aven.svg" alt="Aven company logo" class="bg-white opacity-50" data-inject-svg/>
               </li>
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="assets/img/logos/brand/asgardia.svg" alt="Asgardia company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/asgardia.svg" alt="Asgardia company logo" class="bg-white opacity-50" data-inject-svg/>
               </li>
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="assets/img/logos/brand/kanba.svg" alt="Kanba company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/kanba.svg" alt="Kanba company logo" class="bg-white opacity-50" data-inject-svg/>
               </li>
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="assets/img/logos/brand/treva.svg" alt="Treva company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/treva.svg" alt="Treva company logo" class="bg-white opacity-50" data-inject-svg/>
               </li>
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="assets/img/logos/brand/ztos.svg" alt="Ztos company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/ztos.svg" alt="Ztos company logo" class="bg-white opacity-50" data-inject-svg/>
               </li>
             </ul>
           </div>
