@@ -11,14 +11,14 @@ export default function FirstPost() {
           <div class="col-md-auto" data-aos="fade-up">
             <div class="px-md-4 px-lg-5 mb-5 mb-md-0"data-aos-delay="100">
               <h5>Like us</h5>
-              <a href="#" class="lead">You can ask your <br/>questions on Facebook.</a>
+              <a href="https://fb.com/bimbalacom" class="lead">on Facebook.<br/></a>
             </div>
           </div>
           <div class="col-md-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="px-md-4 px-lg-5 mb-5 mb-md-0">
               <h5>Tweet us</h5>
-                <a href="#" >Don't worry. <br/>We will not tell on  you. <br/>(not every boss gives Twitter privilages)</a>
-
+                <a href="https://twitter.com/bimbalacom" > on Twitter<br/></a>
+                We will not tell on  you. <br/>(not every boss gives Twitter privilages)
             </div>
           </div>
           <div class="col-md-auto" data-aos="fade-up" data-aos-delay="100">
@@ -37,7 +37,7 @@ export default function FirstPost() {
           <div class="col-md-auto" data-aos="fade-up">
             <div class="px-md-4 px-lg-5 mb-5 mb-md-0">
               <h5>Email us </h5>
-              <a href="#" class="lead">contact@bimbala.com</a><br/>
+              <a href="mailto:contact@bimbala.com" class="lead">contact@bimbala.com</a><br/>
               (You will receive an answer in <br/>24 working hours max.)
             </div>
           </div>

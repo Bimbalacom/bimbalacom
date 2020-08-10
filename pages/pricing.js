@@ -10,8 +10,7 @@ export default function FirstPost() {
         <div class="container">
           <div class="row text-center justify-content-center">
             <div class="col">
-              <h1 class="display-3">Pricing that <mark data-aos="highlight-text" data-aos-delay="200">scales with
-                            you</mark></h1>
+              <h1 class="display-3">Pricing that <mark data-aos="highlight-text" data-aos-delay="200">scales with you</mark></h1>
             </div>
           </div>
           <div class="row text-center justify-content-center">
@@ -44,7 +43,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">2GB Cloud Storage</h6>
                   </div>
@@ -52,7 +51,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">100GB CDN Bandwidth</h6>
                   </div>
@@ -60,7 +59,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">98.88% Uptime Guarantee</h6>
                   </div>
@@ -68,7 +67,7 @@ export default function FirstPost() {
                 <li class="my-3 opacity-50">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-danger-alt">
-                      <img src="assets/img/icons/interface/icon-x.svg" alt=" icon=" class="m-2 icon icon-xs bg-danger" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-x.svg"} alt=" icon=" class="m-2 icon icon-xs bg-danger" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">Personal Account Manager</h6>
                   </div>
@@ -76,7 +75,7 @@ export default function FirstPost() {
                 <li class="my-3 opacity-50">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-danger-alt">
-                      <img src="assets/img/icons/interface/icon-x.svg" alt=" icon=" class="m-2 icon icon-xs bg-danger" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-x.svg"} alt=" icon=" class="m-2 icon icon-xs bg-danger" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">Enterprise SLA</h6>
                   </div>
@@ -100,7 +99,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">20GB Cloud Storage</h6>
                   </div>
@@ -108,7 +107,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">1TB CDN Bandwidth</h6>
                   </div>
@@ -116,7 +115,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">99.95% Uptime Guarantee</h6>
                   </div>
@@ -124,7 +123,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">Personal Account Manager</h6>
                   </div>
@@ -132,7 +131,7 @@ export default function FirstPost() {
                 <li class="my-3 opacity-50">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-danger-alt">
-                      <img src="assets/img/icons/interface/icon-x.svg" alt=" icon=" class="m-2 icon icon-xs bg-danger" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-x.svg"} alt=" icon=" class="m-2 icon icon-xs bg-danger" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">Enterprise SLA</h6>
                   </div>
@@ -156,7 +155,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">Unlimited Storage</h6>
                   </div>
@@ -164,7 +163,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">100TB CDN Bandwidth</h6>
                   </div>
@@ -172,7 +171,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">99.999% Uptime Guarantee</h6>
                   </div>
@@ -180,7 +179,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">Personal Account Manager</h6>
                   </div>
@@ -188,7 +187,7 @@ export default function FirstPost() {
                 <li class="my-3">
                   <div class="d-flex align-items-center">
                     <div class="rounded-circle bg-success-alt">
-                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
+                      <img src={"assets/img/icons/interface/icon-check.svg"} alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg/>
                     </div>
                     <h6 class="mb-0 ml-3">Enterprise SLA</h6>
                   </div>
@@ -207,7 +206,7 @@ export default function FirstPost() {
             <div class="px-xl-3">
               <div>
                 <div class="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src="assets/img/icons/theme/navigation/route.svg" alt="Binoculars icon" class="icon bg-primary-2" data-inject-svg/>
+                  <img src={"assets/img/icons/theme/navigation/route.svg"} alt="Binoculars icon" class="icon bg-primary-2" data-inject-svg/>
                 </div>
                 <h5>Fully Responsive</h5>
                 <div>
@@ -220,7 +219,7 @@ export default function FirstPost() {
             <div class="px-xl-3">
               <div>
                 <div class="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src="assets/img/icons/theme/layout/layout-left-panel-2.svg" alt="Layouts icon" class="icon bg-primary-2" data-inject-svg/>
+                  <img src={"assets/img/icons/theme/layout/layout-left-panel-2.svg"} alt="Layouts icon" class="icon bg-primary-2" data-inject-svg/>
                 </div>
                 <h5>Multiple Layouts</h5>
                 <div>
@@ -233,7 +232,7 @@ export default function FirstPost() {
             <div class="px-xl-3">
               <div>
                 <div class="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src="assets/img/icons/theme/shopping/box-2.svg" alt="Box icon" class="icon bg-primary-2" data-inject-svg/>
+                  <img src={"assets/img/icons/theme/shopping/box-2.svg"} alt="Box icon" class="icon bg-primary-2" data-inject-svg/>
                 </div>
                 <h5>Modular Components</h5>
                 <div>
@@ -261,7 +260,7 @@ export default function FirstPost() {
                 <a href="#accordion-1" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
                     <h6 class="mb-0 mr-2">Can I upgrade later on?</h6>
-                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg/>
+                    <img src={"assets/img/icons/interface/icon-caret-right.svg"} alt="Caret Right" class="icon icon-sm" data-inject-svg/>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-1" data-parent="#faq-accordion">
@@ -277,7 +276,7 @@ export default function FirstPost() {
                 <a href="#accordion-2" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
                     <h6 class="mb-0 mr-2">Can I port my data from another provider?</h6>
-                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg/>
+                    <img src={"assets/img/icons/interface/icon-caret-right.svg"} alt="Caret Right" class="icon icon-sm" data-inject-svg/>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-2" data-parent="#faq-accordion">
@@ -292,7 +291,7 @@ export default function FirstPost() {
                 <a href="#accordion-3" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
                     <h6 class="mb-0 mr-2">Are my food photos stored forever in the cloud?</h6>
-                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg/>
+                    <img src={"assets/img/icons/interface/icon-caret-right.svg"} alt="Caret Right" class="icon icon-sm" data-inject-svg/>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-3" data-parent="#faq-accordion">
@@ -307,7 +306,7 @@ export default function FirstPost() {
                 <a href="#accordion-4" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
                     <h6 class="mb-0 mr-2">Who foots the bill for that?</h6>
-                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg/>
+                    <img src={"assets/img/icons/interface/icon-caret-right.svg"} alt="Caret Right" class="icon icon-sm" data-inject-svg/>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-4" data-parent="#faq-accordion">
@@ -322,7 +321,7 @@ export default function FirstPost() {
                 <a href="#accordion-5" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
                     <h6 class="mb-0 mr-2">What's the real cost?</h6>
-                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg/>
+                    <img src={"assets/img/icons/interface/icon-caret-right.svg"} alt="Caret Right" class="icon icon-sm" data-inject-svg/>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-5" data-parent="#faq-accordion">
@@ -337,7 +336,7 @@ export default function FirstPost() {
                 <a href="#accordion-6" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
                     <h6 class="mb-0 mr-2">Can my company request a custom plan?</h6>
-                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg/>
+                    <img src={"assets/img/icons/interface/icon-caret-right.svg"} alt="Caret Right" class="icon icon-sm" data-inject-svg/>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-6" data-parent="#faq-accordion">
@@ -353,7 +352,7 @@ export default function FirstPost() {
         </div>
         <div class="row justify-content-center mt-4 mt-md-5">
           <div class="col-auto">
-            <div class="alert bg-light">Still have unanswered questions? <a href="#">Get in touch</a>
+            <div class="alert bg-light">Still have unanswered questions? <a href="/contact-us">Get in touch</a>
             </div>
           </div>
         </div>
@@ -370,7 +369,7 @@ export default function FirstPost() {
         <div class="row justify-content-center">
           <div class="col-xl-8 col-lg-9 col-md-10 mb-3 mb-sm-4" data-aos="fade-up" data-aos-delay="100">
             <div class="card card-body flex-md-row pl-md-3 bg-white">
-              <img src="assets/img/avatars/male-4.jpg" alt="Harvey Derwent avatar image" class="avatar d-block mr-md-5 ml-md-n5 mb-3 mb-md-0"/>
+              <img src={"assets/img/avatars/male-4.jpg"} alt="Harvey Derwent avatar image" class="avatar d-block mr-md-5 ml-md-n5 mb-3 mb-md-0"/>
               <div>
                 <blockquote class="blockquote pl-0 border-0 mb-3 mb-sm-4">
             &ldquo;We had all sorts of problems around motivation and productivity from our smallest scrums to our largest teams.  Jumpstart helped us rise above all and conquer.&rdquo;
@@ -384,7 +383,7 @@ export default function FirstPost() {
           </div>
           <div class="col-xl-8 col-lg-9 col-md-10 mb-3 mb-sm-4" data-aos="fade-up" data-aos-delay="200">
             <div class="card card-body flex-md-row pl-md-3 bg-white">
-              <img src="assets/img/avatars/male-1.jpg" alt="Harvey Derwent avatar image" class="avatar d-block mr-md-5 ml-md-n5 mb-3 mb-md-0"/>
+              <img src={"assets/img/avatars/male-1.jpg"} alt="Harvey Derwent avatar image" class="avatar d-block mr-md-5 ml-md-n5 mb-3 mb-md-0"/>
               <div>
                 <blockquote class="blockquote pl-0 border-0 mb-3 mb-sm-4">
             &ldquo;We had all sorts of problems around motivation and productivity from our smallest scrums to our largest teams. <mark data-aos="highlight-text" data-aos-delay="200">Jumpstart helped us rise above all and conquer.</mark>&rdquo;
@@ -398,7 +397,7 @@ export default function FirstPost() {
           </div>
           <div class="col-xl-8 col-lg-9 col-md-10 mb-3 mb-sm-4" data-aos="fade-up" data-aos-delay="300">
             <div class="card card-body flex-md-row pl-md-3 bg-white">
-              <img src="assets/img/avatars/female-4.jpg" alt="Shelley McNabb avatar image" class="avatar d-block mr-md-5 ml-md-n5 mb-3 mb-md-0"/>
+              <img src={"assets/img/avatars/female-4.jpg"} alt="Shelley McNabb avatar image" class="avatar d-block mr-md-5 ml-md-n5 mb-3 mb-md-0"/>
               <div>
                 <blockquote class="blockquote pl-0 border-0 mb-3 mb-sm-4">
             &ldquo;We all know the stigma around build times and the ever expanding arsenal of tooling in modern web apps. Fear not, Jumpstart does away with all of that.&rdquo;
