@@ -85,7 +85,7 @@ export default function FirstPost() {
                                             <div className="d-flex flex-column align-items-center">
                                                 <img src={"img/avatars/male-1.jpg"} alt="Gabriel Kanev profile image"
                                                      className="avatar avatar-xl mb-4"/>
-                                                <h5> className="mb-2">Gabriel Kanev</h5>
+                                                <h5 className="mb-2">Gabriel Kanev</h5>
                                                 <div className="mb-3">Co-Founder & loves ducks</div>
                                                 <ul className="list-unstyled d-flex mb-0">
                                                     <li className="mx-2">
@@ -105,19 +105,22 @@ export default function FirstPost() {
                                         </div>
                                         <div className="col-sm-6 text-center mb-5">
                                             <div className="d-flex flex-column align-items-center">
-                                                <img src={"img/avatars/lalexandrov.jpg"} alt="Lyuboslav Alexandrov profile image"
+                                                <img src={"img/avatars/lalexandrov.jpg"}
+                                                     alt="Lyuboslav Alexandrov profile image"
                                                      className="avatar avatar-xl mb-4"/>
                                                 <h5 className="mb-2">Lyuboslav Alexandrov</h5>
                                                 <div className="mb-3">Co-Founder & loves shitty frameworks</div>
                                                 <ul className="list-unstyled d-flex mb-0">
                                                     <li className="mx-2">
-                                                        <a href="#" className="hover-fade-out">
-                                                            <img src="img/icons/social/twitter.svg" alt="Twitter"
+                                                        <a href={"https://fb.me/lyuboslav.alexandrov"}
+                                                           className="hover-fade-out">
+                                                            <img src="img/icons/social/facebook.svg" alt="Facebook"
                                                                  className="icon icon-xs"/>
                                                         </a>
                                                     </li>
                                                     <li className="mx-2">
-                                                        <a href="#" className="hover-fade-out">
+                                                        <a href={"https://github.com/lubo1998"}
+                                                           className="hover-fade-out">
                                                             <img src="img/icons/social/github.svg" alt="Github"
                                                                  className="icon icon-xs"/>
                                                         </a>
