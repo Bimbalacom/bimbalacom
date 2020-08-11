@@ -15,10 +15,9 @@ export default function FirstPost() {
                                                                                   data-aos-delay="500">change
                                     makers</mark></h1>
                                 <p className="lead">
-                                    Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam.
+                                    
                                 </p>
-                                <a href="#" className="lead">Meet the crew</a>
+                               
                             </div>
                             <div className="col-md-8 col-lg-6 mt-4 mt-md-5 mt-lg-0 order-lg-1" data-aos="fade-right">
                                 <img src="img/about-1.jpg" alt="Image" className="rounded img-fluid shadow-lg"/>
@@ -36,8 +35,7 @@ export default function FirstPost() {
                     <div className="row section-title justify-content-center text-center">
                         <div className="col-md-9 col-lg-8 col-xl-7">
                             <h3 className="display-4">What we’re about</h3>
-                            <div className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                            <div className="lead">
                             </div>
                         </div>
                     </div>
@@ -70,8 +68,7 @@ export default function FirstPost() {
                     <div className="row section-title justify-content-center text-center">
                         <div className="col-md-9 col-lg-8 col-xl-7">
                             <h3 className="display-4">We glow all the way up</h3>
-                            <div className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                            <div className="lead">
                             </div>
                             <br/><h5>The team in mostly alphabetical order</h5>
                         </div>
@@ -83,19 +80,19 @@ export default function FirstPost() {
                                     <div className="row">
                                         <div className="col-sm-6 text-center mb-5">
                                             <div className="d-flex flex-column align-items-center">
-                                                <img src={"img/avatars/male-1.jpg"} alt="Gabriel Kanev profile image"
+                                                <img src={"img/avatars/gkanev.jpg"} alt="Gabriel Kanev profile image"
                                                      className="avatar avatar-xl mb-4"/>
                                                 <h5 className="mb-2">Gabriel Kanev</h5>
                                                 <div className="mb-3">Co-Founder & loves ducks</div>
                                                 <ul className="list-unstyled d-flex mb-0">
                                                     <li className="mx-2">
-                                                        <a href="#" className="hover-fade-out">
+                                                        <a href={"https://twitter.com/mrgkanev"} className="hover-fade-out">
                                                             <img src="img/icons/social/twitter.svg" alt="Twitter"
                                                                  className="icon icon-xs"/>
                                                         </a>
                                                     </li>
                                                     <li className="mx-2">
-                                                        <a href="#" className="hover-fade-out">
+                                                        <a href={"https://github.com/mrgkanev"} className="hover-fade-out">
                                                             <img src="img/icons/social/github.svg" alt="Github"
                                                                  className="icon icon-xs"/>
                                                         </a>
@@ -142,46 +139,7 @@ export default function FirstPost() {
                     </div>
                 </div>
             </section>
-            <section className="bg-primary pb-0 text-white">
-                <div className="container">
-                    <div className="row section-title justify-content-center text-center">
-                        <div className="col-md-9 col-lg-8 col-xl-7">
-                            <h3 className="display-4">You’re in good company</h3>
-                            <div className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="col-auto">
-                            <ul className="list-unstyled d-flex flex-wrap justify-content-center mb-0">
-                                <li className="my-3 mx-3 mx-lg-4">
-                                    <img src="img/logos/brand/aven.svg" alt="Aven company logo"
-                                         className="bg-white opacity-50"/>
-                                </li>
-                                <li className="my-3 mx-3 mx-lg-4">
-                                    <img src="img/logos/brand/asgardia.svg" alt="Asgardia company logo"
-                                         className="bg-white opacity-50"/>
-                                </li>
-                                <li className="my-3 mx-3 mx-lg-4">
-                                    <img src="img/logos/brand/kanba.svg" alt="Kanba company logo"
-                                         className="bg-white opacity-50"/>
-                                </li>
-                                <li className="my-3 mx-3 mx-lg-4">
-                                    <img src="img/logos/brand/treva.svg" alt="Treva company logo"
-                                         className="bg-white opacity-50"/>
-                                </li>
-                                <li className="my-3 mx-3 mx-lg-4">
-                                    <img src="img/logos/brand/ztos.svg" alt="Ztos company logo"
-                                         className="bg-white opacity-50"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="divider divider-bottom bg-primary-3"/>
-            </section>
-
+            {/* <Companies/> */}
         </Layout>
     )
 }
