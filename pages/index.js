@@ -37,7 +37,7 @@ export default function Home() {
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
                                     <img src={"/img/icons/theme/general/thunder-move.svg"} alt="Lightning icon"
-                                         className="icon bg-primary"/>
+                                         className="icon bg-primary-alt rounded-circle p-1"/>
                                     <h5 className="mt-4">Suits Your Style</h5>
                                     <div>
                                         Drogon sed ut perspiciatis unde omnis iste error sit voluptatem accusantium
@@ -48,7 +48,7 @@ export default function Home() {
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
                                     <img src={"/img/icons/theme/general/bookmark.svg"} alt="Bookmark icon"
-                                         className="icon bg-primary"/>
+                                         className="icon bg-primary-alt rounded-circle p-1"/>
                                     <h5 className="mt-4">Well Documented</h5>
                                     <div>
                                         Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum
@@ -59,7 +59,7 @@ export default function Home() {
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
                                     <img src={"/img/icons/theme/design/select.svg"} alt="Selection interface icon"
-                                         className="icon bg-primary"/>
+                                         className="icon bg-primary-alt rounded-circle p-1"/>
                                     <h5 className="mt-4">Highly Customizable</h5>
                                     <div>
                                         Eunuch sed blandit libero volutpat sed cras. Cersei quis imperdiet tincidunt

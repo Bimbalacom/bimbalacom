@@ -24,8 +24,10 @@ export default function Navbar(){
                          id="navigation-menu">
                         <ul className="navbar-nav my-3 my-lg-0">
                             <li className="nav-item">
-                                <a aria-expanded="false" aria-haspopup="true"
-                                   className="nav-link nav-item" role="button" href="//bimbala.com/">Home</a>
+                                <Link href={'/'} passHref={true}>
+                                    <a aria-expanded="false" aria-haspopup="true"
+                                       className="nav-link nav-item" role="button">Home</a>
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <Link passHref={true} href={"/pricing"}>
