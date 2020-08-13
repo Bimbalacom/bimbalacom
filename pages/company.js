@@ -4,8 +4,7 @@ import Layout from "../components/layout";
 export default function FirstPost() {
     return (
     <Layout>
-              text
-
+          {/*//TODO: Wrtie this*/}
     </Layout>
   )
 }
