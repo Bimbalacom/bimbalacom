@@ -138,7 +138,11 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<!-- RELEASE PLAN OF THE WEBSITE-->
+## Release plan of the website
 
+- A major version is being published each year.
+- Every 3-4 weeks a new version is being released.
 
 <!-- LICENSE -->
 ## License
