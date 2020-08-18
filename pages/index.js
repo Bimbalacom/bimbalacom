@@ -4,8 +4,7 @@ import {DefaultSeo} from 'next-seo';
 
 export default function Home() {
     return (
-
-        <Layout>
+        <Layout title={'Home - Bimbala.com'}>
             <div data-overlay className="o-hidden">
                 <section className="bg-primary-3 text-white pb-0 o-hidden">
                     <div className="container">
