@@ -4,11 +4,11 @@ import Layout from "../components/layout";
 
 export default function FirstPost() {
     return (
-    <Layout>
+        <Layout title={'Contact us - Bimbala.com'}>
           <section>
       <div class="container">
         <div class="row justify-content-center text-center">
-          <div class="col-md-auto" data-aos="fade-up">
+          <div class="col-md-auto" data-aos={"fade-up"}>
             <div class="px-md-4 px-lg-5 mb-5 mb-md-0"data-aos-delay="100">
               <h5>Like us</h5>
               <a href="https://fb.com/bimbalacom" class="lead">on Facebook.<br/></a>
@@ -17,14 +17,13 @@ export default function FirstPost() {
           <div class="col-md-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="px-md-4 px-lg-5 mb-5 mb-md-0">
               <h5>Tweet us</h5>
-                <a href="https://twitter.com/bimbalacom" > on Twitter<br/></a>
-                We will not tell on  you. <br/>(not every boss gives Twitter privilages)
+              <a href="https://twitter.com/bimbalacom"> on Twitter<br/></a>
+              We will not tell on you. <br/>(not every boss gives Twitter privilages)
             </div>
-          </div>
-          <div class="col-md-auto" data-aos="fade-up" data-aos-delay="100">
+
             <div class="px-md-4 px-lg-5 mb-5 mb-md-0">
               <h5>Chat with us</h5>
-              <a href="#" >Yep, we are down on the right. <br/> Someone will write you back asap.</a>
+              <a href="#">Yep, we are down on the right. <br/> Someone will write you back asap.</a>
             </div>
           </div>
         </div>
@@ -50,7 +49,7 @@ export default function FirstPost() {
           <div class="col-md-auto" data-aos="fade-up" data-aos-delay="200">
             <div class="px-md-4 px-lg-5 mb-5 mb-md-0">
               <h5>Support tickets</h5>
-              Last but not least. 
+              Last but not least.
             </div>
           </div>
         </div>

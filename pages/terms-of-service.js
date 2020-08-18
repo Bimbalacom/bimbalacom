@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Layout from "../components/layout";
 export default function FirstPost() {
 return (
-<Layout>
+    <Layout title={'Terms of Service - Bimbala.com'}>
    <section class="bg-light">
       <div class="container">
          <div class="row justify-content-center">
@@ -24,7 +24,7 @@ return (
                         </li>
                      </ol>
                      <p dir="ltr">
-                        Welcome to Bimbala (“Company”, “we”, “our”, “us”)! As you have just clicked
+                        Welcome to Bimbala Ltd (“Company”, “we”, “our”, “us”)! As you have just clicked
                         our Terms of Service, please pause, grab a cup of coffee and carefully read
                         the following pages. It will take you approximately 20 minutes.
                      </p>

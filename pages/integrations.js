@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Integrations() {
     return (
-    <Layout>
+        <Layout title={'Integrations - Bimbala.com'}>
         <ComingSoon/>
     </Layout>
   )

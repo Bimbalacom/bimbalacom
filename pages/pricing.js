@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 
 export default function FirstPost() {
     return (
-    <Layout>
+        <Layout title={'Pricing - Bimbala.com'}>
              <div data-overlay className="bg-primary-3 text-white o-hidden">
       <section>
         <div className="container">

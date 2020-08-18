@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 
 export default function FirstPost() {
     return (
-    <Layout>
+        <Layout title={'Company - Bimbala.com'}>
           {/*//TODO: Wrtie this*/}
     </Layout>
   )

@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 
 export default function FirstPost() {
     return (
-    <Layout>
+        <Layout title={'Carrers - Bimbala.com'}>
       <section class="pb-0 bg-light">
         <div class="container">
           <div class="row section-title justify-content-center text-center">
