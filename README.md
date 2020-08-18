@@ -28,6 +28,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/885cb202-8649-4867-9415-ac75947bd4ae/deploy-status)](https://app.netlify.com/sites/objective-payne-ff1c8b/deploys)
 [![time tracker](https://wakatime.com/badge/github/Bimbalacom/Website.svg)](https://wakatime.com/badge/github/Bimbalacom/Website)
 
 
