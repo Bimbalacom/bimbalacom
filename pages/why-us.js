@@ -66,7 +66,7 @@ export default function WhyUS() {
                     <div className="row justify-content-center text-center text-sm-left">
                         <div className="col d-flex flex-column flex-sm-row justify-content-center align-items-center">
                             <a data-fancybox href="https://vimeo.com/166034462#t=32s" className="btn btn-lg btn-light rounded-circle" data-aos="zoom-in" data-aos-delay="400">
-                                <img src={"img/icons/interface/icon-media-play.svg"} alt="Media Play Icon" className="icon icon-lg bg-dark pl-1" data-inject-svg />
+                                <img src={"img/icons/interface/icon-media-play.svg"} alt="Media Play Icon" className="icon icon-lg bg-dark pl-1"  />
                             </a>
                             <div className="h1 mb-0 mt-4 mt-sm-0 ml-sm-4" data-aos="fade-up">&ldquo;They changed the game&rdquo;</div>
                         </div>

@@ -14,19 +14,19 @@ export default function Share(){
           <div class="col-auto">
             <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="img/logos/brand/aven.svg" alt="Aven company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/aven.svg" alt="Aven company logo" class="bg-white opacity-50" />
               </li>
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="img/logos/brand/asgardia.svg" alt="Asgardia company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/asgardia.svg" alt="Asgardia company logo" class="bg-white opacity-50" />
               </li>
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="img/logos/brand/kanba.svg" alt="Kanba company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/kanba.svg" alt="Kanba company logo" class="bg-white opacity-50" />
               </li>
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="img/logos/brand/treva.svg" alt="Treva company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/treva.svg" alt="Treva company logo" class="bg-white opacity-50" />
               </li>
               <li class="my-3 mx-3 mx-lg-4">
-                <img src="img/logos/brand/ztos.svg" alt="Ztos company logo" class="bg-white opacity-50" data-inject-svg/>
+                <img src="img/logos/brand/ztos.svg" alt="Ztos company logo" class="bg-white opacity-50" />
               </li>
             </ul>
           </div>
