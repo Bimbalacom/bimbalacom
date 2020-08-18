@@ -36,7 +36,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Bimbalacom/Website">
-    <img src="public/shark_logo_big.png" alt="Logo" width="300" height="250">
+    <img src="public/shark_logo_big.png" alt="Bimbala mascot/logo" width="300" height="250">
   </a>
 
   <h3 align="center">Bimbala website</h3>
@@ -44,14 +44,12 @@
   <p align="center">
     Here you can find the source code of our official website.
     <br />
-    <a href="https://github.com/Bimbalacom/Website"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://bimbala.com">View Demo</a>
     ·
-    <a href="https://github.com/Bimbalacom/Website/issues">Report Bug</a>
+    <a href="https://github.com/Bimbalacom/Website/issues/new?assignees=&labels=bug&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/Bimbalacom/Website/issues">Request Feature</a>
+    <a href="https://github.com/Bimbalacom/Website/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=">Request Feature</a>
   </p>
 </p>
 
@@ -69,6 +67,7 @@
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
+- [Release plan of the website](#release-plan-of-the-website)
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -78,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Bimbala Screen Shot][product-screenshot]](https://example.com)
+[![Bimbala Screen Shot][product-screenshot]](https://bimbala.com)
 
 ### Built With
 
@@ -92,8 +91,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+We mainly only use NextJS and plugin/extensions for it. So you can use NPM for everything.
 ```sh
 npm install npm@latest -g
 ```
@@ -154,9 +152,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@bimbalacom](https://twitter.com/bimbalacom)
+Our Twitter - [@bimbalacom](https://twitter.com/bimbalacom)
 
-Project Link: [https://github.com/Bimbalacom/Website](https://github.com/Bimbalacom/Website)
 
 
 
