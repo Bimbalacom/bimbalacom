@@ -35,7 +35,7 @@ export default function FirstPost() {
                   Design
                 </div>
                 <div class="col-auto col-md-3">
-                  Remove
+                  Remote
                 </div>
               </a>
             </div>

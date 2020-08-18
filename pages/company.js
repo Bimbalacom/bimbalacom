@@ -5,7 +5,7 @@ export default function FirstPost() {
     return (
         <Layout title={'Company - Bimbala.com'}>
            <ComingSoon/>
-          {/*//TODO: Wrtie this*/}
+          {/*/TODO: Wrtie this*/}
     </Layout>
   )
 }
