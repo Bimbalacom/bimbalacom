@@ -2,8 +2,8 @@ export default {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        title: 'Bimbala',
-        site_name: 'Bimbala',
+        title: 'Bimbala - next generation of supporting software.',
+        site_name: 'Bimbala - next generation of supporting software.',
         url: 'https://bimbala.com',
         description: 'Bimbala is a SaaS helping companies upgrade their support team. Integration of roadmaps, knowledge boards and etc. made easy. Make your customers see you work for them and make them part of your business!',
         images: [
