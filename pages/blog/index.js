@@ -5,68 +5,68 @@ export default function Blog() {
     return (
         <Layout>
             <section className={"bg-primary-3"}>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="d-flex flex-column flex-lg-row no-gutters border rounded bg-white o-hidden">
-                                <a href="#" class="d-block position-relative bg-gradient col-xl-5">
-                                    <img class="flex-fill hover-fade-out" src={"img/blog/thumb-2.jpg"} alt="blog.1.image" />
-                                    <div class="divider divider-side bg-white d-none d-lg-block"></div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <div className="d-flex flex-column flex-lg-row no-gutters border rounded bg-white o-hidden">
+                                <a href="#" className="d-block position-relative bg-gradient col-xl-5">
+                                    <img className="flex-fill hover-fade-out" src={"img/blog/thumb-2.jpg"} alt="blog.1.image" />
+                                    <div className="divider divider-side bg-white d-none d-lg-block"></div>
                                 </a>
-                                <div class="p-4 p-md-5 col-xl-7 d-flex align-items-center">
-                                    <div class="p-lg-4 p-xl-5">
-                                        <div class="d-flex justify-content-between align-items-center mb-3 mb-xl-4">
-                                            <a href="#" class="badge badge-pill badge-danger">Design</a>
-                                            <div class="text-small text-muted">October 10th</div>
+                                <div className="p-4 p-md-5 col-xl-7 d-flex align-items-center">
+                                    <div className="p-lg-4 p-xl-5">
+                                        <div className="d-flex justify-content-between align-items-center mb-3 mb-xl-4">
+                                            <a href="#" className="badge badge-pill badge-danger">Design</a>
+                                            <div className="text-small text-muted">October 10th</div>
                                         </div>
                                         <a href="#">
                                             <h1>Unveiling our new vision for Jumpstart</h1>
                                         </a>
-                                        <p class="lead">Volantis vitae unuch sed velit sodales. Sandor imperdiet proin fermentum leo vel Hodor.</p>
-                                        <a href="#" class="lead">Read Story</a>
+                                        <p className="lead">Volantis vitae unuch sed velit sodales. Sandor imperdiet proin fermentum leo vel Hodor.</p>
+                                        <a href="#" className="lead">Read Story</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-3 mt-lg-5">
-                        <div class="col-lg-4 my-2 my-md-3 my-lg-0">
-                            <div class="row">
-                                <a class="col-5" href="#">
-                                    <img class="rounded img-fluid hover-fade-out" src={"img/blog/thumb-1.jpg"} alt="blog.2.image" />
+                    <div className="row mt-3 mt-lg-5">
+                        <div className="col-lg-4 my-2 my-md-3 my-lg-0">
+                            <div className="row">
+                                <a className="col-5" href="#">
+                                    <img className="rounded img-fluid hover-fade-out" src={"img/blog/thumb-1.jpg"} alt="blog.2.image" />
                                 </a>
-                                <div class="col">
-                                    <a class="h6" href="#">Making the most of team-building sessions</a>
-                                    <div class="text-small text-muted mt-2">October 2nd</div>
+                                <div className="col">
+                                    <a className="h6" href="#">Making the most of team-building sessions</a>
+                                    <div className="text-small text-muted mt-2">October 2nd</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 my-2 my-md-3 my-lg-0">
-                            <div class="row">
-                                <a class="col-5" href="#">
-                                    <img class="rounded img-fluid hover-fade-out" src={"img/blog/thumb-3.jpg"} alt="blog.3.image" />
+                        <div className="col-lg-4 my-2 my-md-3 my-lg-0">
+                            <div className="row">
+                                <a className="col-5" href="#">
+                                    <img className="rounded img-fluid hover-fade-out" src={"img/blog/thumb-3.jpg"} alt="blog.3.image" />
                                 </a>
-                                <div class="col">
-                                    <a class="h6" href="#">Keep your users engaged in their sleep</a>
-                                    <div class="text-small text-muted mt-2">September 13th</div>
+                                <div className="col">
+                                    <a className="h6" href="#">Keep your users engaged in their sleep</a>
+                                    <div className="text-small text-muted mt-2">September 13th</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 my-2 my-md-3 my-lg-0">
-                            <div class="row">
-                                <a class="col-5" href="#">
-                                    <img class="rounded img-fluid hover-fade-out" src={"img/blog/thumb-4.jpg"} alt="blog.4.image" />
+                        <div className="col-lg-4 my-2 my-md-3 my-lg-0">
+                            <div className="row">
+                                <a className="col-5" href="#">
+                                    <img className="rounded img-fluid hover-fade-out" src={"img/blog/thumb-4.jpg"} alt="blog.4.image" />
                                 </a>
-                                <div class="col">
-                                    <a class="h6" href="#">It's not just about the clicks. Here's why</a>
-                                    <div class="text-small text-muted mt-2">August 8th</div>
+                                <div className="col">
+                                    <a className="h6" href="#">It's not just about the clicks. Here's why</a>
+                                    <div className="text-small text-muted mt-2">August 8th</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="bg-light">
+            <section className="bg-light">
                 <div className="container">
                     <div className="row">
                         <div className="col">

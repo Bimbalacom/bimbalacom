@@ -3,19 +3,19 @@ import Layout from "../components/layout";
 export default function FirstPost() {
 return (
     <Layout title={'Terms of Service - Bimbala.com'}>
-   <section class="bg-light">
-      <div class="container">
-         <div class="row justify-content-center">
-            <div class="col-xl-8 col-lg-9 col-md-11">
-               <div class="card card-body shadow">
-                  <div class="d-flex flex-column justify-content-between align-items-start pb-4 mb-4 mb-md-5 border-bottom">
-                     <div class="mb-3">
-                        <h1 class="mb-2">Terms of Service</h1>
-                        <div class="lead">Updated 07 August, 2020</div>
+   <section className="bg-light">
+      <div className="container">
+         <div className="row justify-content-center">
+            <div className="col-xl-8 col-lg-9 col-md-11">
+               <div className="card card-body shadow">
+                  <div className="d-flex flex-column justify-content-between align-items-start pb-4 mb-4 mb-md-5 border-bottom">
+                     <div className="mb-3">
+                        <h1 className="mb-2">Terms of Service</h1>
+                        <div className="lead">Updated 07 August, 2020</div>
                      </div>
-                     <a href="javascript:if(window.print)window.print()" class="btn btn-primary">Print</a>
+                     <a href="javascript:if(window.print)window.print()" className="btn btn-primary">Print</a>
                   </div>
-                  <article class="article">
+                  <article className="article">
                      <ol>
                         <li dir="ltr">
                            <p dir="ltr">
