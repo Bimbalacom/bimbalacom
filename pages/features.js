@@ -78,6 +78,29 @@ export default function FirstPost() {
           </div>
         </div>
       </section>
+      <section className="o-hidden">
+        <div className="container">
+          <div className="row align-items-center justify-content-around text-center text-lg-left">
+            <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
+              <div>
+                <div className="alert bg-secondary rounded-lg d-inline-block mb-4">
+                  <div className="d-flex align-items-center">
+                    <div className="badge badge-pill badge-success">New</div>
+                    <div className="mx-3">Announce a great new feature</div>
+                  </div>
+                </div>
+                <h3 className="h1">Everything you’ll need to launch your site</h3>
+                <p className="lead">Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                <a href="#" className="lead">Explore More</a>
+              </div>
+            </div>
+            <div className="col-md-9 col-lg-6 col-xl-5">
+              <img src="img/illustrations/illustration-2.svg" alt="Image" className="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <section className="bg-primary-3 text-white jarallax pb-0" data-jarallax data-speed="0.2">
         <img src="img/heros/hero-1.jpg" alt="Image" className="jarallax-img opacity-50" />
         <div className="container pb-5">
@@ -94,7 +117,6 @@ export default function FirstPost() {
             </div>
           </div>
         </div>
-        <div className="divider divider-bottom bg-white"/>
       </section>
     </Layout>
   )
