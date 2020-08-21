@@ -40,8 +40,7 @@ export default function Home() {
                                         className="icon bg-primary-alt rounded-circle p-1" />
                                     <h5 className="mt-4">Suits Your Style</h5>
                                     <div>
-                                        Drogon sed ut perspiciatis unde omnis iste error sit voluptatem accusantium
-                                        doloremque laudantium, totam aperiam, eaque Arya.
+                                        Your support needs to be fast. That is why everything connected with our software is integrated into one panel. 
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +48,7 @@ export default function Home() {
                                 <div>
                                     <img src={"/img/icons/theme/general/bookmark.svg"} alt="Bookmark icon"
                                         className="icon bg-primary-alt rounded-circle p-1" />
-                                    <h5 className="mt-4">Well Documented</h5>
+                                    <h5 className="mt-4">Everything you need</h5>
                                     <div>
                                         Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum
                                         lorem sed risus ultricies Tyrion. Enim blandit volutpat.
@@ -62,8 +61,7 @@ export default function Home() {
                                         className="icon bg-primary-alt rounded-circle p-1" />
                                     <h5 className="mt-4">Highly Customizable</h5>
                                     <div>
-                                        Eunuch sed blandit libero volutpat sed cras. Cersei quis imperdiet tincidunt
-                                        unuch pulvinar sapien. Habitasse platea Davos vestibulum.
+                                        Like people every company is diffirent. That is why we have a different approach for every client and every project.
                                     </div>
                                 </div>
                             </div>

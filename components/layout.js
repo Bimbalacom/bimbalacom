@@ -27,7 +27,7 @@ export default class Layout extends React.Component {
         <Navbar/>
         {this.props.children}
         <Footer/>
-        <a href="#top" className="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+        <a href="#top" className="btn btn-primary rounded-circle btn-back-to-top aos-init aos-animate" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
             <img src="/img/icons/interface/icon-arrow-up.svg" alt="Icon" className="icon bg-white"  />
         </a>
 
