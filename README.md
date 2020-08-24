@@ -83,7 +83,6 @@
 
 * [nextjs](https://nextjs.org/)
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -150,7 +149,7 @@ Our Twitter - [@bimbalacom](https://twitter.com/bimbalacom)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-
+* [Touko's blog](https://blog.toukopeltomaa.com/next-js-markdown-blog#gets-posts-from-posts-folder) - The blog was mostly made with his idea.
 
 
 
