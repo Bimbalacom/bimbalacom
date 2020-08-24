@@ -1,9 +1,10 @@
 import Layout from "../../components/layout";
 import React from "react";
+// import Blog from "../../components/blog";
 
-export default function Blog() {
+export default function BlogIndex() {
     return (
-        <Layout>
+        <Layout title={'Blog - Bimbala.com'}>
             <section className={"bg-primary-3"}>
                 <div className="container">
                     <div className="row">
@@ -99,6 +100,7 @@ export default function Blog() {
                             </div>
                         </div>
                     </div>
+                    {/* <Blog/> */}
                     <div className="row justify-content-center mt-4">
                         <div className="col-auto">
                             <nav>
