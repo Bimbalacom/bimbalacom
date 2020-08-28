@@ -1,8 +1,9 @@
 import Layout from "../../components/layout";
 import React from "react";
+import matter from "gray-matter";
 // import Blog from "../../components/blog";
 
-export default function BlogIndex() {
+export default function BlogIndex(props) {
     return (
         <Layout title={'Blog - Bimbala.com'}>
             <section className={"bg-primary-3"}>
@@ -10,98 +11,66 @@ export default function BlogIndex() {
                     <div className="row">
                         <div className="col">
                             <div className="d-flex flex-column flex-lg-row no-gutters border rounded bg-white o-hidden">
-                                <a href="#" className="d-block position-relative bg-gradient col-xl-5">
-                                    <img className="flex-fill hover-fade-out" src={"img/blog/thumb-2.jpg"} alt="blog.1.image" />
-                                    <div className="divider divider-side bg-white d-none d-lg-block"></div>
+                                <a href={'/blog/'+props.posts[0].slug} className="d-block position-relative bg-gradient col-xl-5">
+                                    <img className="flex-fill hover-fade-out" src={props.posts[0].image} alt={props.posts[0].imageAlt} />
+                                    <div className="divider divider-side bg-white d-none d-lg-block"/>
                                 </a>
                                 <div className="p-4 p-md-5 col-xl-7 d-flex align-items-center">
                                     <div className="p-lg-4 p-xl-5">
                                         <div className="d-flex justify-content-between align-items-center mb-3 mb-xl-4">
-                                            <a href="#" className="badge badge-pill badge-danger">Design</a>
-                                            <div className="text-small text-muted">October 10th</div>
+                                            <a href={'/blog/'+props.posts[0].slug} className="badge badge-pill badge-danger">{props.posts[0].category}</a>
+                                            <div className="text-small text-muted">{props.posts[0].date}</div>
                                         </div>
-                                        <a href="#">
-                                            <h1>Unveiling our new vision for Jumpstart</h1>
+                                        <a href={'/blog/'+props.posts[0].slug}>
+                                            <h1>{props.posts[0].title}</h1>
                                         </a>
                                         <p className="lead">Volantis vitae unuch sed velit sodales. Sandor imperdiet proin fermentum leo vel Hodor.</p>
-                                        <a href="#" className="lead">Read Story</a>
+                                        <a href={'/blog/'+props.posts[0].slug} className="lead">Read Story</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-3 mt-lg-5">
-                        <div className="col-lg-4 my-2 my-md-3 my-lg-0">
-                            <div className="row">
-                                <a className="col-5" href="#">
-                                    <img className="rounded img-fluid hover-fade-out" src={"img/blog/thumb-1.jpg"} alt="blog.2.image" />
-                                </a>
-                                <div className="col">
-                                    <a className="h6" href="#">Making the most of team-building sessions</a>
-                                    <div className="text-small text-muted mt-2">October 2nd</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 my-2 my-md-3 my-lg-0">
-                            <div className="row">
-                                <a className="col-5" href="#">
-                                    <img className="rounded img-fluid hover-fade-out" src={"img/blog/thumb-3.jpg"} alt="blog.3.image" />
-                                </a>
-                                <div className="col">
-                                    <a className="h6" href="#">Keep your users engaged in their sleep</a>
-                                    <div className="text-small text-muted mt-2">September 13th</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 my-2 my-md-3 my-lg-0">
-                            <div className="row">
-                                <a className="col-5" href="#">
-                                    <img className="rounded img-fluid hover-fade-out" src={"img/blog/thumb-4.jpg"} alt="blog.4.image" />
-                                </a>
-                                <div className="col">
-                                    <a className="h6" href="#">It's not just about the clicks. Here's why</a>
-                                    <div className="text-small text-muted mt-2">August 8th</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            {props.posts > 1 &&
             <section className="bg-light">
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <div className="mb-4 mb-md-5" data-aos="fade-up">
-                                <div
-                                    className="d-flex flex-column flex-lg-row no-gutters border rounded bg-white o-hidden">
-                                    <a href="#" className="d-block position-relative bg-gradient col-xl-5">
-                                        <img className="flex-fill hover-fade-out" src={"/img/blog/thumb-2.jpg"}
-                                            alt="blog.1.image" />
-                                        <div className="divider divider-side bg-white d-none d-lg-block" />
-                                    </a>
-                                    <div className="p-4 p-md-5 col-xl-7 d-flex align-items-center">
-                                        <div className="p-lg-4 p-xl-5">
-                                            <div
-                                                className="d-flex justify-content-between align-items-center mb-3 mb-xl-4">
-                                                <a href="#" className="badge badge-pill badge-danger">Design</a>
-                                                <div className="text-small text-muted">October 10th</div>
-                                            </div>
-                                            <a href="#">
-                                                <h1>Unveiling our new vision for Jumpstart</h1>
+                            {props.posts.map(function(post, idx) {
+                                if(idx===0){
+                                    return;
+                                }
+                                return (
+                                    <div className="mb-4 mb-md-5" data-aos="fade-up" key={idx}>
+                                        <div className="d-flex flex-column flex-lg-row no-gutters border rounded bg-white o-hidden">
+                                            <a href={'/blog/'+post.slug} className="d-block position-relative bg-gradient col-xl-5">
+                                                <img className="flex-fill hover-fade-out" src={post.image} alt={post.imageAlt} />
+                                                <div className="divider divider-side bg-white d-none d-lg-block" />
                                             </a>
-                                            <p className="lead">
-                                                Volantis vitae unuch sed velit sodales. Sandor imperdiet proin fermentum
-                                                leo vel Hodor.
-                                            </p>
-                                            <a href="#" className="lead">Read Story</a>
+                                            <div className="p-4 p-md-5 col-xl-7 d-flex align-items-center">
+                                                <div className="p-lg-4 p-xl-5">
+                                                    <div className="d-flex justify-content-between align-items-center mb-3 mb-xl-4">
+                                                        <a href={'/blog/'+post.slug} className="badge badge-pill badge-danger">{post.category}</a>
+                                                        <div className="text-small text-muted">{post.date}</div>
+                                                    </div>
+                                                    <a href={'/blog/'+post.slug}>
+                                                        <h1>{post.title}</h1>
+                                                    </a>
+                                                    <p className="lead">Volantis vitae unuch sed velit sodales. Sandor imperdiet proin fermentum leo vel Hodor.</p>
+                                                    <a href={'/blog/'+post.slug} className="lead">Read Story</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                )
+                            })}
+
                         </div>
                     </div>
                     {/* <Blog/> */}
-                    <div className="row justify-content-center mt-4">
+                    {/*<div className="row justify-content-center mt-4">
                         <div className="col-auto">
                             <nav>
                                 <ul className="pagination">
@@ -126,9 +95,37 @@ export default function BlogIndex() {
                                 </ul>
                             </nav>
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
-            </section>
+            </section>}
         </Layout>
     )
+}
+
+export async function getStaticProps() {
+    const allPosts = await getAllPosts()
+
+    return {
+        props: {
+            posts: allPosts
+        }
+    }
+}
+export async function getAllPosts() {
+    const context = require.context('../../posts', false, /.md$/)
+    const posts = []
+    for(const key of context.keys()){
+        const post = key.slice(2);
+        const content = await import(`../../posts/${post}`);
+        const meta = matter(content.default)
+        posts.push({
+            slug: post.replace('.md',''),
+            title: meta.data.title,
+            image: meta.data.image,
+            imageAlt: meta.data.imageAlt,
+            date: meta.data.date,
+            category: meta.data.category
+        })
+    }
+    return posts;
 }
