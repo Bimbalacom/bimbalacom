@@ -2,12 +2,13 @@ import Link from "next/link";
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import React from "react";
+import Layout from "../../components/layout";
 const glob = require('glob')
 
 export default function BlogTemplate(props) {
     // Render data from `getStaticProps`
     return (
-      <Layout siteTitle={props.siteTitle}>
+      <Layout title={props.siteTitle}>
         <article>
           <h1>{props.frontmatter.title}</h1>
           <div>
@@ -22,10 +23,9 @@ export default function BlogTemplate(props) {
     const { slug } = ctx.params
     const content = await import(`../../posts/${slug}.md`)
     const data = matter(content.default)
-  
     return {
       props: {
-        siteTitle: config.title,
+        siteTitle: data.data.title + ' - Bimbala blog',
         frontmatter: data.data,
         markdownBody: data.content,
       },

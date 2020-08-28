@@ -12,6 +12,7 @@
     "url": "git://github.com/Bimbalacom/Website.git"
   },
   "dependencies": {
+    "glob": "^7.1.6",
     "globby": "^11.0.1",
     "gray-matter": "^4.0.2",
     "next": "^9.5.1",

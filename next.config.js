@@ -14,5 +14,5 @@ module.exports = {
       use: 'raw-loader',
     })
     return config
-  },
+  }
 }
