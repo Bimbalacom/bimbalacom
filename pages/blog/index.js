@@ -58,7 +58,7 @@ export default function BlogIndex(props) {
                                                     <a href={'/blog/'+post.slug}>
                                                         <h1>{post.title}</h1>
                                                     </a>
-                                                    <p className="lead">Volantis vitae unuch sed velit sodales. Sandor imperdiet proin fermentum leo vel Hodor.</p>
+                                                    <p className="lead">{post.data.data}</p>
                                                     <a href={'/blog/'+post.slug} className="lead">Read Story</a>
                                                 </div>
                                             </div>

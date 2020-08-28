@@ -30,7 +30,7 @@ export default function WhyUS() {
             Saving time = Saving money - When all  your support's needs are made and fulfilled on one platform, Project Managers, Developers and all levels of support will love you. They will not need to check 50 places for their daily needs and can concentrate better on the more important aspects of work.<br />
             We give back - We try to Open source as much as possible all the time. Even the website you are checking out right now is on our Github page.<br />
             Painfully honest - We will tell you if we make mistakes. As a company we believe in honesty in all its forms. So we will not sweep it under the rug if we have a problem.<br />
-            {/* <Share/> */}
+            {/* <share/> */}
                         </div>
                     </div>
                 </div>
