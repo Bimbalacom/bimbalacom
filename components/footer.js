@@ -26,6 +26,9 @@ export default function Footer() {
           <div className="col-xl-auto mr-xl-5 col-md-3">
             <h5>Information</h5>
             <ul className="nav flex-row flex-md-column">
+            <li className="nav-item mr-3 mr-md-0">
+                <a href={"/free-trial"} className="nav-link fade-page px-0 py-2">Free trial</a>
+              </li>
               <li className="nav-item mr-3 mr-md-0">
                 <a href={"/success-stories"} className="nav-link fade-page px-0 py-2">Success Stories</a>
               </li>
@@ -34,9 +37,6 @@ export default function Footer() {
               </li>
               <li className="nav-item mr-3 mr-md-0">
                 <a href={"/blog/"} className="nav-link fade-page px-0 py-2">Blog</a>
-              </li>
-              <li className="nav-item mr-3 mr-md-0">
-                <a href={"/solutions"} className="nav-link fade-page px-0 py-2">Solutions</a>
               </li>
               <li className="nav-item mr-3 mr-md-0">
                 <a href={"/partners"} className="nav-link fade-page px-0 py-2">Partners</a>
