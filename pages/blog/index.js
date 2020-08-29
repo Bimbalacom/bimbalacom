@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import React from "react";
 import matter from "gray-matter";
+import Link from "next/link";
 // import Blog from "../../components/blog";
 
 export default function BlogIndex(props) {
@@ -11,21 +12,29 @@ export default function BlogIndex(props) {
                     <div className="row">
                         <div className="col">
                             <div className="d-flex flex-column flex-lg-row no-gutters border rounded bg-white o-hidden">
-                                <a href={'/blog/'+props.posts[0].slug} className="d-block position-relative bg-gradient col-xl-5">
-                                    <img className="flex-fill hover-fade-out" src={props.posts[0].image} alt={props.posts[0].imageAlt} />
-                                    <div className="divider divider-side bg-white d-none d-lg-block"/>
-                                </a>
+                                <Link href="/blog/[slug]" as={`/blog/${props.posts[0].slug}`}>
+                                    <a  className="d-block position-relative bg-gradient col-xl-5">
+                                        <img className="flex-fill hover-fade-out" src={props.posts[0].image} alt={props.posts[0].imageAlt} />
+                                        <div className="divider divider-side bg-white d-none d-lg-block"/>
+                                    </a>
+                                </Link>
                                 <div className="p-4 p-md-5 col-xl-7 d-flex align-items-center">
                                     <div className="p-lg-4 p-xl-5">
                                         <div className="d-flex justify-content-between align-items-center mb-3 mb-xl-4">
-                                            <a href={'/blog/'+props.posts[0].slug} className="badge badge-pill badge-danger">{props.posts[0].category}</a>
+                                            <Link href="/blog/[slug]" as={`/blog/${props.posts[0].slug}`}>
+                                                <a  className="badge badge-pill badge-danger">{props.posts[0].category}</a>
+                                            </Link>
                                             <div className="text-small text-muted">{props.posts[0].date}</div>
                                         </div>
-                                        <a href={'/blog/'+props.posts[0].slug}>
-                                            <h1>{props.posts[0].title}</h1>
-                                        </a>
+                                        <Link href="/blog/[slug]" as={`/blog/${props.posts[0].slug}`}>
+                                            <a>
+                                                <h1>{props.posts[0].title}</h1>
+                                            </a>
+                                        </Link>
                                         <p className="lead">Volantis vitae unuch sed velit sodales. Sandor imperdiet proin fermentum leo vel Hodor.</p>
-                                        <a href={'/blog/'+props.posts[0].slug} className="lead">Read Story</a>
+                                        <Link href="/blog/[slug]" as={`/blog/${props.posts[0].slug}`}>
+                                            <a  className="lead">Read Story</a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -45,21 +54,29 @@ export default function BlogIndex(props) {
                                 return (
                                     <div className="mb-4 mb-md-5" data-aos="fade-up" key={idx}>
                                         <div className="d-flex flex-column flex-lg-row no-gutters border rounded bg-white o-hidden">
-                                            <a href={'/blog/'+post.slug} className="d-block position-relative bg-gradient col-xl-5">
-                                                <img className="flex-fill hover-fade-out" src={post.image} alt={post.imageAlt} />
-                                                <div className="divider divider-side bg-white d-none d-lg-block" />
-                                            </a>
+                                            <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
+                                                <a  className="d-block position-relative bg-gradient col-xl-5">
+                                                    <img className="flex-fill hover-fade-out" src={post.image} alt={post.imageAlt} />
+                                                    <div className="divider divider-side bg-white d-none d-lg-block" />
+                                                </a>
+                                            </Link>
                                             <div className="p-4 p-md-5 col-xl-7 d-flex align-items-center">
                                                 <div className="p-lg-4 p-xl-5">
                                                     <div className="d-flex justify-content-between align-items-center mb-3 mb-xl-4">
-                                                        <a href={'/blog/'+post.slug} className="badge badge-pill badge-danger">{post.category}</a>
+                                                        <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
+                                                            <a  className="badge badge-pill badge-danger">{post.category}</a>
+                                                        </Link>
                                                         <div className="text-small text-muted">{post.date}</div>
                                                     </div>
-                                                    <a href={'/blog/'+post.slug}>
-                                                        <h1>{post.title}</h1>
-                                                    </a>
+                                                    <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
+                                                        <a>
+                                                            <h1>{post.title}</h1>
+                                                        </a>
+                                                    </Link>
                                                     <p className="lead">{post.data.data}</p>
-                                                    <a href={'/blog/'+post.slug} className="lead">Read Story</a>
+                                                    <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
+                                                        <a  className="lead">Read Story</a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

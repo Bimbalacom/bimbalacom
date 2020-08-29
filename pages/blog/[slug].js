@@ -59,7 +59,7 @@ export default function BlogTemplate(props) {
                   </ol>
                 </nav>
               </div>
-              <Share />
+              <Share frontmatter={props.frontmatter}/>
               {/* <DiscussionEmbed
     shortname='example'
     config={
