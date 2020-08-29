@@ -12,13 +12,21 @@
     "url": "git://github.com/Bimbalacom/Website.git"
   },
   "dependencies": {
+    "disqus-react": "^1.0.9",
+    "glob": "^7.1.6",
     "globby": "^11.0.1",
+    "gray-matter": "^4.0.2",
     "next": "^9.5.1",
     "next-seo": "^4.7.3",
     "nextjs-sitemap-generator": "^1.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-gtm-module": "^2.0.10"
+    "react-gtm-module": "^2.0.10",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.2.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "raw-loader": "^4.0.1"
+  }
 }

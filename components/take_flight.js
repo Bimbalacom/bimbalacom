@@ -47,24 +47,6 @@ export default function TakeFlight() {
                             <h5 className="mb-0">Highly Customizable</h5>
                         </div>
                     </div>
-                    <div className="m-2 text-dark">
-                        <div className="media rounded align-items-center pl-3 pr-4 pl-md-4 pr-md-5 py-2 bg-white text-dark">
-                            <img src={"img/icons/theme/general/fire.svg"} alt="Fire icon" className="icon mr-3" />
-                            <h5 className="mb-0">Saves You Time</h5>
-                        </div>
-                    </div>
-                    <div className="m-2 text-dark">
-                        <div className="media rounded align-items-center pl-3 pr-4 pl-md-4 pr-md-5 py-2 bg-white text-dark">
-                            <img src={"img/icons/theme/food/sushi.svg"} alt="Sushi icon" className="icon mr-3" />
-                            <h5 className="mb-0">Delicious Stuff</h5>
-                        </div>
-                    </div>
-                    <div className="m-2 text-dark">
-                        <div className="media rounded align-items-center pl-3 pr-4 pl-md-4 pr-md-5 py-2 bg-white text-dark">
-                            <img src={"img/icons/theme/food/sushi.svg"} alt="Sushi icon" className="icon mr-3" />
-                            <h5 className="mb-0">Delicious Stuff</h5>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
