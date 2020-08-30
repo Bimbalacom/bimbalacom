@@ -28,7 +28,7 @@ export default class Layout extends React.Component {
         {this.props.children}
         <Footer/>
         <a href="#top" className="btn btn-primary rounded-circle btn-back-to-top aos-init aos-animate" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
-            <img src="/img/icons/interface/icon-arrow-up.svg" alt="Icon" className="icon bg-white"  />
+            <img src="/img/icons/interface/icon-arrow-up.svg" alt="Icon" className="icon"  />
         </a>
 
         {/* Required vendor scripts (Do not remove) */}
@@ -68,8 +68,6 @@ export default class Layout extends React.Component {
         <script type="text/javascript" src="/js/smooth-scroll.polyfills.min.js" />
         {/* SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)*/}
         <script type="text/javascript" src="/js/svg-injector.umd.production.js" />
-        {/* TwitterFetcher (displays a feed of tweets from a specified account)*/}
-        <script type="text/javascript" src="/js/twitterFetcher_min.js" />
         {/* Typed text (animated typing effect)*/}
         <script type="text/javascript" src="/js/typed.min.js" />
         {/* Required theme scripts (Do not remove) */}

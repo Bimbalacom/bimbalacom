@@ -3,7 +3,7 @@
  * Copyright 2018-2020 Medium Rare (undefined)
  */
 ! function(t, e) {
-    "object" == typeof exports && "undefined" != typeof module ? e(exports, require("aos"), require("jquery"), require("jquery-countdown"), require("scrollmonitor"), require("flickity"), require("ion-rangeslider"), require("isotope-layout"), require("jarallax"), require("plyr"), require("prismjs"), require("smooth-scroll"), require("@tanem/svg-injector"), require("twitter-fetcher"), require("typed.js")) : "function" == typeof define && define.amd ? define(["exports", "aos", "jquery", "jquery-countdown", "scrollmonitor", "flickity", "ion-rangeslider", "isotope-layout", "jarallax", "plyr", "prismjs", "smooth-scroll", "@tanem/svg-injector", "twitter-fetcher", "typed.js"], e) : e((t = t || self).theme = {}, t.AOS, t.jQuery, null, t.scrollMonitor, t.flatpickr, t.Flickity, null, t.Isotope, t.jarallax, t.Plyr, t.Prism, t.SmoothScroll, t.SVGInjector, t.twitterFetcher, t.Typed)
+    "object" == typeof exports && "undefined" != typeof module ? e(exports, require("aos"), require("jquery"), require("jquery-countdown"), require("scrollmonitor"), require("flickity"), require("ion-rangeslider"), require("isotope-layout"), require("jarallax"), require("plyr"), require("prismjs"), require("smooth-scroll"), require("@tanem/svg-injector"), require("twitter-fetcher"), require("typed.js")) : "function" == typeof define && define.amd ? define(["exports", "aos", "jquery", "jquery-countdown", "scrollmonitor", "flickity", "ion-rangeslider", "isotope-layout", "jarallax", "plyr", "prismjs", "smooth-scroll", "@tanem/svg-injector", "twitter-fetcher", "typed.js"], e) : e((t = t || self).theme = {}, t.AOS, t.jQuery, null, t.scrollMonitor, t.flatpickr, t.Flickity, null, t.Isotope, t.jarallax, t.Plyr, t.Prism, t.SmoothScroll, t.SVGInjector, t.Typed)
 }(this, function(t, e, j, n, b, s, E, i, O, r, a, o, l, u, A, c) {
     "use strict";
     var h;
@@ -2255,137 +2255,10 @@
             }))
         }
     });
-    var li = function(c) {
-            if (void 0 === A) throw new Error("mrTwitterFetcher requires twitterFetcher.js (https://github.com/jasonmayes/Twitter-Post-Fetcher)");
-            var t = "mrTwitterFetcher",
-                i = "mr.twitterFetcher",
-                e = "." + i,
-                n = c.fn[t],
-                h = {
-                    LOAD_DATA_API: "load" + e + ".data-api",
-                    RESIZE: "resize" + e,
-                    READY: "ready" + e,
-                    APPEND: "tweetAppended" + e
-                },
-                r = "[data-twitter-fetcher]",
-                a = "data-twitter",
-                f = ".user",
-                d = ".tweet",
-                m = ".timePosted",
-                p = ".interact",
-                o = "twitter",
-                s = 6,
-                l = "username",
-                u = "max-tweets",
-                g = "flickity",
-                y = "twitterFlickity",
-                v = "isotope",
-                w = function() {
-                    function n(t) {
-                        var e = c(t);
-                        this.element = t, this.element.id = "tweets-" + (new Date).getTime(), this.username = e.data(l).replace("@", "") || o, this.maxTweets = parseInt(e.data(u), 10) || s, this.slider = null !== this.element.getAttribute(a + "-" + g), this.slider = this.slider && "object" == typeof e.data(y) ? e.data(y) : this.slider, this.isotope = null !== this.element.getAttribute(a + "-" + v), this.initTwitterFeed()
-                    }
-                    return n.prototype.initTwitterFeed = function() {
-                        var u = this;
-                        this.config = {
-                            profile: {
-                                screenName: this.username
-                            },
-                            domId: this.element.id,
-                            maxTweets: this.maxTweets,
-                            enableLinks: !0,
-                            showUser: !0,
-                            showTime: !0,
-                            dateFunction: "",
-                            showRetweet: !1,
-                            customCallback: function(t) {
-                                for (var e = c(u.element), n = e.children().first().detach(), i = t.length, r = 0; r < i;) {
-                                    var a = c("<div>").append(c(t[r])),
-                                        o = n.clone();
-                                    o.find(d).html(a.find(d).html()), o.find(f).html(a.find(f).html()), o.find(m).html(a.find(m).html()), o.find(p).html(a.find(p).html()), e.append(o), r += 1;
-                                    var s = c.Event(h.APPEND);
-                                    s.appendedElement = o, s.mrTwitterFetcher = u, c(u.element).trigger(s)
-                                }
-                                if (!0 === u.slider || "object" == typeof u.slider) {
-                                    if (void 0 === E) throw new Error("mrTwitterFetcher requires flickity.js (https://github.com/metafizzy/flickity)");
-                                    e.data("flickity", new E(u.element, u.slider))
-                                } else if (!0 === u.isotope) {
-                                    if ("undefined" == typeof Isotope) throw new Error("mrTwitterFetcher requires isotope.js (https://github.com/metafizzy/isotope)");
-                                    c(u.element).mrIsotope()
-                                }
-                                var l = c.Event(h.READY);
-                                l.mrTwitterFetcher = u, c(u.element).trigger(l)
-                            }
-                        }, A.fetch(this.config)
-                    }, n.jQueryInterface = function() {
-                        return this.each(function() {
-                            var t = c(this),
-                                e = t.data(i);
-                            e || (e = new n(this), t.data(i, e))
-                        })
-                    }, G(n, null, [{
-                        key: "VERSION",
-                        get: function() {
-                            return "1.0.0"
-                        }
-                    }]), n
-                }();
-            return c(window).on(h.LOAD_DATA_API, function() {
-                for (var t = c.makeArray(c(r)), e = t.length; e--;) {
-                    var n = c(t[e]);
-                    w.jQueryInterface.call(n, n.data())
-                }
-            }), c.fn[t] = w.jQueryInterface, c.fn[t].Constructor = w, c.fn[t].noConflict = function() {
-                return c.fn[t] = n, w.jQueryInterface
-            }, w
-        }(j),
-        ui = function(i) {
-            if ("function" != typeof c) throw new Error("mrTypedText requires typed.js (https://github.com/mattboldt/typed.js/)");
-            if (void 0 === b) throw new Error("mrTypedText requires scrollMonitor.js (https://github.com/stutrek/scrollMonitor)");
-            var t = "mrTypedText",
-                r = "mr.typedText",
-                e = i.fn[t],
-                n = {
-                    LOAD_DATA_API: "load.mr.typedText.data-api"
-                },
-                a = "[data-typed-text]",
-                o = function() {
-                    function n(t) {
-                        this.element = t;
-                        var e = i(t);
-                        this.Typed = new c(this.element, e.data()), this.initWatcher(t)
-                    }
-                    return n.jQueryInterface = function() {
-                        return this.each(function() {
-                            var t = i(this),
-                                e = t.data(r);
-                            e || (e = new n(this), t.data(r, e))
-                        })
-                    }, n.prototype.initWatcher = function(t) {
-                        var e = this,
-                            n = b.create(t);
-                        n.stateChange(function() {
-                            n.isInViewport ? e.Typed.start() : e.Typed.stop()
-                        })
-                    }, G(n, null, [{
-                        key: "VERSION",
-                        get: function() {
-                            return "1.0.0"
-                        }
-                    }]), n
-                }();
-            return i(window).on(n.LOAD_DATA_API, function() {
-                for (var t = i.makeArray(i(a)), e = t.length; e--;) {
-                    var n = i(t[e]);
-                    o.jQueryInterface.call(n, n.data())
-                }
-            }), i.fn[t] = o.jQueryInterface, i.fn[t].Constructor = o, i.fn[t].noConflict = function() {
-                return i.fn[t] = e, o.jQueryInterface
-            }, o
-        }(j);
+(j);
     ! function() {
         if ("undefined" == typeof $) throw new TypeError("Medium Rare JavaScript requires jQuery. jQuery must be included before theme.js.")
-    }(), t.mrCountdown = d, t.mrCountup = z, t.mrDropdownGrid = W, t.mrFormEmail = Y, t.mrIonRangeSlider = Z, t.mrIsotope = J, t.mrMaps = Et, t.mrMapsStyle = bt, t.mrOverlayNav = At, t.mrReadingPosition = kt, t.mrSmoothScroll = Ot, t.mrSticky = jt, t.mrTwitterFetcher = li, t.mrTypedText = ui, t.mrUtil = B, Object.defineProperty(t, "__esModule", {
+    }(), t.mrCountdown = d, t.mrCountup = z, t.mrDropdownGrid = W, t.mrFormEmail = Y, t.mrIonRangeSlider = Z, t.mrIsotope = J, t.mrMaps = Et, t.mrMapsStyle = bt, t.mrOverlayNav = At, t.mrReadingPosition = kt, t.mrSmoothScroll = Ot, t.mrSticky = jt, t.mrUtil = B, Object.defineProperty(t, "__esModule", {
         value: !0
     })
 });
