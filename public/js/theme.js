@@ -584,7 +584,7 @@
                 k = "error",
                 O = function() {
                     function n(t) {
-                        this.form = t, this.action = this.form.getAttribute(l) || A, this.feedback = this.getFeedbackElements(), this.getRecaptcha(), this.initSubmitButton(), this.setSubmitEvent()
+                        this.form = t, this.action = this.form.getAttribute(l) || A, this.feedback = this.getFeedbackElements(), this.initSubmitButton(), this.setSubmitEvent()
                     }
                     var t = n.prototype;
                     return t.submitForm = function() {
@@ -634,11 +634,6 @@
                             this.feedbackDelay = parseInt(t, 10), this.feedbackTimeout = null
                         }
                         return this.feedback
-                    }, t.getRecaptcha = function() {
-                        if (this.form.querySelector(B.selector.RECAPTCHA)) {
-                            if (!K) throw new Error("mrRecaptcha.js is required to handle the reCAPTCHA element in this form.");
-                            this.recaptcha = K.getRecaptchaFromForm(this.form)
-                        }
                     }, t.toggleFormLoading = function(t) {
                         this.toggleSubmitButtonLoading(t), n.toggleDisabled(this.form.querySelectorAll(y), t)
                     }, t.toggleSubmitButtonLoading = function(t) {
