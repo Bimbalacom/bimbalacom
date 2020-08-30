@@ -44,8 +44,6 @@ export default class Layout extends React.Component {
         <script type="text/javascript" src="/js/clipboard.min.js" />
         {/* Fancybox (handles image and video lightbox and galleries) */}
         <script type="text/javascript" src="/js/jquery.fancybox.min.js" />
-        {/* Flatpickr (calendar/date/time picker UI) */}
-        <script type="text/javascript" src="/js/flatpickr.min.js" />
         {/* Flickity (handles touch enabled carousels and sliders) */}
         <script type="text/javascript" src="/js/flickity.pkgd.min.js" />
         {/* Ion rangeSlider (flexible and pretty range slider elements) */}
