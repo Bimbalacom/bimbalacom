@@ -83,7 +83,6 @@ export default function FirstPost() {
                   <div class="d-none alert alert-danger w-100 my-md-3" role="alert" data-error-message>
                     Please fill all fields correctly.
                   </div>
-                  <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft"></div>
                   <button class="btn btn-primary btn-block btn-loading" type="submit" data-loading-text="Requesting Demo">
                     <span>Request Demo</span>
                   </button>
