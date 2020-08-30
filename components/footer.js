@@ -118,7 +118,7 @@ export default function Footer() {
           <div className="col-auto">
             <div className="d-flex flex-column flex-sm-row align-items-center text-small">
               <div className="text-muted">&copy; 2020 Bimbala Ltd | <a href={"privacy-policy/"}>Privacy Policy</a>,
-                <a href={"terms-of-service/"}> Terms of Service</a> and <a href={"gdpr/"}>GDPR</a> | <a href={"https://github.com/Bimbalacom/Website"}>Website version - 0.0.1</a>
+            <a href={"terms-of-service/"}> Terms of Service</a> and <a href={"gdpr/"}>GDPR</a> | <a href={"https://github.com/Bimbalacom/Website"}>Website version -</a> {process.env.REACT_APP_VERSION}
               </div>
             </div>
           </div>
