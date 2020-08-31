@@ -96,7 +96,6 @@ export default function Footer() {
                     <span>Go</span>
                   </button>
                 </div>
-                <div data-recaptcha data-sitekey={"INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"} data-size="invisible" data-badge="bottomleft" />
                 <div className="d-none alert alert-success w-100" role="alert" data-success-message>
                   Thanks, a member of our team will be in touch shortly.
                   </div>

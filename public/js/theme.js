@@ -589,13 +589,6 @@
                     var t = n.prototype;
                     return t.submitForm = function() {
                         this.hideAllFeedback(), this.validateForm() && this.ajaxSubmit()
-                    }, t.validateForm = function() {
-                        var t = this.form.checkValidity();
-                        if (this.recaptcha)
-                            if (this.recaptcha.invisible) {
-                                if (t && !this.recaptcha.checkValidity()) return this.recaptcha.execute(), !1
-                            } else !1 === this.recaptcha.checkValidity() && (t = !1);
-                        return t ? (this.form.classList.remove(o), !0) : (clearTimeout(this.feedbackTimeout), this.form.classList.add(o), this.showFeedback(k, this.validationErrorMessage), !1)
                     }, t.ajaxSubmit = function() {
                         var t = r(this.form).serializeArray();
                         t.push({
@@ -612,14 +605,6 @@
                         }), this.toggleFormLoading(!0)
                     }, t.initSubmitButton = function() {
                         return this.submitButton || (this.submitButton = this.form.querySelector(p)), this.submitButtonSpan = this.submitButton.querySelector(g), this.loadingText = this.submitButton.getAttribute(b) || E, this.originalSubmitText = this.submitButtonSpan.textContent, this.submitButton
-                    }, t.processResponse = function(t) {
-                        var e = this,
-                            n = t.status === I;
-                        this.toggleFormLoading(!1), this.recaptcha && this.recaptcha.reset(), r(this.form).trigger(r.Event(w.SENT));
-                        var i = this.form.getAttribute(h);
-                        n && i && "" !== i ? window.location = i : n && (this.form.reset(), this.feedbackTimeout = setTimeout(function() {
-                            return e.hideAllFeedback()
-                        }, this.feedbackDelay)), i || this.showFeedback(t.status, t.message), t.errorDetail && console.error(t.errorName || T, 0 === t.errorDetail.indexOf("{") ? JSON.parse(t.errorDetail) : t.errorDetail)
                     }, t.showFeedback = function(t, e, n) {
                         this.toggleFormLoading(!1), "object" == typeof t && t.statusText ? (clearTimeout(this.feedbackTimeout), this.feedback.error.innerHTML = (n || e) + ': <em>"' + this.action + '"</em> (' + t.status + " " + e + ")", this.feedback.error.classList.remove(s)) : (this.feedback[t].innerHTML = e, this.feedback[t].classList.remove(s))
                     }, t.hideAllFeedback = function() {

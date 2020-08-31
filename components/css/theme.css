@@ -7835,12 +7835,6 @@ body[data-dropdown-grid-hover="true"] [data-dropdown-content]:not(.container) + 
 .input-group:focus-within .input-group-text {
   border-color: #009b72; }
 
-[data-recaptcha]:not([data-size="invisible"]) {
-  margin-bottom: 0.5rem; }
-
-.grecaptcha-badge {
-  display: none !important; }
-
 .was-validated .form-control:invalid, .form-control.is-invalid {
   background-image: url("data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M18 6L6 18' stroke='%23dc3545' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M6 6L18 18' stroke='%23dc3545' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e"); }
 
