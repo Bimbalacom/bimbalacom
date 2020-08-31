@@ -327,9 +327,6 @@
             container: "#__next"
         }), g(".toast").toast(), {
             version: "1.2.0",
-            selector: {
-                RECAPTCHA: "[data-recaptcha]"
-            },
             activateIframeSrc: function(t) {
                 var e = g(t);
                 e.attr("data-src") && e.attr("src", e.attr("data-src"))
@@ -552,103 +549,7 @@
             n.data().flickity.isInitActivated && n.flickity("resize")
         })
     });
-    var K = function(i) {
-            if (!(B && "1.2.0" <= B.version)) throw new Error("mrUtil >= version 1.2.0 is required.");
-            var t = "mrRecaptchav2",
-                r = "mr.recaptchav2",
-                e = i.fn[t],
-                a = {
-                    RECAPTCHAV2: "https://www.google.com/recaptcha/api.js?onload=mrRecaptchav2Init&render=explicit"
-                },
-                o = "[data-recaptcha]",
-                s = "form",
-                l = "invisible",
-                u = [],
-                c = !1,
-                h = function() {
-                    function n(t) {
-                        this.element = t, this.form = this.getForm(), this.isReady = !1, this.isValid = !1, this.options = i(this.element).data(), this.invisible = this.options.size === l, this.id = null, u.push(this)
-                    }
-                    var t = n.prototype;
-                    return t.init = function() {
-                        var t = this;
-                        "" === this.element.innerHTML.replace(/[\s\xA0]+/g, "") && (this.id = grecaptcha.render(this.element, {
-                            sitekey: this.options.sitekey,
-                            theme: this.options.theme,
-                            size: this.options.size,
-                            badge: this.options.badge,
-                            tabindex: this.options.tabindex,
-                            callback: function() {
-                                t.validate()
-                            },
-                            "expired-callback": function() {
-                                t.invalidate()
-                            }
-                        }), this.isReady = !0)
-                    }, t.validate = function() {
-                        this.isValid = !0, this.invisible && this.form && i(this.form).trigger("submit")
-                    }, t.invalidate = function() {
-                        this.isValid = !1
-                    }, t.checkValidity = function() {
-                        return !(!this.isReady || !this.isValid)
-                    }, t.execute = function() {
-                        this.isReady && this.invisible && grecaptcha.execute(this.id)
-                    }, t.reset = function() {
-                        this.isReady && (grecaptcha.reset(this.id), this.isValid = !1)
-                    }, t.getForm = function() {
-                        var t = i(this.element).closest(s);
-                        return t.length ? t.get(0) : null
-                    }, n.getRecaptchaFromForm = function(t) {
-                        if (B.isElement(t)) {
-                            var e = t.querySelector(o);
-                            return e && i(e).data(r) || null
-                        }
-                        throw new TypeError("Form argument passed to getRecaptchaFromForm is not an element.")
-                    }, n.jQueryInterface = function() {
-                        return this.each(function() {
-                            var t = i(this),
-                                e = t.data(r);
-                            e || (e = new n(this), t.data(r, e))
-                        })
-                    }, G(n, null, [{
-                        key: "VERSION",
-                        get: function() {
-                            return "1.0.0"
-                        }
-                    }, {
-                        key: "ready",
-                        get: function() {
-                            return c
-                        }
-                    }, {
-                        key: "instances",
-                        get: function() {
-                            return u
-                        }
-                    }, {
-                        key: "apiReady",
-                        set: function(t) {
-                            !0 === t && !1 === c && B.forEach(n.instances, function(t, e) {
-                                e.init()
-                            }), c = !0
-                        }
-                    }]), n
-                }();
-            return window.mrRecaptchav2Init = function() {
-                K.apiReady = !0
-            }, i(document).ready(function() {
-                var t = i.makeArray(i(o));
-                if (0 < t.length) {
-                    B.getScript(a.RECAPTCHAV2);
-                    for (var e = t.length; e--;) {
-                        var n = i(t[e]);
-                        h.jQueryInterface.call(n, n.data())
-                    }
-                }
-            }), i.fn[t] = h.jQueryInterface, i.fn[t].Constructor = h, i.fn[t].noConflict = function() {
-                return i.fn[t] = e, h.jQueryInterface
-            }, h
-        }(jQuery),
+    var K = function(i) { }(jQuery),
         Y = function(r) {
             if (!(B && "1.2.0" <= B.version)) throw new Error("mrUtil >= version 1.2.0 is required.");
             var t = "mrFormEmail",
