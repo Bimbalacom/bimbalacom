@@ -3,7 +3,21 @@
  * Copyright 2018-2020 Medium Rare (undefined)
  */
 ! function(t, e) {
-    "object" == typeof exports && "undefined" != typeof module ? e(exports, require("aos"), require("jquery"), require("jquery-countdown"), require("scrollmonitor"), require("flickity"), require("ion-rangeslider"), require("isotope-layout"), require("jarallax"), require("plyr"), require("prismjs"), require("smooth-scroll"), require("typed.js")) : "function" == typeof define && define.amd ? define(["exports", "aos", "jquery", "jquery-countdown", "scrollmonitor", "flickity", "ion-rangeslider", "isotope-layout", "jarallax", "plyr", "prismjs", "smooth-scroll", "typed.js"], e) : e((t = t || self).theme = {}, t.AOS, t.jQuery, null, t.scrollMonitor, t.flatpickr, t.Flickity, null, t.Isotope, t.jarallax, t.Plyr, t.Prism, t.SmoothScroll, t.Typed)
+    "object" == typeof exports && "undefined" != typeof module ? e(
+        exports, require("aos"), require("jquery"),
+        require("jquery-countdown"), require("scrollmonitor"), require("flickity"),
+        require("ion-rangeslider"), require("isotope-layout"), require("jarallax"),
+        require("plyr"), require("prismjs"), require("smooth-scroll"),
+        require("typed.js")) : "function" == typeof define && define.amd ? define(
+            ["exports", "aos", "jquery",
+            "jquery-countdown", "scrollmonitor", "flickity",
+            "ion-rangeslider", "isotope-layout", "jarallax",
+            "plyr", "prismjs", "smooth-scroll", "typed.js"], e) : e(
+    (t = t || self).theme = {}, t.AOS, t.jQuery,
+        null, t.scrollMonitor, t.flatpickr,
+        t.Flickity, null, t.Isotope,
+        t.jarallax, t.Plyr, t.Prism,
+        t.SmoothScroll, t.SVGInjector, t.Typed)
 }(this, function(t, e, j, n, b, s, E, i, O, r, a, o, l, u, A, c) {
     "use strict";
     var h;
