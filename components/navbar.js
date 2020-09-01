@@ -11,7 +11,7 @@ export default function Navbar() {
                     </a>
                     <div className="d-flex align-items-center order-lg-3">
                         <a href="#"
-                            className="btn btn-primary ml-lg-4 mr-3 mr-md-4 mr-lg-0 d-none d-sm-block order-lg-3">Client area</a>
+                            className="btn btn-primary ml-lg-4 mr-3 mr-md-4 mr-lg-0 d-none d-sm-block order-lg-3">Sign in</a>
                         <button aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler"
                             data-target=".navbar-collapse" data-toggle="collapse" type="button">
                             <img alt="Navbar Toggler Open Icon" className="navbar-toggler-open icon icon-sm"
@@ -36,14 +36,21 @@ export default function Navbar() {
                                 </Link>
                             </li> */}
                             <li className="nav-item">
-                                <Link passHref={true} href={"/features"}>
-                                    <a aria-expanded="false" aria-haspopup="true"
-                                        className="nav-link nav-item" role="button">Features</a>
-                                </Link>
+                                <div className="dropdown">
+                                    <a aria-expanded="false" aria-haspopup="true" className="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Solutions</a>
+                                    <div className="row dropdown-menu">
+                                        <div className="col-auto" data-dropdown-content>
+                                            <div className="dropdown-grid-menu">
+                                                <a href={"/features"} className="dropdown-item fade-page">Features</a>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li className="nav-item">
                                 <div className="dropdown">
-                                    <a aria-expanded="false" aria-haspopup="true" className="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">About us</a>
+                                    <a aria-expanded="false" aria-haspopup="true" className="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Docs</a>
                                     <div className="row dropdown-menu">
                                         <div className="col-auto" data-dropdown-content>
                                             <div className="dropdown-grid-menu">
@@ -55,11 +62,17 @@ export default function Navbar() {
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <Link passHref={true} href={"/contact-us"}>
-                                    <a aria-expanded="false" aria-haspopup="true"
-                                        className="nav-link nav-item" role="button">Contact Us</a>
-                                </Link>
-                            </li>
+                                <div className="dropdown">
+                                    <a aria-expanded="false" aria-haspopup="true" className="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">More</a>
+                                    <div className="row dropdown-menu">
+                                        <div className="col-auto" data-dropdown-content>
+                                            <div className="dropdown-grid-menu">
+                                                <a href={"/contact-us"} className="dropdown-item fade-page">Contact Us</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>      
                         </ul>
                     </div>
                 </div>
