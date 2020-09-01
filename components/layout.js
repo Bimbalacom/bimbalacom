@@ -66,8 +66,6 @@ export default class Layout extends React.Component {
         <script type="text/javascript" src="/js/scrollMonitor.js" />
         {/* Smooth scroll (animation to links in-page)*/}
         <script type="text/javascript" src="/js/smooth-scroll.polyfills.min.js" />
-        {/* SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)*/}
-        <script type="text/javascript" src="/js/svg-injector.umd.production.js" />
         {/* Typed text (animated typing effect)*/}
         <script type="text/javascript" src="/js/typed.min.js" />
         {/* Required theme scripts (Do not remove) */}

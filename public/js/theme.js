@@ -3,7 +3,21 @@
  * Copyright 2018-2020 Medium Rare (undefined)
  */
 ! function(t, e) {
-    "object" == typeof exports && "undefined" != typeof module ? e(exports, require("aos"), require("jquery"), require("jquery-countdown"), require("scrollmonitor"), require("flickity"), require("ion-rangeslider"), require("isotope-layout"), require("jarallax"), require("plyr"), require("prismjs"), require("smooth-scroll"), require("@tanem/svg-injector"), require("twitter-fetcher"), require("typed.js")) : "function" == typeof define && define.amd ? define(["exports", "aos", "jquery", "jquery-countdown", "scrollmonitor", "flickity", "ion-rangeslider", "isotope-layout", "jarallax", "plyr", "prismjs", "smooth-scroll", "@tanem/svg-injector", "twitter-fetcher", "typed.js"], e) : e((t = t || self).theme = {}, t.AOS, t.jQuery, null, t.scrollMonitor, t.flatpickr, t.Flickity, null, t.Isotope, t.jarallax, t.Plyr, t.Prism, t.SmoothScroll, t.SVGInjector, t.Typed)
+    "object" == typeof exports && "undefined" != typeof module ? e(
+        exports, require("aos"), require("jquery"),
+        require("jquery-countdown"), require("scrollmonitor"), require("flickity"),
+        require("ion-rangeslider"), require("isotope-layout"), require("jarallax"),
+        require("plyr"), require("prismjs"), require("smooth-scroll"),
+        require("typed.js")) : "function" == typeof define && define.amd ? define(
+            ["exports", "aos", "jquery",
+            "jquery-countdown", "scrollmonitor", "flickity",
+            "ion-rangeslider", "isotope-layout", "jarallax",
+            "plyr", "prismjs", "smooth-scroll", "typed.js"], e) : e(
+    (t = t || self).theme = {}, t.AOS, t.jQuery,
+        null, t.scrollMonitor, t.flatpickr,
+        t.Flickity, null, t.Isotope,
+        t.jarallax, t.Plyr, t.Prism,
+        t.SmoothScroll, t.SVGInjector, t.Typed)
 }(this, function(t, e, j, n, b, s, E, i, O, r, a, o, l, u, A, c) {
     "use strict";
     var h;
@@ -859,8 +873,6 @@
             t(".alert-dismissible").on("closed.bs.alert", function() {
                 r(document.querySelectorAll("[data-jarallax],[data-jarallax-video]"), "onScroll")
             }), t(document).on("resized.mr.overlayNav", function() {
-                r(document.querySelectorAll("[data-jarallax],[data-jarallax-video]"), "onResize")
-            }), document.addEventListener("injected.mr.SVGInjector", function() {
                 r(document.querySelectorAll("[data-jarallax],[data-jarallax-video]"), "onResize")
             });
             var e = {
@@ -2129,13 +2141,6 @@
         }
     });
     We.Array.from;
-    u.SVGInjector(document.querySelectorAll("[data-inject-svg]"), {
-        afterEach: function(t, e) {
-            "function" == typeof jarallax && e.dispatchEvent(new CustomEvent("injected.mr.SVGInjector", {
-                bubbles: !0
-            }))
-        }
-    });
 (j);
     ! function() {
         if ("undefined" == typeof $) throw new TypeError("Medium Rare JavaScript requires jQuery. jQuery must be included before theme.js.")
