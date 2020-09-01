@@ -7,16 +7,16 @@
         exports, require("aos"), require("jquery"),
         require("jquery-countdown"), require("scrollmonitor"), require("flickity"),
         require("ion-rangeslider"), require("isotope-layout"), require("jarallax"),
-        require("plyr"), require("prismjs"), require("smooth-scroll"),
+        require("prismjs"), require("smooth-scroll"),
         require("typed.js")) : "function" == typeof define && define.amd ? define(
             ["exports", "aos", "jquery",
             "jquery-countdown", "scrollmonitor", "flickity",
             "ion-rangeslider", "isotope-layout", "jarallax",
-            "plyr", "prismjs", "smooth-scroll", "typed.js"], e) : e(
+            "prismjs", "smooth-scroll", "typed.js"], e) : e(
     (t = t || self).theme = {}, t.AOS, t.jQuery,
         null, t.scrollMonitor, t.flatpickr,
         t.Flickity, null, t.Isotope,
-        t.jarallax, t.Plyr, t.Prism,
+        t.jarallax,t.Prism,
         t.SmoothScroll, t.SVGInjector, t.Typed)
 }(this, function(t, e, j, n, b, s, E, i, O, r, a, o, l, u, A, c) {
     "use strict";
@@ -1326,8 +1326,6 @@
     ht = j, ft = "show.bs.collapse", dt = "hide.bs.collapse", mt = "#__next > div.navbar-container", pt = ".navbar-container > .navbar", gt = "navbar-toggled-show", yt = document.querySelector(mt), vt = document.querySelector(pt), ht(yt).on(ft + " " + dt, function(t) {
         var e = t.type + "." + t.namespace === ft ? "add" : "remove";
         vt.classList[e](gt)
-    }), a.setup("[data-provider],.plyr"), (wt = j)(document).on("hide.bs.tab", function(t) {
-        wt(wt(t.target).attr("href")).find('[data-toggle="popover"]').popover("hide")
     }), wt(document).on("hide.bs.collapse", function(t) {
         wt(t.target).find('[data-toggle="popover"]').popover("hide")
     }), o.highlightAll();

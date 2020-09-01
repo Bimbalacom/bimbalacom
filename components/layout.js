@@ -58,8 +58,6 @@ export default class Layout extends React.Component {
         <script type="text/javascript" src="/js/jquery.countdown.min.js" />
         {/* jQuery smartWizard facilitates steppable wizard content */}
         <script type="text/javascript" src="/js/jquery.smartWizard.min.js" />
-        {/* Plyr (unified player for Video, Audio, Vimeo and Youtube) */}
-        <script type="text/javascript" src="/js/plyr.polyfilled.min.js" />
         {/* Prism (displays formatted code boxes) */}
         <script type="text/javascript" src="/js/prism.js"/>
         {/* ScrollMonitor (manages events for elements scrolling in and out of view) */}
