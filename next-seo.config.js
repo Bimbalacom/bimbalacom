@@ -20,6 +20,9 @@ export default {
         handle: '@handle',
         site: '@bimbalacom',
         cardType: 'summary_large_image',
+        title: 'Bimbala - next generation of supporting software.',
+        image: 'https://bimbala.com/shark_logo_small.png',
+        description: 'Bimbala is a SaaS helping companies upgrade their support team. Integration of roadmaps, knowledge boards and etc. made easy. Make your customers see you work for them and make them part of your business!'
     },
     title: 'Bimbala',
     description: 'Bimbala is a SaaS helping companies upgrade their support team. Integration of roadmaps, knowledge boards and etc. made easy. Make your customers see you work for them and make them part of your business!',
