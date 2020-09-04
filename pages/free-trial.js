@@ -18,13 +18,13 @@ export default function FirstPost() {
               <div className="d-flex flex-wrap justify-content-center justify-content-lg-start">
                 <div className="m-2" data-aos="fade-up" data-aos-delay="100">
                   <div className="media rounded align-items-center pl-3 pr-4 pl-md-4 pr-md-5 py-2 bg-white">
-                    <img src={"img/icons/theme/navigation/route.svg"} alt="Binoculars icon" className="icon mr-3"/>
+                    <img src={"img/icons/theme/navigation/route.svg"} loading="lazy" alt="Binoculars icon" className="icon mr-3"/>
                     <h5 className="mb-0">Fully Responsive</h5>
                   </div>
                 </div>
                 <div className="m-2" data-aos="fade-up" data-aos-delay="200">
                   <div className="media rounded align-items-center pl-3 pr-4 pl-md-4 pr-md-5 py-2 bg-white">
-                    <img src={"img/icons/theme/layout/layout-left-panel-2.svg"} alt="Layouts icon" className="icon mr-3"/>
+                    <img src={"img/icons/theme/layout/layout-left-panel-2.svg"} loading="lazy" alt="Layouts icon" className="icon mr-3"/>
                     <h5 className="mb-0">Multiple Components</h5>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ export default function FirstPost() {
                         <option value="50-500">50-500</option>
                         <option value="500+">500+</option>
                       </select>
-                      <img src={"img/icons/interface/icon-caret-down.svg"} alt="Arrow Down" className="icon icon-sm"/>
+                      <img src={"img/icons/interface/icon-caret-down.svg"} loading="lazy" alt="Arrow Down" className="icon icon-sm"/>
                       <div className="invalid-feedback">
                         Please provide your company size.
                       </div>
@@ -71,7 +71,7 @@ export default function FirstPost() {
                         <option value="$10k - $50k">$10k - $50k</option>
                         <option value="Over $50k">Over $50k</option>
                       </select>
-                      <img src={"img/icons/interface/icon-caret-down.svg"} alt="Arrow Down" className="icon icon-sm"/>
+                      <img src={"img/icons/interface/icon-caret-down.svg"} loading="lazy" alt="Arrow Down" className="icon icon-sm"/>
                       <div className="invalid-feedback">
                         Please provide your approximate budget.
                       </div>
@@ -112,7 +112,7 @@ export default function FirstPost() {
                 <a href="#accordion-1" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
                   <div className="d-flex justify-content-between align-items-center">
                     <h6 className="mb-0 mr-2">Fully Responsive</h6>
-                    <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm"/>
+                    <img src={"img/icons/interface/icon-caret-right.svg"} loading="lazy" alt="Caret Right" className="icon icon-sm"/>
                   </div>
                 </a>
                 <div className="collapse" id="accordion-1" data-parent="#faq-accordion">
@@ -125,7 +125,7 @@ export default function FirstPost() {
                 <a href="#accordion-2" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
                   <div className="d-flex justify-content-between align-items-center">
                     <h6 className="mb-0 mr-2">Multiple Layouts</h6>
-                    <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm"/>
+                    <img src={"img/icons/interface/icon-caret-right.svg"} loading="lazy" alt="Caret Right" className="icon icon-sm"/>
                   </div>
                 </a>
                 <div className="collapse" id="accordion-2" data-parent="#faq-accordion">

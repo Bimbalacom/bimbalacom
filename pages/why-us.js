@@ -66,7 +66,7 @@ export default function WhyUS() {
                     <div className="row justify-content-center text-center text-sm-left">
                         <div className="col d-flex flex-column flex-sm-row justify-content-center align-items-center">
                             <a data-fancybox href="https://vimeo.com/166034462#t=32s" className="btn btn-lg btn-light rounded-circle" data-aos="zoom-in" data-aos-delay="400">
-                                <img src={"img/icons/interface/icon-media-play.svg"} alt="Media Play Icon" className="icon icon-lg bg-dark pl-1"  />
+                                <img src={"img/icons/interface/icon-media-play.svg"} loading="lazy" alt="Media Play Icon" className="icon icon-lg bg-dark pl-1"  />
                             </a>
                             <div className="h1 mb-0 mt-4 mt-sm-0 ml-sm-4" data-aos="fade-up">&ldquo;They changed the game&rdquo;</div>
                         </div>
@@ -85,7 +85,7 @@ export default function WhyUS() {
                         <div className="col-xl-9 d-flex flex-wrap justify-content-center">
                             <div className="m-2">
                                 <div className="media rounded align-items-center px-3 px-md-4 py-2 py-md-3 bg-white text-dark">
-                                    <img src={"img/logos/product/kyan.svg"} alt="Kyan logo" className="icon icon-sm mr-3" />
+                                    <img src={"img/logos/product/kyan.svg"} loading="lazy" alt="Kyan logo" className="icon icon-sm mr-3" />
                                     <h5 className="mb-0">Kyan Boards</h5>
                                 </div>
                             </div>

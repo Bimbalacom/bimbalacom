@@ -40,7 +40,7 @@ export default function Home() {
                         <div className="row">
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
-                                    <img src={"/img/icons/theme/general/thunder-move.svg"} alt="Lightning icon"
+                                    <img src={"/img/icons/theme/general/thunder-move.svg"} loading="lazy" alt="Lightning icon"
                                         className="icon bg-primary-alt rounded-circle p-1" />
                                     <h5 className="mt-4">Suits Your Style</h5>
                                     <div>
@@ -50,7 +50,7 @@ export default function Home() {
                             </div>
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
-                                    <img src={"/img/icons/theme/general/bookmark.svg"} alt="Bookmark icon"
+                                    <img src={"/img/icons/theme/general/bookmark.svg"} loading="lazy" alt="Bookmark icon"
                                         className="icon bg-primary-alt rounded-circle p-1" />
                                     <h5 className="mt-4">Everything you need</h5>
                                     <div>
@@ -61,7 +61,7 @@ export default function Home() {
                             </div>
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
-                                    <img src={"/img/icons/theme/design/select.svg"} alt="Selection interface icon"
+                                    <img src={"/img/icons/theme/design/select.svg"} loading="lazy" alt="Selection interface icon"
                                         className="icon bg-primary-alt rounded-circle p-1" />
                                     <h5 className="mt-4">Highly Customizable</h5>
                                     <div>

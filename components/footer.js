@@ -125,17 +125,17 @@ export default function Footer() {
             <ul className="list-unstyled d-flex mb-0">
               <li className="mx-3">
                 <a href="https://fb.com/bimbalacom" className="hover-fade-out">
-                  <img src={"/img/icons/social/facebook.svg"} alt="Facebook" className="icon icon-sm bg-white rounded-circle p-1" />
+                  <img src={"/img/icons/social/facebook.svg"} loading="lazy" alt="Facebook" className="icon icon-sm bg-white rounded-circle p-1" />
                 </a>
               </li>
               <li className="mx-3">
                 <a href="https://twitter.com/bimbalacom" className="hover-fade-out">
-                  <img src={"/img/icons/social/twitter.svg"} alt="Twitter" className="icon icon-sm bg-white rounded-circle p-1" />
+                  <img src={"/img/icons/social/twitter.svg"} loading="lazy" alt="Twitter" className="icon icon-sm bg-white rounded-circle p-1" />
                 </a>
               </li>
               <li className="mx-3">
                 <a href="https://github.com/bimbalacom" className="hover-fade-out ">
-                  <img src={"/img/icons/social/github.svg"} alt="Github" className="icon icon-sm bg-white rounded-circle p-1" />
+                  <img src={"/img/icons/social/github.svg"} loading="lazy" alt="Github" className="icon icon-sm bg-white rounded-circle p-1" />
                 </a>
               </li>
             </ul>
