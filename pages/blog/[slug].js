@@ -60,17 +60,17 @@ export default function BlogTemplate(props) {
                 </nav>
               </div>
               <Share frontmatter={props.frontmatter}/>
-              {/* <DiscussionEmbed
-    shortname='example'
+              <DiscussionEmbed
+    shortname='bimbala'
     config={
         {
-            url: this.props.article.url,
-            identifier: this.props.article.id,
-            title: this.props.article.title,
+            url: '{process.env.WEBSITE_URL}${router.asPath}`',
+            identifier: 'this.props.article.id',
+            title: '{frontmatter.title}',
             language: 'en_us' 
         }
     }
-/> */}
+/>
             </div>
           </div>
         </div>
