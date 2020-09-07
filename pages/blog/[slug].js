@@ -65,7 +65,7 @@ export default function BlogTemplate(props) {
     config={
         {
             url: '{process.env.WEBSITE_URL}${router.asPath}`',
-            identifier: '{frontmatter.title}',
+            identifier: 'this.props.article.id',
             title: '{frontmatter.title}',
             language: 'en_us' 
         }
