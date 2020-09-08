@@ -1327,8 +1327,7 @@
         var e = t.type + "." + t.namespace === ft ? "add" : "remove";
         vt.classList[e](gt)
     }), wt(document).on("hide.bs.collapse", function(t) {
-        wt(t.target).find('[data-toggle="popover"]').popover("hide")
-    }), o.highlightAll();
+        }), o.highlightAll();
 
     function St(t) {
         return isNaN(t = +t) ? 0 : (0 < t ? Pt : Ct)(t)
