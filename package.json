@@ -17,7 +17,7 @@
     "glob": "^7.1.6",
     "globby": "^11.0.1",
     "gray-matter": "^4.0.2",
-    "netlify-plugin-cache-nextjs": "^1.5.1",
+    "netlify-plugin-cache-nextjs": "^1.5.2",
     "next": "^9.5.3",
     "next-seo": "^4.7.3",
     "nextjs-sitemap-generator": "^1.1.1",
