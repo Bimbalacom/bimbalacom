@@ -564,117 +564,6 @@
         })
     });
     var K = function(i) { }(jQuery),
-        Y = function(r) {
-            if (!(B && "1.2.0" <= B.version)) throw new Error("mrUtil >= version 1.2.0 is required.");
-            var t = "mrFormEmail",
-                i = "mr.formEmail",
-                e = "." + i,
-                n = r.fn[t],
-                a = "btn-loading-animate",
-                o = "was-validated",
-                s = "d-none",
-                l = "action",
-                u = "disabled",
-                c = "data-feedback-delay",
-                h = "data-success-redirect",
-                f = "[data-form-email]",
-                d = "[data-success-message]",
-                m = "[data-error-message]",
-                p = 'button[type="submit"]',
-                g = "span",
-                y = "input,textarea,select",
-                v = "initially-disabled",
-                w = {
-                    SENT: "sent" + e,
-                    LOAD_DATA_API: "load" + e + ".data-api",
-                    SUBMIT: "submit"
-                },
-                b = "data-loading-text",
-                E = "Sending",
-                A = "forms/mail.php",
-                S = 5e3,
-                T = "Form submission error",
-                I = "success",
-                k = "error",
-                O = function() {
-                    function n(t) {
-                        this.form = t, this.action = this.form.getAttribute(l) || A, this.feedback = this.getFeedbackElements(), this.initSubmitButton(), this.setSubmitEvent()
-                    }
-                    var t = n.prototype;
-                    return t.submitForm = function() {
-                        this.hideAllFeedback(), this.validateForm() && this.ajaxSubmit()
-                    }, t.ajaxSubmit = function() {
-                        var t = r(this.form).serializeArray();
-                        t.push({
-                            name: "url",
-                            value: window.location.href
-                        }), j.ajax({
-                            context: this,
-                            data: t,
-                            dataType: "json",
-                            error: this.showFeedback,
-                            success: this.processResponse,
-                            type: "POST",
-                            url: this.action
-                        }), this.toggleFormLoading(!0)
-                    }, t.initSubmitButton = function() {
-                        return this.submitButton || (this.submitButton = this.form.querySelector(p)), this.submitButtonSpan = this.submitButton.querySelector(g), this.loadingText = this.submitButton.getAttribute(b) || E, this.originalSubmitText = this.submitButtonSpan.textContent, this.submitButton
-                    }, t.showFeedback = function(t, e, n) {
-                        this.toggleFormLoading(!1), "object" == typeof t && t.statusText ? (clearTimeout(this.feedbackTimeout), this.feedback.error.innerHTML = (n || e) + ': <em>"' + this.action + '"</em> (' + t.status + " " + e + ")", this.feedback.error.classList.remove(s)) : (this.feedback[t].innerHTML = e, this.feedback[t].classList.remove(s))
-                    }, t.hideAllFeedback = function() {
-                        this.feedback.success.classList.add(s), this.feedback.error.classList.add(s)
-                    }, t.getFeedbackElements = function() {
-                        if (!this.feedback) {
-                            this.feedback = {
-                                success: this.form.querySelector(d),
-                                error: this.form.querySelector(m)
-                            }, this.validationErrorMessage = this.feedback.error.innerHTML;
-                            var t = this.form.getAttribute(c) || S;
-                            this.feedbackDelay = parseInt(t, 10), this.feedbackTimeout = null
-                        }
-                        return this.feedback
-                    }, t.toggleFormLoading = function(t) {
-                        this.toggleSubmitButtonLoading(t), n.toggleDisabled(this.form.querySelectorAll(y), t)
-                    }, t.toggleSubmitButtonLoading = function(t) {
-                        this.toggleSubmitButtonText(t), this.toggleSubmitButtonAnimation(t), n.toggleDisabled(this.submitButton, t)
-                    }, t.toggleSubmitButtonAnimation = function(t) {
-                        this.submitButton.classList[t ? "add" : "remove"](a)
-                    }, t.toggleSubmitButtonText = function(t) {
-                        this.submitButtonSpan.textContent = t ? this.loadingText : this.originalSubmitText
-                    }, n.toggleDisabled = function(t, n) {
-                        B.forEach(t, function(t, e) {
-                            n && (null !== e.getAttribute(u) ? e.classList.add(v) : e.setAttribute(u, "")), n || e.classList.contains(v) || e.removeAttribute(u)
-                        })
-                    }, n.getInstanceFromForm = function(t) {
-                        if (B.isElement(t)) return r(t).data(i) || null;
-                        throw new TypeError("Form argument passed to getInstanceFromForm is not an element.")
-                    }, t.setSubmitEvent = function() {
-                        var e = this;
-                        r(this.form).on(w.SUBMIT, function(t) {
-                            t.preventDefault(), e.submitForm()
-                        })
-                    }, n.jQueryInterface = function() {
-                        return this.each(function() {
-                            var t = r(this),
-                                e = t.data(i);
-                            e || (e = new n(this), t.data(i, e))
-                        })
-                    }, G(n, null, [{
-                        key: "VERSION",
-                        get: function() {
-                            return "1.0.1"
-                        }
-                    }]), n
-                }();
-            return r(window).on(w.LOAD_DATA_API, function() {
-                for (var t = r.makeArray(r(f)), e = t.length; e--;) {
-                    var n = r(t[e]);
-                    O.jQueryInterface.call(n, n.data())
-                }
-            }), r.fn[t] = O.jQueryInterface, r.fn[t].Constructor = O, r.fn[t].noConflict = function() {
-                return r.fn[t] = n, O.jQueryInterface
-            }, O
-        }(j),
         Z = function(i) {
             if ("function" != typeof i.fn.ionRangeSlider) throw new Error("mrIonRangeSlider requires ion.rangeSlider.js (https://github.com/IonDen/ion.rangeSlider)");
             if (!(B && "1.2.0" <= B.version)) throw new Error("mrUtil >= version 1.2.0 is required.");
@@ -2140,7 +2029,7 @@
 (j);
     ! function() {
         if ("undefined" == typeof $) throw new TypeError("Medium Rare JavaScript requires jQuery. jQuery must be included before theme.js.")
-    }(), t.mrCountdown = d, t.mrCountup = z, t.mrDropdownGrid = W, t.mrFormEmail = Y, t.mrIonRangeSlider = Z, t.mrIsotope = J, t.mrMaps = Et, t.mrMapsStyle = bt, t.mrOverlayNav = At, t.mrReadingPosition = kt, t.mrSmoothScroll = Ot, t.mrSticky = jt, t.mrUtil = B, Object.defineProperty(t, "__esModule", {
+    }(), t.mrCountdown = d, t.mrCountup = z, t.mrDropdownGrid = W, t.mrIonRangeSlider = Z, t.mrIsotope = J, t.mrMaps = Et, t.mrMapsStyle = bt, t.mrOverlayNav = At, t.mrReadingPosition = kt, t.mrSmoothScroll = Ot, t.mrSticky = jt, t.mrUtil = B, Object.defineProperty(t, "__esModule", {
         value: !0
     })
 });

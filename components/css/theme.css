@@ -3161,6 +3161,13 @@ input[type="button"].btn-block {
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
+.navbar .navbar-brand > h3{
+  color: #fff;
+}
+
+.navbar.scrolled .navbar-brand > h3{
+  color: #000;
+}
 .navbar-nav {
   display: flex;
   flex-direction: column;
