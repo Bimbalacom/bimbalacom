@@ -9479,16 +9479,6 @@ section > .divider-top {
 .alert p {
   margin-bottom: 0; }
 
-.code-snippet {
-  position: relative; }
-  .code-snippet .btn-clipboard {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    opacity: 0; }
-  .code-snippet:hover .btn-clipboard {
-    opacity: 1; }
-
 .docs-graphic .btn {
   margin: .5rem; }
 
