@@ -48,8 +48,6 @@ export default class Layout extends React.Component {
             <script type="text/javascript" src="/js/jquery.countdown.min.js" defer/>
             {/* jQuery smartWizard facilitates steppable wizard content */}
             <script type="text/javascript" src="/js/jquery.smartWizard.min.js" defer/>
-            {/* Prism (displays formatted code boxes) */}
-            <script type="text/javascript" src="/js/prism.js" defer/>
             {/* ScrollMonitor (manages events for elements scrolling in and out of view) */}
             <script type="text/javascript" src="/js/scrollMonitor.js" defer/>
             {/* Smooth scroll (animation to links in-page)*/}

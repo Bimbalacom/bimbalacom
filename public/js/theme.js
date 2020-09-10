@@ -7,18 +7,18 @@
         exports, require("aos"), require("jquery"),
         require("jquery-countdown"), require("scrollmonitor"), require("flickity"),
         require("isotope-layout"), require("jarallax"),
-        require("prismjs"), require("smooth-scroll"),
+       require("smooth-scroll"),
         require("typed.js")) : "function" == typeof define && define.amd ? define(
             ["exports", "aos", "jquery",
             "jquery-countdown", "scrollmonitor", "flickity",
             "isotope-layout", "jarallax",
-            "prismjs", "smooth-scroll", "typed.js"], e) : e(
+            "smooth-scroll", "typed.js"], e) : e(
     (t = t || self).theme = {}, t.AOS, t.jQuery,
         null, t.scrollMonitor, t.flatpickr,
         t.Flickity, t.Isotope,
-        t.jarallax,t.Prism,
+        t.jarallax,
         t.SmoothScroll, t.Typed)
-}(this, function(t, e, j, n, b, s, E, O, r, a, l, u, c) {
+}(this, function(t, e, j, n, b, s, E, O, r, l, u, c) {
     "use strict";
     var h;
     function f(t, e) {
@@ -31,7 +31,7 @@
     function G(t, e, n) {
         return e && f(t.prototype, e), n && f(t, n), t
     }
-    e = e && e.hasOwnProperty("default") ? e.default : e, j = j && j.hasOwnProperty("default") ? j.default : j, b = b && b.hasOwnProperty("default") ? b.default : b, s = s && s.hasOwnProperty("default") ? s.default : s, E = E && E.hasOwnProperty("default") ? E.default : E, O = O && O.hasOwnProperty("default") ? O.default : O, r = r && r.hasOwnProperty("default") ? r.default : r, a = a && a.hasOwnProperty("default") ? a.default : a, l = l && l.hasOwnProperty("default") ? l.default : l, c = c && c.hasOwnProperty("default") ? c.default : c, $(window).on("load", function() {
+    e = e && e.hasOwnProperty("default") ? e.default : e, j = j && j.hasOwnProperty("default") ? j.default : j, b = b && b.hasOwnProperty("default") ? b.default : b, s = s && s.hasOwnProperty("default") ? s.default : s, E = E && E.hasOwnProperty("default") ? E.default : E, O = O && O.hasOwnProperty("default") ? O.default : O, r = r && r.hasOwnProperty("default") ? r.default : r, l = l && l.hasOwnProperty("default") ? l.default : l, c = c && c.hasOwnProperty("default") ? c.default : c, $(window).on("load", function() {
         e.init({
             once: !0
         })
