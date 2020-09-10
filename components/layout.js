@@ -25,7 +25,6 @@ export default class Layout extends React.Component {
             <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" onLoad="this.onload=null;this.rel='stylesheet'" />
         </Head>
         <Navbar/>
-        {this.props.children}
         {/* Required vendor scripts (Do not remove) */}
         <script type="text/javascript" src="/js/jquery.min.js" defer/>
         <script type="text/javascript" src="/js/popper.min.js" defer/>
@@ -57,6 +56,7 @@ export default class Layout extends React.Component {
         <script type="text/javascript" src="/js/typed.min.js" defer/>
         {/* Required theme scripts (Do not remove) */}
         <script type="text/javascript" src="/js/theme.js" defer/>
+        {this.props.children}
         <Footer/>
         <a href="#top" className="btn btn-primary rounded-circle btn-back-to-top aos-init aos-animate" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
             <img src="/img/icons/interface/icon-arrow-up.svg" alt="Icon" className="icon"  />
