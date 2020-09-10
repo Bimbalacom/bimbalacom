@@ -22,7 +22,7 @@ export default class Layout extends React.Component {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>{this.props.title || 'Bimbala'}</title>
             <link rel="icon" href="/favicon.ico" />
-            <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet" defer/>
+            <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" onLoad="this.onload=null;this.rel='stylesheet'" />
 
 
             {/* Required vendor scripts (Do not remove) */}
