@@ -14,11 +14,11 @@
             "isotope-layout", "jarallax",
             "smooth-scroll", "typed.js"], e) : e(
     (t = t || self).theme = {}, t.AOS, t.jQuery,
-        null, t.scrollMonitor, t.flatpickr,
+        null, t.scrollMonitor,
         t.Flickity, t.Isotope,
         t.jarallax,
         t.SmoothScroll, t.Typed)
-}(this, function(t, e, j, n, b, s, E, O, r, l, u, c) {
+}(this, function(t, e, j, n, b, E, O, r, l, u, c) {
     "use strict";
     var h;
     function f(t, e) {
@@ -31,7 +31,7 @@
     function G(t, e, n) {
         return e && f(t.prototype, e), n && f(t, n), t
     }
-    e = e && e.hasOwnProperty("default") ? e.default : e, j = j && j.hasOwnProperty("default") ? j.default : j, b = b && b.hasOwnProperty("default") ? b.default : b, s = s && s.hasOwnProperty("default") ? s.default : s, E = E && E.hasOwnProperty("default") ? E.default : E, O = O && O.hasOwnProperty("default") ? O.default : O, r = r && r.hasOwnProperty("default") ? r.default : r, l = l && l.hasOwnProperty("default") ? l.default : l, c = c && c.hasOwnProperty("default") ? c.default : c, $(window).on("load", function() {
+    e = e && e.hasOwnProperty("default") ? e.default : e, j = j && j.hasOwnProperty("default") ? j.default : j, b = b && b.hasOwnProperty("default") ? b.default : b,  E = E && E.hasOwnProperty("default") ? E.default : E, O = O && O.hasOwnProperty("default") ? O.default : O, r = r && r.hasOwnProperty("default") ? r.default : r, l = l && l.hasOwnProperty("default") ? l.default : l, c = c && c.hasOwnProperty("default") ? c.default : c, $(window).on("load", function() {
         e.init({
             once: !0
         })
