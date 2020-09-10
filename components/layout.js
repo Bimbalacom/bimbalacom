@@ -38,8 +38,6 @@ export default class Layout extends React.Component {
             <script type="text/javascript" src="/js/jquery.fancybox.min.js" defer/>
             {/* Flickity (handles touch enabled carousels and sliders) */}
             <script type="text/javascript" src="/js/flickity.pkgd.min.js" defer/>
-            {/* Ion rangeSlider (flexible and pretty range slider elements) */}
-            <script type="text/javascript" src="/js/ion.rangeSlider.min.js" defer/>
             {/* Isotope (masonry layouts and filtering) */}
             <script type="text/javascript" src="/js/isotope.pkgd.min.js" defer/>
             {/* jarallax (parallax effect and video backgrounds) */}
