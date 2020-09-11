@@ -17,8 +17,8 @@
         null, t.scrollMonitor, t.flatpickr,
         t.Flickity, null, t.Isotope,
         t.jarallax,t.Prism,
-        t.SmoothScroll, t.SVGInjector, t.Typed)
-}(this, function(t, e, j, n, b, s, E, i, O, r, a, l, u, A, c) {
+        t.SmoothScroll, t.Typed)
+}(this, function(t, e, j, n, b, s, E, i, O, r, a, l, u, c) {
     "use strict";
     var h;
 
@@ -32,7 +32,7 @@
     function G(t, e, n) {
         return e && f(t.prototype, e), n && f(t, n), t
     }
-    e = e && e.hasOwnProperty("default") ? e.default : e, j = j && j.hasOwnProperty("default") ? j.default : j, b = b && b.hasOwnProperty("default") ? b.default : b, s = s && s.hasOwnProperty("default") ? s.default : s, E = E && E.hasOwnProperty("default") ? E.default : E, O = O && O.hasOwnProperty("default") ? O.default : O, r = r && r.hasOwnProperty("default") ? r.default : r, a = a && a.hasOwnProperty("default") ? a.default : a, l = l && l.hasOwnProperty("default") ? l.default : l, A = A && A.hasOwnProperty("default") ? A.default : A, c = c && c.hasOwnProperty("default") ? c.default : c, $(window).on("load", function() {
+    e = e && e.hasOwnProperty("default") ? e.default : e, j = j && j.hasOwnProperty("default") ? j.default : j, b = b && b.hasOwnProperty("default") ? b.default : b, s = s && s.hasOwnProperty("default") ? s.default : s, E = E && E.hasOwnProperty("default") ? E.default : E, O = O && O.hasOwnProperty("default") ? O.default : O, r = r && r.hasOwnProperty("default") ? r.default : r, a = a && a.hasOwnProperty("default") ? a.default : a, l = l && l.hasOwnProperty("default") ? l.default : l, c = c && c.hasOwnProperty("default") ? c.default : c, $(window).on("load", function() {
         e.init({
             once: !0
         })

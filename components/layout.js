@@ -34,8 +34,6 @@ export default class Layout extends React.Component {
 
             {/* AOS (Animate On Scroll - animates elements into view while scrolling down) */}
             <script type="text/javascript" src="/js/aos.js" defer/>
-            {/* Clipboard (copies content from browser into OS clipboard) */}
-            <script type="text/javascript" src="/js/clipboard.min.js" defer/>
             {/* Fancybox (handles image and video lightbox and galleries) */}
             <script type="text/javascript" src="/js/jquery.fancybox.min.js" defer/>
             {/* Flickity (handles touch enabled carousels and sliders) */}
