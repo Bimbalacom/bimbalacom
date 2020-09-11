@@ -10,7 +10,7 @@ export default async (req, res) => {
         return;
     }
     let data = {email_address: emailAddress, status: 'subscribed'};
-    if(typeof demoData !== undefined){
+    if(Object.keys(demoData).length !== 0 && demoData.constructor === Object){
         data.status = 'unsubscribed';
         data.tags = ['Demo request'];
         data.merge_fields = {};
