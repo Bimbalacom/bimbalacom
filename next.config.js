@@ -11,5 +11,7 @@ module.exports = {
       use: 'raw-loader',
     })
     return config
-  }
+  },
+  // Target must be serverless
+  target: 'serverless'
 }

@@ -1,4 +1,4 @@
-import SubscribeForm from "./subscribeForm";
+import SubscribeForm from "./forms/subscribeForm";
 export default function Footer() {
   return (
     <footer className="bg-primary-3 text-white links-white pb-4 footer-1">
