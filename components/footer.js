@@ -8,7 +8,7 @@ export default function Footer() {
             <h5>About us</h5>
             <ul className="nav flex-row flex-md-column">
               <li className="nav-item mr-3 mr-md-0">
-                <a href="#" className="nav-link fade-page px-0 py-2">Demo</a>
+                <a href={"https://demo.bimbala.com/"} className="nav-link fade-page px-0 py-2">Demo</a>
               </li>
               {/* <li className="nav-item mr-3 mr-md-0">
                 <a href={"/pricing"} className="nav-link fade-page px-0 py-2">Pricing</a>
@@ -97,7 +97,7 @@ export default function Footer() {
           <div className="col-auto">
             <div className="d-flex flex-column flex-sm-row align-items-center text-small">
               <div className="text-muted">&copy; 2020 Bimbala Ltd | <a href={"privacy-policy/"}>Privacy Policy</a>,
-            <a href={"terms-of-service/"}> Terms of Service</a> and <a href={"gdpr/"}>GDPR</a> | <a href={"https://github.com/Bimbalacom/Website"}>Website version - 0.0.1</a> 
+            <a href={"terms-of-service/"}> Terms of Service</a> and <a href={"gdpr/"}>GDPR</a> | <a href={"https://github.com/Bimbalacom/Website"}>Website version - 0.1.0</a> 
               </div>
             </div>
           </div>
