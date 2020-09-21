@@ -22,7 +22,7 @@ export default function Home() {
                                 <a href={"/why-us"} className="btn btn-lg btn-primary">Why us?</a>
                             </div>
                             <div className="col" data-aos="fade-left" data-aos-delay="250">
-                                <img src={"/img/desktop-app/desktop-app-2.jpg"} alt="Screenshot"
+                                <img src={"/img/demo/roadmap-demo.jpg"} alt="Screenshot"
                                     className="img-fluid rounded shadow-lg border" />
                             </div>
                         </div>
