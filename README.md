@@ -167,4 +167,4 @@ Our Twitter - [@bimbalacom](https://twitter.com/bimbalacom)
 [license-url]: https://github.com/Bimbalacom/Website/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/
-[product-screenshot]: public/screenshot.png
+[product-screenshot]: .github/img/demo.png
