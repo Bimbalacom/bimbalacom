@@ -1,5 +1,6 @@
 import '../components/css/loaders/loader-pulse.css';
 import '../components/css/theme.css';
+import '../components/css/menu.css';
 import SEO from '../next-seo.config';
 import {DefaultSeo} from "next-seo";
 import TagManager from 'react-gtm-module'

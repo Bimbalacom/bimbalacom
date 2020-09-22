@@ -35,19 +35,35 @@ export default function Navbar() {
                                         className="nav-link nav-item" role="button">Pricing</a>
                                 </Link>
                             </li> */}
-                            <li className="nav-item">
-                                <div className="dropdown">
-                                    <a aria-expanded="false" aria-haspopup="true" className="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Solutions</a>
-                                    <div className="row dropdown-menu">
-                                        <div className="col-auto" data-dropdown-content>
-                                            <div className="dropdown-grid-menu">
-                                                <a href={"/features"} className="dropdown-item fade-page">Features</a>
-                                                <a href={"/#"} className="dropdown-item fade-page">Roadmap</a>
-                                            </div>
-                                        </div>
+                            <li className="nav-item"><nav>
+
+                                <li> <a aria-expanded="false" aria-haspopup="true"
+                                    className="nav-link nav-item" role="button">Solutions</a>
+                                    <div class="dropdownv2">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <h3>Payments</h3>
+                                                    <span>Full platform for online payments</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <h3>Payments</h3>
+                                                    <span>Full platform for online payments</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <h3>Payments</h3>
+                                                    <span>Full platform for online payments</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
+
+                            </nav></li>
                             <li className="nav-item">
                                 <div className="dropdown">
                                     <a aria-expanded="false" aria-haspopup="true" className="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Docs</a>
@@ -72,7 +88,7 @@ export default function Navbar() {
                                         </div>
                                     </div>
                                 </div>
-                            </li>      
+                            </li>
                         </ul>
                     </div>
                 </div>

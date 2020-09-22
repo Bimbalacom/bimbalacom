@@ -56,6 +56,8 @@ export default class Layout extends React.Component {
         <script type="text/javascript" src="/js/typed.min.js" defer/>
         {/* Required theme scripts (Do not remove) */}
         <script type="text/javascript" src="/js/theme.js" defer/>
+        {/* Required theme scripts (Do not remove) */}
+        <script type="text/javascript" src="/js/menu.js" defer/>
         {this.props.children}
         <Footer/>
         <a href="#top" className="btn btn-primary rounded-circle btn-back-to-top aos-init aos-animate" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
