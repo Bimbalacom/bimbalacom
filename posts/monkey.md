@@ -3,7 +3,7 @@ author: Gabriel kanev
 authorImage: https://bimbala.com/img/avatars/gkanev.jpg
 date: '24.08.2020'
 title: 'Mind, body, and monkey react'
-image: /img/blog/large-2.jpg
+image: /blog/mind-body-monkey.jpg
 imageAlt: Modern office
 category: Development
 ---
