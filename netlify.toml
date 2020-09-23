@@ -1,7 +1,10 @@
 [build]
-command   = "npm run build && npm run sitemap"
+command   = "npm run build"
 functions = "out_functions"
 publish   = "out_publish"
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
