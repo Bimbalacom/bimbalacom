@@ -5,7 +5,7 @@ import TakeFlight from "../components/take_flight";
 
 export default function FirstPost() {
   return (
-    <Layout title={'Features - Bimbala.com'}>
+    <Layout title={'Features'}>
       <TakeFlight/>
     <section className="o-hidden">
         <div className="container">

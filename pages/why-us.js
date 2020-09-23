@@ -3,7 +3,7 @@ import React from "react";
 
 export default function WhyUS() {
     return (
-        <Layout title={'Why us? - Bimbala.com'}>
+        <Layout title={'Why us?'}>
             <section className="p-0 border-top border-bottom bg-light row no-gutters">
                 <div className="col-lg-5 col-xl-6 order-lg-2">
                     <div className="divider divider-side transform-flip-y bg-light d-none d-lg-block"/>

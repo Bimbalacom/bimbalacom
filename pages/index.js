@@ -9,7 +9,7 @@ const Steps = dynamic(() => import('../components/index/steps'));
 
 export default function Home() {
     return (
-        <Layout title={'Home - Bimbala.com'}>
+        <Layout title={'Home'}>
             <div data-overlay className="o-hidden">
                 <section className="bg-primary-3 text-white pb-0 o-hidden">
                     <div className="container">

@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 
 export default function FirstPost() {
     return (
-        <Layout title={'Teem - Bimbala.com'}>
+        <Layout title={'Teem'}>
             <div className="o-hidden" data-overlay>
                 <section className="pb-0">
                     <div className="container">
