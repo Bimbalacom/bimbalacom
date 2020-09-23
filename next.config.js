@@ -13,5 +13,5 @@ module.exports = {
     return config
   },
   // Target must be serverless
-  target: 'serverless',
+  target: 'serverless'
 }
