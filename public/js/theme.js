@@ -6,22 +6,21 @@
     "object" == typeof exports && "undefined" != typeof module ? e(
         exports, require("aos"), require("jquery"),
         require("jquery-countdown"), require("scrollmonitor"), require("flickity"),
-        require("ion-rangeslider"), require("isotope-layout"), require("jarallax"),
-        require("plyr"), require("prismjs"), require("smooth-scroll"),
+        require("isotope-layout"), require("jarallax"),
+       require("smooth-scroll"),
         require("typed.js")) : "function" == typeof define && define.amd ? define(
             ["exports", "aos", "jquery",
             "jquery-countdown", "scrollmonitor", "flickity",
-            "ion-rangeslider", "isotope-layout", "jarallax",
-            "plyr", "prismjs", "smooth-scroll", "typed.js"], e) : e(
+            "isotope-layout", "jarallax",
+            "smooth-scroll", "typed.js"], e) : e(
     (t = t || self).theme = {}, t.AOS, t.jQuery,
-        null, t.scrollMonitor, t.flatpickr,
-        t.Flickity, null, t.Isotope,
-        t.jarallax, t.Plyr, t.Prism,
-        t.SmoothScroll, t.SVGInjector, t.Typed)
-}(this, function(t, e, j, n, b, s, E, i, O, r, a, o, l, u, A, c) {
+        null, t.scrollMonitor,
+        t.Flickity, t.Isotope,
+        t.jarallax,
+        t.SmoothScroll, t.Typed)
+}(this, function(t, e, j, n, b, E, O, r, l, u, c) {
     "use strict";
     var h;
-
     function f(t, e) {
         for (var n = 0; n < e.length; n++) {
             var i = e[n];
@@ -32,7 +31,7 @@
     function G(t, e, n) {
         return e && f(t.prototype, e), n && f(t, n), t
     }
-    e = e && e.hasOwnProperty("default") ? e.default : e, j = j && j.hasOwnProperty("default") ? j.default : j, b = b && b.hasOwnProperty("default") ? b.default : b, s = s && s.hasOwnProperty("default") ? s.default : s, E = E && E.hasOwnProperty("default") ? E.default : E, O = O && O.hasOwnProperty("default") ? O.default : O, r = r && r.hasOwnProperty("default") ? r.default : r, a = a && a.hasOwnProperty("default") ? a.default : a, o = o && o.hasOwnProperty("default") ? o.default : o, l = l && l.hasOwnProperty("default") ? l.default : l, A = A && A.hasOwnProperty("default") ? A.default : A, c = c && c.hasOwnProperty("default") ? c.default : c, $(window).on("load", function() {
+    e = e && e.hasOwnProperty("default") ? e.default : e, j = j && j.hasOwnProperty("default") ? j.default : j, b = b && b.hasOwnProperty("default") ? b.default : b,  E = E && E.hasOwnProperty("default") ? E.default : E, O = O && O.hasOwnProperty("default") ? O.default : O, r = r && r.hasOwnProperty("default") ? r.default : r, l = l && l.hasOwnProperty("default") ? l.default : l, c = c && c.hasOwnProperty("default") ? c.default : c, $(window).on("load", function() {
         e.init({
             once: !0
         })
@@ -564,198 +563,7 @@
         })
     });
     var K = function(i) { }(jQuery),
-        Y = function(r) {
-            if (!(B && "1.2.0" <= B.version)) throw new Error("mrUtil >= version 1.2.0 is required.");
-            var t = "mrFormEmail",
-                i = "mr.formEmail",
-                e = "." + i,
-                n = r.fn[t],
-                a = "btn-loading-animate",
-                o = "was-validated",
-                s = "d-none",
-                l = "action",
-                u = "disabled",
-                c = "data-feedback-delay",
-                h = "data-success-redirect",
-                f = "[data-form-email]",
-                d = "[data-success-message]",
-                m = "[data-error-message]",
-                p = 'button[type="submit"]',
-                g = "span",
-                y = "input,textarea,select",
-                v = "initially-disabled",
-                w = {
-                    SENT: "sent" + e,
-                    LOAD_DATA_API: "load" + e + ".data-api",
-                    SUBMIT: "submit"
-                },
-                b = "data-loading-text",
-                E = "Sending",
-                A = "forms/mail.php",
-                S = 5e3,
-                T = "Form submission error",
-                I = "success",
-                k = "error",
-                O = function() {
-                    function n(t) {
-                        this.form = t, this.action = this.form.getAttribute(l) || A, this.feedback = this.getFeedbackElements(), this.initSubmitButton(), this.setSubmitEvent()
-                    }
-                    var t = n.prototype;
-                    return t.submitForm = function() {
-                        this.hideAllFeedback(), this.validateForm() && this.ajaxSubmit()
-                    }, t.ajaxSubmit = function() {
-                        var t = r(this.form).serializeArray();
-                        t.push({
-                            name: "url",
-                            value: window.location.href
-                        }), j.ajax({
-                            context: this,
-                            data: t,
-                            dataType: "json",
-                            error: this.showFeedback,
-                            success: this.processResponse,
-                            type: "POST",
-                            url: this.action
-                        }), this.toggleFormLoading(!0)
-                    }, t.initSubmitButton = function() {
-                        return this.submitButton || (this.submitButton = this.form.querySelector(p)), this.submitButtonSpan = this.submitButton.querySelector(g), this.loadingText = this.submitButton.getAttribute(b) || E, this.originalSubmitText = this.submitButtonSpan.textContent, this.submitButton
-                    }, t.showFeedback = function(t, e, n) {
-                        this.toggleFormLoading(!1), "object" == typeof t && t.statusText ? (clearTimeout(this.feedbackTimeout), this.feedback.error.innerHTML = (n || e) + ': <em>"' + this.action + '"</em> (' + t.status + " " + e + ")", this.feedback.error.classList.remove(s)) : (this.feedback[t].innerHTML = e, this.feedback[t].classList.remove(s))
-                    }, t.hideAllFeedback = function() {
-                        this.feedback.success.classList.add(s), this.feedback.error.classList.add(s)
-                    }, t.getFeedbackElements = function() {
-                        if (!this.feedback) {
-                            this.feedback = {
-                                success: this.form.querySelector(d),
-                                error: this.form.querySelector(m)
-                            }, this.validationErrorMessage = this.feedback.error.innerHTML;
-                            var t = this.form.getAttribute(c) || S;
-                            this.feedbackDelay = parseInt(t, 10), this.feedbackTimeout = null
-                        }
-                        return this.feedback
-                    }, t.toggleFormLoading = function(t) {
-                        this.toggleSubmitButtonLoading(t), n.toggleDisabled(this.form.querySelectorAll(y), t)
-                    }, t.toggleSubmitButtonLoading = function(t) {
-                        this.toggleSubmitButtonText(t), this.toggleSubmitButtonAnimation(t), n.toggleDisabled(this.submitButton, t)
-                    }, t.toggleSubmitButtonAnimation = function(t) {
-                        this.submitButton.classList[t ? "add" : "remove"](a)
-                    }, t.toggleSubmitButtonText = function(t) {
-                        this.submitButtonSpan.textContent = t ? this.loadingText : this.originalSubmitText
-                    }, n.toggleDisabled = function(t, n) {
-                        B.forEach(t, function(t, e) {
-                            n && (null !== e.getAttribute(u) ? e.classList.add(v) : e.setAttribute(u, "")), n || e.classList.contains(v) || e.removeAttribute(u)
-                        })
-                    }, n.getInstanceFromForm = function(t) {
-                        if (B.isElement(t)) return r(t).data(i) || null;
-                        throw new TypeError("Form argument passed to getInstanceFromForm is not an element.")
-                    }, t.setSubmitEvent = function() {
-                        var e = this;
-                        r(this.form).on(w.SUBMIT, function(t) {
-                            t.preventDefault(), e.submitForm()
-                        })
-                    }, n.jQueryInterface = function() {
-                        return this.each(function() {
-                            var t = r(this),
-                                e = t.data(i);
-                            e || (e = new n(this), t.data(i, e))
-                        })
-                    }, G(n, null, [{
-                        key: "VERSION",
-                        get: function() {
-                            return "1.0.1"
-                        }
-                    }]), n
-                }();
-            return r(window).on(w.LOAD_DATA_API, function() {
-                for (var t = r.makeArray(r(f)), e = t.length; e--;) {
-                    var n = r(t[e]);
-                    O.jQueryInterface.call(n, n.data())
-                }
-            }), r.fn[t] = O.jQueryInterface, r.fn[t].Constructor = O, r.fn[t].noConflict = function() {
-                return r.fn[t] = n, O.jQueryInterface
-            }, O
-        }(j),
-        Z = function(i) {
-            if ("function" != typeof i.fn.ionRangeSlider) throw new Error("mrIonRangeSlider requires ion.rangeSlider.js (https://github.com/IonDen/ion.rangeSlider)");
-            if (!(B && "1.2.0" <= B.version)) throw new Error("mrUtil >= version 1.2.0 is required.");
-            var t = "mrIonRangeSlider",
-                r = "mr.ionRangeSlider",
-                e = i.fn[t],
-                a = {
-                    LOAD_DATA_API: "load.mr.ionRangeSlider.data-api",
-                    CHANGE: "input"
-                },
-                o = "[data-ion-rangeslider]",
-                s = "INPUT",
-                l = "text",
-                u = "theme",
-                c = function() {
-                    function n(t) {
-                        var e = i(t);
-                        this.options = e.data(), this.element = t, this.fromElement = null, this.toElement = null, this.unitElement = null, this.initRangeSlider()
-                    }
-                    var t = n.prototype;
-                    return t.initRangeSlider = function() {
-                        var t = this.options;
-                        t.fromSelector && (this.fromElement = document.querySelectorAll(t.fromSelector), this.setFromUpdateEvent(this.fromElement)), t.toSelector && (this.toElement = document.querySelectorAll(t.toSelector), this.setToUpdateEvent(this.toElement)), t.unitSelector && t.unitSingle && t.unitPlural && (this.unitElement = document.querySelectorAll(t.unitSelector)), i(this.element).ionRangeSlider({
-                            skin: u,
-                            onStart: B.getFuncFromString(t.onStart),
-                            onFinish: B.getFuncFromString(t.onFinish),
-                            onChange: this.handleChange,
-                            scope: this,
-                            onUpdate: B.getFuncFromString(t.onUpdate)
-                        }), this.rangeSlider = i(this.element).data("ionRangeSlider")
-                    }, t.handleChange = function(t) {
-                        if (this.fromElement && 0 < this.fromElement.length && Z.updateValue(this.fromElement, t.from_value || t.from), this.toElement && 0 < this.toElement.length && Z.updateValue(this.toElement, t.to_value || t.to), this.unitElement && 0 < this.unitElement.length) {
-                            var e = parseInt(t.from_value, 10) || t.value;
-                            Z.updateValue(this.unitElement, 1 < e ? this.options.unitPlural : this.options.unitSingle)
-                        }
-                        var n = B.getFuncFromString(this.options.onChange);
-                        n && n(t)
-                    }, t.setToUpdateEvent = function(t) {
-                        var n = this;
-                        B.forEach(t, function(t, e) {
-                            e.tagName.toUpperCase() === s && e.type === l && e.addEventListener(a.CHANGE, function() {
-                                n.rangeSlider.update({
-                                    to: e.value
-                                })
-                            })
-                        })
-                    }, t.setFromUpdateEvent = function(t) {
-                        var n = this;
-                        B.forEach(t, function(t, e) {
-                            e.tagName.toUpperCase() === s && e.type === l && e.addEventListener(a.CHANGE, function() {
-                                n.rangeSlider.update({
-                                    from: e.value
-                                })
-                            })
-                        })
-                    }, n.updateValue = function(t, n) {
-                        B.forEach(t, function(t, e) {
-                            e[e.tagName.toUpperCase() === s ? "value" : "textContent"] = n
-                        })
-                    }, n.jQueryInterface = function() {
-                        return this.each(function() {
-                            var t = i(this),
-                                e = t.data(r);
-                            e || (e = new n(this), t.data(r, e))
-                        })
-                    }, G(n, null, [{
-                        key: "VERSION",
-                        get: function() {
-                            return "1.0.0"
-                        }
-                    }]), n
-                }();
-            return i(window).on(a.LOAD_DATA_API, function() {
-                for (var t = i.makeArray(i(o)), e = t.length; e--;) {
-                    var n = i(t[e]);
-                    c.jQueryInterface.call(n, n.data())
-                }
-            }), i.fn[t] = c.jQueryInterface, i.fn[t].Constructor = c, i.fn[t].noConflict = function() {
-                return i.fn[t] = e, c.jQueryInterface
-            }, c
-        }(j),
+
         J = function(d) {
             if (void 0 === O) throw new Error("mrIsotope requires isotope.pkgd.js (https://github.com/metafizzy/isotope)");
             var t = "mrIsotope",
@@ -889,7 +697,7 @@
             })
         }
     }(j);
-    var X, tt, et, nt, it, rt, at, ot, st, lt, ut, ct, ht, ft, dt, mt, pt, gt, yt, vt, wt, bt = [{
+    var X, tt, et, nt, it, rt, at, ot, st, lt, ut, ct, ht, ft, dt, mt, pt, gt, yt, vt, bt = [{
             featureType: "administrative.country",
             elementType: "labels.text",
             stylers: [{
@@ -1326,11 +1134,7 @@
     ht = j, ft = "show.bs.collapse", dt = "hide.bs.collapse", mt = "#__next > div.navbar-container", pt = ".navbar-container > .navbar", gt = "navbar-toggled-show", yt = document.querySelector(mt), vt = document.querySelector(pt), ht(yt).on(ft + " " + dt, function(t) {
         var e = t.type + "." + t.namespace === ft ? "add" : "remove";
         vt.classList[e](gt)
-    }), a.setup("[data-provider],.plyr"), (wt = j)(document).on("hide.bs.tab", function(t) {
-        wt(wt(t.target).attr("href")).find('[data-toggle="popover"]').popover("hide")
-    }), wt(document).on("hide.bs.collapse", function(t) {
-        wt(t.target).find('[data-toggle="popover"]').popover("hide")
-    }), o.highlightAll();
+    });
 
     function St(t) {
         return isNaN(t = +t) ? 0 : (0 < t ? Pt : Ct)(t)
@@ -2144,7 +1948,7 @@
 (j);
     ! function() {
         if ("undefined" == typeof $) throw new TypeError("Medium Rare JavaScript requires jQuery. jQuery must be included before theme.js.")
-    }(), t.mrCountdown = d, t.mrCountup = z, t.mrDropdownGrid = W, t.mrFormEmail = Y, t.mrIonRangeSlider = Z, t.mrIsotope = J, t.mrMaps = Et, t.mrMapsStyle = bt, t.mrOverlayNav = At, t.mrReadingPosition = kt, t.mrSmoothScroll = Ot, t.mrSticky = jt, t.mrUtil = B, Object.defineProperty(t, "__esModule", {
+    }(), t.mrCountdown = d, t.mrCountup = z, t.mrDropdownGrid = W, t.mrIsotope = J, t.mrMaps = Et, t.mrMapsStyle = bt, t.mrOverlayNav = At, t.mrReadingPosition = kt, t.mrSmoothScroll = Ot, t.mrSticky = jt, t.mrUtil = B, Object.defineProperty(t, "__esModule", {
         value: !0
     })
 });

@@ -1,4 +1,3 @@
-const fs = require("fs");
 module.exports = {
   env: {
     WEBSITE_URL: 'https://bimbala.com',
@@ -13,13 +12,6 @@ module.exports = {
     })
     return config
   },
-  generateBuildId: async () => {
-    const rev = fs.readFileSync('.git/HEAD').toString();
-    console.log("Rev: "+rev);
-    if (rev.indexOf(':') === -1) {
-      return rev;
-    } else {
-      return fs.readFileSync('.git/' + rev.slice(5,-1)).toString();
-    }
-  },
+  // Target must be serverless
+  target: 'serverless',
 }

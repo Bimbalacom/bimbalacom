@@ -14,7 +14,7 @@ export default class Custom404 extends React.Component {
                         <div className="my-5">
                             <div className="row justify-content-center">
                                 <div className="col-5 mb-4">
-                                    <img src={"/img/illustrations/illustration-4.svg"} alt="404 Page Not Found"
+                                    <img src={"/img/illustrations/illustration-4.svg"} loading="lazy" loading="lazy" alt="404 Page Not Found"
                                          className="img-fluid" />
                                 </div>
                                 <div className="col-12">

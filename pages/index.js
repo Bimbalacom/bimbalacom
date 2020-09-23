@@ -14,7 +14,7 @@ export default function Home() {
                 <section className="bg-primary-3 text-white pb-0 o-hidden">
                     <div className="container">
                         <div className="row justify-content-between align-items-center">
-                            <div className="col-xl-5 col-lg-6 text-center text-lg-left mb-4 mb-md-5 mb-lg-0"
+                            <div className="col-xl-5 col-lg-5 text-center text-lg-left mb-3 mb-md-5 mb-lg-0"
                                 data-aos="fade-right">
                                 <h1 className="display-3">A modular software for your support upgrade.</h1>
                                 <p className="lead">Grab it now and make your business awesome. About 5M customers are
@@ -22,7 +22,7 @@ export default function Home() {
                                 <a href={"/why-us"} className="btn btn-lg btn-primary">Why us?</a>
                             </div>
                             <div className="col" data-aos="fade-left" data-aos-delay="250">
-                                <img src={"/img/desktop-app/desktop-app-2.jpg"} alt="Roadmap screenshot"
+                                <img src={"/img/demo/roadmap-demo.webp"} alt="Roadmap screenshot"
                                     className="img-fluid rounded shadow-lg border" />
                             </div>
                         </div>
@@ -40,7 +40,7 @@ export default function Home() {
                         <div className="row">
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
-                                    <img src={"/img/icons/theme/general/thunder-move.svg"} alt="Lightning icon"
+                                    <img src={"/img/icons/theme/general/thunder-move.svg"} loading="lazy" alt="Lightning icon"
                                         className="icon bg-primary-alt rounded-circle p-1" />
                                     <h5 className="mt-4">Suits Your Style</h5>
                                     <div>
@@ -50,7 +50,7 @@ export default function Home() {
                             </div>
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
-                                    <img src={"/img/icons/theme/general/bookmark.svg"} alt="Bookmark icon"
+                                    <img src={"/img/icons/theme/general/bookmark.svg"} loading="lazy" alt="Bookmark icon"
                                         className="icon bg-primary-alt rounded-circle p-1" />
                                     <h5 className="mt-4">Everything you need</h5>
                                     <div>
@@ -61,7 +61,7 @@ export default function Home() {
                             </div>
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div>
-                                    <img src={"/img/icons/theme/design/select.svg"} alt="Selection interface icon"
+                                    <img src={"/img/icons/theme/design/select.svg"} loading="lazy" alt="Selection interface icon"
                                         className="icon bg-primary-alt rounded-circle p-1" />
                                     <h5 className="mt-4">Highly Customizable</h5>
                                     <div>
