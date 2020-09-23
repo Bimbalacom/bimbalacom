@@ -1,50 +1,133 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>undefined/404</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/careers</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/company</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/contact-us</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/features</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/partners</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/pricing</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/privacy-policy</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/solutions</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/team</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/terms-of-service</loc>
-    <changefreq>hourly</changefreq>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://bimbala.com/404</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/affiliates</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/blog/monkey</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/blog</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/careers</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/case-studies</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/company</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/contact-us</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/customer-reviews</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/features</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/free-trial</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/gdpr</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/index</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/integrations</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/partners</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/pricing</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/privacy-policy</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/success-stories</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/team</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/terms-of-service</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bimbala.com/why-us</loc>
+
+
+        <lastmod>2020-09-24</lastmod>
+    </url>
 </urlset>

@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "sitemap": "node scripts/sitemap-generator.js"
   },
   "repository": {
     "type": "git",
