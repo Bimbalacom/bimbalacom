@@ -8,3 +8,6 @@ package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
+
+[[plugins]]
+package = "netlify-plugin-submit-sitemap"
