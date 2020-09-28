@@ -7,7 +7,7 @@ export default function WhyUS() {
             <section className="p-0 border-top border-bottom bg-light row no-gutters">
                 <div className="col-lg-5 col-xl-6 order-lg-2">
                     <div className="divider divider-side transform-flip-y bg-light d-none d-lg-block"/>
-                    <img className="flex-fill" src={"img/blog/large-2.jpg"} alt="blog.1.image" />
+                    <img className="flex-fill" src={"blog/mind-body-monkey.jpg"} alt="Why pick Bimbala" />
                 </div>
                 <div className="col-lg-7 col-xl-6">
                     <div className="container min-vh-lg-70 d-flex align-items-center">
