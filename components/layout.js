@@ -7,7 +7,8 @@ import React from "react";
 export default class Layout extends React.Component {
     static propTypes() {
         return {
-            children: React.PropTypes.object.isRequired
+            children: React.PropTypes.object.isRequired,
+            title: React.PropTypes.object.isRequired
         }
     }
 
@@ -20,7 +21,7 @@ export default class Layout extends React.Component {
     return <React.Fragment>
         <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>{this.props.title || 'Bimbala'}</title>
+            <title>{this.props.title + ' | Bimbala - next generation of supporting software'}</title>
             <link rel="icon" href="/favicon.ico" />
             <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" onLoad="this.onload=null;this.rel='stylesheet'" />
         </Head>

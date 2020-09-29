@@ -3,7 +3,7 @@ import React from "react";
 
 export default function GDPR() {
     return (
-        <Layout title={'GDPR - Bimbala.com'}>
+        <Layout title={'GDPR'}>
             <section className="bg-light">
                 <div className="container">
                     <div className="row justify-content-center">

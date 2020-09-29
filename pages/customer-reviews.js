@@ -5,7 +5,7 @@ import React from "react";
 
 export default function FirstPost() {
     return (
-    <Layout title={'Customer Reviews - Bimbala.com'}>
+    <Layout title={'Customer Reviews'}>
         <ComingSoon/>
     </Layout>
   )

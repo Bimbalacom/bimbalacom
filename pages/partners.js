@@ -5,7 +5,7 @@ import React from "react";
 
 export default function FirstPost() {
     return (
-        <Layout title={'Partners - Bimbala.com'}>
+        <Layout title={'Partners'}>
         <section class="bg-light">
       <div class="container">
         <div class="row section-title justify-content-center text-center">

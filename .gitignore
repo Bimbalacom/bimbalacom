@@ -12,6 +12,8 @@
 .next
 /.next/
 /out/
+/out_publish/
+/out_functions/
 
 # production
 /build

@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 
 export default function FirstPost() {
   return (
-    <Layout title={'Contact us - Bimbala.com'}>
+    <Layout title={'Contact us'}>
       <section>
         <div className="row section-title justify-content-center text-center"><div className="col-md-9 col-lg-8 col-xl-7"><h3 className="display-4">Contact us</h3><div className="lead">Who dosn't love talking to the comunity? Just pick a way ...</div></div></div>
         <div className="container">

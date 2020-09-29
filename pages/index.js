@@ -9,7 +9,7 @@ const Steps = dynamic(() => import('../components/index/steps'));
 
 export default function Home() {
     return (
-        <Layout title={'Home - Bimbala.com'}>
+        <Layout title={'Home'}>
             <div data-overlay className="o-hidden">
                 <section className="bg-primary-3 text-white pb-0 o-hidden">
                     <div className="container">
@@ -22,7 +22,7 @@ export default function Home() {
                                 <a href={"/why-us"} className="btn btn-lg btn-primary">Why us?</a>
                             </div>
                             <div className="col" data-aos="fade-left" data-aos-delay="250">
-                                <img src={"/img/demo/roadmap-demo.webp"} alt="Screenshot"
+                                <img src={"/img/demo/roadmap-demo.webp"} alt="Roadmap screenshot"
                                     className="img-fluid rounded shadow-lg border" />
                             </div>
                         </div>

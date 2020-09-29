@@ -7,7 +7,7 @@ export default class Custom404 extends React.Component {
     }
     render() {
         return (
-            <Layout title={'404 - Bimbala.com'}>
+            <Layout title={'404'}>
                 <section className="bg-primary-3 text-white p-0 o-hidden">
                     <div
                         className="container min-vh-100 d-flex flex-column justify-content-between text-center py-4 py-md-5">
