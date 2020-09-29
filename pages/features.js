@@ -24,7 +24,7 @@ export default function FirstPost() {
               </div>
             </div>
             <div className="col-md-9 col-lg-6 col-xl-5">
-              <img src="img/illustrations/illustration-2.svg" alt="Image" className="img-fluid" />
+              <img src="img/illustrations/user_flow.svg" alt="Everything you need to launch" className="img-fluid" />
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function FirstPost() {
           <div className="row align-items-center justify-content-around text-center text-lg-left">
             <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
               <div>
-                <h2 className="h1">Save tons on design and development</h2>
+                <h2 className="h1">Better desicion making</h2>
                 <p className="lead">Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
               </div>
               <div className="d-flex flex-wrap justify-content-center justify-content-lg-start">
@@ -73,7 +73,7 @@ export default function FirstPost() {
               </div>
             </div>
             <div className="col-md-9 col-lg-6 col-xl-5 order-lg-1">
-              <img src="img/illustrations/illustration-3.svg" alt="Image" className="img-fluid" />
+              <img src="img/illustrations/informed_decision.svg" alt="Informed decision" className="img-fluid" />
             </div>
           </div>
         </div>
@@ -89,18 +89,33 @@ export default function FirstPost() {
                     <div className="mx-3">Announce a great new feature</div>
                   </div>
                 </div>
-                <h3 className="h1">Everything you’ll need to launch your site</h3>
-                <p className="lead">Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                <h3 className="h1">Timeline</h3>
+                <p className="lead">Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                 <a href="#" className="lead">Explore More</a>
               </div>
             </div>
             <div className="col-md-9 col-lg-6 col-xl-5">
-              <img src="img/illustrations/illustration-2.svg" alt="Image" className="img-fluid" />
+              <img src="img/illustrations/timeline.svg" alt="Public timeline" className="img-fluid" />
             </div>
           </div>
         </div>
       </section>
-      
+      <section className="o-hidden pt-0">
+        <div className="container">
+          <div className="row align-items-center justify-content-around text-center text-lg-left">
+            <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
+              <div>
+                <h2 className="h1">Roadmap</h2>
+                <p className="lead">Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+            </div>
+            <div className="col-md-9 col-lg-6 col-xl-5 order-lg-1">
+              <img src="img/illustrations/roadmap.svg" alt=" Public roadmap" className="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+     
       <section className="bg-primary-3 text-white jarallax pb-0" data-jarallax data-speed="0.2">
         <img src="img/heros/hero-1.jpg" alt="Image" className="jarallax-img opacity-50" />
         <div className="container pb-5">
