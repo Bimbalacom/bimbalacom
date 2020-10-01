@@ -3162,6 +3162,9 @@ input[type="button"].btn-block {
     text-decoration: none; }
 
 .navbar .navbar-brand > h3{
+  vertical-align: middle;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 500;
   color: #fff;
 }
 
