@@ -1,17 +1,29 @@
-name: Lighthouse CI
-on: deployment_status
+
+name: Performance Audit
+
+on: [pull_request]
+
 jobs:
-  lhci:
-    if: github.event.deployment_status.state == 'success'
-    name: Lighthouse CI
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - name: run Lighthouse CI
+      - name: Install
+        run: |
+          npm ci
+      - name: Build
+        run: |
+          npm run build
+      - name: Waiting for 200 from the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1.2
+        id: waitFor200
+        with:
+          site_name: "Bimbala.com"
+      - name: Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
-          lhci autorun --collect.url=${DEPLOY_URL} --upload.target=temporary-public-storage || echo "LHCI failed!"
+          lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.waitFor200.outputs.url }}
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
-          DEPLOY_URL: ${{ github.event.deployment_status.target_url }}
