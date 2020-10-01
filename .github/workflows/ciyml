@@ -1,11 +1,17 @@
-name: CI
-on: [push]
+name: Lighthouse CI
+on: deployment_status
 jobs:
-  lighthouseci:
+  lhci:
+    if: github.event.deployment_status.state == 'success'
+    name: Lighthouse CI
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
-      - run: npm install && npm install -g @lhci/cli@0.4.x
-      - run: npm run build
-      - run: lhci autorun
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.4.x
+          lhci autorun --collect.url=${DEPLOY_URL} --upload.target=temporary-public-storage || echo "LHCI failed!"
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          DEPLOY_URL: ${{ github.event.deployment_status.target_url }}
