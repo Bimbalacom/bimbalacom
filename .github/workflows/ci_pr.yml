@@ -1,10 +1,7 @@
 
-name: Performance Audit
+name: Performance Audit on branch ${{ github.head_ref }}
 
-on:
-  push:
-    branches:
-      - master
+on: pull_request
 
 jobs:
   build:
@@ -23,9 +20,14 @@ jobs:
       - name: Build
         run: |
           npm run build
+      - name: Waiting for 200 from the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1.2
+        id: waitFor200
+        with:
+          site_name: "bimbala"
       - name: Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
-          lhci autorun --upload.target=temporary-public-storage --collect.url=https://bimbala.com
+          lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.waitFor200.outputs.url }}
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
