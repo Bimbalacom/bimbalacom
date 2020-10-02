@@ -14,7 +14,7 @@ export default class Layout extends React.Component {
     WebFontConfig = {
         timeout: 3000,
         google: {
-            families: ['Comfortaa:500','Nunito:400,400i,600,700']
+            families: ['Comfortaa:700','Nunito:400,400i,600,700']
         }
     };
 
