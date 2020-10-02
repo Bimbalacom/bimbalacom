@@ -5,7 +5,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import Share from "../../components/share";
 import { DiscussionEmbed } from 'disqus-react';
-import { BlogJsonLd, BreadcrumbJsonLd } from "next-seo";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "next-seo";
 
 const glob = require('glob')
 
@@ -14,15 +14,17 @@ export default function BlogTemplate(props) {
   //TODO: extract this html as a component before creating the blog package
   return (
     <Layout title={props.siteTitle}>
-      <BlogJsonLd
+      <ArticleJsonLd
           url={`${process.env.WEBSITE_URL}/blog/${props.slug}`}
-          title={props.markdownBody.slice(0, props.markdownBody.indexOf('.')+1)}
+          title={props.frontmatter.title}
           images={[
             (!props.frontmatter.image.startsWith('http') ? process.env.WEBSITE_URL+'/img' : '') + props.frontmatter.image
           ]}
           datePublished={props.frontmatter.date}
           authorName={props.frontmatter.author}
-          description="This is the techy blog of Bimbala. Geeky posts about support, software company needs and SaaS things should be expected here."
+          publisherName={props.frontmatter.author}
+          publisherLogo={(!props.frontmatter.authorImage.startsWith('http') ? process.env.WEBSITE_URL+'/img' : '') +props.frontmatter.authorImage}
+          description={props.markdownBody.slice(0, props.markdownBody.indexOf('.')+1)}
       />
       <section className="p-0 border-top border-bottom bg-light row no-gutters">
         <div className="col-lg-5 col-xl-6 order-lg-2">
