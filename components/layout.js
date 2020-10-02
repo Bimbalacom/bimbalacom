@@ -2,6 +2,7 @@ import Head from "next/head"
 import Navbar from "../components/navbar"
 import Footer from '../components/footer'
 import React from "react";
+import {LogoJsonLd} from "next-seo";
 
 export default class Layout extends React.Component {
     static propTypes() {
@@ -17,14 +18,6 @@ export default class Layout extends React.Component {
             families: ['Comfortaa:700','Nunito:400,400i,600,700']
         }
     };
-
-    structuredData = {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "http://www.bimbala.com",
-        "logo": "http://www.bimbala.com/img/bimbalaLogo.png"
-    }
-
 
     componentDidMount(){
         import('webfontloader').then(WebFont => {
@@ -46,8 +39,11 @@ export default class Layout extends React.Component {
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
             <meta name="msapplication-TileColor" content="#00aba9" />
             <meta name="theme-color" content="#daffed" />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: this.structuredData }} />
         </Head>
+        <LogoJsonLd
+            url="http://www.bimbala.com"
+            logo="http://www.bimbala.com/img/bimbalaLogo.png"
+        />
         <Navbar/>
         {/* Required vendor scripts (Do not remove) */}
         <script type="text/javascript" src="/js/jquery.min.js" defer/>

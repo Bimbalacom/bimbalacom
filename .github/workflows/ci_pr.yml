@@ -1,5 +1,5 @@
 
-name: Performance Audit on branch ${{ github.head_ref }}
+name: Performance Audit on pull request
 
 on: [pull_request]
 
