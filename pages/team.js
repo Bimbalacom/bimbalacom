@@ -43,22 +43,22 @@ export default function FirstPost() {
                 <div className="o-hidden">
                     <div className="highlight-selected" data-flickity='{ "imagesLoaded": true, "wrapAround":true }'>
                         <div className="carousel-cell text-center col-9 col-md-7 col-lg-5">
-                            <img className="img-fluid rounded" src={"img/blog/thumb-3.jpg"} alt="blog.3.image"/>
+                            <img className="img-fluid rounded" src={"img/team/thumb-3.jpg"} alt="blog.3.image"/>
                         </div>
                         <div className="carousel-cell text-center col-9 col-md-7 col-lg-5">
-                            <img className="img-fluid rounded" src={"img/blog/thumb-4.jpg"} alt="blog.4.image"/>
+                            <img className="img-fluid rounded" src={"img/team/thumb-4.jpg"} alt="blog.4.image"/>
                         </div>
                         <div className="carousel-cell text-center col-9 col-md-7 col-lg-5">
-                            <img className="img-fluid rounded" src={"img/blog/thumb-5.jpg"} alt="blog.5.image"/>
+                            <img className="img-fluid rounded" src={"img/team/thumb-5.jpg"} alt="blog.5.image"/>
                         </div>
                         <div className="carousel-cell text-center col-9 col-md-7 col-lg-5">
-                            <img className="img-fluid rounded" src={"img/blog/thumb-8.jpg"} alt="blog.6.image"/>
+                            <img className="img-fluid rounded" src={"img/team/thumb-8.jpg"} alt="blog.6.image"/>
                         </div>
                         <div className="carousel-cell text-center col-9 col-md-7 col-lg-5">
-                            <img className="img-fluid rounded" src={"img/blog/thumb-6.jpg"} alt="blog.7.image"/>
+                            <img className="img-fluid rounded" src={"img/team/thumb-6.jpg"} alt="blog.7.image"/>
                         </div>
                         <div className="carousel-cell text-center col-9 col-md-7 col-lg-5">
-                            <img className="img-fluid rounded" src={"img/blog/thumb-7.jpg"} alt="blog.8.image"/>
+                            <img className="img-fluid rounded" src={"img/team/thumb-7.jpg"} alt="blog.8.image"/>
                         </div>
                     </div>
                 </div>
