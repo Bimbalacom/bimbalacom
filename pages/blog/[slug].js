@@ -5,6 +5,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import Share from "../../components/share";
 import { DiscussionEmbed } from 'disqus-react';
+import { BlogJsonLd, BreadcrumbJsonLd } from "next-seo";
 
 const glob = require('glob')
 
@@ -13,6 +14,16 @@ export default function BlogTemplate(props) {
   //TODO: extract this html as a component before creating the blog package
   return (
     <Layout title={props.siteTitle}>
+      <BlogJsonLd
+          url={`${process.env.WEBSITE_URL}/blog/${props.slug}`}
+          title={props.markdownBody.slice(0, props.markdownBody.indexOf('.')+1)}
+          images={[
+            (!props.frontmatter.image.startsWith('http') ? process.env.WEBSITE_URL+'/img' : '') + props.frontmatter.image
+          ]}
+          datePublished={props.frontmatter.date}
+          authorName={props.frontmatter.author}
+          description="This is the techy blog of Bimbala. Geeky posts about support, software company needs and SaaS things should be expected here."
+      />
       <section className="p-0 border-top border-bottom bg-light row no-gutters">
         <div className="col-lg-5 col-xl-6 order-lg-2">
           <div className="divider divider-side transform-flip-y bg-light d-none d-lg-block" />
@@ -31,7 +42,7 @@ export default function BlogTemplate(props) {
                     {props.frontmatter.title}
                   </h1>
                   <a href="#" className="d-flex align-items-center">
-                    <img src={props.frontmatter.authorImage} alt={props.frontmatter.author + ' profile image'}
+                    <img src={(!props.frontmatter.authorImage.startsWith('http') ? process.env.WEBSITE_URL+'/img' : '')+props.frontmatter.authorImage} alt={props.frontmatter.author + ' profile image'}
                       className="avatar avatar-sm" />
                     <div className="h6 mb-0 ml-3">{props.frontmatter.author}</div>
                   </a>
@@ -57,6 +68,25 @@ export default function BlogTemplate(props) {
                     </li>
                     <li className="breadcrumb-item">{props.frontmatter.title}</li>
                   </ol>
+                  <BreadcrumbJsonLd
+                      itemListElements={[
+                        {
+                          position: 1,
+                          name: 'Blog',
+                          item: `${process.env.WEBSITE_URL}/blog`,
+                        },
+                        {
+                          position: 2,
+                          name: props.frontmatter.category,
+                          item: `${process.env.WEBSITE_URL}/blog`,
+                        },
+                        {
+                          position: 3,
+                          name: props.frontmatter.title,
+                          item: `${process.env.WEBSITE_URL}/blog/${props.slug}`,
+                        },
+                      ]}
+                  />
                 </nav>
               </div>
               <Share frontmatter={props.frontmatter}/>
@@ -64,9 +94,9 @@ export default function BlogTemplate(props) {
     shortname='bimbala'
     config={
         {
-            url: '{process.env.WEBSITE_URL}${router.asPath}`',
-            identifier: 'this.props.article.id',
-            title: '{frontmatter.title}',
+            url: `${process.env.WEBSITE_URL}/blog/${props.slug}`,
+            identifier: props.slug,
+            title: props.frontmatter.title,
             language: 'en_us' 
         }
     }
@@ -85,6 +115,7 @@ export async function getStaticProps({ ...ctx }) {
   const data = matter(content.default)
   return {
     props: {
+      slug: slug,
       siteTitle: data.data.title + ' - Bimbala blog',
       frontmatter: data.data,
       markdownBody: data.content,
