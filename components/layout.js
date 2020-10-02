@@ -18,6 +18,14 @@ export default class Layout extends React.Component {
         }
     };
 
+    structuredData = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "http://www.bimbala.com",
+        "logo": "http://www.bimbala.com/img/logos/bimbalaLogo.png"
+    }
+
+
     componentDidMount(){
         import('webfontloader').then(WebFont => {
             WebFont.load(this.WebFontConfig);
@@ -71,6 +79,7 @@ export default class Layout extends React.Component {
         <script type="text/javascript" src="/js/typed.min.js" defer/>
         {/* Required theme scripts (Do not remove) */}
         <script type="text/javascript" src="/js/theme.js" defer/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: this.structuredData }} />
         {this.props.children}
         <Footer/>
         <a href="#top" className="btn btn-primary rounded-circle btn-back-to-top aos-init aos-animate" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
