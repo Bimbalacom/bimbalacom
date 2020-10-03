@@ -2,6 +2,7 @@ import Head from "next/head"
 import Navbar from "../components/navbar"
 import Footer from '../components/footer'
 import React from "react";
+import {LogoJsonLd} from "next-seo";
 
 export default class Layout extends React.Component {
     static propTypes() {
@@ -40,6 +41,10 @@ export default class Layout extends React.Component {
             <meta name="theme-color" content="#daffed" />
             <meta name="facebook-domain-verification" content="o3t83ogcn4p84d55mjkdadv0pjcr12" />
         </Head>
+        <LogoJsonLd
+            url="http://www.bimbala.com"
+            logo="http://www.bimbala.com/img/bimbalaLogo.png"
+        />
         <Navbar/>
         {/* Required vendor scripts (Do not remove) */}
         <script type="text/javascript" src="/js/jquery.min.js" defer/>
