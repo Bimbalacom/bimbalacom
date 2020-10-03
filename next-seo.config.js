@@ -9,9 +9,9 @@ export default {
         keywords: 'support, software, next generation, support software',
         images: [
             {
-                url: 'https://bimbala.com/img/bimbalaLogo_small.png',
-                width: 800,
-                height: 754,
+                url: 'https://bimbala.com/img/bimbalaLogo_og.png',
+                width: 1200,
+                height: 630,
                 alt: 'Bimbala logo',
             }
         ]

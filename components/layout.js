@@ -38,6 +38,7 @@ export default class Layout extends React.Component {
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
             <meta name="msapplication-TileColor" content="#00aba9" />
             <meta name="theme-color" content="#daffed" />
+            <meta name="facebook-domain-verification" content="o3t83ogcn4p84d55mjkdadv0pjcr12" />
         </Head>
         <Navbar/>
         {/* Required vendor scripts (Do not remove) */}
