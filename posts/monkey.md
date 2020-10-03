@@ -1,7 +1,7 @@
 ---
 author: Gabriel kanev
 authorImage: /avatars/gkanev.jpg
-date: '24.08.2020'
+date: '2020-08-24'
 title: 'Mind, body, and monkey react'
 image: /blog/mind-body-monkey.jpg
 imageAlt: Modern office
