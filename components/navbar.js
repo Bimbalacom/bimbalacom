@@ -41,8 +41,8 @@ export default function Navbar() {
                                     <div className="row dropdown-menu">
                                         <div className="col-auto" data-dropdown-content>
                                             <div className="dropdown-grid-menu">
-                                                <a href={"/features"} className="dropdown-item fade-page">Features</a>
-                                                <a href={"/#"} className="dropdown-item fade-page">Roadmap</a>
+                                                <a href={"/features/"} className="dropdown-item fade-page">Features</a>
+                                                <a href={"/features/knowledge-board"} className="dropdown-item fade-page">Knowledge Board</a>
                                             </div>
                                         </div>
                                     </div>
