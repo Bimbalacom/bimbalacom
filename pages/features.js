@@ -12,14 +12,14 @@ export default function FirstPost() {
           <div className="row align-items-center justify-content-around text-center text-lg-left">
             <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
               <div>
-                <div className="alert bg-secondary rounded-lg d-inline-block mb-4">
+                {/* <div className="alert bg-secondary rounded-lg d-inline-block mb-4">
                   <div className="d-flex align-items-center">
                     <div className="badge badge-pill badge-success">New</div>
                     <div className="mx-3">Announce a great new feature</div>
                   </div>
-                </div>
-                <h3 className="h1">Everything you’ll need to launch your site</h3>
-                <p className="lead">Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                </div> */}
+                <h3 className="h1">Everything you’ll need to launch your support community</h3>
+                <p className="lead">Helping your clients grow and know how to use your software is a key thing for a successful company. We can help with that!</p>
                 <a href="#" className="lead">Explore More</a>
               </div>
             </div>
@@ -34,8 +34,8 @@ export default function FirstPost() {
           <div className="row align-items-center justify-content-around text-center text-lg-left">
             <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
               <div>
-                <h2 className="h1">Better desicion making</h2>
-                <p className="lead">Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <h2 className="h1">Better decision making</h2>
+                <p className="lead">Asking your community is on of the best ways to know if you are going in the right path.</p>
               </div>
               <div className="d-flex flex-wrap justify-content-center justify-content-lg-start">
                 <div className="mb-3 mr-4 ml-lg-0 mr-lg-4" data-aos="fade-left" data-aos-delay="100">
@@ -43,7 +43,7 @@ export default function FirstPost() {
                     <div className="rounded-circle bg-success-alt">
                       <img src="img/icons/interface/icon-check.svg" alt="Binoculars icon" className="m-2 icon icon-xs bg-success" />
                     </div>
-                    <h6 className="mb-0 ml-3">Fully Responsive</h6>
+                    <h6 className="mb-0 ml-3">Easy to maintain</h6>
                   </div>
                 </div>
                 <div className="mb-3 mr-4 ml-lg-0 mr-lg-4" data-aos="fade-left" data-aos-delay="200">
@@ -83,12 +83,12 @@ export default function FirstPost() {
           <div className="row align-items-center justify-content-around text-center text-lg-left">
             <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
               <div>
-                <div className="alert bg-secondary rounded-lg d-inline-block mb-4">
+                {/* <div className="alert bg-secondary rounded-lg d-inline-block mb-4">
                   <div className="d-flex align-items-center">
                     <div className="badge badge-pill badge-success">New</div>
                     <div className="mx-3">Announce a great new feature</div>
                   </div>
-                </div>
+                </div> */}
                 <h3 className="h1">Timeline</h3>
                 <p className="lead">Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                 <a href="#" className="lead">Explore More</a>
