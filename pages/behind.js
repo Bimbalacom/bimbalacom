@@ -4,56 +4,127 @@ import Layout from "../components/layout";
 
 export default function FirstPost() {
   return (
-    <Layout title={'Contact us'}>
+    <Layout title={'Behind the scene'}>
       <section>
         <div className="row section-title justify-content-center text-center"><div className="col-md-9 col-lg-8 col-xl-7"><h3 className="display-4">Behind the Scenes</h3><div className="lead">Who dosn't love talking to the comunity? Just pick a way ...</div></div></div>
         <div className="container">
-          <div className="row justify-content-center text-center">
-            <div className="col-md-auto" data-aos={"fade-up"}>
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0" data-aos-delay="0">
-                <h5>Like us</h5>
-                <a href="https://fb.com/bimbalacom">on Facebook.</a>
+          <section className="cd-horizontal-timeline">
+            <div className="timeline">
+              <div className="events-wrapper">
+                <div className="events">
+                  <ol>
+                    <li><a href="#0" data-date="16/01/2014" className="selected">16 Jan</a></li>
+                    <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+                    <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+                    <li><a href="#0" data-date="20/05/2014">20 May</a></li>
+                    <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+                    <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+                    <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+                    <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+                    <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+                    <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+                    <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+                  </ol>
+                  <span className="filling-line" aria-hidden="true"></span>
+                </div>
               </div>
+              <ul className="cd-timeline-navigation">
+                <li><a href="#0" className="prev inactive">Prev</a></li>
+                <li><a href="#0" className="next">Next</a></li>
+              </ul>
             </div>
-            <div className="col-md-auto" data-aos="fade-up" data-aos-delay="100">
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Tweet us</h5>
-                <a href="https://twitter.com/bimbalacom"> on Twitter</a>
-              </div>
+            <div className="events-content">
+              <ol>
+                <li className="selected" data-date="16/01/2014">
+                  <h2>Horizontal Timeline</h2>
+                  <em>January 16th, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
 
+                <li data-date="28/02/2014">
+                  <h2>Event title here</h2>
+                  <em>February 28th, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="20/04/2014">
+                  <h2>Event title here</h2>
+                  <em>March 20th, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="20/05/2014">
+                  <h2>Event title here</h2>
+                  <em>May 20th, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="09/07/2014">
+                  <h2>Event title here</h2>
+                  <em>July 9th, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="30/08/2014">
+                  <h2>Event title here</h2>
+                  <em>August 30th, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="15/09/2014">
+                  <h2>Event title here</h2>
+                  <em>September 15th, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="01/11/2014">
+                  <h2>Event title here</h2>
+                  <em>November 1st, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="10/12/2014">
+                  <h2>Event title here</h2>
+                  <em>December 10th, 2014</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="19/01/2015">
+                  <h2>Event title here</h2>
+                  <em>January 19th, 2015</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+
+                <li data-date="03/03/2015">
+                  <h2>Event title here</h2>
+                  <em>March 3rd, 2015</em>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                </li>
+              </ol>
             </div>
-            <div className="col-md-auto" data-aos="fade-up" data-aos-delay="200">
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Chat with us</h5>
-              Yep, we are down on the right.<br />Someone will write you back asap.<br />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <div className="row justify-content-center text-center">
-            <div className="col-md-auto" data-aos="fade-up">
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Email us </h5>
-                <a href="mailto:contact@bimbala.com" className="lead">contact@bimbala.com</a><br />
-              (You will receive an answer in <br />24 working hours max.)
-            </div>
-            </div>
-            <div className="col-md-auto" data-aos="fade-up" data-aos-delay="100">
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Discord /Slack</h5>
-                One more thing to take care of. <br />
-              </div>
-            </div>
-            <div className="col-md-auto" data-aos="fade-up" data-aos-delay="200">
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Support tickets</h5>
-              Last but not least.
-            </div>
-            </div>
-          </div>
+          </section>
         </div>
       </section>
     </Layout>
