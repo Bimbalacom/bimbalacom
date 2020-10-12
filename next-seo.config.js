@@ -17,7 +17,7 @@ export default {
         ]
     },
     twitter: {
-        handle: '@handle',
+        handle: '@bimbalacom',
         site: '@bimbalacom',
         cardType: 'summary_large_image',
         title: 'Bimbala - next generation of supporting software.',
