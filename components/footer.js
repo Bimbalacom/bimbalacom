@@ -22,6 +22,9 @@ export default function Footer() {
               <li className="nav-item mr-3 mr-md-0">
                 <a href={"/why-us"} className="nav-link fade-page px-0 py-2">Why us?</a>
               </li>
+              <li className="nav-item mr-3 mr-md-0">
+                <a href={"/brand"} className="nav-link fade-page px-0 py-2">Brand</a>
+              </li>
             </ul>
           </div>
           <div className="col-xl-auto mr-xl-5 col-md-3">

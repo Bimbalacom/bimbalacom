@@ -67,6 +67,7 @@ export default function Navbar() {
                                     <div className="row dropdown-menu">
                                         <div className="col-auto" data-dropdown-content>
                                             <div className="dropdown-grid-menu">
+                                                <a href={"/behind"} className="dropdown-item fade-page">Behind the Scenes</a>
                                                 <a href={"/contact-us"} className="dropdown-item fade-page">Contact Us</a>
                                             </div>
                                         </div>
