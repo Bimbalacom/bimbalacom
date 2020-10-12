@@ -65,7 +65,7 @@ export default class Layout extends React.Component {
                 cookieName="myAwesomeCookie"
                 style={{ background: "#2B373B" }}
                 buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-                expires={150}
+                expires={365}
             >
                 This website uses cookies to enhance the user experience.{" "}
             </CookieConsent>
