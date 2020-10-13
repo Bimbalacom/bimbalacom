@@ -3,33 +3,56 @@ import Navbar from "../components/navbar"
 import Footer from '../components/footer'
 import React from "react";
 import CookieConsent from "react-cookie-consent";
+import {LogoJsonLd} from "next-seo";
 
 
 export default class Layout extends React.Component {
     static propTypes() {
         return {
-            children: React.PropTypes.object.isRequired
+            children: React.PropTypes.object.isRequired,
+            title: React.PropTypes.object.isRequired
         }
     }
 
+    WebFontConfig = {
+        timeout: 3000,
+        google: {
+            families: ['Comfortaa:700','Nunito:400,400i,600,700']
+        }
+    };
 
-    componentDidMount() {
+    componentDidMount(){
+        import('webfontloader').then(WebFont => {
+            WebFont.load(this.WebFontConfig);
+        });
+
         document.querySelector('body').classList.add('loaded');
     }
 
     render() {
-        return <React.Fragment>
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>{this.props.title || 'Bimbala'}</title>
-                <link rel="icon" href="/favicon.ico" />
-                <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" onLoad="this.onload=null;this.rel='stylesheet'" />
-            </Head>
-            <Navbar />
-            {/* Required vendor scripts (Do not remove) */}
-            <script type="text/javascript" src="/js/jquery.min.js" defer />
-            <script type="text/javascript" src="/js/popper.min.js" defer />
-            <script type="text/javascript" src="/js/bootstrap.js" defer />
+    return <React.Fragment>
+        <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>{this.props.title + ' | Bimbala - next generation of supporting software'}</title>
+            <link rel="icon" href="/favicon.ico" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+            <link rel="manifest" href="/site.webmanifest" />
+            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+            <meta name="msapplication-TileColor" content="#00aba9" />
+            <meta name="theme-color" content="#daffed" />
+            <meta name="facebook-domain-verification" content="o3t83ogcn4p84d55mjkdadv0pjcr12" />
+        </Head>
+        <LogoJsonLd
+            url="http://www.bimbala.com"
+            logo="http://www.bimbala.com/img/bimbalaLogo.png"
+        />
+        <Navbar/>
+        {/* Required vendor scripts (Do not remove) */}
+        <script type="text/javascript" src="/js/jquery.min.js" defer/>
+        <script type="text/javascript" src="/js/popper.min.js" defer/>
+        <script type="text/javascript" src="/js/bootstrap.js" defer/>
 
             {/* Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) */}
 

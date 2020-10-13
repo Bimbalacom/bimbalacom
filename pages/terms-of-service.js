@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Layout from "../components/layout";
 export default function FirstPost() {
 return (
-    <Layout title={'Terms of Service - Bimbala.com'}>
+    <Layout title={'Terms of Service'}>
    <section className="bg-light">
       <div className="container">
          <div className="row justify-content-center">

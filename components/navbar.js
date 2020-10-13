@@ -6,8 +6,8 @@ export default function Navbar() {
             <nav className="navbar navbar-expand-lg navbar-dark" data-sticky="top">
                 <div className="container">
                     <a className="navbar-brand navbar-brand-dynamic-color fade-page" href="/">
-                        <img alt="Bimbala logo" src={"/img/logos/logov3.svg"} height={"60vh"} className={"pr-4 d-inline"} />
-                        <h3 className={"d-inline"}>Bimbala</h3>
+                        <img alt="Bimbala logo" src={"/img/logos/bimbalaLogo_head.svg"} height={"70vh"} className={"pr-3 d-inline"} />
+                        <h2 className={"d-inline mb-0 brand"}>Bimbala</h2>
                     </a>
                     <div className="d-flex align-items-center order-lg-3">
                         <a href="#"

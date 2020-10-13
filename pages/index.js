@@ -9,12 +9,12 @@ const Steps = dynamic(() => import('../components/index/steps'));
 
 export default function Home() {
     return (
-        <Layout title={'Home - Bimbala.com'}>
+        <Layout title={'Home'}>
             <div data-overlay className="o-hidden">
                 <section className="bg-primary-3 text-white pb-0 o-hidden">
                     <div className="container">
                         <div className="row justify-content-between align-items-center">
-                            <div className="col-xl-5 col-lg-6 text-center text-lg-left mb-4 mb-md-5 mb-lg-0"
+                            <div className="col-xl-5 col-lg-5 text-center text-lg-left mb-3 mb-md-5 mb-lg-0"
                                 data-aos="fade-right">
                                 <h1 className="display-3">A modular software for your support upgrade.</h1>
                                 <p className="lead">Grab it now and make your business awesome. About 5M customers are
@@ -22,7 +22,7 @@ export default function Home() {
                                 <a href={"/why-us"} className="btn btn-lg btn-primary">Why us?</a>
                             </div>
                             <div className="col" data-aos="fade-left" data-aos-delay="250">
-                                <img src={"/img/desktop-app/desktop-app-2.jpg"} alt="Screenshot"
+                                <img src={"/img/demo/roadmap-demo.webp"} alt="Roadmap screenshot"
                                     className="img-fluid rounded shadow-lg border" />
                             </div>
                         </div>

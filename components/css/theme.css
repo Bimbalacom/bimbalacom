@@ -3161,11 +3161,14 @@ input[type="button"].btn-block {
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
-.navbar .navbar-brand > h3{
+.navbar .navbar-brand > .brand{
+  vertical-align: middle;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
   color: #fff;
 }
 
-.navbar.scrolled .navbar-brand > h3{
+.navbar.scrolled .navbar-brand > .brand{
   color: #000;
 }
 .navbar-nav {

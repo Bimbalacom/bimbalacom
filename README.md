@@ -37,7 +37,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Bimbalacom/Website">
-    <img src="public/shark_logo_big.png" alt="Bimbala mascot/logo" width="300" height="250">
+    <img src="public/img/bimbalaLogo.png" alt="Bimbala mascot/logo" width="800">
   </a>
 
   <h3 align="center">Bimbala website</h3>
@@ -167,4 +167,4 @@ Our Twitter - [@bimbalacom](https://twitter.com/bimbalacom)
 [license-url]: https://github.com/Bimbalacom/Website/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/
-[product-screenshot]: public/screenshot.png
+[product-screenshot]: .github/img/demo.png

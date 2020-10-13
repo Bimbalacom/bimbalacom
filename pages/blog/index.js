@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function BlogIndex(props) {
     return (
-        <Layout title={'Blog - Bimbala.com'}>
+        <Layout title={'Blog'}>
             <section className={"bg-primary-3"}>
                 <div className="container">
                     <div className="row">

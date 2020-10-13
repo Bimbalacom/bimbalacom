@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Case_studies() {
     return (
-        <Layout title={'Case Studies - Bimbala.com'}>
+        <Layout title={'Case Studies'}>
          <ComingSoon/>
     </Layout>
   )

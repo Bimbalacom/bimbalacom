@@ -5,7 +5,7 @@ import RequestDemoForm from "../components/forms/requestDemoForm"
 
 export default function FirstPost() {
     return (
-        <Layout title={'Free trial - Bimbala.com'}>
+        <Layout title={'Free trial'}>
            <div className="bg-gradient o-hidden position-relative" data-overlay>
       <section className="pb-0">
         <div className="container">
