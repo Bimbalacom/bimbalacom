@@ -8,7 +8,7 @@ export default function Footer() {
             <h5>About us</h5>
             <ul className="nav flex-row flex-md-column">
               <li className="nav-item mr-3 mr-md-0">
-                <a href="#" className="nav-link fade-page px-0 py-2">Demo</a>
+                <a href={"https://demo.bimbala.com/"} className="nav-link fade-page px-0 py-2">Demo</a>
               </li>
               {/* <li className="nav-item mr-3 mr-md-0">
                 <a href={"/pricing"} className="nav-link fade-page px-0 py-2">Pricing</a>
