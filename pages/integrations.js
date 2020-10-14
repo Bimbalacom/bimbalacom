@@ -27,7 +27,7 @@ export default function Integrations() {
         </section>
       </div>
     </section>
-      <section>
+      <section class="no-gutters o-hidden">
         <div className="row section-title justify-content-center text-center">
           <div className="col-md-9 col-lg-8 col-xl-7"><h3 className="display-4">Integrations</h3><div className="lead">We love integrationg other people's projects and that is why we are doing it every day.</div></div></div>
         <div className="container">
@@ -54,14 +54,22 @@ export default function Integrations() {
         </div>
       </section>
       <section class="bg-primary-3 text-white">
-      <div class="container">
-        <div class="row text-center">
-        <h3 className="display-4">Don't see your integration?</h3>
-        <div className="lead">Please take a moment and suggest what you think we should integrate. </div>
+        <div class="container">
+          <div class="row text-center">
+          <h3 className="display-4">Don't see your integration?</h3>
+          <div className="lead">Please take a moment and suggest what you think we should integrate. </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <div className="container">Integrate a google form maybe</div>
+        <div className="container-fluid min-vh-100">
+          <iframe className={"w-100"}
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSeP2JPRbG8QM8b-Q5S7Ovd_cQi23SzkbL37j0WuEIjkPJHaJQ/viewform?embedded=true"
+                  frameBorder="0" style={{border: 0, height: '120vh'}} allowFullScreen>Loading...
+          </iframe>
+        </div>
+      </section>
+      <section className="bg-primary-3 text-white p-0">
+
+      </section>
     </Layout>
   )
 }
