@@ -2,6 +2,7 @@ import Head from "next/head"
 import Navbar from "../components/navbar"
 import Footer from '../components/footer'
 import React from "react";
+import CookieConsent from "react-cookie-consent";
 import {LogoJsonLd} from "next-seo";
 
 export default class Layout extends React.Component {
@@ -79,6 +80,16 @@ export default class Layout extends React.Component {
         <script type="text/javascript" src="/js/theme.js" defer/>
         {this.props.children}
         <Footer/>
+        <CookieConsent
+                location="bottom"
+                buttonText="Sure!"
+                cookieName="myAwesomeCookie"
+                style={{ background: "#2B373B" }}
+                buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+                expires={365}
+            >
+                This website uses cookies to enhance the user experience.{" "}
+            </CookieConsent>
         <a href="#top" className="btn btn-primary rounded-circle btn-back-to-top aos-init aos-animate" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
             <img src="/img/icons/interface/icon-arrow-up.svg" alt="Icon" className="icon"  />
         </a>
