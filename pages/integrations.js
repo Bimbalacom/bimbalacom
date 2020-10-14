@@ -60,15 +60,14 @@ export default function Integrations() {
           <div className="lead">Please take a moment and suggest what you think we should integrate. </div>
           </div>
         </div>
+      </section>
+      <section className="text-white p-0">
         <div className="container-fluid min-vh-100">
           <iframe className={"w-100"}
                   src="https://docs.google.com/forms/d/e/1FAIpQLSeP2JPRbG8QM8b-Q5S7Ovd_cQi23SzkbL37j0WuEIjkPJHaJQ/viewform?embedded=true"
                   frameBorder="0" style={{border: 0, height: '120vh'}} allowFullScreen>Loading...
           </iframe>
         </div>
-      </section>
-      <section className="bg-primary-3 text-white p-0">
-
       </section>
     </Layout>
   )
