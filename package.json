@@ -21,7 +21,7 @@
     "netlify-plugin-cache-nextjs": "^1.5.2",
     "next": "^9.5.5",
     "next-on-netlify": "^2.5.1",
-    "next-seo": "^4.11.0",
+    "next-seo": "^4.13.0",
     "nextjs-sitemap-generator": "^1.1.1",
     "react": "16.13.1",
     "react-cookie-consent": "^5.2.0",
