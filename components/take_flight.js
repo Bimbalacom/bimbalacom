@@ -6,7 +6,7 @@ export default function TakeFlight() {
         <div className="container">
             <div className="row section-title justify-content-center text-center">
                 <div className="col-md-9 col-lg-8 col-xl-7">
-                    <h3 className="display-4">Why are we diffirent?</h3>
+                    <h3 className="display-4">How are we different?</h3>
                 </div>
             </div>
             <div className="row justify-content-center">
