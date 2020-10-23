@@ -61,7 +61,7 @@ export default function FirstPost() {
               </div>
             </div>
             <div className="col-md-9 col-lg-6 col-xl-5 order-lg-1">
-              <img src={"../img/illustrations/detailed_information.svg"} alt="Work Time" className="img-fluid" />
+              <img src={"../img/illustrations/detailed_information.svg"} alt="Show people you care" className="img-fluid" />
             </div>
           </div>
         </div>
