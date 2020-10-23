@@ -42,7 +42,7 @@ export default function FirstPost() {
             <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
               <div>
                 <h3 className="h1">Let's vote it out</h3>
-                <p className="lead">Not everything can be explained by only text. We support uploading images/files/etc.</p>
+                <p className="lead">You can see it live if your answers are helping people out or need to be reworked. Rome wasn't build</p>
               </div>
             </div>
             <div className="col-md-9 col-lg-6 col-xl-5">
@@ -56,8 +56,8 @@ export default function FirstPost() {
           <div className="row align-items-center justify-content-around text-center text-lg-left">
             <div className="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
               <div>
-                <h2 className="h1">Tidy</h2>
-                <p className="lead">All necessary in one place. Keep the important things for your users in a single page.</p>
+                <h2 className="h1">Show people you care</h2>
+                <p className="lead">Let's make the support team great again...</p>
               </div>
             </div>
             <div className="col-md-9 col-lg-6 col-xl-5 order-lg-1">
