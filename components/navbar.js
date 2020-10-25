@@ -43,6 +43,7 @@ export default function Navbar() {
                                             <div className="dropdown-grid-menu">
                                                 <a href={"/features/"} className="dropdown-item fade-page">Features</a>
                                                 <a href={"/features/knowledge-board"} className="dropdown-item fade-page">Knowledge Board</a>
+                                                <a href={"/features/frequently-asked-questions"} className="dropdown-item fade-page">FAQ</a>
                                             </div>
                                         </div>
                                     </div>
