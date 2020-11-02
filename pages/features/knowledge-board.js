@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import Layout from "../../components/layout";
 import React from "react";
-import TakeFlight from "../../components/take_flight";
 
 export default function FirstPost() {
   return (
