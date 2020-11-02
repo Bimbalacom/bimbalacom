@@ -1,4 +1,5 @@
 import React from "react";
+import Strengths from "../strengths";
 export default function Steps(){
     return (
         <section className="bg-light o-hidden">
@@ -11,8 +12,7 @@ export default function Steps(){
                 </div>
                 <div className="row align-items-center justify-content-around">
                     <div className="col-md-9 col-lg-5" data-aos="fade-in">
-                        <img src={"img/square-2.jpg"} alt="Image" className="img-fluid rounded shadow" />
-                        <img src={"img/square-1.jpg"} alt="Image" className="position-absolute p-0 col-4 col-xl-5 border border-white border-thick rounded-circle top left shadow-lg mt-5 ml-n5 ml-lg-n3 ml-xl-n5 d-none d-md-block" data-jarallax-element="-20 0" />
+                        <img src={"img/case-studies/thumb-7.jpg"} alt="Image" className="img-fluid rounded shadow" />
                     </div>
                     <div className="col-md-9 col-lg-6 col-xl-5 mt-4 mt-md-5 mt-lg-0">
                         <ol className="list-unstyled p-0">
@@ -47,6 +47,7 @@ export default function Steps(){
                         </ol>
                     </div>
                 </div>
+                <Strengths />
             </div>
         </section>
     )

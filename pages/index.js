@@ -1,7 +1,5 @@
 import Layout from '../components/layout'
-import Link from 'next/link'
-import { DefaultSeo } from 'next-seo';
-import TakeFlight from "../components/take_flight";
+import React from "react";
 import dynamic from 'next/dynamic';
 
 const Steps = dynamic(() => import('../components/index/steps'));
@@ -17,8 +15,7 @@ export default function Home() {
                             <div className="col-xl-5 col-lg-5 text-center text-lg-left mb-3 mb-md-5 mb-lg-0"
                                 data-aos="fade-right">
                                 <h1 className="display-3">A modular software for your support upgrade.</h1>
-                                <p className="lead">Grab it now and make your business awesome. About 5M customers are
-                                    more satisfied after the project became using Bimbala!</p>
+                                <p className="lead">Grab it now and make your business awesome. Take your community in hands!</p>
                                 <a href={"/why-us"} className="btn btn-lg btn-primary">Why us?</a>
                             </div>
                             <div className="col" data-aos="fade-left" data-aos-delay="250">
@@ -33,38 +30,61 @@ export default function Home() {
                     <div className="w-50 h-50 bottom right position-absolute" data-jarallax-element="75">
                         <div className="blob blob-4 bg-white opacity-10 w-100 h-100" />
                     </div>
+                    <div className="container mt-5">
+
+                    </div>
                     <div className="divider divider-bottom bg-white" />
                 </section>
                 <section>
                     <div className="container">
+                        <div className="row section-title justify-content-center text-center">
+                            <div className="col-md-9 col-lg-8 col-xl-7">
+                                <h3 className="display-4">What we offer?</h3>
+                            </div>
+                            <div className="row align-items-center justify-content-around text-center text-lg-left">
+                                <div className="col-md-9 col-lg-6">
+                                    <img src={"img/illustrations/timeline.svg"} alt="Public timeline" className="img-fluid" />
+                                </div>
+                                <div className="col-md-9 col-lg-6 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
+                                        <div className={'row align-items-center'}>
+                                            <img src={"img/icons/interface/icon-arrow-right.svg"} loading="lazy" alt="Arrow Down"
+                                                 className="icon icon-md col-2"/>
+                                                 <h3 className={'h1 col-10 mb-0'}><mark data-aos="highlight-text"
+                                                                                              data-aos-delay="500" className={'text-primary'}>A dedicated support &nbsp; portal for your business.</mark></h3>
+                                        </div>
+                                        <p className="lead mt-4">In your portal you will have access to stack of various tools. We help you automate your workflow and satisfy your customers expectations. Make them part of your product!</p>
+                                </div>
+                            </div>
+                        </div>
                         <div className="row">
                             <div className="col-md-4 mb-4 mb-md-0">
-                                <div>
+                                <div className={'text-center'}>
                                     <img src={"/img/icons/theme/general/thunder-move.svg"} loading="lazy" alt="Lightning icon"
-                                        className="icon bg-primary-alt rounded-circle p-1" />
-                                    <h5 className="mt-4">Suits Your Style</h5>
-                                    <div>
-                                        Your support needs to be fast. That is why everything connected with our software is integrated into one panel. 
+                                         className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                    <h5 className="mt-4 text-primary-2">Suits Your Style</h5>
+                                    <div className={'text-justify'}>
+                                        Your support needs to be <mark data-aos="highlight-text"
+                                                                       data-aos-delay="500"  className={'font-weight-bold text-uppercase h5'}>fast</mark>. That is why everything connected with our software is integrated into one panel.
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-4 mb-md-0">
-                                <div>
+                                <div className={'text-center'}>
                                     <img src={"/img/icons/theme/general/bookmark.svg"} loading="lazy" alt="Bookmark icon"
-                                        className="icon bg-primary-alt rounded-circle p-1" />
-                                    <h5 className="mt-4">Everything you need</h5>
-                                    <div>
+                                         className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                    <h5 className="mt-4 text-primary-2">Everything you need</h5>
+                                    <div className={'text-justify'}>
                                         Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum
                                         lorem sed risus ultricies Tyrion. Enim blandit volutpat.
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-4 mb-md-0">
-                                <div>
+                                <div className={'text-center'}>
                                     <img src={"/img/icons/theme/design/select.svg"} loading="lazy" alt="Selection interface icon"
-                                        className="icon bg-primary-alt rounded-circle p-1" />
-                                    <h5 className="mt-4">Highly Customizable</h5>
-                                    <div>
+                                         className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                    <h5 className="mt-4 text-primary-2">Highly Customizable</h5>
+                                    <div  className={'text-justify'}>
                                         Like people every company is diffirent. That is why we have a different approach for every client and every project.
                                     </div>
                                 </div>
@@ -72,10 +92,9 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <TakeFlight />
                 <Steps />
 
-                <section className="border-bottom" id="counters">
+                {/*<section className="border-bottom" id="counters">
                     <div className="container">
                         <div className="row justify-content-between align-items-start">
                             <div className="col-lg-3 mb-4 sticky-lg-top">
@@ -146,7 +165,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>*/}
                 {/*TODO: Integrations listing*/}
             </div>
         </Layout>
