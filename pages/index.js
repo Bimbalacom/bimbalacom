@@ -52,7 +52,7 @@ export default function Home() {
                                                  <h3 className={'h1 col-10 mb-0'}><mark data-aos="highlight-text"
                                                                                               data-aos-delay="500" className={'text-primary'}>A dedicated support &nbsp; portal for your business.</mark></h3>
                                         </div>
-                                        <p className="lead mt-4">In your portal you will have access to stack of various tools. We help you automate your workflow and satisfy your customers expectations. Make them part of your product!</p>
+                                        <p className="lead mt-4">In your portal you will have access to stack of various tools. We will help you automate your workflow and satisfy your customers' expectations. Make them part of your product!</p>
                                 </div>
                             </div>
                         </div>
