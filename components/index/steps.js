@@ -47,8 +47,8 @@ export default function Steps(){
                         </ol>
                     </div>
                 </div>
-                <Strengths />
             </div>
+        <Strengths />
         </section>
     )
 }

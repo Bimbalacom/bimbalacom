@@ -1,10 +1,10 @@
 export default function Strengths() {
     return (
-        <section class="bg-light">
-            <div class="container">
-                <div class="row section-title justify-content-center text-center">
-                <div class="col-xl-10 col-lg-11">
-                        <h3 class="display-4">It worked for them</h3>
+        <section className="bg-primary-3 text-white">
+            <div className="container">
+                <div className="row section-title justify-content-center text-center">
+                <div className="col-xl-10 col-lg-11">
+                        <h3 className="display-4">It worked for them</h3>
                 </div>
                     <div className="row justify-content-center">
                         <div className="col d-flex flex-wrap justify-content-center">

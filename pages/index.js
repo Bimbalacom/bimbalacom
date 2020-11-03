@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic';
 
 const Steps = dynamic(() => import('../components/index/steps'));
 
-
 export default function Home() {
     return (
         <Layout title={'Home'}>
@@ -57,11 +56,9 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </section>
-                <section class="bg-primary text-white">
+                <section className="bg-primary text-white">
                     <div className="container">
                         <div className="row section-title justify-content-center text-center">
                             <div className="col-md-9 col-lg-8 col-xl-7">
@@ -75,7 +72,7 @@ export default function Home() {
                                     <div className="col-md-4 mb-4 mb-md-0">
                                         <div className={'text-center'}>
                                             <img src={"/img/icons/theme/general/thunder-move.svg"} loading="lazy" alt="Lightning icon"
-                                                className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                                className="icon bg-light-alt rounded-circle p-1 shadow" />
                                             <h5 className="mt-4 text-primary-2">Suits Your Style</h5>
                                             <div className={'text-justify'}>
                                                 Your support needs to be <mark data-aos="highlight-text"
@@ -86,7 +83,7 @@ export default function Home() {
                                     <div className="col-md-4 mb-4 mb-md-0">
                                         <div className={'text-center'}>
                                             <img src={"/img/icons/theme/general/bookmark.svg"} loading="lazy" alt="Bookmark icon"
-                                                className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                                className="icon bg-light-alt rounded-circle p-1 shadow" />
                                             <h5 className="mt-4 text-primary-2">Everything you need</h5>
                                             <div className={'text-justify'}>
                                                 Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum
@@ -97,7 +94,7 @@ export default function Home() {
                                     <div className="col-md-4 mb-4 mb-md-0">
                                         <div className={'text-center'}>
                                             <img src={"/img/icons/theme/design/select.svg"} loading="lazy" alt="Selection interface icon"
-                                                className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                                className="icon bg-light-alt rounded-circle p-1 shadow" />
                                             <h5 className="mt-4 text-primary-2">Highly Customizable</h5>
                                             <div className={'text-justify'}>
                                                 Like people every company is different. That is why we have a different approach for every client and every project.
@@ -110,7 +107,98 @@ export default function Home() {
                     </div>
                 </section>
                 <Steps />
-
+                <section class="bg-light o-hidden">
+                    <div class="container">
+                        <div class="row section-title justify-content-center text-center">
+                            <div class="col-md-9 col-lg-8 col-xl-7">
+                                <h3 class="display-4">Great Functionality</h3>
+                                <div class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Groups</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Dark Mode</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="true">Feed</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <div class="row align-items-center justify-content-between flex-lg-row-reverse">
+                                                <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
+                                                    <div class="pl-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
+                                                        <h3 class="h1">A great feature you'll <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">love to use</mark></h3>
+                                                        <p>
+                                                            Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                        </p>
+                                                        <div class="mt-4">
+                                                            <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
+                                                                <img src={"img/avatars/male-4.jpg"} alt="Harvey Derwent avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
+                                                                <div class="text-dark mb-0">“We are working at almost twice the capacity”</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
+                                                    <img src={"img/desktop-app/desktop-app-3.jpg"} alt="Screenshot" class="img-fluid rounded shadow border" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div class="row align-items-center justify-content-around">
+                                                <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
+                                                    <div class="pr-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
+                                                        <h3 class="h1">Easy on the eyes, and the wallet.</h3>
+                                                        <p>
+                                                            Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                        </p>
+                                                        <div class="mt-4">
+                                                            <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
+                                                                <img src={"img/avatars/male-1.jpg"} alt="Harvey Derwent avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
+                                                                <div class="text-dark mb-0">“Jumpstart increases productivity.”</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
+                                                    <img src={"img/desktop-app/desktop-app-1.jpg"} alt="Screenshot" class="img-fluid rounded shadow border" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade active show" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                            <div class="row align-items-center justify-content-around">
+                                                <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
+                                                    <div class="pr-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
+                                                        <h3 class="h1">You’ll Stay right up to date, <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">ever</mark>.</h3>
+                                                        <p>
+                                                            Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                        </p>
+                                                        <div class="mt-4">
+                                                            <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
+                                                                <img src={"img/avatars/female-4.jpg"} alt="Ashley Mance avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
+                                                                <div class="text-dark mb-0">“Jumpstart is a dream come true.”</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
+                                                    <img src={"img/desktop-app/desktop-app-2.jpg"} alt="Screenshot" class="img-fluid rounded shadow border" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 {/*<section className="border-bottom" id="counters">
                     <div className="container">
                         <div className="row justify-content-between align-items-start">
