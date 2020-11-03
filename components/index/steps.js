@@ -6,7 +6,7 @@ export default function Steps(){
             <div className="container">
                 <div className="row section-title justify-content-center text-center">
                     <div className="col-md-9 col-lg-8 col-xl-7">
-                        <h2 className="display-4">Make a diffirence with Bimbala</h2>
+                        <h2 className="display-4">Make a difference with Bimbala</h2>
                         <div className="lead">Changing the way you support your clients in only 3 steps!</div>
                     </div>
                 </div>

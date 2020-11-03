@@ -35,6 +35,7 @@ export default function Home() {
                     </div>
                     <div className="divider divider-bottom bg-white" />
                 </section>
+
                 <section>
                     <div className="container">
                         <div className="row section-title justify-content-center text-center">
@@ -46,46 +47,62 @@ export default function Home() {
                                     <img src={"img/illustrations/timeline.svg"} alt="Public timeline" className="img-fluid" />
                                 </div>
                                 <div className="col-md-9 col-lg-6 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
-                                        <div className={'row align-items-center'}>
-                                            <img src={"img/icons/interface/icon-arrow-right.svg"} loading="lazy" alt="Arrow Down"
-                                                 className="icon icon-md col-2"/>
-                                                 <h3 className={'h1 col-10 mb-0'}><mark data-aos="highlight-text"
-                                                                                              data-aos-delay="500" className={'text-primary'}>A dedicated support &nbsp; portal for your business.</mark></h3>
-                                        </div>
-                                        <p className="lead mt-4">In your portal you will have access to stack of various tools. We will help you automate your workflow and satisfy your customers' expectations. Make them part of your product!</p>
+                                    <div className={'row align-items-center'}>
+                                        <img src={"img/icons/interface/icon-arrow-right.svg"} loading="lazy" alt="Arrow Down"
+                                            className="icon icon-md col-2" />
+                                        <h3 className={'h1 col-10 mb-0'}><mark data-aos="highlight-text"
+                                            data-aos-delay="500" className={'text-primary'}>A dedicated support &nbsp; portal for your business.</mark></h3>
+                                    </div>
+                                    <p className="lead mt-4">In your portal you will have access to stack of various tools. We will help you automate your workflow and satisfy your customers' expectations. Make them part of your product!</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-md-4 mb-4 mb-md-0">
-                                <div className={'text-center'}>
-                                    <img src={"/img/icons/theme/general/thunder-move.svg"} loading="lazy" alt="Lightning icon"
-                                         className="icon bg-dark-alt rounded-circle p-1 shadow" />
-                                    <h5 className="mt-4 text-primary-2">Suits Your Style</h5>
-                                    <div className={'text-justify'}>
-                                        Your support needs to be <mark data-aos="highlight-text"
-                                                                       data-aos-delay="500"  className={'font-weight-bold text-uppercase h5'}>fast</mark>. That is why everything connected with our software is integrated into one panel.
-                                    </div>
-                                </div>
+
+
+                    </div>
+                </section>
+                <section class="bg-primary text-white">
+                    <div className="container">
+                        <div className="row section-title justify-content-center text-center">
+                            <div className="col-md-9 col-lg-8 col-xl-7">
+                                <h3 className="display-4">Change the way you need it</h3>
+                                <div className="lead"></div>
                             </div>
-                            <div className="col-md-4 mb-4 mb-md-0">
-                                <div className={'text-center'}>
-                                    <img src={"/img/icons/theme/general/bookmark.svg"} loading="lazy" alt="Bookmark icon"
-                                         className="icon bg-dark-alt rounded-circle p-1 shadow" />
-                                    <h5 className="mt-4 text-primary-2">Everything you need</h5>
-                                    <div className={'text-justify'}>
-                                        Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum
-                                        lorem sed risus ultricies Tyrion. Enim blandit volutpat.
+                        </div>
+                        <div className="row justify-content-center">
+                            <div className="col d-flex flex-wrap justify-content-center">
+                                <div className="row">
+                                    <div className="col-md-4 mb-4 mb-md-0">
+                                        <div className={'text-center'}>
+                                            <img src={"/img/icons/theme/general/thunder-move.svg"} loading="lazy" alt="Lightning icon"
+                                                className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                            <h5 className="mt-4 text-primary-2">Suits Your Style</h5>
+                                            <div className={'text-justify'}>
+                                                Your support needs to be <mark data-aos="highlight-text"
+                                                    data-aos-delay="500" className={'font-weight-bold text-uppercase h5'}>fast</mark>. That is why everything connected with our software is integrated into one panel.
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 mb-4 mb-md-0">
-                                <div className={'text-center'}>
-                                    <img src={"/img/icons/theme/design/select.svg"} loading="lazy" alt="Selection interface icon"
-                                         className="icon bg-dark-alt rounded-circle p-1 shadow" />
-                                    <h5 className="mt-4 text-primary-2">Highly Customizable</h5>
-                                    <div  className={'text-justify'}>
-                                        Like people every company is diffirent. That is why we have a different approach for every client and every project.
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mb-4 mb-md-0">
+                                        <div className={'text-center'}>
+                                            <img src={"/img/icons/theme/general/bookmark.svg"} loading="lazy" alt="Bookmark icon"
+                                                className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                            <h5 className="mt-4 text-primary-2">Everything you need</h5>
+                                            <div className={'text-justify'}>
+                                                Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum
+                                                lorem sed risus ultricies Tyrion. Enim blandit volutpat.
+                                    </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mb-4 mb-md-0">
+                                        <div className={'text-center'}>
+                                            <img src={"/img/icons/theme/design/select.svg"} loading="lazy" alt="Selection interface icon"
+                                                className="icon bg-dark-alt rounded-circle p-1 shadow" />
+                                            <h5 className="mt-4 text-primary-2">Highly Customizable</h5>
+                                            <div className={'text-justify'}>
+                                                Like people every company is different. That is why we have a different approach for every client and every project.
+                                    </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
