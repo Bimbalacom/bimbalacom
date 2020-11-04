@@ -11,27 +11,27 @@ export default function FirstPost() {
           <div className="row justify-content-center text-center">
             <div className="col-md-auto" data-aos={"fade-up"}>
               <div className="px-md-4 px-lg-5 mb-5 mb-md-0" data-aos-delay="0">
-                <h5>Like us</h5>
-                <a href="https://fb.com/bimbalacom">on Facebook.</a>
+                <a href={"https://www.facebook.com/bimbalacom"}><img src={"img/icons/social/facebook.svg"} alt="Bimbala Facebook" width="75px" height="75px" /></a>
+                <br /><br />like us! 
               </div>
             </div>
             <div className="col-md-auto" data-aos="fade-up" data-aos-delay="100">
               <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Tweet us</h5>
-                <a href="https://twitter.com/bimbalacom"> on Twitter</a>
+                <a href={"https://twitter.com/bimbalacom"}><img src={"img/icons/social/twitter.svg"} alt="Bimbala Twitter" width="75px" height="75px" /></a>
+              <br /><br /> tweet at us!
               </div>
 
             </div>
             <div className="col-md-auto" data-aos="fade-up" data-aos-delay="200">
               <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Chat with us</h5>
-              Yep, we are down on the right.<br />Someone will write you back asap.<br />
+                <a href={"https://www.instagram.com/bimbalaapp/"}><img src={"img/icons/social/instagram.svg"} alt="Bimbala Instagram" width="75px" height="75px" /></a>
+                <br /><br /> like our photos! 
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-md-auto" data-aos="fade-up">
@@ -55,7 +55,7 @@ export default function FirstPost() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }
