@@ -10,12 +10,12 @@ export default function FirstPost() {
         <div className="container">
           <div className="row text-center justify-content-center">
             <div className="col">
-              <h1 className="display-3">Pricing that <mark data-aos="highlight-text" data-aos-delay="200">scales with you</mark></h1>
+              <h1 className="display-3">Pricing which is <mark data-aos="highlight-text" data-aos-delay="200">specially made for you</mark></h1>
             </div>
           </div>
           <div className="row text-center justify-content-center">
             <div className="col-md-9 col-lg-8 col-xl-7">
-              <p className="lead">Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <p className="lead">We are a startup and wanted to help people out. That is why until we finish our MVP these are our pricing:</p>
             </div>
           </div>
         </div>
@@ -250,7 +250,7 @@ export default function FirstPost() {
         <div className="row section-title justify-content-center text-center">
           <div className="col-md-9 col-lg-8 col-xl-7">
             <h3 className="display-4">FAQ</h3>
-            <div className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</div>
+            <div className="lead">Let's answer some questions</div>
           </div>
         </div>
         <div className="row justify-content-center">
@@ -259,95 +259,45 @@ export default function FirstPost() {
               <div className="card mb-2 mb-md-3">
                 <a href="#accordion-1" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
                   <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Can I upgrade later on?</h6>
+                    <h6 className="mb-0 mr-2">How long will the building of the MVP last?</h6>
                     <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
                   </div>
                 </a>
                 <div className="collapse" id="accordion-1" data-parent="#faq-accordion">
                   <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre. Vivamus ornare pharetra diam sit amet tincidunt. Eunuch sit amet pharetra odio. Vivamus in tempor ipsum, sit amet elementum neque. Sed faucibus posuere pharetra.
-                    In imperdiet eleifend dui a aliquet. Aliquam imperdiet Tyrion purus vitae rutrum. Donec eu commodo nunc. Mauris dignissim lectus massa, eget cursus quam mollis id. Eddard sit amet ex Jon nibh maximus cursus at vitae mi. Duis tincidunt
-                    aliquam mi sed sagittis.
-
+                    Hopefully we will be ready end of Q2 2021.
                   </div>
                 </div>
               </div>
               <div className="card mb-2 mb-md-3">
                 <a href="#accordion-2" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
                   <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Can I port my data from another provider?</h6>
+                    <h6 className="mb-0 mr-2">Do you offer refunds?</h6>
                     <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
                   </div>
                 </a>
                 <div className="collapse" id="accordion-2" data-parent="#faq-accordion">
                   <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Eunuch nec dapibus ex. Aenean placerat, ex imp convallis dictum, ex nulla rutrum justo, Jon lobortis nisi ex at leo. Sed Tyrion aliquet sem vel pharetra. Vestibulum ante ipsum primis in faucibus Hodor luctus et ultrices posuere cubilia Curae; Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis a sapien quis quam auctor feugiat. Donec volutpat condimentum risus, eu iaculis nibh dapibus eu.
-
+                    Yes, you can. Just check your account out.
                   </div>
                 </div>
               </div>
               <div className="card mb-2 mb-md-3">
                 <a href="#accordion-3" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
                   <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Are my food photos stored forever in the cloud?</h6>
+                    <h6 className="mb-0 mr-2">Can I change my plan?</h6>
                     <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
                   </div>
                 </a>
                 <div className="collapse" id="accordion-3" data-parent="#faq-accordion">
                   <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Volantisi fringilla, unuch eu sagittis sagittis, urna Loras luctus odio, vitae hendrerit massa dui ac est. Donec leo tortor, Tyrion et aliquet at, convallis imp mi. Vivamus turpis diam, ultrices et tempus quis, sollicitudin et risus. Pellentesque nec
-                    sapien imp dolor condimentum condimentum ut sed neque. Integer efficitur accumsan risus, vitae posuere massa aliquam at.
-
+                    For now we only have one plan until the end of our MVP. After that there will be plans, but we can't give you more information for now.
                   </div>
                 </div>
               </div>
-              <div className="card mb-2 mb-md-3">
-                <a href="#accordion-4" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Who foots the bill for that?</h6>
-                    <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
-                  </div>
-                </a>
-                <div className="collapse" id="accordion-4" data-parent="#faq-accordion">
-                  <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Khaleesi ornare pharetra diam sit amet tincidunt. Eunuch sit amet pharetra odio. Vivamus in tempor ipsum, sit amet elementum neque. Sed faucibus posuere pharetra. In imperdiet eleifend dui a aliquet. Aliquam imperdiet Tyrion purus vitae rutrum. Donec
-                    eu commodo nunc. Vivamus Melisandre Jon lorem eget bibendum. Sed tincidunt sed enim at dignissim. Mauris erat diam, lacinia eget efficitur et, iaculis sed augue.
 
-                  </div>
-                </div>
-              </div>
-              <div className="card mb-2 mb-md-3">
-                <a href="#accordion-5" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">What's the real cost?</h6>
-                    <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
-                  </div>
-                </a>
-                <div className="collapse" id="accordion-5" data-parent="#faq-accordion">
-                  <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Brienne ac maximus Loras, eu placerat odio. Etiam vestibulum Loras et sollicitudin pellentesque. Mauris sed Tyrion Varys. Curabitur posuere augue risus, eget mollis unuch consectetur quis. Vestibulum accumsan congue risus, in semper eros interdum id.
-                    Tincidunt vitae libero efficitur viverra. Integer venenatis massa in dui viverra fermentum. Eunuch fringilla arcu ac urna sodales fermentum. Ut luctus enim ut sagittis consectetur.
 
-                  </div>
-                </div>
-              </div>
-              <div className="card mb-2 mb-md-3">
-                <a href="#accordion-6" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Can my company request a custom plan?</h6>
-                    <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
-                  </div>
-                </a>
-                <div className="collapse" id="accordion-6" data-parent="#faq-accordion">
-                  <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Brienne ac maximus Loras, eu placerat odio. Etiam vestibulum Loras et sollicitudin pellentesque. Mauris sed Tyrion Varys. Curabitur posuere augue risus, eget mollis unuch consectetur quis. Vestibulum accumsan congue risus, in semper eros interdum id.
-
-                  </div>
-                </div>
-              </div>
             </div>
-
           </div>
         </div>
         <div className="row justify-content-center mt-4 mt-md-5">
@@ -358,7 +308,7 @@ export default function FirstPost() {
         </div>
       </div>
     </section>
-    <section className="bg-primary text-white pb-0">
+    {/* <section className="bg-primary text-white pb-0">
       <div className="container">
         <div className="row section-title justify-content-center text-center">
           <div className="col-md-9 col-lg-8 col-xl-7">
@@ -412,7 +362,7 @@ export default function FirstPost() {
         </div>
       </div>
       <div className="divider divider-bottom bg-primary-3"/>
-    </section>
+    </section> */}
 
     </Layout>
   )
