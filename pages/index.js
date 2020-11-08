@@ -71,9 +71,9 @@ export default function Home() {
                                 <div className="row">
                                     <div className="col-md-4 mb-4 mb-md-0">
                                         <div className={'text-center'}>
-                                            <img src={"/img/icons/theme/general/thunder-move.svg"} loading="lazy" alt="Lightning icon"
+                                            <img src={"/img/icons/theme/general/thunder-move-white.svg"} loading="lazy" alt="Lightning icon"
                                                 className="icon bg-light-alt rounded-circle p-1 shadow" />
-                                            <h5 className="mt-4 text-primary-2">Suits Your Style</h5>
+                                            <h5 className="mt-4 text-primary-1">Suits Your Style</h5>
                                             <div className={'text-justify'}>
                                                 Your support needs to be <mark data-aos="highlight-text"
                                                     data-aos-delay="500" className={'font-weight-bold text-uppercase h5'}>fast</mark>. That is why everything connected with our software is integrated into one panel.
@@ -82,20 +82,20 @@ export default function Home() {
                                     </div>
                                     <div className="col-md-4 mb-4 mb-md-0">
                                         <div className={'text-center'}>
-                                            <img src={"/img/icons/theme/general/bookmark.svg"} loading="lazy" alt="Bookmark icon"
+                                            <img src={"/img/icons/theme/general/bookmark-white.svg"} loading="lazy" alt="Bookmark icon"
                                                 className="icon bg-light-alt rounded-circle p-1 shadow" />
-                                            <h5 className="mt-4 text-primary-2">Everything you need</h5>
+                                            <h5 className="mt-4 text-primary-1">Everything you need</h5>
                                             <div className={'text-justify'}>
-                                                Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum
-                                                lorem sed risus ultricies Tyrion. Enim blandit volutpat.
+                                            From a website to a reward winning ducking counting robot - Bimbala helps you explain everything to your client. 
+                                            Impress your audience as if you know them personally without paying "the big bucks"
                                     </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4 mb-4 mb-md-0">
                                         <div className={'text-center'}>
-                                            <img src={"/img/icons/theme/design/select.svg"} loading="lazy" alt="Selection interface icon"
+                                            <img src={"/img/icons/theme/design/select-white.svg"} loading="lazy" alt="Selection interface icon"
                                                 className="icon bg-light-alt rounded-circle p-1 shadow" />
-                                            <h5 className="mt-4 text-primary-2">Highly Customizable</h5>
+                                            <h5 className="mt-4 text-primary-1">Highly Customizable</h5>
                                             <div className={'text-justify'}>
                                                 Like people every company is different. That is why we have a different approach for every client and every project.
                                     </div>
@@ -158,7 +158,7 @@ export default function Home() {
                                                         <h3 class="h1">Easy on the eyes, and the wallet.</h3>
                                                         <p>
                                                             Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
-                        </p>
+                                                        </p>
                                                         <div class="mt-4">
                                                             <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
                                                                 <img src={"img/avatars/male-1.jpg"} alt="Harvey Derwent avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
@@ -179,7 +179,7 @@ export default function Home() {
                                                         <h3 class="h1">You’ll Stay right up to date, <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">ever</mark>.</h3>
                                                         <p>
                                                             Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
-                        </p>
+                                                        </p>
                                                         <div class="mt-4">
                                                             <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
                                                                 <img src={"img/avatars/female-4.jpg"} alt="Ashley Mance avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
