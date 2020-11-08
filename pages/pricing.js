@@ -10,12 +10,12 @@ export default function FirstPost() {
         <div className="container">
           <div className="row text-center justify-content-center">
             <div className="col">
-              <h1 className="display-3">Pricing which is <mark data-aos="highlight-text" data-aos-delay="200">specially made for you</mark></h1>
+              <h1 className="display-3">Affordable pricing for <mark data-aos="highlight-text" data-aos-delay="200">Everyone (you included)</mark></h1>
             </div>
           </div>
           <div className="row text-center justify-content-center">
             <div className="col-md-9 col-lg-8 col-xl-7">
-              <p className="lead">We are a startup and wanted to help people out. That is why until we finish our MVP these are our pricing:</p>
+              <p className="lead">We are a startup and wanted to help people out. No string attached. That is why until we finish our MVP these are our pricing:</p>
             </div>
           </div>
         </div>

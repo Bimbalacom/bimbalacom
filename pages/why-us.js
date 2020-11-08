@@ -25,12 +25,18 @@ export default function WhyUS() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-12 col-md-12">
-                            <h3 className="h2">Part of the reasons why clients pick us:</h3>
-            The Bimbala approach - Our way of working is a combination of our understanding of the user behaviour with the commitment to help our clients help themselves.<br />
-            Saving time = Saving money - When all  your support's needs are made and fulfilled on one platform, Project Managers, Developers and all levels of support will love you. They will not need to check 50 places for their daily needs and can concentrate better on the more important aspects of work.<br />
-            We give back - We try to Open source as much as possible all the time. Even the website you are checking out right now is on our Github page.<br />
-            Painfully honest - We will tell you if we make mistakes. As a company we believe in honesty in all its forms. So we will not sweep it under the rug if we have a problem.<br />
-            {/* <share/> */}
+                            <h2 className="h2">Part of the reasons why clients pick us:</h2>
+                            <br /><b>The Bimbala approach</b><br />
+                            Our way of working is a combination of our understanding of the user behaviour with the commitment to help our clients help themselves.Without our client's support, we cannot improve to serve you better.<br />
+                            <br /><b>Saving time = Saving money</b><br />
+                            When all  your support's needs are made and fulfilled on one platform, Project Managers, Developers and all levels of support will love you. They will not need to check 50 places for their daily needs and can concentrate better on the more important aspects of work.<br />
+                            <br /><b>Just listening</b><br />
+                            We want to know how you love you business and why. Give us all your feedback and even more. That is how we can upgrade your support in a new way. Understanding you and your company better, will allow us to make and build a better product.<br/>
+                            <br /><b>We give back</b><br />
+                            We try to Open source as much as possible all the time. Even the website you are checking out right now is on our Github page.<br />
+                            <br /><b>NO Bulls**t / Painfully honest approach</b><br />
+                            We will tell you when we make mistakes.(It will happen don't worry.) As a company we believe in honesty in all its forms. So we will not sweep it under the rug if we have a problem.<br />
+                            {/* <share/> */}
                         </div>
                     </div>
                 </div>
