@@ -137,7 +137,7 @@ export default function Home() {
                                                         <h3 class="h1">A great feature you'll <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">love to use</mark></h3>
                                                         <p>
                                                             Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
-                        </p>
+                                                        </p>
                                                         <div class="mt-4">
                                                             <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
                                                                 <img src={"img/avatars/male-4.jpg"} alt="Harvey Derwent avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
