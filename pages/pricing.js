@@ -28,72 +28,16 @@ export default function FirstPost() {
     <section className="bg-light">
       <div className="container">
         <div className="row align-items-center justify-content-center">
-          <div className="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div className="card card-body align-items-center shadow">
-
-              <div className="text-center mb-4">
-                <h4>Basic</h4>
-                <div className="d-flex align-items-center justify-content-center mb-1">
-                  <span className="h5 mb-0 mr-2">$</span>
-                  <span className="display-3 mb-0 text-dark">19</span>
-                </div>
-                <div>Per user, per month</div>
-              </div>
-              <ul className="list-unstyled p-0">
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs" />
-                    </div>
-                    <h6 className="mb-0 ml-3">2GB Cloud Storage</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">100GB CDN Bandwidth</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">98.88% Uptime Guarantee</h6>
-                  </div>
-                </li>
-                <li className="my-3 opacity-50">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-danger">
-                      <img src={"img/icons/interface/icon-x.svg"} alt=" icon=" className="m-2 icon icon-xs" />
-                    </div>
-                    <h6 className="mb-0 ml-3">Personal Account Manager</h6>
-                  </div>
-                </li>
-                <li className="my-3 opacity-50">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-danger">
-                      <img src={"img/icons/interface/icon-x.svg"} alt=" icon=" className="m-2 icon icon-xs" />
-                    </div>
-                    <h6 className="mb-0 ml-3">Enterprise SLA</h6>
-                  </div>
-                </li>
-              </ul>
-              <a href="#" className="btn btn-lg btn-block btn-outline-primary">Start with Basic</a>
-            </div>
-          </div>
           <div className="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div className="card card-body align-items-center shadow">
               <div className="badge badge-success badge-pill mb-4">Best Value</div>
               <div className="text-center mb-4">
-                <h4>Premium</h4>
+                <h4>Before MVP</h4>
                 <div className="d-flex align-items-center justify-content-center mb-1">
                   <span className="h5 mb-0 mr-2">$</span>
-                  <span className="display-3 mb-0 text-dark">29</span>
+                  <span className="display-3 mb-0 text-dark">9.99</span>
                 </div>
-                <div>Per user, per month</div>
+                <div>Per month</div>
               </div>
               <ul className="list-unstyled p-0">
                 <li className="my-3">
@@ -101,7 +45,7 @@ export default function FirstPost() {
                     <div className="rounded-circle bg-success">
                       <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
                     </div>
-                    <h6 className="mb-0 ml-3">20GB Cloud Storage</h6>
+                    <h6 className="mb-0 ml-3">Unlimited users</h6>
                   </div>
                 </li>
                 <li className="my-3">
@@ -109,7 +53,7 @@ export default function FirstPost() {
                     <div className="rounded-circle bg-success">
                       <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
                     </div>
-                    <h6 className="mb-0 ml-3">1TB CDN Bandwidth</h6>
+                    <h6 className="mb-0 ml-3">New major features every month</h6>
                   </div>
                 </li>
                 <li className="my-3">
@@ -117,7 +61,7 @@ export default function FirstPost() {
                     <div className="rounded-circle bg-success">
                       <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
                     </div>
-                    <h6 className="mb-0 ml-3">99.95% Uptime Guarantee</h6>
+                    <h6 className="mb-0 ml-3">99% Uptime Guarantee</h6>
                   </div>
                 </li>
                 <li className="my-3">
@@ -128,119 +72,16 @@ export default function FirstPost() {
                     <h6 className="mb-0 ml-3">Personal Account Manager</h6>
                   </div>
                 </li>
-                <li className="my-3 opacity-50">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-danger">
-                      <img src={"img/icons/interface/icon-x.svg"} alt=" icon=" className="m-2 icon icon-xs" />
-                    </div>
-                    <h6 className="mb-0 ml-3">Enterprise SLA</h6>
-                  </div>
-                </li>
               </ul>
-              <a href="#" className="btn btn-lg btn-block btn-primary">Start with Premium</a>
+              <a href="#" className="btn btn-lg btn-block btn-primary">Start</a>
             </div>
           </div>
-          <div className="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div className="card card-body align-items-center shadow">
-
-              <div className="text-center mb-4">
-                <h4>Pro</h4>
-                <div className="d-flex align-items-center justify-content-center mb-1">
-                  <span className="h5 mb-0 mr-2">$</span>
-                  <span className="display-3 mb-0 text-dark">79</span>
-                </div>
-                <div>Per user, per month</div>
-              </div>
-              <ul className="list-unstyled p-0">
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">Unlimited Storage</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">100TB CDN Bandwidth</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">99.999% Uptime Guarantee</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">Personal Account Manager</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">Enterprise SLA</h6>
-                  </div>
-                </li>
-              </ul>
-              <a href="#" className="btn btn-lg btn-block btn-outline-primary">Start with Pro</a>
-            </div>
-          </div>
-        </div>
+     </div>
       </div>
     </section>
     <section className="p-0 bg-light">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 mb-4 mb-md-0 text-center">
-            <div className="px-xl-3">
-              <div>
-                <div className="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src={"img/icons/theme/navigation/route.svg"} alt="Binoculars icon" className="icon" />
-                </div>
-                <h5>Fully Responsive</h5>
-                <div>
-                  Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque Arya.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4 mb-md-0 text-center">
-            <div className="px-xl-3">
-              <div>
-                <div className="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src={"img/icons/theme/layout/layout-left-panel-2.svg"} alt="Layouts icon" className="icon" />
-                </div>
-                <h5>Multiple Layouts</h5>
-                <div>
-                  Non pulvinar neque laoreet suspendisse interdum Catelyn libero id. Olenna imp leo in vitae turpis massa. Sapien habitant Tyrion.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4 mb-md-0 text-center">
-            <div className="px-xl-3">
-              <div>
-                <div className="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src={"img/icons/theme/shopping/box-2.svg"} alt="Box icon" className="icon" />
-                </div>
-                <h5>Modular Components</h5>
-                <div>
-                  Khaleesi vedit sodales ut eu. Melisandre pellentesque elit eget Gendry est sociis natoque penatibus. Eunuch pulvinar sapien et Loras.
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div className="divider divider-bottom"/>
