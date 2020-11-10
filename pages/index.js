@@ -109,24 +109,22 @@ export default function Home() {
                 <Steps />
                 <section class="bg-light o-hidden">
                     <div class="container">
-                        <div class="row section-title justify-content-center text-center">
+                        {/* <div class="row section-title justify-content-center text-center">
                             <div class="col-md-9 col-lg-8 col-xl-7">
                                 <h3 class="display-4">Great Functionality</h3>
-                                <div class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</div>
                             </div>
-                        </div>
-                        <div class="container">
+                        </div> */}
                             <div class="row">
                                 <div class="col">
                                     <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" id="myTab" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Groups</a>
+                                            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Teams</a>
                                         </li>
-                                        <li class="nav-item">
+                                        {/* <li class="nav-item">
                                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Dark Mode</a>
-                                        </li>
+                                        </li> */}
                                         <li class="nav-item">
-                                            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="true">Feed</a>
+                                            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="true">Integrations</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="myTabContent">
@@ -134,24 +132,18 @@ export default function Home() {
                                             <div class="row align-items-center justify-content-between flex-lg-row-reverse">
                                                 <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
                                                     <div class="pl-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
-                                                        <h3 class="h1">A great feature you'll <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">love to use</mark></h3>
+                                                        <h3 class="h1">Be the part of the <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">team / change</mark></h3>
                                                         <p>
-                                                            Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                                                            Supports and Managers love to get to know they're clients. This is the easiest and funniest way possible.
                                                         </p>
-                                                        <div class="mt-4">
-                                                            <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
-                                                                <img src={"img/avatars/male-4.jpg"} alt="Harvey Derwent avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
-                                                                <div class="text-dark mb-0">“We are working at almost twice the capacity”</div>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
-                                                    <img src={"img/desktop-app/desktop-app-3.jpg"} alt="Screenshot" class="img-fluid rounded shadow border" />
+                                                    <img src={"img/illustrations/collaboration.svg"} alt="collaboration" class="img-fluid rounded shadow border" />
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        {/* <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                             <div class="row align-items-center justify-content-around">
                                                 <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
                                                     <div class="pr-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
@@ -171,32 +163,25 @@ export default function Home() {
                                                     <img src={"img/desktop-app/desktop-app-1.jpg"} alt="Screenshot" class="img-fluid rounded shadow border" />
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div class="tab-pane fade active show" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                             <div class="row align-items-center justify-content-around">
                                                 <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
                                                     <div class="pr-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
-                                                        <h3 class="h1">You’ll Stay right up to date, <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">ever</mark>.</h3>
+                                                        <h3 class="h1">Updating or adding a integration every  major <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">update</mark>.</h3>
                                                         <p>
-                                                            Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                                                            We love being a part of something big. That is why we have at least one new or updated integration with part of our friends.
                                                         </p>
-                                                        <div class="mt-4">
-                                                            <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
-                                                                <img src={"img/avatars/female-4.jpg"} alt="Ashley Mance avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
-                                                                <div class="text-dark mb-0">“Jumpstart is a dream come true.”</div>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
-                                                    <img src={"img/desktop-app/desktop-app-2.jpg"} alt="Screenshot" class="img-fluid rounded shadow border" />
+                                                    <img src={"img/illustrations/integrations.svg"} alt="Integrations" class="img-fluid rounded shadow border" />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </section>
                 {/*<section className="border-bottom" id="counters">
