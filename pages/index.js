@@ -62,7 +62,7 @@ export default function Home() {
                     <div className="container">
                         <div className="row section-title justify-content-center text-center">
                             <div className="col-md-9 col-lg-8 col-xl-7">
-                                <h3 className="display-4">Change the way you need it</h3>
+                                <h3 className="display-4">Why Bimbala is the perfect choice for you</h3>
                                 <div className="lead"></div>
                             </div>
                         </div>
