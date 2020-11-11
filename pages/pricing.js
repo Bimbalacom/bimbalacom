@@ -10,12 +10,12 @@ export default function FirstPost() {
         <div className="container">
           <div className="row text-center justify-content-center">
             <div className="col">
-              <h1 className="display-3">Pricing that <mark data-aos="highlight-text" data-aos-delay="200">scales with you</mark></h1>
+              <h1 className="display-3">Pricing which is <mark data-aos="highlight-text" data-aos-delay="200">specially made for you</mark></h1>
             </div>
           </div>
           <div className="row text-center justify-content-center">
             <div className="col-md-9 col-lg-8 col-xl-7">
-              <p className="lead">Berspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <p className="lead">We are a startup and wanted to help people out. That is why until we finish our MVP these are our pricing:</p>
             </div>
           </div>
         </div>
@@ -28,72 +28,16 @@ export default function FirstPost() {
     <section className="bg-light">
       <div className="container">
         <div className="row align-items-center justify-content-center">
-          <div className="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div className="card card-body align-items-center shadow">
-
-              <div className="text-center mb-4">
-                <h4>Basic</h4>
-                <div className="d-flex align-items-center justify-content-center mb-1">
-                  <span className="h5 mb-0 mr-2">$</span>
-                  <span className="display-3 mb-0 text-dark">19</span>
-                </div>
-                <div>Per user, per month</div>
-              </div>
-              <ul className="list-unstyled p-0">
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs" />
-                    </div>
-                    <h6 className="mb-0 ml-3">2GB Cloud Storage</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">100GB CDN Bandwidth</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">98.88% Uptime Guarantee</h6>
-                  </div>
-                </li>
-                <li className="my-3 opacity-50">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-danger">
-                      <img src={"img/icons/interface/icon-x.svg"} alt=" icon=" className="m-2 icon icon-xs" />
-                    </div>
-                    <h6 className="mb-0 ml-3">Personal Account Manager</h6>
-                  </div>
-                </li>
-                <li className="my-3 opacity-50">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-danger">
-                      <img src={"img/icons/interface/icon-x.svg"} alt=" icon=" className="m-2 icon icon-xs" />
-                    </div>
-                    <h6 className="mb-0 ml-3">Enterprise SLA</h6>
-                  </div>
-                </li>
-              </ul>
-              <a href="#" className="btn btn-lg btn-block btn-outline-primary">Start with Basic</a>
-            </div>
-          </div>
           <div className="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div className="card card-body align-items-center shadow">
               <div className="badge badge-success badge-pill mb-4">Best Value</div>
               <div className="text-center mb-4">
-                <h4>Premium</h4>
+                <h4>Before MVP</h4>
                 <div className="d-flex align-items-center justify-content-center mb-1">
                   <span className="h5 mb-0 mr-2">$</span>
-                  <span className="display-3 mb-0 text-dark">29</span>
+                  <span className="display-3 mb-0 text-dark">9.99</span>
                 </div>
-                <div>Per user, per month</div>
+                <div>Per month</div>
               </div>
               <ul className="list-unstyled p-0">
                 <li className="my-3">
@@ -101,7 +45,7 @@ export default function FirstPost() {
                     <div className="rounded-circle bg-success">
                       <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
                     </div>
-                    <h6 className="mb-0 ml-3">20GB Cloud Storage</h6>
+                    <h6 className="mb-0 ml-3">Unlimited users</h6>
                   </div>
                 </li>
                 <li className="my-3">
@@ -109,7 +53,7 @@ export default function FirstPost() {
                     <div className="rounded-circle bg-success">
                       <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
                     </div>
-                    <h6 className="mb-0 ml-3">1TB CDN Bandwidth</h6>
+                    <h6 className="mb-0 ml-3">New major features every month</h6>
                   </div>
                 </li>
                 <li className="my-3">
@@ -117,7 +61,7 @@ export default function FirstPost() {
                     <div className="rounded-circle bg-success">
                       <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
                     </div>
-                    <h6 className="mb-0 ml-3">99.95% Uptime Guarantee</h6>
+                    <h6 className="mb-0 ml-3">99% Uptime Guarantee</h6>
                   </div>
                 </li>
                 <li className="my-3">
@@ -128,119 +72,16 @@ export default function FirstPost() {
                     <h6 className="mb-0 ml-3">Personal Account Manager</h6>
                   </div>
                 </li>
-                <li className="my-3 opacity-50">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-danger">
-                      <img src={"img/icons/interface/icon-x.svg"} alt=" icon=" className="m-2 icon icon-xs" />
-                    </div>
-                    <h6 className="mb-0 ml-3">Enterprise SLA</h6>
-                  </div>
-                </li>
               </ul>
-              <a href="#" className="btn btn-lg btn-block btn-primary">Start with Premium</a>
+              <a href="#" className="btn btn-lg btn-block btn-primary">Start</a>
             </div>
           </div>
-          <div className="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div className="card card-body align-items-center shadow">
-
-              <div className="text-center mb-4">
-                <h4>Pro</h4>
-                <div className="d-flex align-items-center justify-content-center mb-1">
-                  <span className="h5 mb-0 mr-2">$</span>
-                  <span className="display-3 mb-0 text-dark">79</span>
-                </div>
-                <div>Per user, per month</div>
-              </div>
-              <ul className="list-unstyled p-0">
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">Unlimited Storage</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">100TB CDN Bandwidth</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">99.999% Uptime Guarantee</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">Personal Account Manager</h6>
-                  </div>
-                </li>
-                <li className="my-3">
-                  <div className="d-flex align-items-center">
-                    <div className="rounded-circle bg-success">
-                      <img src={"img/icons/interface/icon-check.svg"} alt=" icon=" className="m-2 icon icon-xs " />
-                    </div>
-                    <h6 className="mb-0 ml-3">Enterprise SLA</h6>
-                  </div>
-                </li>
-              </ul>
-              <a href="#" className="btn btn-lg btn-block btn-outline-primary">Start with Pro</a>
-            </div>
-          </div>
-        </div>
+     </div>
       </div>
     </section>
     <section className="p-0 bg-light">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 mb-4 mb-md-0 text-center">
-            <div className="px-xl-3">
-              <div>
-                <div className="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src={"img/icons/theme/navigation/route.svg"} alt="Binoculars icon" className="icon" />
-                </div>
-                <h5>Fully Responsive</h5>
-                <div>
-                  Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque Arya.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4 mb-md-0 text-center">
-            <div className="px-xl-3">
-              <div>
-                <div className="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src={"img/icons/theme/layout/layout-left-panel-2.svg"} alt="Layouts icon" className="icon" />
-                </div>
-                <h5>Multiple Layouts</h5>
-                <div>
-                  Non pulvinar neque laoreet suspendisse interdum Catelyn libero id. Olenna imp leo in vitae turpis massa. Sapien habitant Tyrion.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4 mb-md-0 text-center">
-            <div className="px-xl-3">
-              <div>
-                <div className="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-2-alt">
-                  <img src={"img/icons/theme/shopping/box-2.svg"} alt="Box icon" className="icon" />
-                </div>
-                <h5>Modular Components</h5>
-                <div>
-                  Khaleesi vedit sodales ut eu. Melisandre pellentesque elit eget Gendry est sociis natoque penatibus. Eunuch pulvinar sapien et Loras.
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div className="divider divider-bottom"/>
@@ -250,7 +91,7 @@ export default function FirstPost() {
         <div className="row section-title justify-content-center text-center">
           <div className="col-md-9 col-lg-8 col-xl-7">
             <h3 className="display-4">FAQ</h3>
-            <div className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</div>
+            <div className="lead">Let's answer some questions</div>
           </div>
         </div>
         <div className="row justify-content-center">
@@ -259,95 +100,45 @@ export default function FirstPost() {
               <div className="card mb-2 mb-md-3">
                 <a href="#accordion-1" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
                   <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Can I upgrade later on?</h6>
+                    <h6 className="mb-0 mr-2">How long will the building of the MVP last?</h6>
                     <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
                   </div>
                 </a>
                 <div className="collapse" id="accordion-1" data-parent="#faq-accordion">
                   <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre. Vivamus ornare pharetra diam sit amet tincidunt. Eunuch sit amet pharetra odio. Vivamus in tempor ipsum, sit amet elementum neque. Sed faucibus posuere pharetra.
-                    In imperdiet eleifend dui a aliquet. Aliquam imperdiet Tyrion purus vitae rutrum. Donec eu commodo nunc. Mauris dignissim lectus massa, eget cursus quam mollis id. Eddard sit amet ex Jon nibh maximus cursus at vitae mi. Duis tincidunt
-                    aliquam mi sed sagittis.
-
+                    Hopefully we will be ready end of Q2 2021.
                   </div>
                 </div>
               </div>
               <div className="card mb-2 mb-md-3">
                 <a href="#accordion-2" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
                   <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Can I port my data from another provider?</h6>
+                    <h6 className="mb-0 mr-2">Do you offer refunds?</h6>
                     <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
                   </div>
                 </a>
                 <div className="collapse" id="accordion-2" data-parent="#faq-accordion">
                   <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Eunuch nec dapibus ex. Aenean placerat, ex imp convallis dictum, ex nulla rutrum justo, Jon lobortis nisi ex at leo. Sed Tyrion aliquet sem vel pharetra. Vestibulum ante ipsum primis in faucibus Hodor luctus et ultrices posuere cubilia Curae; Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis a sapien quis quam auctor feugiat. Donec volutpat condimentum risus, eu iaculis nibh dapibus eu.
-
+                    Yes, you can. Just check your account out.
                   </div>
                 </div>
               </div>
               <div className="card mb-2 mb-md-3">
                 <a href="#accordion-3" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
                   <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Are my food photos stored forever in the cloud?</h6>
+                    <h6 className="mb-0 mr-2">Can I change my plan?</h6>
                     <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
                   </div>
                 </a>
                 <div className="collapse" id="accordion-3" data-parent="#faq-accordion">
                   <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Volantisi fringilla, unuch eu sagittis sagittis, urna Loras luctus odio, vitae hendrerit massa dui ac est. Donec leo tortor, Tyrion et aliquet at, convallis imp mi. Vivamus turpis diam, ultrices et tempus quis, sollicitudin et risus. Pellentesque nec
-                    sapien imp dolor condimentum condimentum ut sed neque. Integer efficitur accumsan risus, vitae posuere massa aliquam at.
-
+                    For now we only have one plan until the end of our MVP. After that there will be plans, but we can't give you more information for now.
                   </div>
                 </div>
               </div>
-              <div className="card mb-2 mb-md-3">
-                <a href="#accordion-4" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Who foots the bill for that?</h6>
-                    <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
-                  </div>
-                </a>
-                <div className="collapse" id="accordion-4" data-parent="#faq-accordion">
-                  <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Khaleesi ornare pharetra diam sit amet tincidunt. Eunuch sit amet pharetra odio. Vivamus in tempor ipsum, sit amet elementum neque. Sed faucibus posuere pharetra. In imperdiet eleifend dui a aliquet. Aliquam imperdiet Tyrion purus vitae rutrum. Donec
-                    eu commodo nunc. Vivamus Melisandre Jon lorem eget bibendum. Sed tincidunt sed enim at dignissim. Mauris erat diam, lacinia eget efficitur et, iaculis sed augue.
 
-                  </div>
-                </div>
-              </div>
-              <div className="card mb-2 mb-md-3">
-                <a href="#accordion-5" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">What's the real cost?</h6>
-                    <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
-                  </div>
-                </a>
-                <div className="collapse" id="accordion-5" data-parent="#faq-accordion">
-                  <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Brienne ac maximus Loras, eu placerat odio. Etiam vestibulum Loras et sollicitudin pellentesque. Mauris sed Tyrion Varys. Curabitur posuere augue risus, eget mollis unuch consectetur quis. Vestibulum accumsan congue risus, in semper eros interdum id.
-                    Tincidunt vitae libero efficitur viverra. Integer venenatis massa in dui viverra fermentum. Eunuch fringilla arcu ac urna sodales fermentum. Ut luctus enim ut sagittis consectetur.
 
-                  </div>
-                </div>
-              </div>
-              <div className="card mb-2 mb-md-3">
-                <a href="#accordion-6" data-toggle="collapse" role="button" aria-expanded="false" className="p-3 p-md-4">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0 mr-2">Can my company request a custom plan?</h6>
-                    <img src={"img/icons/interface/icon-caret-right.svg"} alt="Caret Right" className="icon icon-sm" />
-                  </div>
-                </a>
-                <div className="collapse" id="accordion-6" data-parent="#faq-accordion">
-                  <div className="px-3 px-md-4 pb-3 pb-md-4">
-                    Brienne ac maximus Loras, eu placerat odio. Etiam vestibulum Loras et sollicitudin pellentesque. Mauris sed Tyrion Varys. Curabitur posuere augue risus, eget mollis unuch consectetur quis. Vestibulum accumsan congue risus, in semper eros interdum id.
-
-                  </div>
-                </div>
-              </div>
             </div>
-
           </div>
         </div>
         <div className="row justify-content-center mt-4 mt-md-5">
@@ -358,7 +149,7 @@ export default function FirstPost() {
         </div>
       </div>
     </section>
-    <section className="bg-primary text-white pb-0">
+    {/* <section className="bg-primary text-white pb-0">
       <div className="container">
         <div className="row section-title justify-content-center text-center">
           <div className="col-md-9 col-lg-8 col-xl-7">
@@ -412,7 +203,7 @@ export default function FirstPost() {
         </div>
       </div>
       <div className="divider divider-bottom bg-primary-3"/>
-    </section>
+    </section> */}
 
     </Layout>
   )
