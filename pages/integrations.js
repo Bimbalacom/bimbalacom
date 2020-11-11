@@ -5,19 +5,19 @@ import React from "react";
 export default function Integrations() {
   return (
     <Layout title={'Integrations'}>
-      <section class="p-0 bg-primary row no-gutters o-hidden">
-      <div class="col-lg-5 col-xl-6 d-flex align-items-center justify-content-center">
+      <section className="p-0 bg-primary row no-gutters o-hidden">
+      <div className="col-lg-5 col-xl-6 d-flex align-items-center justify-content-center">
         <img src={"img/illustrations/integrations.svg"} alt="Integrations"  width="75%" height="75%"/>
-        <div class="divider divider-side bg-primary d-none d-lg-block"></div>
+        <div className="divider divider-side bg-primary d-none d-lg-block"></div>
       </div>
-      <div class="col-lg-7 col-xl-6">
+      <div className="col-lg-7 col-xl-6">
         <section>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col col-md-10 col-xl-9">
-                <div class="text-white text-center text-lg-left">
-                  <h3 class="h1">Connect your apps</h3>
-                  <p class="lead">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col col-md-10 col-xl-9">
+                <div className="text-white text-center text-lg-left">
+                  <h3 className="h1">Connect your apps</h3>
+                  <p className="lead">
                     Get and send all kind of data everywhere. <br />Who doesn't love automatisation?
                   </p>
                 </div>
@@ -27,7 +27,7 @@ export default function Integrations() {
         </section>
       </div>
     </section>
-      <section class="no-gutters o-hidden">
+      <section className="no-gutters o-hidden">
         <div className="row section-title justify-content-center text-center">
           <div className="col-md-9 col-lg-8 col-xl-7"><h3 className="display-4">Integrations</h3><div className="lead">We love integrationg other people's projects and that is why we are doing it every day.</div></div></div>
         <div className="container">
@@ -53,9 +53,9 @@ export default function Integrations() {
           </div>
         </div>
       </section>
-      <section class="bg-primary-3 text-white">
-        <div class="container">
-          <div class="row text-center">
+      <section className="bg-primary-3 text-white">
+        <div className="container">
+          <div className="row text-center">
           <h3 className="display-4">Don't see your integration?</h3>
           <div className="lead">Please take a moment and suggest what you think we should integrate. </div>
           </div>
