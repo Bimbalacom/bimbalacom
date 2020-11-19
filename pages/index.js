@@ -13,9 +13,9 @@ export default function Home() {
                         <div className="row justify-content-between align-items-center">
                             <div className="col-xl-5 col-lg-5 text-center text-lg-left mb-3 mb-md-5 mb-lg-0"
                                 data-aos="fade-right">
-                                <h1 className="display-3">A modular software for your support upgrade.</h1>
-                                <p className="lead">Grab it now and make your business awesome. Take your community in hands!</p>
-                                <a href={"/why-us"} className="btn btn-lg btn-primary">Why us?</a>
+                                <h1 className="display-3">Build the product your <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">customers want</mark></h1>
+                                <p className="lead">Show what you are working on and ask customers for requests in one place, so you can make better decisions.</p>
+                                <a href={"/free-trial"} className="btn btn-lg btn-primary">Demo?</a>
                             </div>
                             <div className="col" data-aos="fade-left" data-aos-delay="250">
                                 <img src={"/img/demo/roadmap-demo.webp"} alt="Roadmap screenshot"
@@ -60,12 +60,6 @@ export default function Home() {
                 </section>
                 <section className="bg-primary text-white">
                     <div className="container">
-                        <div className="row section-title justify-content-center text-center">
-                            <div className="col-md-9 col-lg-8 col-xl-7">
-                                <h3 className="display-4">Why Bimbala is the perfect choice for you</h3>
-                                <div className="lead"></div>
-                            </div>
-                        </div>
                         <div className="row justify-content-center">
                             <div className="col d-flex flex-wrap justify-content-center">
                                 <div className="row">
@@ -73,11 +67,10 @@ export default function Home() {
                                         <div className={'text-center'}>
                                             <img src={"/img/icons/theme/general/thunder-move-white.svg"} loading="lazy" alt="Lightning icon"
                                                 className="icon bg-light-alt rounded-circle p-1 shadow" />
-                                            <h5 className="mt-4 text-primary-1">Suits Your Style</h5>
+                                             <h5 className="mt-4 text-primary-1">Gathering feedback</h5>
                                             <div className={'text-justify'}>
-                                                Your support needs to be <mark data-aos="highlight-text"
-                                                    data-aos-delay="500" className={'font-weight-bold text-uppercase h5'}>fast</mark>. That is why everything connected with our software is integrated into one panel.
-                                    </div>
+                                                People can submit feedback, suggestions and even requests. Everybody can vote on it and you can understand if this feature is really needed.
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4 mb-4 mb-md-0">
@@ -86,19 +79,19 @@ export default function Home() {
                                                 className="icon bg-light-alt rounded-circle p-1 shadow" />
                                             <h5 className="mt-4 text-primary-1">Everything you need</h5>
                                             <div className={'text-justify'}>
-                                            From a website to a reward winning ducking counting robot - Bimbala helps you explain everything to your client. 
-                                            Impress your audience as if you know them personally without paying "the big bucks"
-                                    </div>
+                                                From a website to a reward winning ducking counting robot - Bimbala helps you explain everything to your client. 
+                                                Impress your audience as if you know them personally without paying "the big bucks"
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4 mb-4 mb-md-0">
                                         <div className={'text-center'}>
                                             <img src={"/img/icons/theme/design/select-white.svg"} loading="lazy" alt="Selection interface icon"
                                                 className="icon bg-light-alt rounded-circle p-1 shadow" />
-                                            <h5 className="mt-4 text-primary-1">Highly Customizable</h5>
+                                            <h5 className="mt-4 text-primary-1">Information that customers need</h5>
                                             <div className={'text-justify'}>
-                                                Like people every company is different. That is why we have a different approach for every client and every project.
-                                    </div>
+                                                Show your customers a view into your roadmap / changelog and etc. Let your customers see what is coming and what you have already done.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -29,12 +29,12 @@ export default function Navbar() {
                                         className="nav-link nav-item" role="button">Home</a>
                                 </Link>
                             </li>
-                            {/* <li className="nav-item">
+                            <li className="nav-item">
                                 <Link passHref={true} href={"/pricing"}>
                                     <a aria-expanded="false" aria-haspopup="true"
                                         className="nav-link nav-item" role="button">Pricing</a>
                                 </Link>
-                            </li> */}
+                            </li>
                             <li className="nav-item">
                                 <div className="dropdown">
                                     <a aria-expanded="false" aria-haspopup="true" className="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Solutions</a>
