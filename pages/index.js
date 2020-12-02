@@ -79,7 +79,7 @@ export default function Home() {
                                                 className="icon bg-light-alt rounded-circle p-1 shadow" />
                                             <h5 className="mt-4 text-primary-1">Everything you need</h5>
                                             <div className={'text-justify'}>
-                                                From a website to a reward winning ducking counting robot - Bimbala helps you explain everything to your client. 
+                                                From a website to a reward winning duck robot - Bimbala helps you explain everything to your client. 
                                                 Impress your audience as if you know them personally without paying "the big bucks"
                                             </div>
                                         </div>
@@ -102,11 +102,9 @@ export default function Home() {
                 <Steps />
                 <section class="bg-light o-hidden">
                     <div class="container">
-                        {/* <div class="row section-title justify-content-center text-center">
-                            <div class="col-md-9 col-lg-8 col-xl-7">
-                                <h3 class="display-4">Great Functionality</h3>
-                            </div>
-                        </div> */}
+                        <div class="row section-title justify-content-center text-center">
+                            <h4 class="display-4">Focus on the change ...</h4>
+                        </div>
                             <div class="row">
                                 <div class="col">
                                     <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" id="myTab" role="tablist">
