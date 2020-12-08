@@ -10,9 +10,9 @@ export default function Footer() {
               <li className="nav-item mr-3 mr-md-0">
                 <a href={"https://demo.bimbala.com"} className="nav-link fade-page px-0 py-2">Demo</a>
               </li>
-              {/* <li className="nav-item mr-3 mr-md-0">
+               <li className="nav-item mr-3 mr-md-0">
                 <a href={"/pricing"} className="nav-link fade-page px-0 py-2">Pricing</a>
-              </li> */}
+              </li>
               <li className="nav-item mr-3 mr-md-0">
                 <a href={"/features"} className="nav-link fade-page px-0 py-2">Features</a>
               </li>
