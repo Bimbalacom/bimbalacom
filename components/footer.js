@@ -17,6 +17,9 @@ export default function Footer() {
                 <a href={"/features"} className="nav-link fade-page px-0 py-2">Features</a>
               </li>
               <li className="nav-item mr-3 mr-md-0">
+                <a href={"https://uptime.bimbala.com"} className="nav-link fade-page px-0 py-2">Uptime</a>
+              </li>
+              <li className="nav-item mr-3 mr-md-0">
                 <a href={"/integrations"} className="nav-link fade-page px-0 py-2">Integrations</a>
               </li>
               <li className="nav-item mr-3 mr-md-0">
