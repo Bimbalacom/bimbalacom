@@ -107,75 +107,75 @@ export default function Home() {
                     </div>
                 </section>
                 <Steps />
-                <section class="bg-light o-hidden">
-                    <div class="container">
-                        {/* <div class="row section-title justify-content-center text-center">
-                            <div class="col-md-9 col-lg-8 col-xl-7">
-                                <h3 class="display-4">Great Functionality</h3>
+                <section className="bg-light o-hidden">
+                    <div className="container">
+                        {/* <div className="row section-title justify-content-center text-center">
+                            <div className="col-md-9 col-lg-8 col-xl-7">
+                                <h3 className="display-4">Great Functionality</h3>
                             </div>
                         </div> */}
-                            <div class="row">
-                                <div class="col">
-                                    <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" id="myTab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Teams</a>
+                            <div className="row">
+                                <div className="col">
+                                    <ul className="nav nav-pills lead mb-4 mb-md-5 justify-content-center" id="myTab" role="tablist">
+                                        <li className="nav-item">
+                                            <a className="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Teams</a>
                                         </li>
-                                        {/* <li class="nav-item">
-                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Dark Mode</a>
+                                        {/* <li className="nav-item">
+                                            <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Dark Mode</a>
                                         </li> */}
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="true">Integrations</a>
+                                        <li className="nav-item">
+                                            <a className="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="true">Integrations</a>
                                         </li>
                                     </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                            <div class="row align-items-center justify-content-between flex-lg-row-reverse">
-                                                <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
-                                                    <div class="pl-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
-                                                        <h3 class="h1">Be the part of the <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">team / change</mark></h3>
+                                    <div className="tab-content" id="myTabContent">
+                                        <div className="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <div className="row align-items-center justify-content-between flex-lg-row-reverse">
+                                                <div className="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
+                                                    <div className="pl-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
+                                                        <h3 className="h1">Be the part of the <mark data-aos="highlight-text" data-aos-delay="250" className="aos-init aos-animate">team / change</mark></h3>
                                                         <p>
                                                             Supports and Managers love to get to know they're clients. This is the easiest and funniest way possible.
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
-                                                    <img src={"img/illustrations/collaboration.svg"} alt="collaboration" class="img-fluid rounded shadow border" />
+                                                <div className="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
+                                                    <img src={"img/illustrations/collaboration.svg"} alt="collaboration" className="img-fluid rounded shadow border" />
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                            <div class="row align-items-center justify-content-around">
-                                                <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
-                                                    <div class="pr-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
-                                                        <h3 class="h1">Easy on the eyes, and the wallet.</h3>
+                                        {/* <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div className="row align-items-center justify-content-around">
+                                                <div className="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
+                                                    <div className="pr-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
+                                                        <h3 className="h1">Easy on the eyes, and the wallet.</h3>
                                                         <p>
                                                             Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
                                                         </p>
-                                                        <div class="mt-4">
-                                                            <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
-                                                                <img src={"img/avatars/male-1.jpg"} alt="Harvey Derwent avatar image" class="avatar avatar-sm flex-shrink-0 mr-3" />
-                                                                <div class="text-dark mb-0">“Jumpstart increases productivity.”</div>
+                                                        <div className="mt-4">
+                                                            <div className="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 d-inline-flex text-left shadow-sm bg-white">
+                                                                <img src={"img/avatars/male-1.jpg"} alt="Harvey Derwent avatar image" className="avatar avatar-sm flex-shrink-0 mr-3" />
+                                                                <div className="text-dark mb-0">“Jumpstart increases productivity.”</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
-                                                    <img src={"img/desktop-app/desktop-app-1.jpg"} alt="Screenshot" class="img-fluid rounded shadow border" />
+                                                <div className="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
+                                                    <img src={"img/desktop-app/desktop-app-1.jpg"} alt="Screenshot" className="img-fluid rounded shadow border" />
                                                 </div>
                                             </div>
                                         </div> */}
-                                        <div class="tab-pane fade active show" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                            <div class="row align-items-center justify-content-around">
-                                                <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
-                                                    <div class="pr-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
-                                                        <h3 class="h1">Updating or adding a integration every  major <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">update</mark>.</h3>
+                                        <div className="tab-pane fade active show" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                            <div className="row align-items-center justify-content-around">
+                                                <div className="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
+                                                    <div className="pr-lg-4 pr-xl-5 aos-init aos-animate" data-aos="fade-right">
+                                                        <h3 className="h1">Updating or adding a integration every  major <mark data-aos="highlight-text" data-aos-delay="250" className="aos-init aos-animate">update</mark>.</h3>
                                                         <p>
                                                             We love being a part of something big. That is why we have at least one new or updated integration with part of our friends.
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
-                                                    <img src={"img/illustrations/integrations.svg"} alt="Integrations" class="img-fluid rounded shadow border" />
+                                                <div className="col-lg-6 col-xl-7 aos-init aos-animate" data-aos="fade-left">
+                                                    <img src={"img/illustrations/integrations.svg"} alt="Integrations" className="img-fluid rounded shadow border" />
                                                 </div>
                                             </div>
                                         </div>
