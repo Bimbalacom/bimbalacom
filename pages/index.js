@@ -18,8 +18,8 @@ export default function Home() {
                                 <a href={"/free-trial"} className="btn btn-lg btn-primary">Demo?</a>
                             </div>
                             <div className="col" data-aos="fade-left" data-aos-delay="250">
-                                <img src={"/img/demo/roadmap-demo.webp"} alt="Roadmap screenshot"
-                                    className="img-fluid rounded shadow-lg border" />
+                                <img src={"/img/learning.svg"} alt="Roadmap screenshot"
+                                    className="img-fluid rounded " />
                             </div>
                         </div>
                     </div>
