@@ -21,7 +21,7 @@ export default function FirstPost() {
               <h3>Data location</h3><br />
                 All data is safely stored within the European Union, currently in Germany. This facilitates compliance with privacy regulations and leverages the EU’s strong standards for data protection.
               </div>
-            </div>
+            </div><br />
             <div class="row">
               <div class="col-sm">
               <h3>Site reliability</h3><br />

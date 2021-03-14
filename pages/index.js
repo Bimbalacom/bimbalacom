@@ -13,7 +13,7 @@ export default function Home() {
                         <div className="row justify-content-between align-items-center">
                             <div className="col-xl-5 col-lg-5 text-center text-lg-left mb-3 mb-md-5 mb-lg-0"
                                 data-aos="fade-right">
-                                <h1 className="display-3">Build the product your <mark data-aos="highlight-text" data-aos-delay="250" class="aos-init aos-animate">customers want</mark></h1>
+                                <h1 className="display-3">Build the product your <mark data-aos="highlight-text" data-aos-delay="250" className="aos-init aos-animate">customers want</mark></h1>
                                 <p className="lead">Show what you are working on and ask customers for requests in one place, so you can make better decisions.</p>
                                 <a href={"/free-trial"} className="btn btn-lg btn-primary">Demo?</a>
                             </div>
@@ -100,16 +100,16 @@ export default function Home() {
                     </div>
                 </section>
                 <Steps />
-                <section class="bg-light o-hidden">
-                    <div class="container">
-                        <div class="row section-title justify-content-center text-center">
-                            <h4 class="display-4">Focus on the change ...</h4>
+                <section className="bg-light o-hidden">
+                    <div className="container">
+                        <div className="row section-title justify-content-center text-center">
+                            <h4 className="display-4">Focus on the change ...</h4>
                         </div>
-                            <div class="row">
-                                <div class="col">
-                                    <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" id="myTab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Teams</a>
+                            <div className="row">
+                                <div className="col">
+                                    <ul className="nav nav-pills lead mb-4 mb-md-5 justify-content-center" id="myTab" role="tablist">
+                                        <li className="nav-item">
+                                            <a className="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Teams</a>
                                         </li>
                                         {/* <li className="nav-item">
                                             <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Dark Mode</a>
