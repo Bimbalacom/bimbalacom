@@ -28,34 +28,15 @@ export default function FirstPost() {
                 <br /><br /> like our photos! 
               </div>
             </div>
+            <div className="col-md-auto" data-aos="fade-up" data-aos-delay="200">
+              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
+                <a href={"https://discord.gg/teKwr6qVdg"}><img src={"img/icons/social/discord.svg"} alt="Bimbala Discord" width="75px" height="75px" /></a>
+                <br /><br /> talk to us! 
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      {/* <section>
-        <div className="container">
-          <div className="row justify-content-center text-center">
-            <div className="col-md-auto" data-aos="fade-up">
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Email us </h5>
-                <a href="mailto:contact@bimbala.com" className="lead">contact@bimbala.com</a><br />
-              (You will receive an answer in <br />24 working hours max.)
-            </div>
-            </div>
-            <div className="col-md-auto" data-aos="fade-up" data-aos-delay="100">
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Discord /Slack</h5>
-                One more thing to take care of. <br />
-              </div>
-            </div>
-            <div className="col-md-auto" data-aos="fade-up" data-aos-delay="200">
-              <div className="px-md-4 px-lg-5 mb-5 mb-md-0">
-                <h5>Support tickets</h5>
-              Last but not least.
-            </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </Layout>
   )
 }

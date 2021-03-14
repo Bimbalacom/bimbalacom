@@ -34,7 +34,7 @@ export default function Footer() {
                 <a href={"/free-trial"} className="nav-link fade-page px-0 py-2">Free trial</a>
               </li>
               <li className="nav-item mr-3 mr-md-0">
-                <a href={"/success-stories"} className="nav-link fade-page px-0 py-2">Success Stories</a>
+                <a href={"/security"} className="nav-link fade-page px-0 py-2">Security</a>
               </li>
               <li className="nav-item mr-3 mr-md-0">
                 <a href={"/customer-reviews"} className="nav-link fade-page px-0 py-2">Customer Reviews</a>
