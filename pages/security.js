@@ -15,7 +15,7 @@ export default function FirstPost() {
               </div>
               <div class="col-sm">
               <h3>Threat detection</h3><br />
-                Our infrastructure has automated vulnerability scanning, threat detection, and bot protection. Our partners Cloudflare and Amazon Web Services, are industry leaders in security.
+                Our infrastructure has automated vulnerability scanning, threat detection, and bot protection. Our partners Cloudflare and Hetzner, are industry leaders in security.
               </div>
               <div class="col-sm">
               <h3>Data location</h3><br />
