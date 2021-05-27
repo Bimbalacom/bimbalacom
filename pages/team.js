@@ -116,7 +116,7 @@ export default function FirstPost() {
                                                         </a>
                                                     </li>
                                                     <li className="mx-2">
-                                                        <a href={"https://github.com/lubo1998"}
+                                                        <a href={"https://github.com/l-alexandrov"}
                                                            className="hover-fade-out">
                                                             <img src="img/icons/social/github.svg" alt="Github"
                                                                  className="icon icon-xs"/>
