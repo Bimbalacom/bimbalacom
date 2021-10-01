@@ -28,7 +28,6 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Netlify Status](https://api.netlify.com/api/v1/badges/885cb202-8649-4867-9415-ac75947bd4ae/deploy-status)](https://app.netlify.com/sites/objective-payne-ff1c8b/deploys)
 [![time tracker](https://wakatime.com/badge/github/Bimbalacom/Website.svg)](https://wakatime.com/badge/github/Bimbalacom/Website)
 
 
@@ -36,8 +35,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Bimbalacom/Website">
-    <img src="public/img/bimbalaLogo.png" alt="Bimbala mascot/logo" width="800">
+  <a href="https://github.com/Bimbalacom/bimbala.com">
+    <img src=".github/img/bimbalaLogo.png" alt="Bimbala mascot/logo" width="800">
   </a>
 
   <h3 align="center">Bimbala website</h3>
@@ -62,50 +61,21 @@
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [Release plan of the website](#release-plan-of-the-website)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Bimbala Screen Shot][product-screenshot]](https://bimbala.com)
-
 ### Built With
 
-* [nextjs](https://nextjs.org/)
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-We mainly only use NextJS and plugin/extensions for it. So you can use NPM for everything.
-```sh
-npm install npm@latest -g
-```
-
-### Installation
- 
-1. Clone the repo
-```sh
-git clone https://github.com/Bimbalacom/Website.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
-
+* [Laravel](https://laravel.com)
+* [Devdojo Wave](https://github.com/thedevdojo/wave)
 
 
 <!-- ROADMAP -->
@@ -130,7 +100,7 @@ Contributions are what make the open source community such an amazing place to b
 ## Release plan of the website
 
 - A major version is being published each year.
-- Every 3-4 weeks a new version is being released.
+- Every month there will be a new version is being released.
 
 <!-- LICENSE -->
 ## License
@@ -147,24 +117,19 @@ Our Twitter - [@bimbalacom](https://twitter.com/bimbalacom)
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [Touko's blog](https://blog.toukopeltomaa.com/next-js-markdown-blog#gets-posts-from-posts-folder) - The blog was mostly made with his idea.
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/Bimbalacom/Website.svg?style=flat-square
-[contributors-url]: https://github.com/Bimbalacom/Website/graphs/contributors
+[contributors-url]: https://github.com/Bimbalacom/bimbala.com/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Bimbalacom/Website.svg?style=flat-square
-[forks-url]: https://github.com/Bimbalacom/Website/network/members
+[forks-url]: https://github.com/Bimbalacom/bimbala.com/network/members
 [stars-shield]: https://img.shields.io/github/stars/Bimbalacom/Website.svg?style=flat-square
-[stars-url]: https://github.com/Bimbalacom/Website/stargazers
+[stars-url]: https://github.com/Bimbalacom/bimbala.com/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Bimbalacom/Website.svg?style=flat-square
-[issues-url]: https://github.com/Bimbalacom/Website/issues
+[issues-url]: https://github.com/Bimbalacom/bimbala.com/issues
 [license-shield]: https://img.shields.io/github/license/Bimbalacom/Website.svg?style=flat-square
-[license-url]: https://github.com/Bimbalacom/Website/blob/master/LICENSE.txt
+[license-url]: https://github.com/Bimbalacom/bimbala.com/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/
+[linkedin-url]: https://www.linkedin.com/company/bimbala/
 [product-screenshot]: .github/img/demo.png

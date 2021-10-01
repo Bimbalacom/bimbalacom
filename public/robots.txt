@@ -1,3 +1,2 @@
-Sitemap: https://bimbala.com/sitemap.xml
-User-agent:*
+User-agent: *
 Disallow:
