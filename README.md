@@ -47,9 +47,9 @@
     <br />
     <a href="https://bimbala.com">View Demo</a>
     ·
-    <a href="https://github.com/Bimbalacom/Website/issues/new?assignees=&labels=bug&template=bug_report.md&title=">Report Bug</a>
+    <a href="https://github.com/Bimbalacom/bimbalacom/issues/new?assignees=&labels=bug&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/Bimbalacom/Website/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=">Request Feature</a>
+    <a href="https://github.com/Bimbalacom/bimbalacom/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=">Request Feature</a>
   </p>
 </p>
 
@@ -81,7 +81,7 @@
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/Bimbalacom/Website/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Bimbalacom/bimbalacom/issues) for a list of proposed features (and known issues).
 
 
 
@@ -120,15 +120,15 @@ Our Twitter - [@bimbalacom](https://twitter.com/bimbalacom)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Bimbalacom/Website.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/Bimbalacom/bimbalacom.svg?style=flat-square
 [contributors-url]: https://github.com/Bimbalacom/bimbala.com/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Bimbalacom/Website.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/Bimbalacom/bimbalacom.svg?style=flat-square
 [forks-url]: https://github.com/Bimbalacom/bimbala.com/network/members
-[stars-shield]: https://img.shields.io/github/stars/Bimbalacom/Website.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/Bimbalacom/bimbalacom.svg?style=flat-square
 [stars-url]: https://github.com/Bimbalacom/bimbala.com/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Bimbalacom/Website.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/Bimbalacom/bimbalacom.svg?style=flat-square
 [issues-url]: https://github.com/Bimbalacom/bimbala.com/issues
-[license-shield]: https://img.shields.io/github/license/Bimbalacom/Website.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/Bimbalacom/bimbalacom.svg?style=flat-square
 [license-url]: https://github.com/Bimbalacom/bimbala.com/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/bimbala/
