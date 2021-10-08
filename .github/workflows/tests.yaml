@@ -3,10 +3,10 @@ on:
   pull_request:
     branches:
       - main
- 
+
 jobs:
   laravel-tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latestс
 # Service container Mysql mysql
     services:
       # Label used to access the service container
@@ -25,15 +25,15 @@ jobs:
           --health-interval=10s
           --health-timeout=5s
           --health-retries=3
- 
+
     strategy:
       matrix:
         operating-system: [ubuntu-latest]
         php-versions: [ '7.4' ]
         dependency-stability: [ prefer-stable ]
- 
+
     name: P${{ matrix.php-versions }} - L${{ matrix.laravel }} - ${{ matrix.dependency-stability }} - ${{ matrix.operating-system}}
- 
+
     steps:
     - uses: actions/checkout@v2
     - name: Install PHP versions
