@@ -68,11 +68,11 @@
         </svg>
     </div>
     {{-- Blob Top Right --}}
-    <div class="absolute top-0 right-0 -mb-56 opacity-25 w-96 h-96">
+ {{-- <div class="absolute top-0 right-0 -mb-56 opacity-25 w-96 h-96 -mr-72">
         <svg class="w-full h-full text-yellow-500 opacity-50 fill-current" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path d="M44.3,-48.3C55.3,-33.4,60.4,-16.7,62.2,1.8C64,20.3,62.5,40.6,51.6,55.3C40.6,70,20.3,79,2.3,76.7C-15.7,74.4,-31.4,60.7,-46.7,46C-62,31.4,-76.9,15.7,-78.5,-1.6C-80,-18.8,-68.2,-37.6,-52.9,-52.5C-37.6,-67.5,-18.8,-78.5,-1.1,-77.5C16.7,-76.4,33.4,-63.3,44.3,-48.3Z" transform="translate(100 100)"></path>
         </svg>
-    </div>
+    </div> --}}
 
 </section>
 {{-- Blobs --}}
