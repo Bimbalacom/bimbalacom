@@ -70,6 +70,6 @@
         <div :class="{ 'flex' : mobile, 'hidden md:flex' : !mobile }" class="relative z-20 flex-col justify-center pr-5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0">
             <a href="{{ route('login') }}" class="flex-shrink-0 font-semibold text-gray-200 hover:underline" >Sign in</a>
 
-            <a href="{{ route('register') }}" class="flex-shrink-0 w-auto text-base font-semibold leading-5 text-left text-blue-50 capitalize bg-transparent md:text-sm md:py-3 md:px-8 md:font-medium md:text-center md:text-white md:bg-purple-900 md:mx-0 rounded">
+         {{--   <a href="{{ route('register') }}" class="flex-shrink-0 w-auto text-base font-semibold leading-5 text-left text-blue-50 capitalize bg-transparent md:text-sm md:py-3 md:px-8 md:font-medium md:text-center md:text-white md:bg-purple-900 md:mx-0 rounded">
                 Sign up
-            </a>
+            </a> --}}
