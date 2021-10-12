@@ -36,7 +36,7 @@
                 Amazing Features
             </h2>
             <p class="w-full max-w-xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
-                Check out our set of awesome features and tools. We are the industry leaders in providing quality tools, trusted and used by over 1,200 companies. We kind'of rock!
+                Here are part of our features and future plans.
             </p>
         </div>
         <div class="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
