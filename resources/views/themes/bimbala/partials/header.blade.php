@@ -24,15 +24,16 @@
         <div class="relative z-20 flex items-center justify-between">
             <div>
                 <a href="{{ route('wave.home') }}" class="text-lg font-semibold text-white md:text-xl">
-                    <h2 class="d-inline mb-0 brand">Bimbala</h2></a>
+                    <h2 class="d-inline mb-0 brand">Bimbala</h2>
+                </a>
             </div>
-        {{-- This is the homepage nav when a user is not logged in --}}
-        @if(auth()->guest())
-            @include('theme::menus.guest')
-        @else 
-        {{-- Otherwise we want to show the menu for the logged in user --}}
-            @include('theme::menus.authenticated')
-        @endif
+                {{-- This is the homepage nav when a user is not logged in --}}
+                @if(auth()->guest())
+                    @include('theme::menus.guest')
+                @else 
+                {{-- Otherwise we want to show the menu for the logged in user --}}
+                    @include('theme::menus.authenticated')
+                @endif
         </div>
     </nav>
 </header>

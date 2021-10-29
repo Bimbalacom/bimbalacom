@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer>
-<section class="pt-6 w-full bg-gray-900 ">
+<section class="pt-6 mt-16 w-full bg-gray-900 ">
     <div class="px-6 mx-auto max-w-7xl xl:px-12">
         <div class="box-border flex flex-wrap pt-20 pb-0 text-base leading-tight text-gray-500 md:pb-12">
             <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
