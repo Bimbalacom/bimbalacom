@@ -26,8 +26,8 @@
         <meta itemprop="image" content="{{ $seo->image }}">
 
         @if(isset($seo->image_w) && isset($seo->image_h))
-            <meta property="og:image:width" content="{{ $seo->image_w }}">
-            <meta property="og:image:height" content="{{ $seo->image_h }}">
+        <meta property="og:image:width" content="{{ $seo->image_w }}">
+        <meta property="og:image:height" content="{{ $seo->image_h }}">
         @endif
     @endif
 
@@ -41,7 +41,7 @@
     {{-- Styles --}}
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
 </head>
-<body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif @if(config('wave.dev_bar')){{ 'pb-10' }}@endif">
+<body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif">
 
     @include('theme::partials.header')
 
