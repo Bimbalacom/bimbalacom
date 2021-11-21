@@ -1,3 +1,6 @@
+@extends('theme::layouts.app')
+
+@section('content')
 {{--Team--}}
 <section class="w-full py-12 bg-white lg:py-24">
     <div class="max-w-6xl px-12 mx-auto text-center">
@@ -74,3 +77,5 @@
 
     </div>
 </section>
+
+@endsection

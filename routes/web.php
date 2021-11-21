@@ -25,4 +25,4 @@ Wave::routes();
 
 // Bimbala included
 Route::view('/team','theme::team');
-Route::view('/discord','https://suck.it');
+Route::view('/discord','https://discord.gg/r9fsYbwZVA');
