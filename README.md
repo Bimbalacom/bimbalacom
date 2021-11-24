@@ -22,13 +22,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!-- [![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![time tracker](https://wakatime.com/badge/github/Bimbalacom/Website.svg)](https://wakatime.com/badge/github/Bimbalacom/Website) -->
+[![time tracker](https://wakatime.com/badge/github/Bimbalacom/Website.svg)](https://wakatime.com/badge/github/Bimbalacom/Website) 
 
 
 
@@ -56,6 +56,7 @@
 
 
 <!-- TABLE OF CONTENTS -->
+<!-- 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -66,7 +67,7 @@
 - [Release plan of the website](#release-plan-of-the-website)
 - [License](#license)
 - [Contact](#contact)
-
+-->
 
 
 <!-- ABOUT THE PROJECT -->
