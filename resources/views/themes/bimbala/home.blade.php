@@ -132,41 +132,40 @@
 </section>
 {{-- End Features with images --}}
 
-{{-- Motivation --}}
+{{-- --}}
+<section class="relative block pt-16 overflow-hidden leading-6 text-left text-white bg-purple-900 bg-no-repeat bg-cover sm:pt-20 md:pt-24">
+    <div class="w-full max-w-5xl px-8 mx-auto leading-6 text-left xl:px-0">
+        <div class="flex flex-wrap items-center justify-center flex-1 text-center text-white lg:text-left">
+            <div class="relative w-full px-4 leading-6 text-left lg:w-7/12 xl:w-1/2">
+                <h2 class="mx-0 mt-0 mb-5 font-sans text-4xl font-bold text-white">
+                    Designed with your client in mind.
+                </h2>
+                <div class="pr-10 text-left text-purple-300">
+                    Beautifully crafted HQ which provides you paying customer with an alternative to the boring old help desk.
+                </div>
+            </div>
+            <div class="relative flex flex-col w-full px-4 mt-10 leading-6 text-left md:flex-row lg:w-5/12 xl:w-1/2 justifty-end">
+                <a href="https://board.bimbala.com/" class="inline-flex items-center justify-center w-full h-16 px-10 py-0 mb-8 text-xl font-semibold text-center text-white no-underline align-middle bg-green-400 border border-transparent border-solid rounded-full cursor-pointer select-none md:mb-0 md:mr-8 md:w-auto lg:px-7 xl:px-10 hover:bg-green-500 focus:shadow-xs focus:no-underline">
+                    Our Demo
+                </a>
+                <a href="https://calendly.com/bimbalacom/30min" class="inline-flex items-center justify-center w-full h-16 px-10 py-0 text-xl font-semibold text-center text-white no-underline align-middle bg-transparent border-2 border-purple-600 border-solid rounded-full cursor-pointer select-none md:w-auto lg:px-7 xl:px-10 hover:border-white hover:text-white focus:shadow-xs focus:no-underline">
+                    Book a demo
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center max-w-5xl mx-auto mt-8 text-white md:mt-20">
+            <div class="relative w-full px-4 leading-6 text-left xl:flex-grow-0 xl:flex-shrink-0">
+                <div class="rounded-t-xl h-10 bg-gray-900 flex items-center space-x-1.5 justify-start relative overflow-hidden">
+                    <div class="relative z-10 w-3 h-3 ml-3 bg-gray-700 rounded-full"></div>
+                    <div class="relative z-10 w-3 h-3 bg-gray-700 rounded-full"></div>
+                    <div class="relative z-10 w-3 h-3 bg-gray-700 rounded-full"></div>
+                </div>
 
-<!-- Section 1 -->
-<section class="w-full px-8 py-16 md:py-16 bg-whitexl:px-0" x-data="{ section: 'gather' }">
-  <div class="flex flex-col max-w-6xl px-3 mx-auto md:px-0 lg:px-8 xl:px-0 md:flex-row">
-    <div class="w-full pr-5 mb-6 space-y-1 md:mb-0 md:space-y-4 md:w-4/12 xl:pr-12">
-        <h2 @click="section='gather'" class="pb-2 text-5xl font-extrabold cursor-pointer lg:text-6xl" :class="{ 'text-black' : section == 'gather', 'text-gray-400 hover:text-gray-900' : section != 'gather' }">Gather</h2>
-        <h2 @click="section='understand'" class="py-2 text-5xl font-extrabold cursor-pointer lg:text-6xl" :class="{ 'text-black' : section == 'understand', 'text-gray-400 hover:text-gray-900' : section != 'understand' }">Understand</h2>
-        <h2 @click="section='learn'" class="py-2 text-5xl font-extrabold cursor-pointer lg:text-6xl" :class="{ 'text-black' : section == 'learn', 'text-gray-400 hover:text-gray-900' : section != 'learn' }">Learn</h2>
-    </div>
-
-    <div class="relative w-full mt-6 overflow-hidden md:mt-1 md:w-9/12">
-        <div class="w-full space-y-6" x-show="section == 'gather'" x-transition:enter="top-0 left-0 w-full h-full absolute transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-full" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-full">
-        <svg class="w-12 h-12 text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>    
-        <h3 class="text-2xl font-bold leading-7">Gathering feedback</h3>
-            <p class="text-base font-normal leading-none text-gray-700 md:text-lg">Starting every journey from the beginning is exciting, but understanding your clients is even better. This kind of adventure needs a great companion and be sure you have picked the right one.</p>
-         </div>
-
-        <div class="space-y-6" x-show="section == 'understand'" x-transition:enter="top-0 left-0 w-full h-full absolute transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-full" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-full">
-        <svg class="w-12 h-12 text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>    
-        <h3 class="text-2xl font-bold leading-7">Understand your clients</h3>
-            <p class="text-base font-normal leading-none text-gray-700 md:text-lg">Use our powerful dashboard to see what your customers want.</p>
-          </div>
-
-        <div class="space-y-6" x-show="section == 'learn'" x-transition:enter="top-0 left-0 w-full h-full absolute transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-full" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-full">
-            <svg class="w-12 h-12 text-purple-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-            <h3 class="text-2xl font-bold leading-7">Learn from experience</h3>
-            <p class="text-base font-normal leading-none text-gray-700 md:text-lg">Every step on your journey is getting you closer to your end goal, and the quickest way to get closer to that goal is by learning from your past experiences.</p>
-            {{-- <a href="#_" class="flex items-center justify-start mt-8 text-lg font-medium tracking-wide text-gray-900 underline uppercase">Learn More <svg class="w-5 h-5 ml-1 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></a> --}}
+                <img src="{{URL::asset('themes/bimbala/images/demo.bimbala.jpg')}}" alt="Designed with your client in mind" class=" max-w-full text-white align-middle border-none">
+            </div>
         </div>
     </div>
-  </div>
 </section>
 
-{{-- End of motivation --}}
-{{--TOdo: Talking shark --}}
 
 @endsection
