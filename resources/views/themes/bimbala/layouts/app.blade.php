@@ -38,7 +38,7 @@
     @if(isset($seo['seo_description']))
         <meta name="description" content="{{ $seo['seo_description'] }}">
     @endif
-
+    <meta name="google-site-verification" content="173vXOSU7DHgNz9UkFqBkQ1_yThKQPBGvoZrIKoEm6U" />
     {{-- Styles --}}
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
 </head>
