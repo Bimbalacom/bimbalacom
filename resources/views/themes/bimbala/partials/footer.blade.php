@@ -68,10 +68,10 @@
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="https://uptime.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Uptime</a>
                         </li>
-                        {{--         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Blog</a>
+                                 <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                            <a href="/security" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Security</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        {{--  <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Culture</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
