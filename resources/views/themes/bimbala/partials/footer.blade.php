@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer>
-<section class="pt-6 mt-16 w-full bg-gray-900 ">
+<section class="pt-6 w-full bg-gray-900 ">
     <div class="px-6 mx-auto max-w-7xl xl:px-12">
         <div class="box-border flex flex-wrap pt-20 pb-0 text-base leading-tight text-gray-500 md:pb-12">
             <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
@@ -10,14 +10,14 @@
                 @else
                     <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">Bimbala</h2>
                 @endif
-                {{--  <ul class="p-0 m-0 text-base leading-tight list-none">
+                  <ul class="p-0 m-0 text-base leading-tight list-none">
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Home</a>
+                            <a href="{{ route('wave.home') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Home</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Downloads</a>
+                            <a href="https://board.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Demo</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                       {{-- <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Web App</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
@@ -64,14 +64,14 @@
                     <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Company
                     </h2>
-                 {{--   <ul class="p-0 m-0 text-base leading-tight list-none">
+                    <ul class="p-0 m-0 text-base leading-tight list-none">
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Contact us</a>
+                            <a href="https://uptime.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Uptime</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Blog</a>
+                                 <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                            <a href="/security" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Security</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        {{--  <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Culture</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
