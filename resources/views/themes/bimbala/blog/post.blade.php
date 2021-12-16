@@ -34,7 +34,7 @@
         </div>
  
     </article>
-    <div class="max-w-4xl mx-auto mt-6"><div id="disqus_thread"></div>
+    <div class="max-w-4xl mx-auto mt-6 pb-20"><div id="disqus_thread"></div>
         <script>
             /**
             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
