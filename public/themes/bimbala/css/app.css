@@ -1347,6 +1347,12 @@ select {
 .-ml-5 {
   margin-left: -1.25rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
+.-mt-1 {
+  margin-top: -0.25rem;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -1427,6 +1433,9 @@ select {
 }
 .h-56 {
   height: 14rem;
+}
+.h-1 {
+  height: 0.25rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -1561,6 +1570,10 @@ select {
 }
 .translate-y-4 {
   --tw-translate-y: 1rem;
+  transform: var(--tw-transform);
+}
+.translate-y-2 {
+  --tw-translate-y: 0.5rem;
   transform: var(--tw-transform);
 }
 .rotate-6 {
@@ -1826,6 +1839,9 @@ select {
 .border-r {
   border-right-width: 1px;
 }
+.border-l {
+  border-left-width: 1px;
+}
 .border-solid {
   border-style: solid;
 }
@@ -2001,6 +2017,18 @@ select {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+.bg-indigo-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
+}
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
@@ -2269,6 +2297,18 @@ select {
 .pt-2 {
   padding-top: 0.5rem;
 }
+.pr-0\.5 {
+  padding-right: 0.125rem;
+}
+.pr-0 {
+  padding-right: 0px;
+}
+.pl-3\.5 {
+  padding-left: 0.875rem;
+}
+.pl-3 {
+  padding-left: 0.75rem;
+}
 .text-left {
   text-align: left;
 }
@@ -2526,6 +2566,18 @@ select {
 .text-red-400 {
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+.text-indigo-400 {
+  --tw-text-opacity: 1;
+  color: rgb(129 140 248 / var(--tw-text-opacity));
+}
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 .no-underline {
   -webkit-text-decoration-line: none;
@@ -3251,6 +3303,16 @@ svg {
 
   .sm\:translate-y-0 {
     --tw-translate-y: 0px;
+    transform: var(--tw-transform);
+  }
+
+  .sm\:translate-x-2 {
+    --tw-translate-x: 0.5rem;
+    transform: var(--tw-transform);
+  }
+
+  .sm\:translate-x-0 {
+    --tw-translate-x: 0px;
     transform: var(--tw-transform);
   }
 
