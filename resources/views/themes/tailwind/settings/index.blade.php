@@ -117,7 +117,7 @@
 
 			if(document.getElementById('upload')){
 				document.getElementById('upload').addEventListener('change', function () {
-					Alpine.store('uploadModal').openModal();
+					document.getElementById('upload-modal').__x.$data.open = true;
 					uploadCropEl.classList.add('hidden');
 					uploadLoading.classList.remove('hidden');
 					setTimeout(function(){
