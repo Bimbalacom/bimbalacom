@@ -20,7 +20,7 @@ Route::get('blog/{category}/{post}', '\Wave\Http\Controllers\BlogController@post
 Route::view('install', 'wave::install')->name('wave.install');
 
 /***** Pages *****/
-Route::get('{page}', '\Wave\Http\Controllers\PageController@page');
+Route::get('p/{page}', '\Wave\Http\Controllers\PageController@page');
 
 /***** Pricing Page *****/
 Route::view('pricing', 'theme::pricing')->name('wave.pricing');
@@ -37,16 +37,16 @@ Route::group(['middleware' => 'wave'], function () {
 });
 
 Route::group(['middleware' => 'auth'], function(){
-	Route::get('account/settings/{section?}', '\Wave\Http\Controllers\SettingsController@index')->name('wave.settings');
+	Route::get('settings/{section?}', '\Wave\Http\Controllers\SettingsController@index')->name('wave.settings');
 
-	Route::post('account/settings/profile', '\Wave\Http\Controllers\SettingsController@profilePut')->name('wave.settings.profile.put');
-	Route::put('account/settings/security', '\Wave\Http\Controllers\SettingsController@securityPut')->name('wave.settings.security.put');
+	Route::post('settings/profile', '\Wave\Http\Controllers\SettingsController@profilePut')->name('wave.settings.profile.put');
+	Route::put('settings/security', '\Wave\Http\Controllers\SettingsController@securityPut')->name('wave.settings.security.put');
 
-	Route::post('account/settings/api', '\Wave\Http\Controllers\SettingsController@apiPost')->name('wave.settings.api.post');
-	Route::put('account/settings/api/{id?}', '\Wave\Http\Controllers\SettingsController@apiPut')->name('wave.settings.api.put');
-	Route::delete('account/settings/api/{id?}', '\Wave\Http\Controllers\SettingsController@apiDelete')->name('wave.settings.api.delete');
+	Route::post('settings/api', '\Wave\Http\Controllers\SettingsController@apiPost')->name('wave.settings.api.post');
+	Route::put('settings/api/{id?}', '\Wave\Http\Controllers\SettingsController@apiPut')->name('wave.settings.api.put');
+	Route::delete('settings/api/{id?}', '\Wave\Http\Controllers\SettingsController@apiDelete')->name('wave.settings.api.delete');
 
-	Route::get('account/settings/invoices/{invoice}', '\Wave\Http\Controllers\SettingsController@invoice')->name('wave.invoice');
+	Route::get('settings/invoices/{invoice}', '\Wave\Http\Controllers\SettingsController@invoice')->name('wave.invoice');
 
 	Route::get('notifications', '\Wave\Http\Controllers\NotificationController@index')->name('wave.notifications');
 	Route::get('announcements', '\Wave\Http\Controllers\AnnouncementController@index')->name('wave.announcements');

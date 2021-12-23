@@ -2,10 +2,9 @@
 
 In this section we'll quickly cover the Wave routes.
 
-- [Routing](#routing)
-		- [Wave Web Routes](#wave-web-routes)
-		- [Wave API Routes](#wave-api-routes)
-		- [Wave Middleware](#wave-middleware)
+- [Wave Web Routes](#web-routes)
+- [Wave API Routes](#api-routes)
+- [Wave Middleware](#wave-middleware)
 
 ---
 

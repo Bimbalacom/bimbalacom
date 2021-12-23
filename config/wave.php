@@ -15,8 +15,8 @@ return [
 		'min_password_length' => 5,
 	],
 
-	'user_model' => App\User::class,
-	'show_docs' => env('WAVE_DOCS', false),
+	'user_model' => App\Models\User::class,
+	'show_docs' => env('WAVE_DOCS', true),
     'demo' => env('WAVE_DEMO', false),
     'dev_bar' => env('WAVE_BAR', false),
 

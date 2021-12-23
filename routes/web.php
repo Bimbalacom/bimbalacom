@@ -1,5 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\{Auth, Route};
+use TCG\Voyager\Facades\Voyager;
+use Wave\Facades\Wave;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,18 +15,10 @@
 |
 */
 
-
-// Authentication routes
 Auth::routes();
-
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-// Include Wave Routes
 Wave::routes();
-
-// Bimbala included
-Route::view('/team','theme::team');
-Route::view('/discord','https://discord.gg/r9fsYbwZVA');
