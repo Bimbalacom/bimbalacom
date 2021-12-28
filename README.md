@@ -100,8 +100,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- RELEASE PLAN OF THE WEBSITE-->
 ## Release plan of the website
 
-- A major version is being published each year.
-- Every month there will be a new version is being released.
+- There isn't an official plan for now. We will keep an eye on everything and update it as much as possible.
 
 <!-- LICENSE -->
 ## License
@@ -114,7 +113,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Our Twitter - [@bimbalacom](https://twitter.com/bimbalacom)
-
+Our Discord - [@bimbala](https://discord.gg/tADx7aJusB)
 
 
 
