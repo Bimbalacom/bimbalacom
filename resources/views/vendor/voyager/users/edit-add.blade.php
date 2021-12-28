@@ -20,9 +20,9 @@
               method="POST" enctype="multipart/form-data" autocomplete="off">
             <!-- PUT Method if we are editing -->
             @if(isset($dataTypeContent->id))
-                {{ method_field("PUT") }}
+                @method("PUT")
             @endif
-            {{ csrf_field() }}
+            @csrf
 
             <div class="row">
                 <div class="col-md-8">
@@ -124,7 +124,7 @@
 
         <iframe id="form_target" name="form_target" style="display:none"></iframe>
         <form id="my_form" action="{{ route('voyager.upload') }}" target="form_target" method="post" enctype="multipart/form-data" style="width:0px;height:0;overflow:hidden">
-            {{ csrf_field() }}
+            @csrf
             <input name="image" id="upload_file" type="file" onchange="$('#my_form').submit();this.value='';">
             <input type="hidden" name="type_slug" id="type_slug" value="{{ $dataType->slug }}">
         </form>

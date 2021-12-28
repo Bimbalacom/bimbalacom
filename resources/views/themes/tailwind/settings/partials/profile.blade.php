@@ -40,7 +40,7 @@
 		</div>
 	</div>
 
-	{{ csrf_field() }}
+	@csrf
 
 
 

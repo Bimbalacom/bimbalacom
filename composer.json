@@ -20,7 +20,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.4",
-        "tcg/voyager": "1.4.x-dev",
+        "tcg/voyager": "1.5.*",
         "tymon/jwt-auth": "dev-develop"
     },
     "require-dev": {

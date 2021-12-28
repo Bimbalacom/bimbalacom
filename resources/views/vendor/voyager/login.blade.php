@@ -40,7 +40,7 @@
                     </div>
                     <div class="p-8">
                         <form action="{{ route('voyager.login') }}" method="POST">
-                            {{ csrf_field() }}
+                            @csrf
                             <div class="mb-6">
                                 <label for="email" class="block mb-2 text-sm text-gray-600">Email Address</label>
                                 <input type="email" value="{{ old('email') }}" name="email" id="email" placeholder="johndoe@email.com" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50 focus:border-blue-500" />
