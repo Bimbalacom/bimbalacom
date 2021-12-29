@@ -24,6 +24,8 @@
         "tymon/jwt-auth": "dev-develop"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6",
+        "barryvdh/laravel-ide-helper": "^2.10",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/dusk": "^6.0",
@@ -63,6 +65,14 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover",
             "@php artisan storage:link"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta"
+        ],
+        "generate": [
+            "@php artisan ide-helper:models --write-mixin"
         ]
     },
     "config": {
