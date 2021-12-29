@@ -165,7 +165,7 @@
                     <a href="/terms-and-conditions" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Terms and Conditions</a>
                 </li>
                 <li class="box-border block font-semibold text-left">
-                    <a href="#" class="text-gray-500 no-underline bg-transparent cursor-pointer">Sitemap</a>
+                    <a href="/sitemap.xml" class="text-gray-500 no-underline bg-transparent cursor-pointer">Sitemap</a>
                 </li>
             </ul>
             <p class="block m-0 text-base font-semibold text-gray-500">
