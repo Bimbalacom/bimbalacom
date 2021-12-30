@@ -17,82 +17,116 @@
             <div class="grid grid-cols-6 sm:grid-cols-12 bg-white">
                 <div class="w-full border border-gray-200  shadow-sm col-span-6 sm:col-span-8 p-5">
                     <form
-                        class="flex flex-col justify-center items-center my-auto h-full p-10 grid grid-cols-1 sm:grid-cols-2 gap-6 relative">
-                        <label class="block relative text-gray-600 focus-within:text-gray-700">
+                        class="flex flex-col justify-center items-center my-auto h-full p-10 grid grid-cols-1 sm:grid-cols-2 gap-6 relative" action="{{ route('contact-send') }}" method="POST">
+                        @if(session('success'))
+                            <p class="col-span-1 sm:col-span-2 p-1 bg-green-600 text-white rounded-full text-center">{{session('success')}}</p>
+                        @endif
+                        <label class="block text-gray-600 focus-within:text-gray-700">
                             <span class="text-gray-700">Full name</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-1/4 transform translate-y-1/4 left-3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-                            </svg>
-                            <input type="text" class="
-                                    mt-0
-                                    block
-                                    w-full
-                                    px-0.5
-                                    pl-12
-                                    border-0 border-b-2 border-gray-200
-                                    focus:ring-0 focus:border-black
-                                  " placeholder="John Doe" required/>
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-[47%] transform translate-y-[47%] left-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                                <input type="text" class="
+                                        mt-0
+                                        block
+                                        w-full
+                                        px-0.5
+                                        pl-12
+                                        border-0 border-b-2 border-gray-200
+                                        focus:ring-0 focus:border-black
+                                        @error('name') border-red-500 @enderror
+                                      " placeholder="John Doe" name="name" minlength="3" required/>
+                            </div>
+                            @error('name')
+                            <div class="text-bold text-red-500">{{$message}}</div>
+                            @enderror
                         </label>
-                        <label class="block relative text-gray-600 focus-within:text-gray-700">
+                        <label class="block text-gray-600 focus-within:text-gray-700">
                             <span class="text-gray-700">Email address</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-1/4 transform translate-y-1/4 left-3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z" clip-rule="evenodd" />
-                            </svg>
-                            <input type="email" class="
-                                    mt-0
-                                    block
-                                    w-full
-                                    px-0.5
-                                    pl-12
-                                    border-0 border-b-2 border-gray-200
-                                    focus:ring-0 focus:border-black
-                                  " placeholder="john@example.com" required/>
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-[47%] transform translate-y-[47%] left-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z" clip-rule="evenodd" />
+                                </svg>
+                                <input type="email" class="
+                                        mt-0
+                                        block
+                                        w-full
+                                        px-0.5
+                                        pl-12
+                                        border-0 border-b-2 border-gray-200
+                                        focus:ring-0 focus:border-black
+                                        @error('email') border-red-500 @enderror
+                                      " placeholder="john@example.com" name="email" required/>
+                            </div>
+                            @error('email')
+                            <div class="text-bold text-red-500">{{$message}}</div>
+                            @enderror
                         </label>
-                        <label class="block relative text-gray-600 focus-within:text-gray-700">
+                        <label class="block text-gray-600 focus-within:text-gray-700">
                             <span class="text-gray-700">Phone</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-1/4 transform translate-y-1/4 left-3" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                            </svg>
-                            <input type="tel" class="
-                                    mt-0
-                                    block
-                                    w-full
-                                    px-0.5
-                                    pl-12
-                                    border-0 border-b-2 border-gray-200
-                                    focus:ring-0 focus:border-black
-                                  "/>
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-[47%] transform translate-y-[47%] left-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                </svg>
+                                <input type="tel" class="
+                                        mt-0
+                                        block
+                                        w-full
+                                        px-0.5
+                                        pl-12
+                                        border-0 border-b-2 border-gray-200
+                                        focus:ring-0 focus:border-black
+                                        @error('phone') border-red-500 @enderror
+                                      "  name="phone" minlength="3"/>
+                            </div>
+                            @error('phone')
+                            <div class="text-bold text-red-500">{{$message}}</div>
+                            @enderror
                         </label>
-                        <label class="block relative text-gray-600 focus-within:text-gray-700">
+                        <label class="block text-gray-600 focus-within:text-gray-700">
                             <span class="text-gray-700">Company</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-1/4 transform translate-y-1/4 left-3" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
-                            </svg>
-                            <input type="text" class="
-                                    mt-0
-                                    block
-                                    w-full
-                                    px-0.5
-                                    pl-12
-                                    border-0 border-b-2 border-gray-200
-                                    focus:ring-0 focus:border-black
-                                  "/>
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-[47%] transform translate-y-[47%] left-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
+                                </svg>
+                                <input type="text" class="
+                                        mt-0
+                                        block
+                                        w-full
+                                        px-0.5
+                                        pl-12
+                                        border-0 border-b-2 border-gray-200
+                                        focus:ring-0 focus:border-black
+                                        @error('company') border-red-500 @enderror
+                                      "  name="company" minlength="3"/>
+                            </div>
+                            @error('company')
+                            <div class="text-bold text-red-500">{{$message}}</div>
+                            @enderror
                         </label>
                         <label class="block sm:col-span-2 relative text-gray-600 focus-within:text-gray-700">
                             <span class="text-gray-700">Message</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-1/3 transform translate-y-1/3 left-3" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
-                            </svg>
-                            <textarea class="
-                                    mt-0
-                                    block
-                                    w-full
-                                    px-0.5
-                                    pl-12
-                                    border-0 border-b-2 border-gray-200
-                                    focus:ring-0 focus:border-black
-                                  " rows="2"></textarea>
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-6 h-6 absolute bottom-1/3 transform translate-y-1/3 left-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                <textarea class="
+                                        mt-0
+                                        block
+                                        w-full
+                                        px-0.5
+                                        pl-12
+                                        border-0 border-b-2 border-gray-200
+                                        focus:ring-0 focus:border-black
+                                        @error('message') border-red-500 @enderror
+                                      " rows="2"  name="message" minlength="15" required></textarea>
+                            </div>
+                            @error('message')
+                            <div class="text-bold text-red-500">{{$message}}</div>
+                            @enderror
                         </label>
+                        @csrf
                         <div class="block sm:col-start-2 text-right absolute bottom-5 right-7">
                             <button type="submit" class="rounded-full bg-purple-700 text-white hover:bg-purple-900 p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 rotate-45 -skew-y-[15deg]" viewBox="0 0 20 20" fill="currentColor">
