@@ -10,18 +10,29 @@ class Contact extends Mailable
 {
     use Queueable, SerializesModels;
 
+    private $name;
+    private $email;
+    private $messageText;
+    private $company = null;
+    private $phone = null;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
     public function __construct(
-        private string $name,
-        private string $email,
-        private string $messageText,
-        private ?string $company = null,
-        private ?string $phone = null)
+        string $name,
+        string $email,
+        string $messageText,
+        ?string $company = null,
+        ?string $phone = null)
     {
+        $this->phone = $phone;
+        $this->company = $company;
+        $this->messageText = $messageText;
+        $this->email = $email;
+        $this->name = $name;
     }
 
     /**
