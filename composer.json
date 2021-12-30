@@ -20,6 +20,7 @@
         "laravel/helpers": "^1.0",
         "laravel/tinker": "^2.0",
         "livewire/livewire": "^2.4",
+        "spatie/laravel-sitemap": "^6.0",
         "tcg/voyager": "1.5.*",
         "tymon/jwt-auth": "dev-develop"
     },
