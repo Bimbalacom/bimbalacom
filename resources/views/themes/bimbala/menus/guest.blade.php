@@ -14,7 +14,7 @@
             <div class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
                <a href="{{ route('wave.home') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Home</a>
                <a href="https://board.bimbala.com" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Demo</a>
-               <a href="{{ route('wave.blog') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Blog</a> 
+               <a href="{{ route('wave.blog') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Blog</a>
                 {{-- <div x-data="{ isOpen: false }" @mouseenter="isOpen = true" @mouseleave="isOpen = false" class="relative py-3">
                     <div class="relative z-10 flex items-center space-x-1 text-gray-300 cursor-pointer lg:space-x-3 hover:text-gray-200 focus:outline-none">
                         <span>Features</span>
@@ -54,11 +54,11 @@
                         </a>
                         <a href="#_" class="block px-4 py-3 text-sm text-gray-200 capitalize hover:bg-gray-900 hover:text-gray-100 rounded">
                             Press Release
-                        </a>
-                        <a href="#_" class="block px-4 py-3 text-sm text-gray-200 capitalize hover:bg-gray-900 hover:text-gray-100 rounded">
+                        </a> --}}
+                        <a href="{{ route('contact') }}" class="block px-4 py-3 text-sm text-gray-200 capitalize hover:bg-gray-900 hover:text-gray-100 rounded">
                             Contact Us
                         </a>
-                        <a href="{{ route('wave.blog') }}" class="block px-4 py-3 text-sm text-gray-200 capitalize hover:bg-gray-900 hover:text-gray-100 rounded">
+                        {{--<a href="{{ route('wave.blog') }}" class="block px-4 py-3 text-sm text-gray-200 capitalize hover:bg-gray-900 hover:text-gray-100 rounded">
                             Our Blog
                         </a>
                     </div>
@@ -72,4 +72,4 @@
 
             <a href="{{ route('register') }}" class="flex-shrink-0 w-auto text-base font-semibold leading-5 text-left text-blue-50 capitalize bg-transparent md:text-sm md:py-3 md:px-8 md:font-medium md:text-center md:text-white md:bg-purple-900 md:mx-0 rounded">
                 Sign up
-            </a> 
+            </a>

@@ -28,8 +28,8 @@
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Templates</a>
-                        </li>
-                    </ul> --}}
+                        </li> --}}
+                    </ul>
                 </div>
             </div>
             <div width="6,3" class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
@@ -66,9 +66,15 @@
                     </h2>
                     <ul class="p-0 m-0 text-base leading-tight list-none">
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                            <a href="{{ route('about-us') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">About Us</a>
+                        </li>
+                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                            <a href="{{ route('team') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Our Team</a>
+                        </li>
+                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="https://uptime.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Uptime</a>
                         </li>
-                                 <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="/security" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Security</a>
                         </li>
                           <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
@@ -82,8 +88,8 @@
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Security</a>
-                        </li>
-                    </ul>--}}
+                        </li>--}}
+                    </ul>
                 </div>
             </div>
             <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
@@ -169,7 +175,7 @@
                 </li>
             </ul>
             <p class="block m-0 text-base font-semibold text-gray-500">
-            &copy; 2020 - {{ date('Y') }} {{ setting('site.title', 'Bimbala Ltd') }}, Inc. All rights reserved.
+            &copy; 2020 - {{ date('Y') }} {{ setting('site.title', 'Bimbala Ltd') }}, Ltd. All rights reserved.
             </p>
         </div>
     </div>
