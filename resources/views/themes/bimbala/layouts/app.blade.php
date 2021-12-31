@@ -40,6 +40,8 @@
     @else
         <meta name="description" content="{{ setting('site.description', 'Bimbala is a SaaS helping companies upgrade their support team. Integration of roadmaps, knowledge boards and etc. made easy. Make your customers see you work for them and make them part of your business!') }}">
     @endif
+
+    <meta name="keywords" content="{{ setting('site.keywords', 'product development, customer feedback, customers, integrations, bimbala, SaaS, support, roadmap, knowledge board, FAQ, feedback-based product') }}">
     <meta name="google-site-verification" content="173vXOSU7DHgNz9UkFqBkQ1_yThKQPBGvoZrIKoEm6U" />
     {{-- Styles --}}
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
