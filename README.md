@@ -113,7 +113,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Our Twitter - [@bimbalacom](https://twitter.com/bimbalacom)
-Our Discord - [@bimbala](https://discord.gg/tADx7aJusB)
+Our Discord - [@bimbala](https://bimbala.com/discord)
 
 
 
