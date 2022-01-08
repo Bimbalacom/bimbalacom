@@ -24,6 +24,7 @@ Route::group(['prefix' => 'admin'], function () {
 Route::view('/team','theme::team')->name('team');
 Route::view('/contact','theme::contact')->name('contact');
 Route::view('/about-us','theme::about_us')->name('about-us');
+Route::view('/try-it','theme::try_it')->name('try-it');
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
 
 Route::post('/contact', ContactController::class)->name('contact-send');
