@@ -1,3 +1,7 @@
+@extends('theme::layouts.app')
+
+@section('content')
+
 {{--Big in progress --}}
 <section class="bg-gray-100">
     <div class="relative">
@@ -115,3 +119,5 @@
         </div>
     </div>
 </section>
+@endsection
+

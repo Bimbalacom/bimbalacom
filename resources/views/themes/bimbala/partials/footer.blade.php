@@ -37,8 +37,8 @@
                     <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Product
                     </h2>
-                    {{--    <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                    <ul class="p-0 m-0 text-base leading-tight list-none">
+                    {{--    <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Drag'n Drop Builder</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
@@ -52,11 +52,11 @@
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Developer API</a>
-                        </li>
+                    --}} </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">System Import</a>
+                            <a href="{{ route('integrations') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Integrations</a>
                         </li>
-                    </ul>--}}
+                    </ul>
                 </div>
             </div>
             <div width="6,3" class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
