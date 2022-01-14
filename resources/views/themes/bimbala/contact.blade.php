@@ -183,7 +183,7 @@
                                           clip-rule="evenodd"></path>
                                 </svg>
                             </a>
-                            <a href="https://discord.gg/tADx7aJusB" class="text-gray-400 hover:text-gray-200">
+                            <a href="https://bimbala.com/discord" class="text-gray-400 hover:text-gray-200">
                                 <span class="sr-only">Discord</span>
                                 <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path fill-rule="evenodd"
