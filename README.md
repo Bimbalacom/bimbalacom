@@ -28,7 +28,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![time tracker](https://wakatime.com/badge/github/Bimbalacom/Website.svg)](https://wakatime.com/badge/github/Bimbalacom/Website)
+[![time tracker](https://wakatime.com/badge/github/Bimbalacom/bimbalacom.svg)](https://wakatime.com/badge/github/Bimbalacom/bimbalacom)
 [![Laravel Tests](https://github.com/Bimbalacom/bimbalacom/actions/workflows/tests.yaml/badge.svg)](https://github.com/Bimbalacom/bimbalacom/actions/workflows/tests.yaml)
 
 
