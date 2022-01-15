@@ -3,6 +3,7 @@
 /public/storage
 /public/.well-known
 /storage/*.key
+/public/sitemap.xml
 /vendor
 /.idea
 /.vagrant
