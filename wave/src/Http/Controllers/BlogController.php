@@ -55,9 +55,10 @@ class BlogController extends \App\Http\Controllers\Controller
 
     private function generetePostSchema(Post $post): BlogPosting
     {
-        $author = Schema::person()->name($post->user->name)->image(Schema::imageObject()->url($post->user->avatar()))->email($post->user->email);
+        $author = Schema::person()->name($post->user->name)->image(Schema::imageObject()->url($post->user->avatar()))->email($post->user->email)->url(route('wave.profile', $post->user->username));
         return Schema::blogPosting()
             ->name($post->title)
+            ->headline($post->title)
             ->url($post->link())
             ->image($post->image())
             ->author($author)
