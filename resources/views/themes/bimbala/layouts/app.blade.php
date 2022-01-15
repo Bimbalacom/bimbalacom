@@ -31,6 +31,7 @@
         <meta property="og:image:height" content="{{ $seo->image_h }}">
         @endif
     @endif
+    {!! \Spatie\SchemaOrg\Schema::organization()->url(route('wave.home'))->name('Bimbala')->toScript() !!}
     @if(isset($schema))
     {!! $schema !!}
     @endif
