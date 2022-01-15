@@ -24,7 +24,7 @@
 		</div>
         <div class="grid gap-5 mx-auto mt-12 sm:grid-cols-2 lg:grid-cols-3">
 			<!-- Loop Through Posts Here -->
-            @foreach($posts ->where('status', 'PUBLISHED') as $post)
+            @foreach($posts as $post)
 			<article id="post-{{ $post->id }}" class="flex flex-col overflow-hidden rounded-lg shadow-lg" typeof="Article">
 
 				<meta property="name" content="{{ $post->title }}">

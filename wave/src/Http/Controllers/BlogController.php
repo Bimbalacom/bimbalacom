@@ -13,7 +13,8 @@ class BlogController extends \App\Http\Controllers\Controller
 {
     public function index(Request $request){
 
-        $posts = Post::orderBy('created_at', 'DESC')->paginate(6);
+        $posts = Post::whereStatus(Post::STATUS_PUBLISHED)->orderBy('created_at', 'DESC')->paginate(6);
+        $posts->load(['user']);
         $categories = Category::all();
 
         $schema = Schema::blog()->url($request->url())->blogPosts($posts->map(function(Post $post) {
@@ -29,7 +30,8 @@ class BlogController extends \App\Http\Controllers\Controller
     public function category($slug, Request $request){
 
         $category = Category::where('slug', '=', $slug)->firstOrFail();
-        $posts = $category->posts()->orderBy('created_at', 'DESC')->paginate(6);
+        $posts = $category->posts()->whereStatus(Post::STATUS_PUBLISHED)->orderBy('created_at', 'DESC')->paginate(6);
+        $posts->load(['user']);
         $categories = Category::all();
 
         $seo = [
@@ -42,7 +44,7 @@ class BlogController extends \App\Http\Controllers\Controller
 
     public function post($category, $slug){
 
-    	$post = Post::where('slug', '=', $slug)->firstOrFail();
+    	$post = Post::where('slug', '=', $slug)->whereStatus(Post::STATUS_PUBLISHED)->firstOrFail();
 
         $seo = [
             'seo_title' => $post->title,

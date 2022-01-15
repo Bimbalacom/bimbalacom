@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+    public const STATUS_PUBLISHED = 'PUBLISHED';
+
     public function link(){
     	return url('/blog/' . $this->category->slug . '/' . $this->slug);
     }
