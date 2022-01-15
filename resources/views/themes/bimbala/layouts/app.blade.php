@@ -31,6 +31,9 @@
         <meta property="og:image:height" content="{{ $seo->image_h }}">
         @endif
     @endif
+    @if(isset($schema))
+    {!! $schema !!}
+    @endif
 
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
