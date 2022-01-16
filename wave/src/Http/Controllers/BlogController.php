@@ -75,7 +75,7 @@ class BlogController extends \App\Http\Controllers\Controller
         if($category !== null){
             $listElements[] = Schema::listItem()->position(2)->url(route('wave.blog.category', [$category->slug]))->name($category->name);
             if($post !== null){
-                $listElements[] = Schema::listItem()->position(3)->url(route('wave.blog.post', [$post->slug]))->name($post->title);
+                $listElements[] = Schema::listItem()->position(3)->url(route('wave.blog.post', [$category, $post->slug]))->name($post->title);
             }
         }
 
