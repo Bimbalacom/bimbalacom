@@ -19,9 +19,6 @@ Route::get('blog/{category}/{post}', '\Wave\Http\Controllers\BlogController@post
 
 Route::view('install', 'wave::install')->name('wave.install');
 
-/***** Pages *****/
-Route::get('{page}', '\Wave\Http\Controllers\PageController@page');
-
 /***** Pricing Page *****/
 Route::view('pricing', 'theme::pricing')->name('wave.pricing');
 
@@ -68,3 +65,6 @@ Route::group(['middleware' => 'auth'], function(){
 Route::group(['middleware' => 'admin.user'], function(){
     Route::view('admin/do', 'wave::do');
 });
+
+/***** Pages *****/
+Route::get('{page}', '\Wave\Http\Controllers\PageController@page');

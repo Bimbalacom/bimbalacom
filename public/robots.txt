@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin/*
 
-Sitemap: http://bimbala.com//sitemap.xml
+Sitemap: http://bimbala.com/sitemap.xml

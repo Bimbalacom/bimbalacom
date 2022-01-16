@@ -21,6 +21,7 @@
         "laravel/tinker": "^2.0",
         "livewire/livewire": "^2.4",
         "spatie/laravel-sitemap": "^6.0",
+        "spatie/schema-org": "^3.8",
         "tcg/voyager": "1.5.*",
         "tymon/jwt-auth": "dev-develop"
     },
@@ -79,6 +80,9 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
 }

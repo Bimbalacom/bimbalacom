@@ -11,13 +11,22 @@ class ContactController extends Controller
 {
     public const CONTACT_EMAIL = 'contact@bimbala.com';
 
+
+    public function serveThePage()
+    {
+        return view('theme::contact', ['seo' => [
+            'seo_title' => 'Contact Us',
+            'seo_description' => 'The contact us page gives us an opportunity to hear your opinion or suggestions. Each new email is valueable for us.',
+        ]]);
+    }
+
     /**
      * Handle the incoming request.
      *
      * @param  SendEmailRequest  $request
      * @return RedirectResponse
      */
-    public function __invoke(SendEmailRequest $request)
+    public function sendEmail(SendEmailRequest $request)
     {
         $data = $request->validated();
         Mail::to(self::CONTACT_EMAIL)->send(new Contact(
