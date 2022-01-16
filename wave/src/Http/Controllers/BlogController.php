@@ -71,11 +71,11 @@ class BlogController extends \App\Http\Controllers\Controller
 
     private function generateBreadCrumbSchema(Category $category = null, Post $post = null): BreadcrumbList
     {
-        $listElements = [Schema::listItem()->position(1)->url(url('wave.blog'))->name('Blog')];
+        $listElements = [Schema::listItem()->position(1)->url(route('wave.blog'))->name('Blog')];
         if($category !== null){
-            $listElements[] = Schema::listItem()->position(2)->url(url('wave.blog.category', [$category->slug]))->name($category->name);
+            $listElements[] = Schema::listItem()->position(2)->url(route('wave.blog.category', [$category->slug]))->name($category->name);
             if($post !== null){
-                $listElements[] = Schema::listItem()->position(3)->url(url('wave.blog.post', [$post->slug]))->name($post->title);
+                $listElements[] = Schema::listItem()->position(3)->url(route('wave.blog.post', [$post->slug]))->name($post->title);
             }
         }
 
