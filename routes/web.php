@@ -34,7 +34,7 @@ Route::get('/try-it', static function () {
     ]]);
 })->name('try-it');
 Route::get('/integrations', static function () {
-    return view('theme::integrations', ['seo' => ['seo_title' => 'Integrations', 'seo_description' => 'Everyone loves to work sa a team. Here are part of our officially supported friends.',
+    return view('theme::integrations', ['seo' => ['seo_title' => 'Integrations', 'seo_description' => 'Everyone loves to work as a team. Here are part of our officially supported friends.',
     ]]);
 })->name('integrations');
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
