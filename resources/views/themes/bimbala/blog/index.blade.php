@@ -12,12 +12,12 @@
 			<p class="mt-3 text-center text-xl leading-7 text-gray-500 sm:mt-4">
 				Check out some of our latest blog posts below.
 			</p>
-			<ul class="flex self-start px-3 py-1 mt-3 text-xs font-medium text-gray-600 bg-blue-100 rounded-md">
+			<ul class="flex self-start px-3 py-1 my-6 text-xs font-medium text-gray-600 bg-blue-100 rounded-md">
 				<li class="mr-4 font-bold  text-blue-600 uppercase">Categories:</li>
 				@foreach($categories as $cat)
 					<li class="@if(isset($category) && isset($category->slug) && ($category->slug == $cat->slug)){{ 'text-blue-700' }}@endif"><a href="{{ route('wave.blog.category', $cat->slug) }}">{{ $cat->name }}</a></li>
 					@if(!$loop->last)
-						<li class="mx-2">&middot;</li>
+						<li class="mx-2">|</li>
 					@endif
 				@endforeach
 			</ul>
