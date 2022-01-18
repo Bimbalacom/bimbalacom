@@ -148,7 +148,7 @@
                 <p class="mt2 text-sm text-gray-500">Email Marketing</p>
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\Hubspot.svg') }}" loading=”lazy” alt="Hubspot">
+            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading=”lazy” alt="Hubspot">
                 <p class="font-bold mt-4">Hubspot *</p>
                 <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
             </div>
