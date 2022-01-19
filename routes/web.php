@@ -33,6 +33,10 @@ Route::get('/try-it', static function () {
     return view('theme::try_it', ['seo' => ['seo_title' => 'Try it', 'seo_description' => 'Try our product and be part of our beta testers group. We promise - you will love it!',
     ]]);
 })->name('try-it');
+Route::get('/integrations', static function () {
+    return view('theme::integrations', ['seo' => ['seo_title' => 'Integrations', 'seo_description' => 'Everyone loves to work as a team. Here are part of our officially supported friends.',
+    ]]);
+})->name('integrations');
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
 
 Route::get('/contact', [ContactController::class, 'serveThePage'])->name('contact');
@@ -40,4 +44,3 @@ Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact-
 
 // Include Wave Routes
 Wave::routes();
-

@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#05070c"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="url" content="{{ url('/') }}">
-    <link rel="icon" href="{{ setting('site.favicon', 'themes/bimbala/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ setting('site.favicon', 'https://bimbala.com/themes/bimbala/favicon.ico') }}" type="image/x-icon">
     {{-- Social Share Open Graph Meta Tags --}}
     @if(isset($seo['seo_title'], $seo['seo_description'], $seo->image))
         <meta property="og:title" content="{{ $seo['seo_title'] }}">
