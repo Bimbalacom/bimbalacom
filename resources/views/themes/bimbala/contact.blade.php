@@ -8,7 +8,7 @@
             <div class="space-y-12 md:text-center">
                 <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
                     <h2 class="relative text-4xl font-extrabold tracking-tight sm:text-5xl text-white">Contact Us</h2>
-                    <p class="text-xl text-purple-200">Who dosn't love talking to the comunity? Just pick a
+                    <p class="text-xl text-purple-200">Who doesn't love talking to the community? Just pick a
                         channel...</p>
                     <p class="text-xl text-purple-200">We are always glad to hear you.</p>
                 </div>
@@ -16,7 +16,10 @@
 
             <div class="grid grid-cols-6 sm:grid-cols-12 bg-white">
                 <div class="w-full border border-gray-200  shadow-sm col-span-6 sm:col-span-8 p-5">
-                    <form
+                <h6 class="relative text-3xl font-extrabold tracking-tight sm:text-3xl text-black">Our E-mails are full ...</h6>
+                <h6 class="relative text-3xl font-extrabold tracking-tight sm:text-3xl text-black">Why don't you try some of the social medias on the right?</h6>
+                {{--Temporary removal --}}   
+                {{--  <form
                         class="flex flex-col justify-center items-center my-auto h-full p-10 grid grid-cols-1 sm:grid-cols-2 gap-6 relative" action="{{ route('contact-send') }}" method="POST">
                         @if(session('success'))
                             <p class="col-span-1 sm:col-span-2 p-1 bg-green-600 text-white rounded-full text-center">{{session('success')}}</p>
@@ -134,7 +137,7 @@
                                 </svg>
                             </button>
                         </div>
-                    </form>
+                    </form> --}}
                 </div>
                 <aside class="w-full shadow-sm col-span-6 sm:col-span-4 bg-gray-900 text-white text-center">
                     <div class="flex flex-col justify-center items-center p-10 h-full my-auto">
