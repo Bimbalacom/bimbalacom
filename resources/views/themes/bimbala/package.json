@@ -17,6 +17,8 @@
         "laravel-mix-tailwind": "^0.1.2",
         "lodash": "^4.17.21",
         "postcss": "^8.4.4",
+        "prettier": "^2.5.1",
+        "prettier-plugin-tailwindcss": "^0.1.7",
         "resolve-url-loader": "^4.0.0",
         "sass": "^1.43.4",
         "sass-loader": "^12.3.0",

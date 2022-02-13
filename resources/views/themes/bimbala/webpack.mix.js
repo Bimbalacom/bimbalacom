@@ -1,9 +1,8 @@
-const mix = require('laravel-mix');
-const glob = require('glob-all');
+const mix = require("laravel-mix");
+const glob = require("glob-all");
 
-require('laravel-mix-tailwind');
-require('laravel-mix-purgecss');
-
+require("laravel-mix-tailwind");
+require("laravel-mix-purgecss");
 
 /*
  |--------------------------------------------------------------------------
@@ -16,7 +15,7 @@ require('laravel-mix-purgecss');
  |
  */
 
-mix.setPublicPath('../../../../public/themes/bimbala/')
-	.sass('assets/sass/app.scss', 'css')
-	.js('assets/js/app.js', 'js')
-	.tailwind('./tailwind.config.js');
+mix.setPublicPath("../../../../public/themes/bimbala/")
+    .sass("assets/sass/app.scss", "css")
+    .js("assets/js/app.js", "js")
+    .tailwind("./tailwind.config.js");
