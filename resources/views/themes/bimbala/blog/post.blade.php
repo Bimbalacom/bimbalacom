@@ -16,13 +16,12 @@
         <meta class="uk-margin-remove-adjacent" property="datePublished" content="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">
 
         <div class="max-w-4xl mx-auto mt-6">
-
-            <h1 class="flex flex-col leading-none">
-                <span>{{ $post->title }}</span>
-                <span class="my-6 text-base font-normal">Written on <time datetime="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">{{ Carbon\Carbon::parse($post->created_at)->toFormattedDateString() }}</time>. Posted in <a href="{{ route('wave.blog.category', $post->category->slug) }}" rel="category">{{ $post->category->name }}</a>.</span>
-            </h1>
-
-
+                <h1 class="text-center">
+                    <span class="block text-base text-indigo-600 font-semibold tracking-wide uppercase"><a href="{{ route('wave.blog.category', $post->category->slug) }}" rel="category">{{ $post->category->name }}</a></span>
+                    <span
+                        class="mt-2 block text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">{{ $post->title }}</span>
+                        
+                </h1>
         </div>
 
         <div class="relative">
@@ -31,6 +30,9 @@
 
         <div class="max-w-4xl mx-auto">
             {!! $post->body !!}
+            <span class="my-6 text-base font-normal">Written on <time
+                    datetime="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">{{
+                    Carbon\Carbon::parse($post->created_at)->toFormattedDateString() }}</time></span>
         </div>
  
     </article>
