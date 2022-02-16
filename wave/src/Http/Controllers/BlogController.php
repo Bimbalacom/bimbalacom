@@ -24,7 +24,7 @@ class BlogController extends \App\Http\Controllers\Controller
     		'seo_title' => 'Blog',
             'seo_description' => 'Our Blog',
        	];
-    	return view('theme::blog.index', compact('posts', 'categories', 'seo', 'schema'));
+    	return response()->view('theme::blog.index', compact('posts', 'categories', 'seo', 'schema'))->header('Link', '<'.route('wave.blog').'>; rel="cannonical"');
     }
 
     public function category($slug, Request $request){
@@ -71,11 +71,18 @@ class BlogController extends \App\Http\Controllers\Controller
 
     private function generateBreadCrumbSchema(Category $category = null, Post $post = null): BreadcrumbList
     {
-        $listElements = [Schema::listItem()->position(1)->url(route('wave.blog'))->name('Blog')];
+        $listElements = [
+            Schema::listItem()->position(1)->url(route('wave.blog'))->name('Blog')
+                ->setProperty('item', route('wave.blog'))
+        ];
         if($category !== null){
-            $listElements[] = Schema::listItem()->position(2)->url(route('wave.blog.category', [$category->slug]))->name($category->name);
+            $listElements[] = Schema::listItem()->position(2)
+                ->url(route('wave.blog.category', [$category->slug]))->name($category->name)
+                ->setProperty('item', route('wave.blog.category', [$category->slug]));
             if($post !== null){
-                $listElements[] = Schema::listItem()->position(3)->url(route('wave.blog.post', [$category, $post->slug]))->name($post->title);
+                $listElements[] = Schema::listItem()->position(3)
+                    ->url(route('wave.blog.post', [$category, $post->slug]))->name($post->title)
+                    ->setProperty('item', route('wave.blog.post', [$category, $post->slug]));
             }
         }
 

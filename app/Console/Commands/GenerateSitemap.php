@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Psr\Http\Message\UriInterface;
 use Spatie\Sitemap\SitemapGenerator;
-use Spatie\Sitemap\Tags\Url;
 
 class GenerateSitemap extends Command
 {
@@ -31,6 +31,13 @@ class GenerateSitemap extends Command
     {
         // modify this to your own needs
         SitemapGenerator::create(config('app.url'))
+            ->shouldCrawl(function (UriInterface $url) {
+                // All pages will be crawled, except the contact page.
+                // Links present on the contact page won't be added to the
+                // sitemap unless they are present on a crawlable page.
+
+                return strpos($url->getPath(), '/discord') === false;
+            })
             ->writeToFile(public_path('sitemap.xml'));
     }
 }
