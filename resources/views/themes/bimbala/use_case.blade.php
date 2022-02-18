@@ -18,7 +18,7 @@
         <div>
             <span
               class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-              Article
+              Being open
             </span>
         </div>
         <a href="#" class="block mt-4">
@@ -34,84 +34,49 @@
       <div class="mb-6 mr-4">
         <div>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-            Article
+            Being open
           </span>
         </div>
         <a href="#" class="block mt-4">
           <p class="text-xl font-semibold text-gray-900">
-            UpVotes
+            Changelog
           </p>
           <p class="mt-3 text-base text-gray-500">
-            Upvotes are the easiest way to gather user feedback on your problems. A simple way to add everything you need to
-            understand your problems and a simple process for validating them. (Yes just voting.)
+            Changelog is a simple way of showing how your project is going and what you are changing every release. It is common for
+            clients to miss a feature update.
           </p>
         </a>
       </div>
       <div class="mb-6 mr-4">
         <div>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-            Article
+            Being closed
           </span>
         </div>
         <a href="#" class="block mt-4">
           <p class="text-xl font-semibold text-gray-900">
-            UpVotes
+            Internal feedback
           </p>
           <p class="mt-3 text-base text-gray-500">
-            Upvotes are the easiest way to gather user feedback on your problems. A simple way to add everything you need to
-            understand your problems and a simple process for validating them. (Yes just voting.)
+            Not everyone wants to show everything off from the start. That is why, you can limit who see the updates.
           </p>
         </a>
       </div>
       <div class="mb-6 mr-4">
         <div>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-            Article
+            Being open
           </span>
         </div>
         <a href="#" class="block mt-4">
           <p class="text-xl font-semibold text-gray-900">
-            UpVotes
+            Customization your workflow
           </p>
           <p class="mt-3 text-base text-gray-500">
-            Upvotes are the easiest way to gather user feedback on your problems. A simple way to add everything you need to
-            understand your problems and a simple process for validating them. (Yes just voting.)
+            Automating your work process can be a hassle every time. Adding new integrations is one of our "must" -s.
           </p>
         </a>
-      </div>
-      <div class="mb-6 mr-4">
-        <div>
-          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-            Article
-          </span>
-        </div>
-        <a href="#" class="block mt-4">
-          <p class="text-xl font-semibold text-gray-900">
-            UpVotes
-          </p>
-          <p class="mt-3 text-base text-gray-500">
-            Upvotes are the easiest way to gather user feedback on your problems. A simple way to add everything you need to
-            understand your problems and a simple process for validating them. (Yes just voting.)
-          </p>
-        </a>
-      </div>
-      <div class="mb-6 mr-4">
-        <div>
-          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-            Article
-          </span>
-        </div>
-        <a href="#" class="block mt-4">
-          <p class="text-xl font-semibold text-gray-900">
-            UpVotes
-          </p>
-          <p class="mt-3 text-base text-gray-500">
-            Upvotes are the easiest way to gather user feedback on your problems. A simple way to add everything you need to
-            understand your problems and a simple process for validating them. (Yes just voting.)
-          </p>
-        </a>
-      </div>
-      
+      </div>    
     </div>
   </div>
 </section>
