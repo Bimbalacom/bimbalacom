@@ -21,7 +21,7 @@
                             <a href="{{ route('try-it') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Try it</a>
                         </li>
                         {{-- <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="{{ route('use-case') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Use Case</a>
+                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Use Case</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Integrations</a>
@@ -40,7 +40,7 @@
                     <ul class="p-0 m-0 text-base leading-tight list-none">
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="{{ route('use-case') }}"
-                                class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Use Case</a>
+                                class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Use Cases</a>
                         </li>
                     {{--   <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Developer Inspector</a>
