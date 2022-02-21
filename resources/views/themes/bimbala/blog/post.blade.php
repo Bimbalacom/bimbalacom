@@ -17,10 +17,8 @@
 
         <div class="max-w-4xl mx-auto mt-6">
                 <h1 class="text-center">
-                    <span class="block text-base text-indigo-600 font-semibold tracking-wide uppercase"><a href="{{ route('wave.blog.category', $post->category->slug) }}" rel="category">{{ $post->category->name }}</a></span>
-                    <span
-                        class="mt-2 block text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">{{ $post->title }}</span>
-                        
+                    <span class="block text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl">{{ $post->title}}</span>
+                    <span class="mt-4 block text-base text-indigo-600 font-semibold tracking-wide uppercase"><a href="{{ route('wave.blog.category', $post->category->slug) }}" rel="category">{{ $post->category->name }}</a></span>
                 </h1>
         </div>
 
