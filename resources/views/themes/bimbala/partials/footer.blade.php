@@ -189,7 +189,7 @@
 @endif
 
 <!-- Scripts -->
-<script src="{{ asset('themes/' . $theme->folder . '/js/app.js') }}" defer></script>
+<script src="{{ mix('js/app.js', 'themes/' . $theme->folder) }}" defer></script>
 
 @yield('javascript')
 
