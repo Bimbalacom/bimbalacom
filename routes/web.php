@@ -43,7 +43,7 @@ Route::get('/use-case', static function () {
 })->name('use-case');
 Route::get('/apps', static function () {
     return view('theme::apps', ['seo' => [
-        'seo_title' => 'Apps', 'seo_description' => 'Here we provide examples of the best ways to use our system. If you have more ideas please share them with us.',
+        'seo_title' => 'Apps', 'seo_description' => 'Our applications are fast and simple. Doing what you love, where you want it.',
     ]]);
 })->name('apps');
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
