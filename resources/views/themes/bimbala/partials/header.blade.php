@@ -22,11 +22,10 @@
 
     <nav x-data="{ mobile: false }" class="relative z-40 px-10 pt-6 mx-auto md:pb-6 max-w-7xl md:flex md:justify-between md:items-center">
         <div class="relative z-20 flex items-center justify-between">
-            <div>
-                <a href="{{ route('wave.home') }}" class="text-lg font-semibold text-white md:text-xl">
-                    <h2 class="d-inline mb-0 brand">Bimbala</h2>
+            <a href="{{ route('wave.home') }}" class="relative flex items-center">
+                    <img class="h-8 w-8" src="../../bimbala/img/logo-small.png" alt="Bimbala's logo"> 
+                    <h2 class="mx-2 text-lg font-semibold text-white md:text-xl">Bimbala</h2>
                 </a>
-            </div>
                 {{-- This is the homepage nav when a user is not logged in --}}
                 @if(auth()->guest())
                     @include('theme::menus.guest')
