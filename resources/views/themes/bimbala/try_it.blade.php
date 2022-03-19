@@ -3,7 +3,7 @@
 @section('content')
     {{-- Content --}}
     <section class="w-full py-12 bg-white lg:py-24">
-        
+
 <!-- Section 1 -->
 <section class="px-2 py-32 bg-white md:px-0">
   <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
@@ -15,13 +15,13 @@
             <span class="block text-indigo-600 xl:inline">Become an beta tester!</span>
           </h1>
           <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
-          We are building a product that helps companies upgrade their product. Integrating of roadmaps, knowledge boards the easy way.              
+          We are building a product that helps companies upgrade their product. Integrating of roadmaps, knowledge boards the easy way.
          </p>
         </div>
       </div>
       <div class="w-full md:w-1/2">
         <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-            <img src="{{URL::asset('themes/bimbala/images/try-it.jpeg')}}" loading=”lazy” alt="Bimbala - try it">
+            <img src="{{URL::asset('themes/bimbala/images/try-it.jpeg')}}" loading="lazy" alt="Bimbala - try it">
           </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
                     <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
                         <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">Your own world</h6>
                         <p class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                           Everyone will receive a sub-domained version of our product. You pick the name don't worry. 
+                           Everyone will receive a sub-domained version of our product. You pick the name don't worry.
                         </p>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </div>
     </section>
 

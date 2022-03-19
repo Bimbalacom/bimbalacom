@@ -10,27 +10,27 @@
                 <p class="mt-4 text-gray-500 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> Check out with who we are integrated  👇</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading=”lazy” alt="Google Tag Manager">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading="lazy" alt="Google Tag Manager">
                         <p class="font-bold mt-4">Google Tag Manager</p>
                         <p class="mt-2 text-sm text-gray-500">Web Tag Manager</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\mailchimp.svg') }}" loading=”lazy” alt="Mailchimp">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\mailchimp.svg') }}" loading="lazy" alt="Mailchimp">
                         <p class="font-bold mt-4">Mailchimp *</p>
                         <p class="mt2 text-sm text-gray-500">Email Marketing</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading=”lazy” alt="Hubspot">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading="lazy" alt="Hubspot">
                         <p class="font-bold mt-4">Hubspot *</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading=”lazy” alt="Zendesk">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Zendesk">
                         <p class="font-bold mt-4">Zendesk *</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Messaging</p>
                     </div>
                 </div>
-                <p class="pb-8 text-purple-900 font-medium uppercase">Want more integrations? Please tell us !</p> 
+                <p class="pb-8 text-purple-900 font-medium uppercase">Want more integrations? Please tell us !</p>
                 <a href="https://board.bimbala.com/" class="w-full px-8 py-3 text-lg text-center bg-purple-900 text-white transition duration-150 ease-in-out bg-white sm:w-auto focus:outline-none rounded">Our roadmap</a>
             </div>
         </section>
