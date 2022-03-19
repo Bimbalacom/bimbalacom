@@ -1,8 +1,5 @@
 const mix = require('laravel-mix');
-const glob = require('glob-all');
-
-require('laravel-mix-tailwind');
-require('laravel-mix-purgecss');
+const tailwindcss = require('tailwindcss');
 
 
 /*
@@ -18,5 +15,8 @@ require('laravel-mix-purgecss');
 
 mix.setPublicPath('../../../../public/themes/bimbala/')
 	.sass('assets/sass/app.scss', 'css')
+    .options({
+        postCss: [ tailwindcss('./tailwind.config.js') ],
+    })
 	.js('assets/js/app.js', 'js')
-	.tailwind('./tailwind.config.js');
+    .version();

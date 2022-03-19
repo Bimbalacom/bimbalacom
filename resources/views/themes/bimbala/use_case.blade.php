@@ -76,7 +76,7 @@
             Automating your work process can be a hassle every time. Adding new integrations is one of our "must" -s.
           </p>
         </a>
-      </div>    
+      </div>
     </div>
   </div>
 </section>

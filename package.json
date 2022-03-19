@@ -1,16 +1,18 @@
 {
     "private": true,
     "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
+        "dev": "cd ./resources/views/themes/bimbala && npm run dev",
+        "development": "cd ./resources/views/themes/bimbala && npm run dev",
+        "watch": "cd ./resources/views/themes/bimbala && npm run watch",
+        "watch-poll": "cd ./resources/views/themes/bimbala && npm run watch-poll",
+        "hot": "cd ./resources/views/themes/bimbala && npm run hot",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "cd ./resources/views/themes/bimbala && npm run production",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "axios": "^0.21",
+        "husky": "^7.0.4",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
