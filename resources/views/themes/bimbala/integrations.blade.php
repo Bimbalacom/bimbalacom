@@ -53,23 +53,23 @@
                         <p class="mt-2 text-sm text-gray-500">Inbound Marketing, Sales, and Service Software</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Matomo">
-                        <p class="font-bold mt-4">Matomo</p>
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\facebook-messanger.svg') }}" loading="lazy" alt="Facebook Messenger">
+                        <p class="font-bold mt-4">Facebook Messenger</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
-                        <p class="mt-2 text-sm text-gray-500">Text</p>
+                        <p class="mt-2 text-sm text-gray-500">messaging app and platform. </p>
                     </div>
                     {{--Three row--}}
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
                     <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\crisp.svg') }}" loading="lazy" alt="Crisp">
                         <p class="font-bold mt-4">Crisp</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
-                        <p class="mt-2 text-sm text-gray-500">American blog comment hosting service</p>
+                        <p class="mt-2 text-sm text-gray-500">Messaging Platform For Startups</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\plausible-analytics.svg') }}" loading="lazy" alt="TawkTo">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\tawkto.png') }}" loading="lazy" alt="TawkTo">
                         <p class="font-bold mt-4">TawkTo</p>
                         <p class="mt2 text-sm text-gray-500">Customer Relations</p>
-                        <p class="mt2 text-sm text-gray-500">Оpen-source and privacy-friendly alternative to Google Analytics</p>
+                        <p class="mt2 text-sm text-gray-500">100% FREE live chat software for your website!</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
                     <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\tidio.svg') }}" loading="lazy" alt="Tidio">
@@ -78,10 +78,10 @@
                         <p class="mt-2 text-sm text-gray-500">Inbound Marketing, Sales, and Service Software</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Matomo">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\matomo.svg') }}" loading="lazy" alt="Matomo">
                         <p class="font-bold mt-4">Matomo</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
-                        <p class="mt-2 text-sm text-gray-500">Text</p>
+                        <p class="mt-2 text-sm text-gray-500">Google Analytics alternative that protects your data and your customers' privacy</p>
                     </div>
                 </div>
                 <p class="pb-8 text-purple-900 font-medium uppercase">Want more integrations? Please tell us !</p>
