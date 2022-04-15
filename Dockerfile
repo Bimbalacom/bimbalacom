@@ -1,11 +1,12 @@
-FROM nazmulpcc/php:8.0-cli as builder
+FROM php:8.0-cli-alpine as builder
 
 WORKDIR /app
 
 COPY composer.* /app/
 COPY package.json package-lock.json /app/
 
-RUN wget https://getcomposer.org/composer-2.phar -O /usr/bin/composer && \
+RUN docker-php-ext-install pdo_mysql && \
+    wget https://getcomposer.org/composer-2.phar -O /usr/bin/composer && \
     chmod +x /usr/bin/composer && \
     composer install \
         --ignore-platform-reqs \
@@ -16,13 +17,16 @@ RUN wget https://getcomposer.org/composer-2.phar -O /usr/bin/composer && \
         --no-scripts
 
 
-FROM nazmulpcc/php:8.0-fpm
+FROM php:8.0-fpm-alpine
 
 WORKDIR /app/bimbalacom
 
 COPY --from=builder /app /app/bimbalacom
 COPY --from=builder /usr/bin/composer /usr/bin/composer
+COPY --from=builder /usr/local/lib/php/extensions/no-debug-non-zts-20200930/pdo_mysql.so /usr/local/lib/php/extensions/no-debug-non-zts-20200930
+
 COPY . /app/bimbalacom
 
-RUN composer dump-autoload --optimize --classmap-authoritative && \
+RUN docker-php-ext-enable pdo_mysql && \
+    composer dump-autoload --optimize --classmap-authoritative && \
     chown -R www-data:www-data /app/bimbalacom
