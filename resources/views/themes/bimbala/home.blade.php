@@ -191,7 +191,7 @@
                     <div class="relative z-10 w-3 h-3 bg-gray-700 rounded-full"></div>
                 </div>
 
-                <img src="{{URL::asset('themes/bimbala/images/demo.bimbala.jpg')}}" alt="Designed with your client in mind" class=" max-w-full text-white align-middle border-none">
+                <img src="{{URL::asset('themes/bimbala/images/demo.bimbala.jpg')}}" alt="Designed with your client in mind" class=" max-w-full text-white align-middle border-none" loading="lazy">
             </div>
         </div>
     </div>
