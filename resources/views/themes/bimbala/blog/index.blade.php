@@ -10,7 +10,7 @@
                 Blog
             </h2>
             <p class="mt-3 max-w-3xl text-lg text-gray-500">
-                Here you can find our awesome and informative postst.
+                Here you can find our awesome and informative posts.
             </p>
         </div>
         <div class="mt-8 lg:mt-0 lg:ml-8">

@@ -5,7 +5,6 @@
     <section class="w-full py-12 bg-white lg:py-24">
     {{-- Integrations --}}
             <div class="max-w-7xl px-10 mx-auto sm:text-center">
-                <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps.</h3>
                 <p class="mt-4 text-gray-500 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> Check out with who we are integrated  👇</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
                     {{--First row --}}

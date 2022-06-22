@@ -57,6 +57,16 @@
     @include('theme::partials.header')
 
     <main class="flex-grow overflow-x-hidden">
+        @unless (Request::path() == '/' ||  Request::path() == 'login' || Request::path() == 'register' ||Request::path() == 'dashboard' || Request::is('account/*')|| Request::is('password/*') || Request::is('@*') || Request::is('blog*'))
+            <div class="bg-gray-900">
+                <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
+                    <div class="max-w-xl">
+                    <h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">{{ $seo['seo_title']}}</h2>
+                    <p class="mt-5 text-xl text-gray-300">{{ $seo['seo_description'] }}</p>
+                    </div>
+                </div>
+            </div>
+        @endif
         @yield('content')
     </main>
 

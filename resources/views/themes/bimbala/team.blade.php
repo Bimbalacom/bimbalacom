@@ -4,13 +4,6 @@
 {{--Team--}}
 <section class="w-full py-12 bg-white lg:py-24">
     <div class="max-w-6xl px-12 mx-auto text-center">
-        <div class="space-y-12 md:text-center">
-            <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
-                <h2 class="relative text-4xl font-extrabold tracking-tight sm:text-5xl">Our Awesome Team</h2>
-                <p class="text-xl text-gray-500">We take pride in the people we work with. This is because we all collectively help each other become more awesome every day.</p>
-            </div>
-        </div>
-
         <div class="grid grid-cols-1 gap-10 sm:grid-cols-2">
             <div class="w-full border border-gray-200 rounded-lg shadow-sm">
                 <div class="flex flex-col items-center justify-center p-10">
