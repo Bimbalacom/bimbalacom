@@ -17,9 +17,9 @@
 
                     <h3 class="relative text-3xl tracking-tight sm:text-4xl text-black mt-4">Target</h3>
                     <p class="text-xl text-black">
-                        The product is carried mostly on the shoulders of two university students. Our dream to succeed to address
-                        the needs of each business which carries about its customers' feedback. This includes easier work process for managers as well
-                        as all desperate employees from a support team.
+                        The product is carried mostly on the shoulders of two university students.
+                         Our dream is to succeed in addressing the needs of each business that carries about its customers' feedback. 
+                         This includes easier work process for managers as well as all desperate employees from a support team.
                     </p>
                 </div>
             </div>
