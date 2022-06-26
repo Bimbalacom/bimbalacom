@@ -2,7 +2,7 @@
 
 @section('content')
     {{-- Content --}}
-    <section class="w-full py-12 bg-white lg:py-24">
+    <section class="w-full">
 <!-- Section 2 -->
 <section class="box-border relative w-full font-sans leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
     <div class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">

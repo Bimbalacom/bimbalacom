@@ -166,7 +166,7 @@
                     <a href="/privacy-policy" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Privacy Policy</a>
                 </li>
                 <li class="box-border block font-semibold text-left">
-                    <a href="/disclaimers" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Disclaimers</a>
+                    <a href="/gdpr" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">GDPR</a>
                 </li>
                 <li class="box-border block font-semibold text-left">
                     <a href="/terms-and-conditions" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Terms and Conditions</a>

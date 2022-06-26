@@ -23,7 +23,7 @@
                     </p>
                 </div>
             </div>
-            <div class="max-w-7xl mx-auto w-full grid grid-cols-9 px-2">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-9 px-2 ">
                 <!-- Stack 3 -->
             {{--<div class="col-span-4 w-full h-full ">
                 <div class="w-full h-full bg-black rounded-md p-2 md:pl-4">
@@ -39,12 +39,12 @@
 
 
                 <!-- Stack 2 -->
-                <div class="col-span-4 w-full h-full"></div>
-                <div class="relative col-span-1 w-full h-full flex justify-center items-center">
-                    <div class="h-full w-1 bg-white"></div>
-                    <div class="absolute w-8 h-8 rounded-full bg-white z-10 text-black text-center"></div>
+                <div class="col-span-4 w-full h-full "></div>
+                <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+                    <div class="h-full w-1 bg-white border-2 border-white-500"></div>
+                    <div class="absolute w-8 h-8 rounded-full bg-white z-10 text-black text-center border-2 border-white-500"></div>
                 </div>
-                <div class="col-span-4 w-full h-full ">
+                <div class="col-span-4 w-full h-full border-2 border-white-500">
                     <div class="w-full h-full bg-white rounded-md p-2 md:pl-4">
                         <h1 class="text-black text-2xl font-bold py-2">16.10.2021</h1>
                         <p class="text-gray-500 sm:text-md text-sm">
@@ -54,7 +54,7 @@
                 </div>
 
                 <!-- Stack 1 -->
-                <div class="col-span-4 w-full h-full ">
+                <div class="col-span-4 w-full h-full border-2 border-white-500">
                     <div class="w-full h-full bg-white rounded-md p-2 md:pl-4">
                         <h1 class="text-black text-2xl font-bold py-2">31.07.2020</h1>
                         <p class="text-gray-500 sm:text-md text-sm">It all began with a coffee afternoon meeting between two students...
@@ -62,9 +62,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="relative col-span-1 w-full h-full flex justify-center items-center">
-                    <div class="h-full w-1 bg-white"></div>
-                    <div class="absolute w-8 h-8 rounded-full bg-white z-10 text-black text-center"></div>
+                <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+                    <div class="h-full w-1 bg-white border-2 border-white-500"></div>
+                    <div class="absolute w-8 h-8 rounded-full bg-white z-10 text-black text-center border-2 border-white-500 "></div>
                 </div>
                 <div class="col-span-4 w-full h-full"></div>
             </div>
