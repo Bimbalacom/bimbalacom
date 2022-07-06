@@ -52,7 +52,7 @@
         </div>
         <br/>
         <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
-            * Still in alfa or backlog version. Every month we provide a major update
+            * Still in beta, every month we provide a major update's
         </p>
     </div>
     {{-- Blobs --}}
@@ -110,7 +110,7 @@
         </div>
         <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-                <img class="rounded-lg" src="{{ asset('themes\bimbala\images\control_center.svg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
+                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/roadmap.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
                 <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">know your data</p>
@@ -175,7 +175,7 @@
                     Designed with your client in mind.
                 </h2>
                 <div class="pr-10 text-left text-purple-300">
-                    Beautifully crafted HQ which provides you paying customer with an alternative to the boring old help desk.
+                    Beautifully crafted HQ which provides you customer with an alternative to the boring old feedback hub / help desk.
                 </div>
             </div>
             <div class="relative flex flex-col w-full px-4 mt-10 leading-6 text-left md:flex-row lg:w-5/12 xl:w-1/2 justifty-end">
