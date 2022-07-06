@@ -16,26 +16,26 @@
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
                     <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\mailchimp.svg') }}" loading="lazy" alt="Mailchimp">
-                        <p class="font-bold mt-4">Mailchimp *</p>
+                        <p class="font-bold mt-4">Mailchimp</p>
                         <p class="mt2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt2 text-sm text-gray-500">Marketing, Automation &amp; Email Platform</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
                     <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading="lazy" alt="Hubspot">
-                        <p class="font-bold mt-4">Hubspot *</p>
+                        <p class="font-bold mt-4">Hubspot</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">Inbound Marketing, Sales, and Service Software</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
                     <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Zendesk">
-                        <p class="font-bold mt-4">Zendesk *</p>
+                        <p class="font-bold mt-4">Zendesk</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Service Software &amp; Sales CRM</p>
                     </div>
                     {{--Second row--}}
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
                     <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\disqus.svg') }}" loading="lazy" alt="Disqus">
-                        <p class="font-bold mt-4">Disqus *</p>
+                        <p class="font-bold mt-4">Disqus</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">American blog comment hosting service</p>
                     </div>
