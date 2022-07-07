@@ -110,7 +110,7 @@
         </div>
         <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/roadmap.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
+                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/upvote.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
                 <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">know your data</p>
@@ -124,7 +124,7 @@
         </div>
         <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-                <img class="rounded-lg" src="{{ asset('themes\bimbala\images\better_decision.svg') }}" loading="lazy" alt="Better decision making">
+                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/roadmap.jpg') }}" loading="lazy" alt="Better decision making">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
                 <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Better decisions</p>
