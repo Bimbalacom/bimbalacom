@@ -14,7 +14,7 @@
             <div>
                 <div class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
                     <a href="{{ route('wave.home') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Home</a>
-                    <a href="{{ route('plans') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Plans</a>
+                    <a href="{{ route('try-it') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Try it</a>
                     <a href="{{ route('wave.blog') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Blog</a>
                     <a href="{{ route('contact') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Contact Us</a>
                 </div>
