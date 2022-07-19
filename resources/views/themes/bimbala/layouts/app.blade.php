@@ -66,7 +66,7 @@
                     </div>
                     @if(Request::path() == 'blog' || Request::path() == 'use-case' || Request::path() == 'about-us')
                     <div class="mt-10 w-full max-w-xs">
-                        <label for="currency" class="block text-base font-medium text-gray-300">Subscribe to our e-mails</label>
+                        <p class="block text-base font-medium text-gray-300">Subscribe to our e-mails</p>
                         <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="sm:flex">
                             <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
                             <label for="email"  name="EMAIL" class="sr-only">Email address</label>
