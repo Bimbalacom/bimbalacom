@@ -105,7 +105,7 @@
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
                 <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Gather your feedback</p>
                 <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">An easy way to collect and organize feedback</h3>
-                <p class="mt-5 text-lg text-gray-700 text md:text-left">Gathering feedback is a big hassle. You receive it from everywhere and nobody knows it all. That is why Bimbala is hear to help and adapt to your way of thinking.</p>
+                <p class="mt-5 text-lg text-gray-700 text md:text-left">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
             </div>
         </div>
         <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
