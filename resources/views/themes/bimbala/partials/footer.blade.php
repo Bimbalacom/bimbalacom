@@ -20,9 +20,9 @@
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="{{ route('wave.pricing') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Pricing</a>
                         </li>
-                        {{-- <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Use Case</a>
-                        </li>
+                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                            <a href="{{ route('apps') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Apps</a>
+                        </li>{{--
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Integrations</a>
                         </li>
