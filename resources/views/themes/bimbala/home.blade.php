@@ -175,7 +175,7 @@
                     Designed with your client in mind.
                 </h2>
                 <div class="pr-10 text-left text-purple-300">
-                    Beautifully crafted HQ which provides you customer with an alternative to the boring old feedback hub / help desk.
+                    Beautifully crafted HQ which provides your customers with an alternative to the boring old feedback hub / help desk.
                 </div>
             </div>
             <div class="relative flex flex-col w-full px-4 mt-10 leading-6 text-left md:flex-row lg:w-5/12 xl:w-1/2 justifty-end">
