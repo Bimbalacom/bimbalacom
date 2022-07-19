@@ -117,7 +117,7 @@
                 <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Analyze and use the users' feedback</h3>
                 <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
                 <p><ul>
-                    <li>Real time imput from users</li>
+                    <li>Real time input from users</li>
                     <li>Data-Driven work approach</li>
                 </ul></p>
             </div>
