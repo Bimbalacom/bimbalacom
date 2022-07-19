@@ -64,7 +64,7 @@
                         <h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">{{ $seo['seo_title']}}</h2>
                         <p class="mt-5 text-xl text-gray-300">{{ $seo['seo_description'] }}</p>
                     </div>
-                    @if(Request::path() == 'blog' || Request::path() == 'use-case' || Request::path() == 'about-us')
+                    @if(Request::is(['blog', 'use-case', 'about-us']))
                     <div class="mt-10 w-full max-w-xs">
                         <p class="block text-base font-medium text-gray-300">Subscribe to our e-mails</p>
                         <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="sm:flex">
