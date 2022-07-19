@@ -57,7 +57,7 @@
     @include('theme::partials.header')
 
     <main class="flex-grow overflow-x-hidden">
-        @unless (Request::path() == '/' ||  Request::path() == 'login'||  Request::path() == 'pricing' || Request::path() == 'register' ||Request::path() == 'dashboard' || Request::is('account/*')|| Request::is('password/*') || Request::is('@*') || Request::is('blog/*'))
+        @unless (Request::is(['/', 'login', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*']))
             <div class="bg-gray-900">
                 <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
                     <div class="max-w-xl">
