@@ -41,6 +41,11 @@ Route::get('/use-case', static function () {
     return view('theme::use_case', ['seo' => ['seo_title' => 'Use Cases', 'seo_description' => 'Here we provide examples of the best ways to use our system. If you have more ideas please share them with us.',
     ]]);
 })->name('use-case');
+Route::get('/apps', static function () {
+    return view('theme::apps', ['seo' => [
+        'seo_title' => 'Apps', 'seo_description' => 'Our applications are fast and simple. Doing what you love, where you want it.',
+    ]]);
+})->name('apps');
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
 
 Route::get('/contact', [ContactController::class, 'serveThePage'])->name('contact');
