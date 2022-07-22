@@ -3,17 +3,7 @@
 @section('content')
     {{--Contact--}}
     <section class="w-full relative">
-        <div class="h-3/6 inset-x-0 absolute bg-purple-900"></div>
         <div class="max-w-7xl px-12 py-12 lg:py-24  mx-auto text-center relative">
-            <div class="space-y-12 md:text-center">
-                <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
-                    <h2 class="relative text-4xl font-extrabold tracking-tight sm:text-5xl text-white">Contact Us</h2>
-                    <p class="text-xl text-purple-200">Who doesn't love talking to the community? Just pick a
-                        channel...</p>
-                    <p class="text-xl text-purple-200">We are always glad to hear you.</p>
-                </div>
-            </div>
-
             <div class="grid grid-cols-6 sm:grid-cols-12 bg-white">
                 <div class="w-full border border-gray-200  shadow-sm col-span-6 sm:col-span-8 p-5">
                 <h6 class="relative text-3xl font-extrabold tracking-tight sm:text-3xl text-black">Our E-mails are full ...</h6>

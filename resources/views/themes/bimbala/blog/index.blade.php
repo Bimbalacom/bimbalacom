@@ -4,37 +4,6 @@
 
 
 <div class="relative  mx-auto xl:px-5 max-w-7xl sm:px-6 lg:pt-10 lg:pb-28">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:flex lg:items-center">
-        <div class="lg:w-0 lg:flex-1">
-            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                Blog
-            </h2>
-            <p class="mt-3 max-w-3xl text-lg text-gray-500">
-                Here you can find our awesome and informative postst.
-            </p>
-        </div>
-        <div class="mt-8 lg:mt-0 lg:ml-8">
-            <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="sm:flex">
-                <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
-                <label for="email"  name="EMAIL" class="sr-only">Email address</label>
-                <input id="email" name="EMAIL" name="email-address" type="email" autocomplete="email" required
-                    class="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs rounded-md"
-                    placeholder="Enter your email">
-                <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                    <button type="submit"
-                        class="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        Notify me
-                    </button>
-                </div>
-            </form>
-            <p class="mt-3 text-sm text-gray-500">
-                We care about the protection of your data. Read our
-                <a href="/privacy-policy" class="font-medium underline">
-                    Privacy Policy.
-                </a>
-            </p>
-        </div>
-    </div>
     <div class="relative mx-auto max-w-7xl">
 		<div class="flex flex-col justify-start">
 			<ul class="flex self-start px-3 py-1 my-6 text-xs font-medium text-gray-600 bg-blue-100 rounded-md">

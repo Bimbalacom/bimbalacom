@@ -5,7 +5,7 @@
 {{-- Start header --}}
     <div class="relative z-30 flex flex-col px-10 pt-20 pb-32 mx-auto md:flex-row sm:pt-24 sm:pb-32 md:pt-32 md:pb-40 max-w-7xl">
         <div class="flex flex-col items-start justify-center w-full space-y-8 md:w-1/2 sm:pr-8 xl:pr-20">
-            <h1 class="text-5xl font-bold text-white lg:text-6xl xl:text-7xl">{{ theme('home_headline') }}</h1>
+            <h1 class="text-4xl font-bold text-white lg:text-6xl xl:text-6xl">{{ theme('home_headline') }}</h1>
             <p class="text-base text-blue-200 lg:text-xl">{{ theme('home_subheadline') }} {{-- -  {{ theme('home_description') }} --}}</p>
             <div class="flex flex-col items-center w-full mb-10 sm:flex-row sm:mb-20">
                 <a href="{{ theme('home_cta_url') }}" class="w-full px-8 py-3 text-lg text-center bg-purple-900 text-white transition duration-150 ease-in-out bg-white sm:w-auto focus:outline-none rounded">Demo </a>
@@ -52,7 +52,7 @@
         </div>
         <br/>
         <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
-            * Still in alfa or backlog version. Every month we provide a major update
+            * Still in beta, every month we provide a major update's
         </p>
     </div>
     {{-- Blobs --}}
@@ -71,7 +71,7 @@
             <!-- Heading -->
              <div class="relative w-full px-4 leading-6 text-center xl:flex-grow-0 xl:flex-shrink-0 lg:flex-grow-0 lg:flex-shrink-0">
                 <h2 class="box-border px-10 mx-0 mt-0 mb-10 font-sans text-2xl font-bold leading-tight text-white md:px-0 sm:text-3xl md:text-4xl">
-                    Sign up for our newsletter to receive weekly tips and strategies
+                    Sign up for our newsletter
                 </h2>
             <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="box-border text-center text-indigo-900">
                 <div class="flex flex-wrap justify-center leading-6 text-indigo-900">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             <div class="mt-8 leading-6 text-purple-300">
-                 By signing up, you agree to the <a href="/terms-and-conditions">Terms and Conditions</a>.
+                 By signing up, you agree to the <a href="/terms-and-conditions" class="font-bold">Terms and Conditions</a>.
             </div>
         </form>
     </div>
@@ -100,27 +100,31 @@
         </div>
         <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-                <img class="rounded-lg" src="{{ asset('themes\bimbala\images\feedback_form.svg') }}" loading="lazy" alt="Knowing your clients">
+                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Drag-n-drop design</p>
-                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Everything you need</h3>
-                <p class="mt-5 text-lg text-gray-700 text md:text-left">Helping your clients grow and know how to use your software is a key thing for a successful company. We can help with that!</p>
+                <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Gather your feedback</p>
+                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">An easy way to collect and organize feedback</h3>
+                <p class="mt-5 text-lg text-gray-700 text md:text-left">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
             </div>
         </div>
         <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-                <img class="rounded-lg" src="{{ asset('themes\bimbala\images\control_center.svg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
+                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/upvote.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
                 <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">know your data</p>
-                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Make an optimized dedicated support portal</h3>
-                <p class="mt-5 text-lg text-gray-700 text md:text-left">In your portal you will have access to stack of various tools. We will help you automate your workflow and satisfy your customers' expectations. Make them part of your product!</p>
+                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Analyze and use the users' feedback</h3>
+                <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
+                <p><ul>
+                    <li>Real time input from users</li>
+                    <li>Data-Driven work approach</li>
+                </ul></p>
             </div>
         </div>
         <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-                <img class="rounded-lg" src="{{ asset('themes\bimbala\images\better_decision.svg') }}" loading="lazy" alt="Better decision making">
+                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/roadmap.jpg') }}" loading="lazy" alt="Better decision making">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
                 <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Better decisions</p>
@@ -135,7 +139,7 @@
 <section class="py-12 sm:py-16 bg-white">
     <div class="max-w-7xl px-10 mx-auto sm:text-center">
         <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps.</h3>
-        <p class="mt-4 text-gray-500 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> Check out with who we are integrated  👇</p>
+        <p class="mt-4 text-gray-500 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check out</a>  who we are integrated with 👇</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading="lazy" alt="Google Tag Manager">
@@ -144,17 +148,17 @@
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\mailchimp.svg') }}" loading="lazy" alt="Mailchimp">
-                <p class="font-bold mt-4">Mailchimp *</p>
+                <p class="font-bold mt-4">Mailchimp</p>
                 <p class="mt2 text-sm text-gray-500">Email Marketing</p>
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading="lazy" alt="Hubspot">
-                <p class="font-bold mt-4">Hubspot *</p>
+                <p class="font-bold mt-4">Hubspot</p>
                 <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Zendesk">
-                <p class="font-bold mt-4">Zendesk *</p>
+                <p class="font-bold mt-4">Zendesk</p>
                 <p class="mt-2 text-sm text-gray-500">Customer Messaging</p>
             </div>
         </div>
@@ -171,7 +175,7 @@
                     Designed with your client in mind.
                 </h2>
                 <div class="pr-10 text-left text-purple-300">
-                    Beautifully crafted HQ which provides you paying customer with an alternative to the boring old help desk.
+                    Beautifully crafted HQ which provides your customers with an alternative to the boring old feedback hub / help desk.
                 </div>
             </div>
             <div class="relative flex flex-col w-full px-4 mt-10 leading-6 text-left md:flex-row lg:w-5/12 xl:w-1/2 justifty-end">

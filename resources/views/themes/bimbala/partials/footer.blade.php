@@ -15,10 +15,10 @@
                             <a href="{{ route('wave.home') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Home</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="https://board.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Demo</a>
+                            <a href="https://board.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Our board</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="{{ route('try-it') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Try it</a>
+                            <a href="{{ route('wave.pricing') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Pricing</a>
                         </li>
                          <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="{{ route('apps') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Apps</a>
@@ -73,6 +73,9 @@
                             <a href="{{ route('team') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Our Team</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                            <a href="https://bimbala-2.creator-spring.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Merchandise</a>
+                        </li>
+                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="https://uptime.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Uptime</a>
                         </li>
                          <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
@@ -81,10 +84,7 @@
                           <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="/legal" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Legal</a>
                         </li>
-                        {{-- <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Jobs</a>
-                        </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                       {{-- <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Technology</a>
                         </li>
                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
@@ -166,7 +166,7 @@
                     <a href="/privacy-policy" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Privacy Policy</a>
                 </li>
                 <li class="box-border block font-semibold text-left">
-                    <a href="/disclaimers" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Disclaimers</a>
+                    <a href="/gdpr" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">GDPR</a>
                 </li>
                 <li class="box-border block font-semibold text-left">
                     <a href="/terms-and-conditions" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Terms and Conditions</a>
@@ -205,3 +205,20 @@
     </script>
 
 @endif
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.bimbala.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+

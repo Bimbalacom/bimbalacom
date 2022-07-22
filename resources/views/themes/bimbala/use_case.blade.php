@@ -3,17 +3,8 @@
 @section('content')
 {{-- Content --}}
 <section class="w-full py-12 bg-white lg:py-24">
-
   <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
-    <div>
-      <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-        Use cases
-      </h2>
-      <p class="mt-3 text-xl text-gray-500 sm:mt-4">
-        Discover a few use cases from us and our customers. Learn how to understand your customers by gathering their feedback.
-      </p>
-    </div>
-    <div class="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+    <div class="grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
       <div class="mb-6 mr-4">
         <div>
             <span

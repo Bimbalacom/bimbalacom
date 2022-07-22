@@ -29,10 +29,10 @@ Route::get('/about-us', static function () {
     return view('theme::about_us', ['seo' => ['seo_title' => 'About Us', 'seo_description' => 'Read our amazing company history. It all became as a joke and now we grow strong.',
     ]]);
 })->name('about-us');
-Route::get('/try-it', static function () {
-    return view('theme::try_it', ['seo' => ['seo_title' => 'Try it', 'seo_description' => 'Try our product and be part of our beta testers group. We promise - you will love it!',
-    ]]);
-})->name('try-it');
+// Route::get('/try-it', static function () {
+//     return view('theme::try_it', ['seo' => ['seo_title' => 'Try it', 'seo_description' => 'Try our product and be part of our beta testers group. We promise - you will love it!',
+//     ]]);
+// })->name('try-it');
 Route::get('/integrations', static function () {
     return view('theme::integrations', ['seo' => ['seo_title' => 'Integrations', 'seo_description' => 'Everyone loves to work as a team. Here are part of our officially supported friends.',
     ]]);

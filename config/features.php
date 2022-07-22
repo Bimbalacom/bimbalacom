@@ -2,8 +2,8 @@
 
 return [
     (object)[
-        'title' => 'Authentication',
-        'description' => 'Fully loaded authentication, email verification, and password reset. Authentication in a snap!',
+        'title' => 'Authentication and Single sign-on',
+        'description' => 'Let your users use it in a snap!',
         'image' => '/themes/bimbala/images/authentication.png'
     ],
     (object)[
@@ -17,8 +17,8 @@ return [
         'image' => '/themes/bimbala/images/notifications.png'
     ],
     (object)[
-        'title' => 'Changelog',
-        'description' => 'Showing the important changes fast and simple.',
+        'title' => 'Your own view',
+        'description' => 'Using only the features you need. Everything here is customisable.',
         'image' => '/themes/bimbala/images/blog.png'
     ],
     (object)[
