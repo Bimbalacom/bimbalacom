@@ -50,14 +50,14 @@
     <meta name="keywords" content="{{ setting('site.keywords', 'product development, customer feedback, customers, integrations, bimbala, SaaS, support, roadmap, knowledge board, FAQ, feedback-based product') }}">
     <meta name="google-site-verification" content="173vXOSU7DHgNz9UkFqBkQ1_yThKQPBGvoZrIKoEm6U" />
     {{-- Styles --}}
-    <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="stylesheet" rel="preload" as="style">
 </head>
 <body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif">
 
     @include('theme::partials.header')
 
     <main class="flex-grow overflow-x-hidden">
-        @unless (Request::is(['/', 'login', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*']))
+        @unless (Request::is(['/', 'login', 'announcement*', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*']))
             <div class="bg-gray-900">
                 <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
                     <div class="max-w-xl">

@@ -9,75 +9,75 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
                     {{--First row --}}
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading="lazy" alt="Google Tag Manager">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading="lazy" alt="Google Tag Manager" width="64px" height="64px">
                         <p class="font-bold mt-4">Google Tag Manager</p>
                         <p class="mt-2 text-sm text-gray-500">Web Tag Manager</p>
                         <p class="mt-2 text-sm text-gray-500">Tag management system</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\mailchimp.svg') }}" loading="lazy" alt="Mailchimp">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\mailchimp.svg') }}" loading="lazy" alt="Mailchimp" width="64px" height="64px">
                         <p class="font-bold mt-4">Mailchimp</p>
                         <p class="mt2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt2 text-sm text-gray-500">Marketing, Automation &amp; Email Platform</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading="lazy" alt="Hubspot">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading="lazy" alt="Hubspot" width="64px" height="64px">
                         <p class="font-bold mt-4">Hubspot</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">Inbound Marketing, Sales, and Service Software</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Zendesk">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Zendesk" width="64px" height="64px">
                         <p class="font-bold mt-4">Zendesk</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Service Software &amp; Sales CRM</p>
                     </div>
                     {{--Second row--}}
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\disqus.svg') }}" loading="lazy" alt="Disqus">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\disqus.svg') }}" loading="lazy" alt="Disqus" width="64px" height="64px">
                         <p class="font-bold mt-4">Disqus</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">American blog comment hosting service</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\plausible-analytics.svg') }}" loading="lazy" alt="Plausible Analytics">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\plausible-analytics.svg') }}" loading="lazy" alt="Plausible Analytics" width="64px" height="64px">
                         <p class="font-bold mt-4">Plausible Analytics</p>
                         <p class="mt2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt2 text-sm text-gray-500">Оpen-source and privacy-friendly alternative to Google Analytics</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google_analytics.svg') }}" loading="lazy" alt="Google Analytics">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google_analytics.svg') }}" loading="lazy" alt="Google Analytics" width="64px" height="64px">
                         <p class="font-bold mt-4">Google Analytics</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">Inbound Marketing, Sales, and Service Software</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\facebook-messanger.svg') }}" loading="lazy" alt="Facebook Messenger">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\facebook-messanger.svg') }}" loading="lazy" alt="Facebook Messenger" width="64px" height="64px">
                         <p class="font-bold mt-4">Facebook Messenger</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">messaging app and platform. </p>
                     </div>
                     {{--Three row--}}
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\crisp.svg') }}" loading="lazy" alt="Crisp">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\crisp.svg') }}" loading="lazy" alt="Crisp" width="64px" height="64px">
                         <p class="font-bold mt-4">Crisp</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">Messaging Platform For Startups</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\tawkto.png') }}" loading="lazy" alt="TawkTo">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\tawkto.png') }}" loading="lazy" alt="TawkTo" width="64px" height="64px">
                         <p class="font-bold mt-4">TawkTo</p>
                         <p class="mt2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt2 text-sm text-gray-500">100% FREE live chat software for your website!</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\tidio.svg') }}" loading="lazy" alt="Tidio">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\tidio.svg') }}" loading="lazy" alt="Tidio" width="64px" height="64px">
                         <p class="font-bold mt-4">Tidio</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">Inbound Marketing, Sales, and Service Software</p>
                     </div>
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\matomo.svg') }}" loading="lazy" alt="Matomo">
+                    <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\matomo.svg') }}" loading="lazy" alt="Matomo" width="64px" height="64px">
                         <p class="font-bold mt-4">Matomo</p>
                         <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
                         <p class="mt-2 text-sm text-gray-500">Google Analytics alternative that protects your data and your customers' privacy</p>
