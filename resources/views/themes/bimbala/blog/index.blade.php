@@ -39,7 +39,7 @@
                             </h3>
                         </a>
                         <a href="{{ $post->link() }}" class="block">
-                            <p class="mt-3 text-base leading-6 text-gray-600">
+                            <p class="mt-3 text-base leading-6 text-gray-500">
 								{{ substr(strip_tags($post->body), 0, 200) }}@if(strlen(strip_tags($post->body)) > 200){{ '...' }}@endif
                             </p>
                         </a>
@@ -61,7 +61,7 @@
                             <p class="text-sm font-medium leading-5 text-gray-900">
                                 Written by <a href="#" class="hover:underline">{{ $post->user->name }}</a>
                             </p>
-                            <div class="flex text-sm leading-5 text-gray-600">
+                            <div class="flex text-sm leading-5 text-gray-500">
 								on <time datetime="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}" class="ml-1">{{ Carbon\Carbon::parse($post->created_at)->toFormattedDateString() }}</time>
                             </div>
                         </div>

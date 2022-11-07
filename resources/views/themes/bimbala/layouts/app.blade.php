@@ -81,7 +81,7 @@
                                 </button>
                             </div>
                         </form>
-                        <p class="mt-3 text-sm text-white">
+                        <p class="mt-3 text-sm text-gray-500">
                             We care about the protection of your data. Read our
                             <a href="/privacy-policy" class="font-medium underline">
                                 Privacy Policy.

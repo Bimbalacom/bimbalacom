@@ -14,7 +14,7 @@
 	                <h3 class="text-lg font-medium leading-6 text-gray-700">
 	                    Welcome to your Dashboard
 	                </h3>
-	                <p class="text-sm leading-5 text-gray-600 mt">
+	                <p class="text-sm leading-5 text-gray-500 mt">
 	                    Learn More Below
 	                </p>
 				</div>
@@ -33,16 +33,16 @@
 	                <h3 class="text-lg font-medium leading-6 text-gray-700">
 						Learn more about us
 	                </h3>
-	                <p class="text-sm leading-5 text-gray-600 mt">
+	                <p class="text-sm leading-5 text-gray-500 mt">
 						Are you more of a visual learner?
 	                </p>
 				</div>
 
 	        </div>
 	        <div class="relative p-5">
-				<p class="text-base leading-loose text-gray-600">Make sure to head on over to our public Youtube channel to learn more how to use and customize Bimbala.<br><br>Click on the button below to checkout the video tutorials.</p>
+				<p class="text-base leading-loose text-gray-500">Make sure to head on over to our public Youtube channel to learn more how to use and customize Bimbala.<br><br>Click on the button below to checkout the video tutorials.</p>
 				<span class="inline-flex mt-5 rounded-md shadow-sm">
-	                <a href="https://www.youtube.com/channel/UChe6dcq2IXt6BnTlRByAEXA" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-600 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
+	                <a href="https://www.youtube.com/channel/UChe6dcq2IXt6BnTlRByAEXA" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
 						Watch our videos
 	                </a>
 				</span>

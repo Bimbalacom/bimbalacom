@@ -16,7 +16,7 @@
           <p class="text-xl font-semibold text-gray-900">
             UpVotes
           </p>
-          <p class="mt-3 text-base text-gray-600">
+          <p class="mt-3 text-base text-gray-500">
             Upvotes are the easiest way to gather user feedback on your problems. A simple way to add everything you need to
             understand your problems and a simple process for validating them. (Yes just voting.)
           </p>
@@ -32,7 +32,7 @@
           <p class="text-xl font-semibold text-gray-900">
             Changelog
           </p>
-          <p class="mt-3 text-base text-gray-600">
+          <p class="mt-3 text-base text-gray-500">
             Changelog is a simple way of showing how your project is going and what you are changing every release. It is common for
             clients to miss a feature update.
           </p>
@@ -48,7 +48,7 @@
           <p class="text-xl font-semibold text-gray-900">
             Internal feedback
           </p>
-          <p class="mt-3 text-base text-gray-600">
+          <p class="mt-3 text-base text-gray-500">
             Not everyone wants to show everything off from the start. That is why, you can limit who see the updates.
           </p>
         </a>
@@ -63,7 +63,7 @@
           <p class="text-xl font-semibold text-gray-900">
             Customization your workflow
           </p>
-          <p class="mt-3 text-base text-gray-600">
+          <p class="mt-3 text-base text-gray-500">
             Automating your work process can be a hassle every time. Adding new integrations is one of our "must" -s.
           </p>
         </a>
