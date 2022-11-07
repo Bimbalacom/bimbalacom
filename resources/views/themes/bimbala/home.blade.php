@@ -83,7 +83,7 @@
                         </button>
                     </div>
                 </div>
-            <div class="mt-8 leading-6 text-purple-500">
+            <div class="mt-8 leading-6 text-white">
                  By signing up, you agree to the <a href="/terms-and-conditions" class="font-bold">Terms and Conditions</a>.
             </div>
         </form>
