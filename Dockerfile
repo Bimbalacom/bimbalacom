@@ -1,5 +1,7 @@
 FROM php:8.0-cli-alpine as builder
 
+ARG APP_ENV="production"
+
 WORKDIR /app
 
 COPY composer.* /app/
@@ -36,6 +38,10 @@ RUN docker-php-ext-enable pdo_mysql && \
     composer dump-autoload --optimize --classmap-authoritative && \
     chown -R www-data:www-data /app/bimbalacom
 
+RUN if [ "$APP_ENV" = "production" ] ; then\
+    RUN docker-php-ext-enable opcache;\
+    COPY /php/opcache.ini /usr/local/etc/php/conf.d/opcache.ini;\
+    fi
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
