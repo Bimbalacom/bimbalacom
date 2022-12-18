@@ -34,6 +34,10 @@ COPY --from=builder /usr/local/lib/php/extensions/no-debug-non-zts-20200930/pdo_
 
 COPY . /app/bimbalacom
 
+COPY date-timezone.ini /etc/php/
+COPY php-memory-limits.ini /etc/php/
+COPY security.ini /etc/php/
+
 RUN docker-php-ext-enable pdo_mysql && \
     composer dump-autoload --optimize --classmap-authoritative && \
     chown -R www-data:www-data /app/bimbalacom
