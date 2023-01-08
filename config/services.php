@@ -27,6 +27,11 @@ return [
 
     'sparkpost' => [
         'secret' => env('SPARKPOST_SECRET'),
+    ],
+
+    'saas' => [
+        'url' => env('SAAS_LANDLORD_URL'),
+        'shared_secret' => env('SAAS_SHARED_SECRET'),
     ]
 
 ];
