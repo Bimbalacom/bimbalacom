@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PortalSettingsController;
 Route::impersonate();
 
 Route::get('/', '\Wave\Http\Controllers\HomeController@index')->name('wave.home');
@@ -9,9 +10,9 @@ Route::get('@{username}', '\Wave\Http\Controllers\ProfileController@index')->nam
 Route::view('docs/{page?}', 'docs::index')->where('page', '(.*)');
 
 // Additional Auth Routes
-Route::get('logout', 'Auth\LoginController@logout')->name('wave.logout');
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('wave.logout');
 Route::get('user/verify/{verification_code}', 'Auth\RegisterController@verify')->name('verify');
-Route::post('register/complete', '\Wave\Http\Controllers\Auth\RegisterController@complete')->name('wave.register-complete');
+Route::post('register/user', '\Wave\Http\Controllers\Auth\RegisterController@complete')->name('wave.register-user-info');
 
 Route::get('blog', '\Wave\Http\Controllers\BlogController@index')->name('wave.blog');
 Route::get('blog/{category}', '\Wave\Http\Controllers\BlogController@category')->name('wave.blog.category');
@@ -54,7 +55,30 @@ Route::group(['middleware' => 'auth'], function(){
 
     /********** Checkout/Billing Routes ***********/
     Route::post('cancel', '\Wave\Http\Controllers\SubscriptionController@cancel')->name('wave.cancel');
-    Route::view('checkout/welcome', 'theme::welcome');
+    Route::get('checkout/welcome',  function (\Illuminate\Http\Request $request) {
+        if(Auth::user()->name){
+            return redirect()->to('checkout/portal?'.Arr::query($request->input()));
+        }
+        return view('theme::welcome.index', [
+            'seo' => [
+                'seo_title' => 'Welсome to Bimbala!',
+                'seo_description' => 'Thanks for subscribing and welcome aboard.',
+            ]
+        ]);
+    });
+    Route::get('checkout/portal', [PortalSettingsController::class, 'index']);
+    Route::post('checkout/portal', [PortalSettingsController::class, 'store'])->name('create-portal');
+    Route::get('checkout/finish', function (\Illuminate\Http\Request $request) {
+        if(!Auth::user()->subdomain_url) {
+            return redirect()->to('checkout/portal?'.Arr::query($request->input()));
+        }
+        return view('theme::welcome.finish', [
+            'seo' => [
+                'seo_title' => 'Your portal is successfully configured!',
+                'seo_description' => 'We are initializing your Bimbala portal...',
+            ]
+        ]);
+    });
 
     Route::post('subscribe', '\Wave\Http\Controllers\SubscriptionController@subscribe')->name('wave.subscribe');
 	Route::view('trial_over', 'theme::trial_over')->name('wave.trial_over');

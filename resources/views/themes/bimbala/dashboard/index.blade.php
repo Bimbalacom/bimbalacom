@@ -3,7 +3,29 @@
 
 @section('content')
 
+    @subscriber
+    @notsubscriber
+    <div class="flex flex-col px-8 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
+        <div class="flex flex-col justify-start flex-1 overflow-hidden bg-[#0077b3] border rounded-lg border-gray-150">
+            <div class="flex flex-wrap items-center justify-between p-5 bg-white border-b border-gray-150 sm:flex-no-wrap">
+                <div class="relative flex-1">
+                    <h3 class="text-lg font-medium leading-6 text-gray-700">
+                        Get started
+                    </h3>
+                </div>
+            </div>
+            <div class="relative p-5">
+                <p class="text-4xl leading-loose text-white text-center ">Pick a plan and ignite your Bimbala workspace!</p>
+                <span class="flex mt-5 rounded-md justify-center">
+	                <a href="{{url('/pricing')}}" target="_blank" class="inline-flex items-center px-10 py-4 text-lg font-medium leading-4 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
+						Ignite the engines
+	                </a>
+				</span>
+            </div>
+        </div>
 
+    </div>
+    @endsubscriber
 	<div class="flex flex-col px-8 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
 	    <div class="flex flex-col justify-start flex-1 mb-5 overflow-hidden bg-white border rounded-lg lg:mr-3 lg:mb-0 border-gray-150">
 	        <div class="flex flex-wrap items-center justify-between p-5 bg-white border-b border-gray-150 sm:flex-no-wrap">
