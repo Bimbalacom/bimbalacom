@@ -1,0 +1,12 @@
+#!/bin/bash
+# This is a convenience script for issuing commands to the site's docker environment
+# Example: ./docker-command php artisan migrate
+
+container_id=$(docker ps -q -f name=dcmp_public);
+
+if [ ! "$container_id" ]; then
+  echo "Docker Containers are not running. Use: 'docker-compose up -d public'"
+  exit 1;
+fi
+
+eval "docker exec -u $(id -u) $container_id $@";
