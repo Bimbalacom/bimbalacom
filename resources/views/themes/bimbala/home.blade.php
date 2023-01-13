@@ -3,23 +3,45 @@
 @section('content')
 
 {{-- Start header --}}
-    <div class="relative z-30 flex flex-col px-10 pt-20 pb-32 mx-auto md:flex-row sm:pt-24 sm:pb-32 md:pt-32 md:pb-40 max-w-7xl">
-        <div class="flex flex-col items-start justify-center w-full space-y-8 md:w-1/2 sm:pr-8 xl:pr-20">
-            <h1 class="text-4xl font-bold text-white lg:text-6xl xl:text-6xl">{{ theme('home_headline') }}</h1>
-            <p class="text-base text-blue-200 lg:text-xl">{{ theme('home_subheadline') }} {{-- -  {{ theme('home_description') }} --}}</p>
-            <div class="flex flex-col items-center w-full mb-10 sm:flex-row sm:mb-20">
-                <a href="{{ theme('home_cta_url') }}" class="w-full px-8 py-3 text-lg text-center bg-purple-900 text-white transition duration-150 ease-in-out bg-white sm:w-auto focus:outline-none rounded">Demo </a>
-                <a href="https://calendly.com/bimbalacom/30min" class="w-full px-8 py-3 mt-5 ml-3 text-lg text-center text-white transition duration-150 ease-in-out bg-transparent border border-white sm:ml-6 sm:w-auto sm:mt-0 focus:outline-none hover:bg-white hover:text-blue-700 rounded">Book a demo</a>
+<section class="relative w-full bg-black">
+ <div class="mx-auto max-w-7xl md:pb-20 lg:pb-24">
+        <div class="relative z-10 flex flex-col items-start justify-start w-full bg-grey-900 px-4 pt-4 md:flex-row md:items-stretch md:space-x-16 md:pt-8 lg:pt-12 md:px-6">
+            <div class="w-full max-w-lg pt-8 mx-auto md:w-1/2 md:max-w-none md:mx-0 md:pb-12">
+                <h1 class="my-6 text-5xl font-bold tracking-tight text-center lg:text-6xl md:text-left text-white"><span class="text-indigo-500">Easy&nbsp;on-boarding</span> {{ theme('home_cta_url') }}</h1>
+                <p class="max-w-md mt-4 mb-8 text-center md:text-left text-white">{{ theme('home_subheadline') }}</p>
+                <p><a href="{{ theme('home_cta_url') }}" class="w-full px-8 py-3 text-lg text-center bg-purple-900 text-white transition duration-150 ease-in-out bg-white sm:w-auto focus:outline-none rounded">Demo</a>
+                <a href="https://calendly.com/bimbalacom/30min" class="w-full px-8 py-3 mt-5 ml-3 text-lg text-center text-white transition duration-150 ease-in-out bg-transparent border border-white sm:ml-6 sm:w-auto sm:mt-0 focus:outline-none hover:bg-white hover:text-blue-700 rounded">Book a demo</a></p>
+            </div>
+            <div class="relative flex items-center justify-center w-full mt-8 md:w-1/2 h-80 md:h-auto md:block">
+                <img src="{{URL::asset('themes/bimbala/images/hero-photo.jpg')}}" class="left-0 z-0 object-cover object-center w-full h-full max-w-lg mx-auto md:max-w-none md:mx-0 md:w-full md:absolute md:top-0 md:-ml-8 rounded-t-3xl md:rounded-3xl" alt="image">
+                <div class="absolute top-0 right-0 w-32 h-32 -mt-10 -mr-10 overflow-hidden shadow-2xl md:right-0 rounded-2xl">
+                    <img src="{{URL::asset('themes/bimbala/images/hero-photo.jpg')}}" class="absolute inset-0 z-0 object-cover object-center w-full h-full" alt="image">
+                </div>
+                <div class="absolute bottom-0 z-20 px-4 -mb-12 md:-ml-36 md:left-0 md:px-0">
+                    <a href="#_" class="flex items-stretch justify-start overflow-hidden transition duration-200 transform bg-white shadow-xl rounded-xl group hover:scale-105 hover:shadow-2xl">
+                        <div class="relative flex items-center justify-center h-24 w-28">
+                            <img src="{{URL::asset('themes/bimbala/images/hero-photo.jpg')}}" class="absolute inset-0 z-0 object-cover object-center w-full h-full transition duration-200 opacity-75 group-hover:opacity-50" alt="image">
+                            <svg class="relative z-10 text-white fill-current" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 6C19.458 6 6 19.458 6 36C6 52.542 19.458 66 36 66C52.542 66 66 52.542 66 36C66 19.458 52.542 6 36 6ZM36 60C22.767 60 12 49.233 12 36C12 22.767 22.767 12 36 12C49.233 12 60 22.767 60 36C60 49.233 49.233 60 36 60Z" class=""></path><path d="M27 45.5873C27 47.9436 29.5919 49.3801 31.59 48.1313L46.9296 38.544C48.8096 37.369 48.8096 34.631 46.9296 33.456L31.59 23.8687C29.5919 22.6199 27 24.0564 27 26.4127V45.5873Z" class=""></path></svg>
+                        </div>
+                        <div class="flex flex-col items-start justify-center px-4 text-gray-600">
+                            <h3 class="text-xl font-bold tracking-tight text-indigo-500">See how it work</h3>
+                            <p class="text-sm">Watch our 2 minutes intro video</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="relative flex items-center justify-center w-full mt-10 md:mt-0 md:w-1/2">
-            <svg class="absolute top-0 right-0 z-0 hidden w-32 h-32 -mt-12 -mr-12 text-blue-300 fill-current md:block" viewBox="0 0 91 91" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill-rule="evenodd"><g fill-rule="nonzero"><g><g><circle cx="3.261" cy="3.445" r="2.72"></circle><circle cx="15.296" cy="3.445" r="2.719"></circle><circle cx="27.333" cy="3.445" r="2.72"></circle><circle cx="39.369" cy="3.445" r="2.72"></circle><circle cx="51.405" cy="3.445" r="2.72"></circle><circle cx="63.441" cy="3.445" r="2.72"></circle><circle cx="75.479" cy="3.445" r="2.72"></circle><circle cx="87.514" cy="3.445" r="2.719"></circle></g><g transform="translate(0 12)"><circle cx="3.261" cy="3.525" r="2.72"></circle><circle cx="15.296" cy="3.525" r="2.719"></circle><circle cx="27.333" cy="3.525" r="2.72"></circle><circle cx="39.369" cy="3.525" r="2.72"></circle><circle cx="51.405" cy="3.525" r="2.72"></circle><circle cx="63.441" cy="3.525" r="2.72"></circle><circle cx="75.479" cy="3.525" r="2.72"></circle><circle cx="87.514" cy="3.525" r="2.719"></circle></g><g transform="translate(0 24)"><circle cx="3.261" cy="3.605" r="2.72"></circle><circle cx="15.296" cy="3.605" r="2.719"></circle><circle cx="27.333" cy="3.605" r="2.72"></circle><circle cx="39.369" cy="3.605" r="2.72"></circle><circle cx="51.405" cy="3.605" r="2.72"></circle><circle cx="63.441" cy="3.605" r="2.72"></circle><circle cx="75.479" cy="3.605" r="2.72"></circle><circle cx="87.514" cy="3.605" r="2.719"></circle></g><g transform="translate(0 36)"><circle cx="3.261" cy="3.686" r="2.72"></circle><circle cx="15.296" cy="3.686" r="2.719"></circle><circle cx="27.333" cy="3.686" r="2.72"></circle><circle cx="39.369" cy="3.686" r="2.72"></circle><circle cx="51.405" cy="3.686" r="2.72"></circle><circle cx="63.441" cy="3.686" r="2.72"></circle><circle cx="75.479" cy="3.686" r="2.72"></circle><circle cx="87.514" cy="3.686" r="2.719"></circle></g><g transform="translate(0 49)"><circle cx="3.261" cy="2.767" r="2.72"></circle><circle cx="15.296" cy="2.767" r="2.719"></circle><circle cx="27.333" cy="2.767" r="2.72"></circle><circle cx="39.369" cy="2.767" r="2.72"></circle><circle cx="51.405" cy="2.767" r="2.72"></circle><circle cx="63.441" cy="2.767" r="2.72"></circle><circle cx="75.479" cy="2.767" r="2.72"></circle><circle cx="87.514" cy="2.767" r="2.719"></circle></g><g transform="translate(0 61)"><circle cx="3.261" cy="2.846" r="2.72"></circle><circle cx="15.296" cy="2.846" r="2.719"></circle><circle cx="27.333" cy="2.846" r="2.72"></circle><circle cx="39.369" cy="2.846" r="2.72"></circle><circle cx="51.405" cy="2.846" r="2.72"></circle><circle cx="63.441" cy="2.846" r="2.72"></circle><circle cx="75.479" cy="2.846" r="2.72"></circle><circle cx="87.514" cy="2.846" r="2.719"></circle></g><g transform="translate(0 73)"><circle cx="3.261" cy="2.926" r="2.72"></circle><circle cx="15.296" cy="2.926" r="2.719"></circle><circle cx="27.333" cy="2.926" r="2.72"></circle><circle cx="39.369" cy="2.926" r="2.72"></circle><circle cx="51.405" cy="2.926" r="2.72"></circle><circle cx="63.441" cy="2.926" r="2.72"></circle><circle cx="75.479" cy="2.926" r="2.72"></circle><circle cx="87.514" cy="2.926" r="2.719"></circle></g><g transform="translate(0 85)"><circle cx="3.261" cy="3.006" r="2.72"></circle><circle cx="15.296" cy="3.006" r="2.719"></circle><circle cx="27.333" cy="3.006" r="2.72"></circle><circle cx="39.369" cy="3.006" r="2.72"></circle><circle cx="51.405" cy="3.006" r="2.72"></circle><circle cx="63.441" cy="3.006" r="2.72"></circle><circle cx="75.479" cy="3.006" r="2.72"></circle><circle cx="87.514" cy="3.006" r="2.719"></circle></g></g></g></g></svg>
-            <div class="relative cursor-pointer group">
-                <img src="{{URL::asset('themes/bimbala/images/hero-photo.jpg')}}" class="rounded-lg" fetchpriority="high" alt="{{ theme('home_subheadline') }}"  width="600" height="400">
+        <div class="relative z-0 flex items-center justify-start px-4 py-12 md:py-0 md:px-6 lg:px-4">
+            <div class="relative z-10 w-full max-w-lg px-8 pt-20 pb-12 mx-auto -mt-12 bg-indigo-500 md:w-1/2 md:max-w-none md:mx-0 md:mt-0 md:py-12 rounded-b-3xl md:rounded-l-2xl md:rounded-br-2xl">
+                <p class="mb-4 text-center text-indigo-100 md:text-left">Trusted by awesome companies</p>
+                <div class="flex items-start justify-center w-full space-x-8 text-white md:justify-start">
+                    <img src="https://mrgkanev.eu/wp-content/uploads/2023/01/logo-2.svg" alt="" class="">
+                    <img src="https://mrgkanev.eu/wp-content/uploads/2023/01/logo-2.svg" alt="">
+                    <img src="https://mrgkanev.eu/wp-content/uploads/2023/01/logo-2.svg" alt="" class="">
+                </div>
             </div>
         </div>
     </div>
-    <div class="absolute bottom-0 left-0 z-20 w-full h-full overflow-x-hidden opacity-50 bg-gradient-to-b from-transparent via-transparent to-black"></div>
 </section>
 {{--End header--}}
 {{-- FEATURES SECTION --}}

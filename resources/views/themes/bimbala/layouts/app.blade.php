@@ -53,7 +53,7 @@
     {{-- Styles --}}
     <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="stylesheet" rel="preload" as="style">
 </head>
-<body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif">
+<body>
 
     @include('theme::partials.header')
 
