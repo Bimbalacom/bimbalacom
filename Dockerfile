@@ -32,12 +32,18 @@ RUN apk update && apk add \
     libxml2-dev \
     libzip-dev \
     zip \
+    nano \
     jpegoptim optipng pngquant gifsicle \
     vim \
     unzip \
     git \
     oniguruma-dev \
-    curl
+    curl \
+    # svgo
+    nodejs \
+    npm
+
+RUN npm i -g svgo
 
 RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml
 RUN docker-php-ext-configure gd
