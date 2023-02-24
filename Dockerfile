@@ -29,6 +29,7 @@ RUN apk update && apk add \
     freetype-dev \
     libjpeg-turbo-dev \
     libpng-dev \
+    libxml2-dev \
     libzip-dev \
     zip \
     jpegoptim optipng pngquant gifsicle \
@@ -52,6 +53,5 @@ COPY . /app/bimbalacom
 RUN composer dump-autoload --optimize --classmap-authoritative
 
 RUN chown -R www-data:www-data /app/bimbalacom 
-RUN chown -R www-data:www-data /app/bimbalacom/storage
-RUN chown -R www-data:www-data /app/bimbalacom/vendor
+RUN chown 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
 
