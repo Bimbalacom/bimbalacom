@@ -5,6 +5,19 @@ ARG APP_ENV="production"
 # Everything is at one place
 ENV PHP_INI_DIR /usr/local/etc/php
 
+# dependencies required for running "phpize"
+# these get automatically installed and removed by "docker-php-ext-*" (unless they're already installed)
+ENV PHPIZE_DEPS \
+    autoconf \
+    dpkg-dev dpkg \
+    file \
+    g++ \
+    gcc \
+    libc-dev \
+    make \
+    pkgconf \
+    re2c
+
 WORKDIR /app
 
 COPY composer.* /app/
@@ -40,6 +53,7 @@ RUN apk update && apk add \
     git \
     oniguruma-dev \
     curl \
+    supervisor \ 
     # svgo
     nodejs \
     npm
@@ -51,15 +65,25 @@ RUN if [ "$APP_ENV" = "production" ] ; then\
     fi
 
 # install redis extension
-RUN pecl install redis-5.3.7 && \
-    docker-php-ext-enable redis
+RUN pecl install redis
 
 RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml
 RUN docker-php-ext-configure gd
 RUN docker-php-ext-install gd
 
-COPY /dc/php.ini "$PHP_INI_DIR/"
+# Configure PHP
+RUN mkdir -p /run/php/
+RUN touch /run/php/php8.0-fpm.pid
+
+COPY .dc/php-fpm.conf /etc/php8/php-fpm.conf
+COPY .dc/php.ini-production /etc/php8/php.ini
+
+# COPY /dc/php.ini "$PHP_INI_DIR/"
 # COPY ../dc/php-fpm.conf "$PHP_INI_DIR/"
+
+# Configure supervisor
+RUN mkdir -p /etc/supervisor.d/
+COPY .dc/supervisord.ini /etc/supervisor.d/supervisord.ini
 
 WORKDIR /app/bimbalacom
 
