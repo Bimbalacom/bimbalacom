@@ -5,19 +5,6 @@ ARG APP_ENV="production"
 # Everything is at one place
 ENV PHP_INI_DIR /usr/local/etc/php
 
-# dependencies required for running "phpize"
-# these get automatically installed and removed by "docker-php-ext-*" (unless they're already installed)
-ENV PHPIZE_DEPS \
-    autoconf \
-    dpkg-dev dpkg \
-    file \
-    g++ \
-    gcc \
-    libc-dev \
-    make \
-    pkgconf \
-    re2c
-
 WORKDIR /app
 
 COPY composer.* /app/
@@ -60,6 +47,11 @@ RUN apk update && apk add \
 
 RUN npm i -g svgo
 
+# dependencies required for running "phpize"
+# these get automatically installed and removed by "docker-php-ext-*" (unless they're already installed)
+RUN apk add --no-cache \
+    $PHPIZE_DEPS 
+
 RUN if [ "$APP_ENV" = "production" ] ; then\
     RUN docker-php-ext-enable opcache;\
     fi
@@ -75,15 +67,15 @@ RUN docker-php-ext-install gd
 RUN mkdir -p /run/php/
 RUN touch /run/php/php8.0-fpm.pid
 
-COPY .dc/php-fpm.conf /etc/php8/php-fpm.conf
-COPY .dc/php.ini-production /etc/php8/php.ini
+# COPY dc/php-fpm.conf /etc/php8/php-fpm.conf
+# COPY dc/php.ini-production /etc/php8/php.ini
 
-# COPY /dc/php.ini "$PHP_INI_DIR/"
+COPY dc/php.ini "$PHP_INI_DIR/conf.d/"
 # COPY ../dc/php-fpm.conf "$PHP_INI_DIR/"
 
 # Configure supervisor
 RUN mkdir -p /etc/supervisor.d/
-COPY .dc/supervisord.ini /etc/supervisor.d/supervisord.ini
+# COPY .dc/supervisord.ini /etc/supervisor.d/supervisord.ini
 
 WORKDIR /app/bimbalacom
 
