@@ -56,8 +56,10 @@ RUN if [ "$APP_ENV" = "production" ] ; then\
     RUN docker-php-ext-enable opcache;\
     fi
 
-# install redis extension
-RUN pecl install redis
+# Installing Redis Extension
+RUN apk add autoconf && pecl install -o -f redis \
+    &&  rm -rf /tmp/pear \
+    &&  docker-php-ext-enable redis && apk del autoconf
 
 RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml
 RUN docker-php-ext-configure gd
@@ -70,8 +72,13 @@ RUN touch /run/php/php8.0-fpm.pid
 # COPY dc/php-fpm.conf /etc/php8/php-fpm.conf
 # COPY dc/php.ini-production /etc/php8/php.ini
 
-COPY dc/php.ini "$PHP_INI_DIR/conf.d/"
+# COPY dc/php.ini "$PHP_INI_DIR/conf.d/"
 # COPY ../dc/php-fpm.conf "$PHP_INI_DIR/"
+
+# Enabling OPcache and JIT.
+# Temporary solution. Will be moved to php.ini
+RUN echo "opcache.enable=1" >> $PHP_INI_DIR/conf.d/opcache.ini &&\
+    echo "opcache.jit=on" >> $PHP_INI_DIR/conf.d/opcache.ini
 
 # Configure supervisor
 RUN mkdir -p /etc/supervisor.d/
