@@ -45,6 +45,9 @@ RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml
 RUN docker-php-ext-configure gd
 RUN docker-php-ext-install gd
 
+# Clear instalation cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app/bimbalacom
 
 COPY --from=builder /app /app/bimbalacom
