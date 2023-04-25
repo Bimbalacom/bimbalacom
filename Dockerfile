@@ -46,7 +46,7 @@ RUN docker-php-ext-configure gd
 RUN docker-php-ext-install gd
 
 # Clear instalation cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN rm -rf /tmp/corpusopssteroids /var/cache/apk/* /var/lib/apt/lists/* && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app/bimbalacom
 
