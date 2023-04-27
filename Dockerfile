@@ -69,11 +69,13 @@ RUN docker-php-ext-install gd
 RUN mkdir -p /run/php/
 RUN touch /run/php/php8.0-fpm.pid
 
-# COPY dc/php-fpm.conf /etc/php8/php-fpm.conf
-# COPY dc/php.ini-production /etc/php8/php.ini
+RUN rm /etc/php8/php-fpm.conf
+COPY php/php-fpm.conf /etc/php8/php-fpm.conf
+# COPY php/php.ini-production /etc/php8/php.ini
 
-# COPY dc/php.ini "$PHP_INI_DIR/conf.d/"
-# COPY ../dc/php-fpm.conf "$PHP_INI_DIR/"
+RUN rm /usr/local/etc/php/php.ini && rm /usr/local/etc/php/php-fpm.conf 
+COPY php/php.ini "$PHP_INI_DIR/conf.d/"
+COPY ../php/php-fpm.conf "$PHP_INI_DIR/"
 
 # Enabling OPcache and JIT.
 # Temporary solution. Will be moved to php.ini
@@ -82,7 +84,8 @@ RUN echo "opcache.enable=1" >> $PHP_INI_DIR/conf.d/opcache.ini &&\
 
 # Configure supervisor
 RUN mkdir -p /etc/supervisor.d/
-# COPY .dc/supervisord.ini /etc/supervisor.d/supervisord.ini
+RUN rm /etc/supervisor.d/supervisord.ini
+COPY .php/supervisord.ini /etc/supervisor.d/supervisord.ini
 
 WORKDIR /app/bimbalacom
 
