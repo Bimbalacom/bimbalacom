@@ -29,7 +29,7 @@
             <h2 class="w-full m-0 font-sans text-4xl font-black leading-loose tracking-wide text-center text-gray-700 border-0 border-gray-200 sm:text-5xl">
                 Amazing Features
             </h2>
-            <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
+            <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-600 border-0 border-gray-200 lg:text-lg md:text-base">
                 Here are part of our features and future plans.
             </p>
         </div>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
                         <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">{{ $feature->title }}</h6>
-                        <p class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
+                        <p class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-600 border-solid sm:mt-4">
                             {{ $feature->description }}
                         </p>
                     </div>
@@ -51,7 +51,7 @@
         @endforeach
         </div>
         <br/>
-        <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
+        <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-600 border-0 border-gray-200 lg:text-lg md:text-base">
             * Still in beta, every month we provide a major update's
         </p>
     </div>
@@ -83,7 +83,7 @@
                         </button>
                     </div>
                 </div>
-            <div class="mt-8 leading-6 text-purple-300">
+            <div class="mt-8 leading-6 text-purple-500">
                  By signing up, you agree to the <a href="/terms-and-conditions" class="font-bold">Terms and Conditions</a>.
             </div>
         </form>
@@ -98,7 +98,7 @@
             <h2 class="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl"> Level Up Your Support</h2>
             <p class="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">Helping your clients while, giving the needed tools for your support / marketing teams.</p>
         </div>
-        <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
+        <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
             </div>
@@ -108,7 +108,7 @@
                 <p class="mt-5 text-lg text-gray-700 text md:text-left">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
             </div>
         </div>
-        <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
+        <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/upvote.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
             </div>
@@ -122,7 +122,7 @@
                 </ul></p>
             </div>
         </div>
-        <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
+        <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/roadmap.jpg') }}" loading="lazy" alt="Better decision making">
             </div>
@@ -136,30 +136,30 @@
 </section>
 {{-- End Features with images --}}
 {{-- Integrations --}}
-<section class="py-12 sm:py-16 bg-white">
+<section class="py-12 sm:py-16 bg-white text-gray-700">
     <div class="max-w-7xl px-10 mx-auto sm:text-center">
         <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps.</h3>
-        <p class="mt-4 text-gray-500 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check out</a>  who we are integrated with 👇</p>
+        <p class="mt-4 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check out</a>  who we are integrated with 👇</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading="lazy" alt="Google Tag Manager" width="64" height="64">
                 <p class="font-bold mt-4">Google Tag Manager</p>
-                <p class="mt-2 text-sm text-gray-500">Web Tag Manager</p>
+                <p class="mt-2 text-sm">Web Tag Manager</p>
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\mailchimp.svg') }}" loading="lazy" alt="Mailchimp" width="64" height="64">
                 <p class="font-bold mt-4">Mailchimp</p>
-                <p class="mt2 text-sm text-gray-500">Email Marketing</p>
+                <p class="mt2 text-sm">Email Marketing</p>
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading="lazy" alt="Hubspot" width="64" height="64">
                 <p class="font-bold mt-4">Hubspot</p>
-                <p class="mt-2 text-sm text-gray-500">Customer Relations</p>
+                <p class="mt-2 text-sm">Customer Relations</p>
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Zendesk" width="64" height="64">
                 <p class="font-bold mt-4">Zendesk</p>
-                <p class="mt-2 text-sm text-gray-500">Customer Messaging</p>
+                <p class="mt-2 text-sm">Customer Messaging</p>
             </div>
         </div>
     </div>
@@ -174,7 +174,7 @@
                 <h2 class="mx-0 mt-0 mb-5 font-sans text-4xl font-bold text-white">
                     Designed with your client in mind.
                 </h2>
-                <div class="pr-10 text-left text-purple-300">
+                <div class="pr-10 text-left">
                     Beautifully crafted HQ which provides your customers with an alternative to the boring old feedback hub / help desk.
                 </div>
             </div>

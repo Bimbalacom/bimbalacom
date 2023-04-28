@@ -8,13 +8,13 @@
             <div class="space-y-12 text-justify">
                 <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
                     <h3 class="relative text-3xl tracking-tight sm:text-4xl text-black mt-4">Values</h3>
-                    <p class="text-xl text-black">
+                    <p class="text-xl text-gray-600">
                         The first principle of our company is to be transparent. Honesty is something we value the most.
                         We are always aiming to show our customers the things as they are.
                     </p>
 
                     <h3 class="relative text-3xl tracking-tight sm:text-4xl text-black mt-4">Target</h3>
-                    <p class="text-xl text-black">
+                    <p class="text-xl text-gray-600">
                         The product is carried mostly on the shoulders of two university students.
                          Our dream is to succeed in addressing the needs of each business that carries about its customers' feedback.
                          This includes easier work process for managers as well as all desperate employees from a support team.
@@ -26,7 +26,7 @@
             {{--<div class="col-span-4 w-full h-full ">
                 <div class="w-full h-full bg-black rounded-md p-2 md:pl-4">
                     <h1 class="text-black text-2xl font-bold py-2">Title</h1>
-                    <p class="text-gray-500 sm:text-md text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt corporis consequuntur voluptate nulla iusto quam ut quasi, eaque quas omnis vero totam ullam, reprehenderit ratione pariatur accusamus suscipit odit nostrum?</p>
+                    <p class="text-gray-600 sm:text-md text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt corporis consequuntur voluptate nulla iusto quam ut quasi, eaque quas omnis vero totam ullam, reprehenderit ratione pariatur accusamus suscipit odit nostrum?</p>
                 </div>
             </div>
             <div class="relative col-span-1 w-full h-full flex justify-center items-center">
