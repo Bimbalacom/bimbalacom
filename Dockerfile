@@ -3,7 +3,8 @@ FROM php:8.0-cli-alpine as builder
 ARG APP_ENV="production"
 
 # Everything is at one place
-ENV PHP_INI_DIR /usr/local/etc/php
+# Commenting out for future use.
+# ENV PHP_INI_DIR /usr/local/etc/php
 
 WORKDIR /app
 
