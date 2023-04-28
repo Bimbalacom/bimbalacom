@@ -61,6 +61,7 @@ RUN apk add autoconf && pecl install -o -f redis \
     &&  rm -rf /tmp/pear \
     &&  docker-php-ext-enable redis && apk del autoconf
 
+
 RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml
 RUN docker-php-ext-configure gd
 RUN docker-php-ext-install gd
@@ -90,6 +91,7 @@ RUN mkdir -p /var/log/php; \
 # Copying PHP conf file
 COPY php/php.ini /usr/local/etc/php/php.ini
 
+
 WORKDIR /app/bimbalacom
 
 COPY --from=builder /app /app/bimbalacom
@@ -101,3 +103,4 @@ RUN composer dump-autoload --optimize --classmap-authoritative
 
 RUN chown -R www-data:www-data /app/bimbalacom 
 RUN chown 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
+
