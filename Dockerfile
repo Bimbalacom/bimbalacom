@@ -82,6 +82,14 @@ RUN mkdir -p /etc/supervisor.d/
 RUN rm /etc/supervisor.d/supervisord.ini
 COPY .php/supervisord.ini /etc/supervisor.d/supervisord.ini
 
+# Setup logs
+RUN mkdir -p /var/log/php; \
+    chown -R www-data: /var/log/php; \
+    rm /usr/local/etc/php-fpm.d/*;
+
+# Copying PHP conf file
+COPY php/php.ini /usr/local/etc/php/php.ini
+
 WORKDIR /app/bimbalacom
 
 COPY --from=builder /app /app/bimbalacom
