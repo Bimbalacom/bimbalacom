@@ -2,119 +2,119 @@
 <footer>
 <section class="pt-6 w-full bg-gray-900 ">
     <div class="px-6 mx-auto max-w-7xl xl:px-12">
-        <div class="box-border flex flex-wrap pt-20 pb-0 text-base leading-tight text-gray-500 md:pb-12">
+        <div class="box-border flex flex-wrap pt-20 pb-0 text-base leading-tight text-white md:pb-12">
             <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
-                <div class="box-border text-base text-gray-500">
+                <div class="box-border text-base text-white">
                 @if(Voyager::image(theme('footer_logo')))
                     <img class="h-10" src="{{ Voyager::image(theme('footer_logo')) }}" alt="Company name">
                 @else
                     <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">Bimbala</h2>
                 @endif
                   <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="{{ route('wave.home') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Home</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="https://board.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Our board</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="{{ route('wave.pricing') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Pricing</a>
                         </li>
-                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                         <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="{{ route('apps') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Apps</a>
                         </li>{{--
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Integrations</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Changelog</a>
                         </li> --}}
                     </ul>
                 </div>
             </div>
             <div width="6,3" class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
-                <div class="box-border text-base text-gray-500">
+                <div class="box-border text-base text-white">
                     <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Product
                     </h2>
                     <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="{{ route('use-case') }}"
                                 class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Use Cases</a>
                         </li>
-                    {{--   <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                    {{--   <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Developer Inspector</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Theme Configuration</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Template Customization</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Developer API</a>
                     --}} </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="{{ route('integrations') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Integrations</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div width="6,3" class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
-                <div class="box-border text-base text-gray-500">
+                <div class="box-border text-base text-white">
                     <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Company
                     </h2>
                     <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="{{ route('about-us') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">About Us</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="{{ route('team') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Our Team</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="https://bimbala-2.creator-spring.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Merchandise</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="https://uptime.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Uptime</a>
                         </li>
-                         <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                         <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="/security" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Security</a>
                         </li>
-                          <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                          <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="/legal" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Legal</a>
                         </li>
-                       {{-- <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                       {{-- <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Technology</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Security</a>
                         </li>--}}
                     </ul>
                 </div>
             </div>
             <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
-                <div class="box-border text-base text-gray-500">
+                <div class="box-border text-base text-white">
                     <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Support
                     </h2>
                 {{--     <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Getting started</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Suggest a feature</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Help center</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Server status</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Report a bug</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-gray-500 md:text-base md:mb-1">
+                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
                             <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Press Kit</a>
                         </li>
                     </ul>--}}
@@ -122,7 +122,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col items-center justify-between w-full py-12 text-xs leading-none text-gray-500 border-t border-gray-800 lg:flex-row">
+        <div class="flex flex-col items-center justify-between w-full py-12 text-xs leading-none text-white border-t border-gray-800 lg:flex-row">
             <div class="flex self-start flex-grow-0 flex-shrink-0 w-full leading-none lg:w-auto">
                 <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0">
                     <a href="https://www.facebook.com/bimbalacom" class="text-gray-400 hover:text-gray-200">
@@ -163,21 +163,21 @@
                      </a>
                 </span>
             </div>
-            <ul class="flex my-6 text-sm text-gray-500 list-none lg:flex-grow-0 lg:flex-shrink-0 lg:my-0">
+            <ul class="flex my-6 text-sm text-white list-none lg:flex-grow-0 lg:flex-shrink-0 lg:my-0">
                 <li class="box-border block font-semibold text-left">
-                    <a href="/privacy-policy" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Privacy Policy</a>
+                    <a href="/privacy-policy" class="pr-5 mr-5 text-white no-underline bg-transparent border-r border-gray-700 cursor-pointer">Privacy Policy</a>
                 </li>
                 <li class="box-border block font-semibold text-left">
-                    <a href="/gdpr" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">GDPR</a>
+                    <a href="/gdpr" class="pr-5 mr-5 text-white no-underline bg-transparent border-r border-gray-700 cursor-pointer">GDPR</a>
                 </li>
                 <li class="box-border block font-semibold text-left">
-                    <a href="/terms-and-conditions" class="pr-5 mr-5 text-gray-500 no-underline bg-transparent border-r border-gray-700 cursor-pointer">Terms and Conditions</a>
+                    <a href="/terms-and-conditions" class="pr-5 mr-5 text-white no-underline bg-transparent border-r border-gray-700 cursor-pointer">Terms and Conditions</a>
                 </li>
                 <li class="box-border block font-semibold text-left">
-                    <a href="/sitemap.xml" class="text-gray-500 no-underline bg-transparent cursor-pointer">Sitemap</a>
+                    <a href="/sitemap.xml" class="text-white no-underline bg-transparent cursor-pointer">Sitemap</a>
                 </li>
             </ul>
-            <p class="block m-0 text-base font-semibold text-gray-500">
+            <p class="block m-0 text-base font-semibold text-white">
             &copy; 2020 - {{ date('Y') }} {{ setting('site.title', 'Bimbala Ltd') }}, Ltd. All rights reserved.
             </p>
         </div>
