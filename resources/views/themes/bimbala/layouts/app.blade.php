@@ -15,8 +15,16 @@
     <meta name="facebook-domain-verification" content="i8nvt9l8tdw2jqc1t55cdoq3c6znvi" />
     <link rel="canonical" href="{{ url('/') }}" />
 
-    <link rel="icon" href="{{ setting('site.favicon', 'https://bimbala.com/themes/bimbala/favicon.ico') }}" type="image/x-icon">
-    {{-- Social Share Open Graph Meta Tags --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('themes/bimbala/images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('themes/bimbala/images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('themes/bimbala/images/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('themes/bimbala/images/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ asset('themes/bimbala/images/favicon.ico') }}">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="{{ asset('browserconfig.xml') }}">
+
+        {{-- Social Share Open Graph Meta Tags --}}
     @if(isset($seo['seo_title'], $seo['seo_description'], $seo->image))
         <meta property="og:title" content="{{ $seo['seo_title'] }}">
         <meta property="og:url" content="{{ \Illuminate\Http\Request::url() }}">
