@@ -81,7 +81,7 @@ RUN { \
 # Configure supervisor
 RUN mkdir -p /etc/supervisor.d/
 RUN rm  -f /etc/supervisor.d/supervisord.ini
-# COPY php/supervisord.ini /etc/supervisor.d/supervisord.ini
+COPY php/supervisord.ini /etc/supervisor.d/supervisord.ini
 
 # Setup logs
 RUN mkdir -p /var/log/php; \
