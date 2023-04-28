@@ -18,5 +18,5 @@ jobs:
           cd ~/dcmp/bimbalacom
           git pull
           cd ~/dcmp/
-          docker-compose build public
-          docker-compose up -d public
+          docker compose build public
+          docker compose up -d public
