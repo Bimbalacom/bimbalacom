@@ -65,22 +65,17 @@ RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml
 RUN docker-php-ext-configure gd
 RUN docker-php-ext-install gd
 
-# Configure PHP
-RUN mkdir -p /run/php/
-RUN touch /run/php/php8.0-fpm.pid
-
-RUN rm /etc/php8/php-fpm.conf
-COPY php/php-fpm.conf /etc/php8/php-fpm.conf
-# COPY php/php.ini-production /etc/php8/php.ini
-
-RUN rm /usr/local/etc/php/php.ini && rm /usr/local/etc/php/php-fpm.conf 
-COPY php/php.ini "$PHP_INI_DIR/conf.d/"
-COPY ../php/php-fpm.conf "$PHP_INI_DIR/"
-
-# Enabling OPcache and JIT.
-# Temporary solution. Will be moved to php.ini
-RUN echo "opcache.enable=1" >> $PHP_INI_DIR/conf.d/opcache.ini &&\
-    echo "opcache.jit=on" >> $PHP_INI_DIR/conf.d/opcache.ini
+# Enabling OPcache and JIT. Will be moved to php.ini
+# set recommended PHP.ini settings
+# see https://secure.php.net/manual/en/opcache.installation.php
+RUN { \
+    echo 'opcache.memory_consumption=128'; \
+    echo 'opcache.interned_strings_buffer=8'; \
+    echo 'opcache.max_accelerated_files=4000'; \
+    echo 'opcache.revalidate_freq=2'; \
+    echo 'opcache.fast_shutdown=1'; \
+    echo 'opcache.enable_cli=1'; \
+    } > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
 # Configure supervisor
 RUN mkdir -p /etc/supervisor.d/
