@@ -67,6 +67,9 @@ RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml
 RUN docker-php-ext-configure gd
 RUN docker-php-ext-install gd
 
+# Clear instalation cache
+RUN rm -rf /var/lib/apt/lists/*
+
 # Enabling OPcache and JIT. Will be moved to php.ini
 # set recommended PHP.ini settings
 # see https://secure.php.net/manual/en/opcache.installation.php
@@ -90,7 +93,6 @@ RUN mkdir -p /var/log/php; \
 
 # Copying PHP conf file
 COPY php/php.ini /usr/local/etc/php/php.ini
-
 
 WORKDIR /app/bimbalacom
 
