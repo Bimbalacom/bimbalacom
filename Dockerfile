@@ -26,6 +26,10 @@ RUN docker-php-ext-install pdo_mysql && \
 
 FROM php:8.0-fpm-alpine
 
+## Essential: Set the timezone
+RUN apk add --no-cache tzdata
+ENV TZ=Europe/Sofia
+
 RUN apk update && apk add \
     build-base \
     freetype-dev \
