@@ -106,4 +106,4 @@ RUN composer dump-autoload --optimize --classmap-authoritative
 RUN chown -R www-data:www-data /app/bimbalacom 
 RUN chown 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
 
-CMD ["supervisord", "-c", "/etc/supervisor.d/supervisord.ini"]
+CMD supervisord -c /etc/supervisor.d/supervisord.ini & php-fpm -F -R
