@@ -36,7 +36,6 @@ RUN apk update && apk add \
     zip \
     nano \
     jpegoptim optipng pngquant gifsicle \
-    vim \
     unzip \
     git \
     oniguruma-dev \
