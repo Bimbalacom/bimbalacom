@@ -102,4 +102,9 @@ RUN composer dump-autoload --optimize --classmap-authoritative
 RUN chown -R www-data:www-data /app/bimbalacom 
 RUN chown 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
 
-CMD supervisord -c /etc/supervisor.d/supervisord.ini & php-fpm -F -R
+# Run the Laravel Task Scheduler
+RUN echo "* * * * * cd /app/bimbalacom && php artisan schedule:run >> /var/log/bimbalacom-schedule 2>&1" > /etc/crontabs/root
+
+CMD supervisord -c /etc/supervisor.d/supervisord.ini & \
+    crond \
+    php-fpm -F -R
