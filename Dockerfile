@@ -44,7 +44,7 @@ RUN apk update && apk add \
     git \
     oniguruma-dev \
     curl \
-    supervisor \ 
+    supervisor \
     # svgo
     nodejs \
     npm
@@ -54,7 +54,7 @@ RUN npm i -g svgo
 # dependencies required for running "phpize"
 # these get automatically installed and removed by "docker-php-ext-*" (unless they're already installed)
 RUN apk add --no-cache \
-    $PHPIZE_DEPS 
+    $PHPIZE_DEPS
 
 RUN if [ "$APP_ENV" = "production" ] ; then\
     RUN docker-php-ext-enable opcache;\
@@ -99,11 +99,14 @@ COPY . /app/bimbalacom
 
 RUN composer dump-autoload --optimize --classmap-authoritative
 
-RUN chown -R www-data:www-data /app/bimbalacom 
+RUN chown -R www-data:www-data /app/bimbalacom
 RUN chown 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
 
 # Run the Laravel Task Scheduler
 RUN echo "* * * * * cd /app/bimbalacom && php artisan schedule:run >> /var/log/bimbalacom-schedule 2>&1" > /etc/crontabs/root
+
+# Set the default editor
+ENV EDITOR=nano
 
 CMD supervisord -c /etc/supervisor.d/supervisord.ini & \
     crond \
