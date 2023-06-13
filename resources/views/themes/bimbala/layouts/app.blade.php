@@ -13,6 +13,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="url" content="{{ url('/') }}">
     <meta name="facebook-domain-verification" content="i8nvt9l8tdw2jqc1t55cdoq3c6znvi" />
+    <meta name="msvalidate.01" content="C0A3EBD94A574266297F779F912F41C6" />
     <link rel="canonical" href="{{ url('/') }}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('themes/bimbala/images/apple-touch-icon.png') }}">
