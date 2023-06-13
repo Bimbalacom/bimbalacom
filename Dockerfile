@@ -109,5 +109,5 @@ RUN echo "* * * * * cd /app/bimbalacom && php artisan schedule:run >> /var/log/b
 ENV EDITOR=nano
 
 CMD supervisord -c /etc/supervisor.d/supervisord.ini & \
-    crond \
+    crond && \
     php-fpm -F -R
