@@ -99,6 +99,8 @@ COPY . /app/bimbalacom
 
 RUN composer dump-autoload --optimize --classmap-authoritative
 
+RUN php artisan horizon:publish
+
 RUN chown -R www-data:www-data /app/bimbalacom
 RUN chown 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
 
