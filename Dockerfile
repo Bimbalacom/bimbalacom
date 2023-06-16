@@ -102,7 +102,7 @@ RUN composer dump-autoload --optimize --classmap-authoritative
 RUN php artisan horizon:publish
 
 RUN chown -R www-data:www-data /app/bimbalacom
-RUN chown 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
+RUN chmod -R 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
 
 # Run the Laravel Task Scheduler
 RUN echo "* * * * * cd /app/bimbalacom && php artisan schedule:run >> /var/log/bimbalacom-schedule 2>&1" > /etc/crontabs/root
