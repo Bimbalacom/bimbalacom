@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App\Policies;
 
-use App\User;
+use Wave\User;
 
 class UserPolicy
 {
