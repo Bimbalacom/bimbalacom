@@ -13,10 +13,19 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="url" content="{{ url('/') }}">
     <meta name="facebook-domain-verification" content="i8nvt9l8tdw2jqc1t55cdoq3c6znvi" />
+    <meta name="msvalidate.01" content="C0A3EBD94A574266297F779F912F41C6" />
     <link rel="canonical" href="{{ url('/') }}" />
 
-    <link rel="icon" href="{{ setting('site.favicon', 'https://bimbala.com/themes/bimbala/favicon.ico') }}" type="image/x-icon">
-    {{-- Social Share Open Graph Meta Tags --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('themes/bimbala/images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('themes/bimbala/images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('themes/bimbala/images/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('themes/bimbala/images/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ asset('themes/bimbala/images/favicon.ico') }}">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="{{ asset('browserconfig.xml') }}">
+
+        {{-- Social Share Open Graph Meta Tags --}}
     @if(isset($seo['seo_title'], $seo['seo_description'], $seo->image))
         <meta property="og:title" content="{{ $seo['seo_title'] }}">
         <meta property="og:url" content="{{ \Illuminate\Http\Request::url() }}">
@@ -67,7 +76,7 @@
                     </div>
                     @if(Request::is(['blog', 'use-case', 'about-us']))
                     <div class="mt-10 w-full max-w-xs">
-                        <p class="block text-base font-medium text-gray-300">Subscribe to our e-mails</p>
+                        <p class="mb-3 block text-base font-medium text-gray-300">Subscribe to our e-mails</p>
                         <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="sm:flex">
                             <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
                             <label for="email"  name="EMAIL" class="sr-only">Email address</label>
@@ -81,7 +90,7 @@
                                 </button>
                             </div>
                         </form>
-                        <p class="mt-3 text-sm text-gray-500">
+                        <p class="mt-3 text-sm text-white">
                             We care about the protection of your data. Read our
                             <a href="/privacy-policy" class="font-medium underline">
                                 Privacy Policy.

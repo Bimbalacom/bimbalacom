@@ -19,6 +19,7 @@
         "lab404/laravel-impersonate": "^1.2",
         "laravel/framework": "^8.0",
         "laravel/helpers": "^1.0",
+        "laravel/horizon": "^5.16",
         "laravel/tinker": "^2.0",
         "livewire/livewire": "^2.4",
         "spatie/laravel-sitemap": "^6.0",

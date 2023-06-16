@@ -2,6 +2,7 @@
 /public/hot
 /public/storage
 /public/.well-known
+/public/vendor/horizon
 /storage/*.key
 /public/sitemap.xml
 /vendor
