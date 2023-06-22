@@ -9,6 +9,7 @@
     "type": "project",
     "require": {
         "php": "^7.3|^8.0",
+        "aws/aws-sdk-php": "^3.218",
         "crazybooot/base64-validation": "^1.0",
         "devdojo/app": "0.11.0",
         "devdojo/themes": "0.0.5",
