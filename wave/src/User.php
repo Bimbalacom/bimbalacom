@@ -23,7 +23,7 @@ class User extends \TCG\Voyager\Models\User implements JWTSubject
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'username', 'password', 'verification_code', 'verified', 'trial_ends_at'
+        'name', 'email', 'username', 'password', 'verification_code', 'verified', 'trial_ends_at', 'subdomain_url'
     ];
 
     /**
@@ -76,7 +76,6 @@ class User extends \TCG\Voyager\Models\User implements JWTSubject
 
         $roles = $this->roles->pluck('id')->push( $this->role_id )->unique();
         $plans = Plan::whereIn('role_id', $roles)->count();
-
         // If the user has a role that belongs to a plan
         if($plans){
             return true;
