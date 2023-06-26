@@ -10,9 +10,6 @@
     </div>
     <article id="post-{{ $post->id }}" class="max-w-4xl px-5 mx-auto prose prose-xl lg:prose-2xl lg:px-0">
 
-        <meta property="name" content="{{ $post->title }}">
-        <meta property="author" content="Bimbala">
-        <meta property="dateModified" content="{{ Carbon\Carbon::parse($post->updated_at)->toIso8601String() }}">
         <meta class="uk-margin-remove-adjacent" property="datePublished" content="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">
 
         <div class="max-w-4xl mx-auto mt-6">
