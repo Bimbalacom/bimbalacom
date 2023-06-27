@@ -8,17 +8,22 @@ use \Storage;
 
 class User extends \Wave\User
 {
-
     use Notifiable;
+
+    /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var string[]|bool
+     */
+
+    protected $guarded = [];
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = [
-        'name', 'email', 'username', 'password', 'verification_code', 'verified', 'trial_ends_at'
-    ];
+    protected $fillable = [];
 
     protected $dates = [
         'created_at',
