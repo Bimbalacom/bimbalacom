@@ -66,7 +66,7 @@ RUN apk add autoconf && pecl install -o -f redis \
     &&  docker-php-ext-enable redis && apk del autoconf
 
 
-RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml zip
+RUN docker-php-ext-install pdo_mysql bcmath mbstring fileinfo exif pcntl xml zip
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 RUN docker-php-ext-install gd
 
