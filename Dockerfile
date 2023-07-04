@@ -89,6 +89,7 @@ RUN mkdir -p /var/log/php; \
 
 # Copying PHP conf file
 COPY php/php.ini /usr/local/etc/php/php.ini
+COPY php/fpm-pool.conf /usr/local/etc/php/php-fpm.d/www.conf
 
 WORKDIR /app/bimbalacom
 
@@ -113,3 +114,6 @@ ENV EDITOR=nano
 CMD supervisord -c /etc/supervisor.d/supervisord.ini & \
     crond && \
     php-fpm -F -R
+
+# Configure a healthcheck to validate that everything is up&running
+HEALTHCHECK --timeout=10s CMD curl --silent --fail http://127.0.0.1:8080/fpm-ping
