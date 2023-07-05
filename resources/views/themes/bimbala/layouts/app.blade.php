@@ -13,9 +13,19 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="url" content="{{ url('/') }}">
     <meta name="facebook-domain-verification" content="i8nvt9l8tdw2jqc1t55cdoq3c6znvi" />
+    <meta name="msvalidate.01" content="C0A3EBD94A574266297F779F912F41C6" />
+    <link rel="canonical" href="{{ url('/') }}" />
 
-    <link rel="icon" href="{{ setting('site.favicon', 'https://bimbala.com/themes/bimbala/favicon.ico') }}" type="image/x-icon">
-    {{-- Social Share Open Graph Meta Tags --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('themes/bimbala/images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('themes/bimbala/images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('themes/bimbala/images/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('themes/bimbala/images/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ asset('themes/bimbala/images/favicon.ico') }}">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="{{ asset('browserconfig.xml') }}">
+
+        {{-- Social Share Open Graph Meta Tags --}}
     @if(isset($seo['seo_title'], $seo['seo_description'], $seo->image))
         <meta property="og:title" content="{{ $seo['seo_title'] }}">
         <meta property="og:url" content="{{ \Illuminate\Http\Request::url() }}">
@@ -50,13 +60,47 @@
     <meta name="keywords" content="{{ setting('site.keywords', 'product development, customer feedback, customers, integrations, bimbala, SaaS, support, roadmap, knowledge board, FAQ, feedback-based product') }}">
     <meta name="google-site-verification" content="173vXOSU7DHgNz9UkFqBkQ1_yThKQPBGvoZrIKoEm6U" />
     {{-- Styles --}}
-    <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="stylesheet" rel="preload" as="style">
 </head>
 <body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif">
 
     @include('theme::partials.header')
 
     <main class="flex-grow overflow-x-hidden">
+        @unless (Request::is(['/', 'login', 'announcement*', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*']))
+            <div class="bg-gray-900">
+                <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
+                    <div class="max-w-xl">
+                        <h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">{{ $seo['seo_title']}}</h2>
+                        <p class="mt-5 text-xl text-gray-300">{{ $seo['seo_description'] }}</p>
+                    </div>
+                    @if(Request::is(['blog', 'use-case', 'about-us']))
+                    <div class="mt-10 w-full max-w-xs">
+                        <p class="mb-3 block text-base font-medium text-gray-300">Subscribe to our e-mails</p>
+                        <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="sm:flex">
+                            <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
+                            <label for="email"  name="EMAIL" class="sr-only">Email address</label>
+                            <input id="email" name="EMAIL" name="email-address" type="email" autocomplete="email" required
+                                class="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs rounded-md"
+                                placeholder="Enter your email">
+                            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                                <button type="submit"
+                                    class="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Notify me
+                                </button>
+                            </div>
+                        </form>
+                        <p class="mt-3 text-sm text-white">
+                            We care about the protection of your data. Read our
+                            <a href="/privacy-policy" class="font-medium underline">
+                                Privacy Policy.
+                            </a>
+                        </p>
+                     </div>
+                     @endif
+                </div>
+            </div>
+        @endif
         @yield('content')
     </main>
 

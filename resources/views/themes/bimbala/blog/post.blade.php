@@ -10,14 +10,11 @@
     </div>
     <article id="post-{{ $post->id }}" class="max-w-4xl px-5 mx-auto prose prose-xl lg:prose-2xl lg:px-0">
 
-        <meta property="name" content="{{ $post->title }}">
-        <meta property="author" typeof="Person" content="admin">
-        <meta property="dateModified" content="{{ Carbon\Carbon::parse($post->updated_at)->toIso8601String() }}">
         <meta class="uk-margin-remove-adjacent" property="datePublished" content="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">
 
         <div class="max-w-4xl mx-auto mt-6">
                 <h1 class="text-center">
-                    <span class="block text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl">{{ $post->title}}</span>
+                    <span class="block text-3xl leading-8 font-extrabold tracking-tight sm:text-5xl">{{ $post->title}}</span>
                     <span class="mt-4 block text-base text-indigo-600 font-semibold tracking-wide uppercase"><a href="{{ route('wave.blog.category', $post->category->slug) }}" rel="category">{{ $post->category->name }}</a></span>
                 </h1>
         </div>
@@ -26,7 +23,7 @@
             <img class="w-full h-auto rounded-lg" src="{{ $post->image() }}" alt="{{ $post->title }}" srcset="{{ $post->image() }}">
         </div>
 
-        <div class="max-w-4xl mx-auto">
+        <div class="text-base max-w-4xl mx-auto">
             {!! $post->body !!}
             <span class="my-6 text-base font-normal">Written on <time
                     datetime="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">{{

@@ -1,0 +1,11 @@
+.idea
+vendor
+node_modules
+Dockerfile
+storage/app/public/*
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/testing/*
+storage/framework/views/data/*
+storage/logs/*
+public/storage/
