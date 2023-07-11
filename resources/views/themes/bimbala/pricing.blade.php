@@ -25,6 +25,7 @@
 		<table class="w-full">
 			<thead>
 				<tr>
+                    <th></th>
 					<th scope="col">
 						<h2 class="px-2 text-lg font-medium">Basic Plan</h2>
 					</th>
@@ -34,10 +35,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Unlimited team members</h3>
-            <span class="text-xm">Don’t worry the portal has a seat for each of your team members. 👨🏼‍💼</span>
+                        <span class="text-xm font-normal">Don’t worry the portal has a seat for each of your team members. 👨🏼‍💼</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -45,10 +46,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Product roadmap </h3>
-            <span class="text-xm">For those who want to make their pipeline fully transparent. Be sure - it is worth trying. 🏗️</span>
+                        <span class="text-xm font-normal">For those who want to make their pipeline fully transparent. Be sure - it is worth trying. 🏗️</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -56,10 +57,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Roadmap Prioritization</h3>
-            <span class="text-xm">The plans always change, so we will not stop you from being agile. 🔃</span>
+                        <span class="text-xm font-normal">The plans always change, so we will not stop you from being agile. 🔃</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -67,10 +68,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">FAQ</h3>
-            <span class="text-xm">A fundamental part of autonomous customer support. 💭</span>
+                        <span class="text-xm font-normal">A fundamental part of autonomous customer support. 💭</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -78,10 +79,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Change log</h3>
-            <span class="text-xm">Let the users know what awesome work you’ve done. 🗒️</span>
+                        <span class="text-xm font-normal">Let the users know what awesome work you’ve done. 🗒️</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -89,10 +90,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Custom subdomain</h3>
-            <span class="text-xm">Bimbala portal personalized for you 🏡</span>
+                        <span class="text-xm font-normal">Bimbala portal personalized for you 🏡</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -100,10 +101,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">API Access</h3>
-            <span class="text-xm">We are happy to share data with other services. 🧑🏻‍💻</span>
+                        <span class="text-xm font-normal">We are happy to share data with other services. 🧑🏻‍💻</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -111,10 +112,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Over <a class="text-purple-900 font-bold" href="{{ route('integrations') }}">20+ integrations</a></h3>
-            <span class="text-xm">Your convenience is important. ☕</span>
+                        <span class="text-xm font-normal">Your convenience is important. ☕</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -122,10 +123,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">User permissions</h3>
-            <span class="text-xm">The granular control is always a must. 🛠️</span>
+                        <span class="text-xm font-normal">The granular control is always a must. 🛠️</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -133,10 +134,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Desktop application</h3>
-            <span class="text-xm">For the hard work outside the browser 🖥️ 🛠️</span>
+                        <span class="text-xm font-normal">For the hard work outside the browser 🖥️ 🛠️</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -144,10 +145,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Mobile application</h3>
-            <span class="text-xm">Commuting is a great time to do some work too 📱</span>
+                        <span class="text-xm font-normal">Commuting is a great time to do some work too 📱</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
@@ -155,10 +156,10 @@
 				<tr>
 					<th scope="row" class="text-left">
 						<h3 class="py-3">Email & Chat Support</h3>
-            <span class="text-xm">After all, we will always be there for you and happy to help! ✉️</span>
+                        <span class="text-xm font-normal">After all, we will always be there for you and happy to help! ✉️</span>
 					</th>
 					<td>
-						<svg class="w-4 h-4 mr-3 text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
