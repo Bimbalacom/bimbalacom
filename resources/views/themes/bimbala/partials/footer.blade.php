@@ -1,3 +1,4 @@
+@include('theme::partials.cta')
 <!-- Footer -->
 <footer>
 <section class="pt-6 w-full bg-gray-900 ">
