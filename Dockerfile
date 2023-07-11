@@ -89,6 +89,7 @@ RUN mkdir -p /var/log/php; \
 
 # Copying PHP conf file
 COPY php/php.ini /usr/local/etc/php/php.ini
+COPY php/fpm-pool.conf /usr/local/etc/php/php-fpm.d/www.conf
 
 WORKDIR /app/bimbalacom
 
