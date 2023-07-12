@@ -6,10 +6,7 @@
         <div class="max-w-7xl px-12 py-12 lg:py-24  mx-auto text-center relative">
             <div class="grid grid-cols-6 sm:grid-cols-12 bg-white">
                 <div class="w-full border border-gray-200  shadow-sm col-span-6 sm:col-span-8 p-5">
-                <h6 class="relative text-3xl font-extrabold tracking-tight sm:text-3xl text-black">Our E-mails are full ...</h6>
-                <h6 class="relative text-3xl font-extrabold tracking-tight sm:text-3xl text-black">Why don't you try some of the social medias on the right?</h6>
-                {{--Temporary removal --}}   
-                {{--  <form
+                <form
                         class="flex flex-col justify-center items-center my-auto h-full p-10 grid grid-cols-1 sm:grid-cols-2 gap-6 relative" action="{{ route('contact-send') }}" method="POST">
                         @if(session('success'))
                             <p class="col-span-1 sm:col-span-2 p-1 bg-green-600 text-white rounded-full text-center">{{session('success')}}</p>
@@ -127,23 +124,15 @@
                                 </svg>
                             </button>
                         </div>
-                    </form> --}}
+                    </form>
                 </div>
                 <aside class="w-full shadow-sm col-span-6 sm:col-span-4 bg-gray-900 text-white text-center">
                     <div class="flex flex-col justify-center items-center p-10 h-full my-auto">
-                        <p class="text-lg font-extrabold">Contact information</p>
+                        <p class="text-lg font-extrabold">Let's connect</p>
 
-                        <div class="flex flex-col items-center justify-center p-10">
-                            <a href="mailto:contact@bimbala.com" class="font-medium">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current inline" viewBox="0 0 20 20"
-                                                                                                     fill="currentColor">
-                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-                                </svg>
-                                contact[at]bimbala.com
-                            </a>
-                        </div>
-                        <div class="flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0">
+                        <div class="p-10"> </div>
+
+                        <div class="flex justify-center w-full mt-10 space-x-5 sm:ml-auto sm:mt-0">
                             <a href="https://www.facebook.com/bimbalacom" class="text-gray-400 hover:text-gray-200">
                                 <span class="sr-only">Facebook</span>
                                 <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
