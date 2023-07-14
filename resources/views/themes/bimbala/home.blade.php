@@ -23,26 +23,26 @@
 </section>
 {{--End header--}}
 {{-- FEATURES SECTION --}}
-    <section class="box-border relative w-full font-sans leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
+    <section class="box-border relative w-full leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
     <div class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
         <div class="relative pb-10">
-            <h2 class="w-full m-0 font-sans text-4xl font-black leading-loose tracking-wide text-center text-gray-700 border-0 border-gray-200 sm:text-5xl">
-                Amazing Features
+            <h2 class="w-full m-0 text-4xl font-black leading-loose tracking-wide text-center border-0 border-gray-200 sm:text-5xl">
+                Some of our features
             </h2>
-            <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-600 border-0 border-gray-200 lg:text-lg md:text-base">
-                Here are part of our features and future plans.
+            <p class="mx-auto mt-4 mb-0 text-sm font-medium leading-relaxed text-center text-gray-600 border-0 border-gray-200 lg:text-lg md:text-base">
+                Here are some of the features our users love.
             </p>
         </div>
         <div class="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
         @foreach(config('features') as $feature)
-            <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
-                <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
-                    <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
+            <div class="col-span-3 bg-gray-50 rounded-3xl">
+                <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:">
+                    <div class="flex-shrink-0 p-3 border border-gray-200 rounded-full">
                        <img src="{{ $feature->image }}" class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7" loading="lazy" alt="{{ $feature->title }} - {{ $feature->description }}"  width="28" height="28">
                     </div>
-                    <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
-                        <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">{{ $feature->title }}</h6>
-                        <p class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-600 border-solid sm:mt-4">
+                    <div class="mt-4 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                        <h6 class="box-border text-2xl text-left font-bold leading-none tracking-wide  border-solid">{{ $feature->title }}</h6>
+                        <p class="box-border mx-0 mt-1 text-left mb-0 font-medium leading-loose text-gray-600 border-solid sm:mt-4">
                             {{ $feature->description }}
                         </p>
                     </div>
@@ -50,10 +50,6 @@
             </div>
         @endforeach
         </div>
-        <br/>
-        <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-600 border-0 border-gray-200 lg:text-lg md:text-base">
-            * Still in beta, every month we provide a major update's
-        </p>
     </div>
     {{-- Blobs --}}
     {{-- Blob Left --}}
@@ -70,14 +66,14 @@
         <div class="relative container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 space-y-16">
             <!-- Heading -->
              <div class="relative w-full px-4 leading-6 text-center xl:flex-grow-0 xl:flex-shrink-0 lg:flex-grow-0 lg:flex-shrink-0">
-                <h2 class="box-border px-10 mx-0 mt-0 mb-10 font-sans text-2xl font-bold leading-tight text-white md:px-0 sm:text-3xl md:text-4xl">
+                <h2 class="box-border px-10 mx-0 mt-0 mb-10 text-2xl font-bold leading-tight text-white md:px-0 sm:text-3xl md:text-4xl">
                     Sign up for our newsletter
                 </h2>
             <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="box-border text-center text-indigo-900">
                 <div class="flex flex-wrap justify-center leading-6 text-indigo-900">
                     <div class="box-border relative py-1 pr-1 text-center border-purple-500 rounded-full sm:border-2">
                     <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
-                    <input type="email" name="EMAIL" placeholder="Your email" class="inline-block w-full h-16 px-6 py-0 mb-6 overflow-visible text-xl font-semibold text-white placeholder-purple-300 align-top bg-transparent border-2 border-purple-500 rounded-full sm:w-auto sm:border-0 sm:mb-0 focus:outline-none md:text-left">
+                    <input type="email" name="EMAIL" placeholder="Your email" class="inline-block w-full h-16 px-6 py-0 mb-6 overflow-visible text-xl font-semibold text-white placeholder-purple-300 align-top bg-transparent border-2 border-purple-500 rounded-full sm:w-auto sm:border-0 sm:mb-0 focus:outline-none md:">
                         <button   id="mc-embedded-subscribe"  class="inline-block w-full h-16 px-10 py-0 m-0 overflow-visible text-xl font-semibold text-white normal-case align-middle bg-green-400 border border-transparent border-solid rounded-full cursor-pointer select-none sm:w-auto focus:outline-none focus:shadow-xs">
                             Sign Up
                         </button>
@@ -96,16 +92,16 @@
     <div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
         <div class="relative">
             <h2 class="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl"> Level Up Your Support</h2>
-            <p class="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">Helping your clients while, giving the needed tools for your support / marketing teams.</p>
+            <p class="w-full py-8 mx-auto -mt-2 text-lg text-center intro sm:max-w-3xl">Helping your clients while, giving the needed tools for your support / marketing teams.</p>
         </div>
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Gather your feedback</p>
-                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">An easy way to collect and organize feedback</h3>
-                <p class="mt-5 text-lg text-gray-700 text md:text-left">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
+                <p class="mb-2 text-sm font-semibold leading-none  text-indigo-600 uppercase">Gather your feedback</p>
+                <h3 class="mt-2 text-2xl sm: md:text-4xl">An easy way to collect and organize feedback</h3>
+                <p class="mt-5 text-lg text md:">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
             </div>
         </div>
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
@@ -113,9 +109,9 @@
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/upvote.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
-                <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">know your data</p>
-                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Analyze and use the users' feedback</h3>
-                <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
+                <p class="mb-2 text-sm font-semibold leading-none  text-indigo-600 uppercase">know your data</p>
+                <h3 class="mt-2 text-2xl sm: md:text-4xl">Analyze and use the users' feedback</h3>
+                <p class="my-3 text-lg">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
                 <p><ul>
                     <li>Real time input from users</li>
                     <li>Data-Driven work approach</li>
@@ -127,9 +123,9 @@
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/roadmap.jpg') }}" loading="lazy" alt="Better decision making">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Better decisions</p>
-                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Better decision making</h3>
-                <p class="mt-5 text-lg text-gray-700 text md:text-left">Asking your community is on of the best ways to know if you are going in the right path.</p>
+                <p class="mb-2 text-sm font-semibold leading-none  text-indigo-600 uppercase">Better decisions</p>
+                <h3 class="mt-2 text-2xl sm: md:text-4xl">Better decision making</h3>
+                <p class="mt-5 text-lg text-gray-700 text md:">Asking your community is on of the best ways to know if you are going in the right path.</p>
             </div>
         </div>
     </div>
