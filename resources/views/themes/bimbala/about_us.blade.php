@@ -2,26 +2,35 @@
 
 @section('content')
     {{--Contact--}}
-    <section class="w-full relative">
-        <div class="h-full inset-x-0 bottom-0 absolute"></div>
-        <div class="max-w-7xl px-12 py-12 lg:py-24  mx-auto text-center relative">
+    <section class="max-w-6xl mx-auto relative ">
+        <div class="px-12 py-12 lg:py-24  mx-auto text-center relative">
             <div class="space-y-12 text-justify">
-                <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
+                <div class="mb-20 space-y-5 sm:mx-auto sm:space-y-4">
                     <h3 class="relative text-3xl tracking-tight sm:text-4xl text-black mt-4">Values</h3>
-                    <p class="text-xl text-gray-600">
+                    <p>
                         The first principle of our company is to be transparent. Honesty is something we value the most.
-                        We are always aiming to show our customers the things as they are.
+                        We are always aiming to show our customers the things as they are. We maintain open culture and believe that everyone is a contributor and has something to bring to the table.
                     </p>
 
                     <h3 class="relative text-3xl tracking-tight sm:text-4xl text-black mt-4">Target</h3>
-                    <p class="text-xl text-gray-600">
+                    <p>
                         The product is carried mostly on the shoulders of two university students.
                          Our dream is to succeed in addressing the needs of each business that carries about its customers' feedback.
                          This includes easier work process for managers as well as all desperate employees from a support team.
                     </p>
+                    <h3 class="relative text-3xl tracking-tight sm:text-4xl text-black mt-4">Community</h3>
+                    <p>
+                        Understanding our <a href="/discord">community</a> will be the key to our success. We are always open to feedback and suggestions.
+                        Every individual, team and organization has a different company setup. Sometimes they are internal and are not always accessible to others. That is why we are always trying to be flexible and adapt to the needs of our customers.
+                    </p>
+                     <h3 class="relative text-3xl tracking-tight sm:text-4xl text-black mt-4">Privacy</h3>
+                    <p>
+                        We respect your privacy. None of the data is sold, and we don’t use it for advertisement. For more information, please read our <a href="/privacy-policy">Privacy Policy</a>.
+                    </p>
                 </div>
             </div>
-            <div class="max-w-7xl mx-auto w-full grid grid-cols-9 px-2 ">
+            <h3 class="text-left pb-12 text-3xl tracking-tight sm:text-4xl text-black mt-4">Part of our history</h3>
+            <div class="max-w-6xl grid grid-cols-9 px-2">
                 <!-- Stack 3 -->
             {{--<div class="col-span-4 w-full h-full ">
                 <div class="w-full h-full bg-black rounded-md p-2 md:pl-4">
