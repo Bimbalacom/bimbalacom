@@ -2,8 +2,8 @@
 
 return [
     (object)[
-        'title' => 'Authentication and Single sign-on',
-        'description' => 'Let your users use it in a snap!',
+        'title' => 'SEO friendly & fast',
+        'description' => 'Simple and effection pages, making them fast and search engine friendly.',
         'image' => '/themes/bimbala/images/authentication.png'
     ],
     (object)[
@@ -12,8 +12,8 @@ return [
         'image' => '/themes/bimbala/images/roles.png'
     ], 
     (object)[
-        'title' => 'Notifications *',
-        'description' => 'Easy to subscribe notification system, which can provide the needed updates, when you need them.',
+        'title' => 'Integrations',
+        'description' => 'With the help of Zapier integration you can use your data as you wish.',
         'image' => '/themes/bimbala/images/notifications.png'
     ],
     (object)[
@@ -22,13 +22,13 @@ return [
         'image' => '/themes/bimbala/images/blog.png'
     ],
     (object)[
-        'title' => 'Functional API *',
+        'title' => 'Functional API',
         'description' => 'Ready-to-consume API for your application. Create API tokens with role specific permissions.',
         'image' => '/themes/bimbala/images/api.png'
     ],
     (object)[
-        'title' => 'Themes *',
-        'description' => 'Fully customizable theme. Configuring to make it your own.',
+        'title' => 'Free subdomains',
+        'description' => 'Use a free domain under (sub).bimbala.com and start gathering feedback in minutes.',
         'image' => '/themes/bimbala/images/themes.png'
     ]
 ];
