@@ -10,7 +10,7 @@
         </div>
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <div :class="{ 'hidden' : !mobile, 'flex': mobile }" class="left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute">
+        <div :class="{ 'hidden' : !mobile, 'flex': mobile }" class="left-0 z-10 items-center w-full font-semibold select-none md:flex  md:justify-center lg:absolute">
             <div>
                 <div class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
                     <a href="{{ route('wave.home') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Home</a>
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex sm:ml-6 sm:items-center">
+        <div class="flex sm:ml-6 sm:items-center z-20">
 
             @if( auth()->user()->onTrial() )
                 <div class="relative items-center justify-center hidden h-full md:flex">

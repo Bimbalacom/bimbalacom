@@ -12,7 +12,7 @@
     </div>
 @endif
 @endsubscriber
-<section class="relative overflow-hidden bg-gray-900">
+<section class="relative bg-gray-900">
 
     <nav x-data="{ mobile: false }" class="relative z-40 px-10 pt-6 mx-auto md:pb-6 max-w-7xl md:flex md:justify-between md:items-center">
         <div class="relative z-20 flex items-center justify-between">
