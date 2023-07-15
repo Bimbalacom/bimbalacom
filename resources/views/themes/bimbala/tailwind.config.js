@@ -41,6 +41,7 @@ module.exports = {
                 '450': '450ms',
             },
             colors: {
+                'bimbala': '#0278B5',
                 'wave': {
                     50: '#F2F8FF',
                     100: '#E6F0FF',

@@ -136,8 +136,8 @@
 {{-- Integrations --}}
 <section class="py-12 sm:py-16 bg-white text-gray-700">
     <div class="max-w-7xl px-10 mx-auto sm:text-center">
-        <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps.</h3>
-        <p class="mt-4 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check out</a>  who we are integrated with 👇</p>
+        <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps</h3>
+        <p class="mt-4 text-base sm:text-xl lg:text-2xl">We have integrate with 10+ other popular software<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check them out</a>  👇</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading="lazy" alt="Google Tag Manager" width="64" height="64">
@@ -155,9 +155,9 @@
                 <p class="mt-2 text-sm">Customer Relations</p>
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Zendesk" width="64" height="64">
-                <p class="font-bold mt-4">Zendesk</p>
-                <p class="mt-2 text-sm">Customer Messaging</p>
+            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zapier.svg') }}" loading="lazy" alt="Zapier" width="64" height="64">
+                <p class="font-bold mt-4">Zapier</p>
+                <p class="mt-2 text-sm">Task Automation</p>
             </div>
         </div>
     </div>
