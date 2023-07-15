@@ -13,10 +13,10 @@
         <div :class="{ 'hidden' : !mobile, 'flex': mobile }" class="left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute">
             <div>
                 <div class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
-                    <a href="{{ route('wave.home') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Home</a>
-                    <a href="{{ route('wave.pricing') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Pricing</a>
-                    <a href="{{ route('wave.blog') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Blog</a>
-                    <a href="{{ route('contact') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Contact Us</a>
+                    <a href="{{ route('wave.home') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Home</a>
+                    <a href="{{ route('wave.pricing') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Pricing</a>
+                    <a href="{{ route('wave.blog') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Blog</a>
+                    <a href="{{ route('contact') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                             </span>
                         </a>
                         @impersonating
-                                <a href="{{ route('impersonate.leave') }}" class="block px-4 py-2 text-sm leading-5 text-gray-700 text-blue-900 border-t border-gray-100 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:bg-blue-200">Leave impersonation</a>
+                                <a href="{{ route('impersonate.leave') }}" class="block px-4 py-2 text-sm leading-5 text-blue-900 border-t border-gray-100 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:bg-blue-200">Leave impersonation</a>
                         @endImpersonating
                         <div class="border-t border-gray-100"></div>
                         <div class="py-1">
