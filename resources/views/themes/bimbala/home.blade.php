@@ -23,7 +23,7 @@
 </section>
 {{--End header--}}
 {{-- FEATURES SECTION --}}
-    <section class="box-border relative w-full leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
+<section class="box-border relative w-full leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
     <div class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
         <div class="relative pb-10">
             <h2 class="w-full m-0 text-4xl font-black leading-loose tracking-wide text-center border-0 border-gray-200 sm:text-5xl">
@@ -53,12 +53,12 @@
     </div>
     {{-- Blobs --}}
     {{-- Blob Left --}}
-        <div class="absolute top-0 left-0 -ml-56 opacity-25 w-96 h-96">
-            <svg class="text-pink-500 opacity-50 fill-current w-88 h-88" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25.5,-24.7C35.8,-15.2,48.9,-7.6,50.6,1.7C52.3,11,42.6,22,32.3,31.2C22,40.4,11,47.8,-1.9,49.8C-14.9,51.7,-29.7,48.1,-41.1,38.9C-52.5,29.7,-60.5,14.9,-60.3,0.3C-60,-14.3,-51.5,-28.6,-40,-38.1C-28.6,-47.6,-14.3,-52.3,-3.4,-48.9C7.6,-45.5,15.2,-34.2,25.5,-24.7Z" transform="translate(100 100)"></path>
-            </svg>
-        </div>
-    </section>
+    <div class="absolute top-0 left-0 -ml-56 opacity-25 w-96 h-96">
+        <svg class="text-pink-500 opacity-50 fill-current w-88 h-88" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.5,-24.7C35.8,-15.2,48.9,-7.6,50.6,1.7C52.3,11,42.6,22,32.3,31.2C22,40.4,11,47.8,-1.9,49.8C-14.9,51.7,-29.7,48.1,-41.1,38.9C-52.5,29.7,-60.5,14.9,-60.3,0.3C-60,-14.3,-51.5,-28.6,-40,-38.1C-28.6,-47.6,-14.3,-52.3,-3.4,-48.9C7.6,-45.5,15.2,-34.2,25.5,-24.7Z" transform="translate(100 100)"></path>
+        </svg>
+    </div>
+</section>
 
 {{-- Weekly mails --}}
 <section class="w-ful">
@@ -133,10 +133,12 @@
                 <p class="mb-2 text-sm font-semibold leading-none text-left text-purple-600 uppercase">know your data</p>
                 <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Analyze and use the users' feedback</h3>
                 <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
-                <p><ul>
+                <p>
+                    <ul class="list-disc ml-5">
                     <li>Real time input from users</li>
                     <li>Data-Driven work approach</li>
-                </ul></p>
+                </ul>
+            </p>
             </div>
         </div>
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
