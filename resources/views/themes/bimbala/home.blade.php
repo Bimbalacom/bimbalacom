@@ -8,7 +8,7 @@
             <h1 class="text-4xl font-bold text-white lg:text-6xl xl:text-6xl">{{ theme('home_headline') }}</h1>
             <p class="text-base text-blue-200 lg:text-xl">{{ theme('home_subheadline') }} {{-- -  {{ theme('home_description') }} --}}</p>
             <div class="flex flex-col items-center w-full mb-10 sm:flex-row sm:mb-20">
-                <a href="{{ theme('home_cta_url') }}" class="w-full px-8 py-3 text-lg text-center bg-purple-900 text-white transition duration-150 ease-in-out bg-white sm:w-auto focus:outline-none rounded">Demo </a>
+                <a href="{{ theme('home_cta_url') }}" class="w-full px-8 py-3 text-lg text-center bg-purple-900 text-white transition duration-150 ease-in-out sm:w-auto focus:outline-none rounded">Demo </a>
                 <a href="https://calendly.com/bimbalacom/30min" class="w-full px-8 py-3 mt-5 ml-3 text-lg text-center text-white transition duration-150 ease-in-out bg-transparent border border-white sm:ml-6 sm:w-auto sm:mt-0 focus:outline-none hover:bg-white hover:text-blue-700 rounded">Book a demo</a>
             </div>
         </div>
@@ -61,31 +61,52 @@
     </section>
 
 {{-- Weekly mails --}}
-<section class="bg-white relative">
-    <div class="absolute inset-0 transform skew-y-1 bg-purple-900"></div>
-        <div class="relative container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 space-y-16">
-            <!-- Heading -->
-             <div class="relative w-full px-4 leading-6 text-center xl:flex-grow-0 xl:flex-shrink-0 lg:flex-grow-0 lg:flex-shrink-0">
-                <h2 class="box-border px-10 mx-0 mt-0 mb-10 text-2xl font-bold leading-tight text-white md:px-0 sm:text-3xl md:text-4xl">
-                    Sign up for our newsletter
-                </h2>
-            <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="box-border text-center text-indigo-900">
-                <div class="flex flex-wrap justify-center leading-6 text-indigo-900">
-                    <div class="box-border relative py-1 pr-1 text-center border-purple-500 rounded-full sm:border-2">
-                    <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
-                    <input type="email" name="EMAIL" placeholder="Your email" class="inline-block w-full h-16 px-6 py-0 mb-6 overflow-visible text-xl font-semibold text-white placeholder-purple-300 align-top bg-transparent border-2 border-purple-500 rounded-full sm:w-auto sm:border-0 sm:mb-0 focus:outline-none md:">
-                        <button   id="mc-embedded-subscribe"  class="inline-block w-full h-16 px-10 py-0 m-0 overflow-visible text-xl font-semibold text-white normal-case align-middle bg-green-400 border border-transparent border-solid rounded-full cursor-pointer select-none sm:w-auto focus:outline-none focus:shadow-xs">
-                            Sign Up
-                        </button>
+<section class="w-ful">
+    
+</section><section class="py-24 overflow-hidden">
+    <div class="px-8 mx-auto max-w-7xl lg:px-12 xl:px-16 ">
+        <div class="flex flex-col lg:flex-row ">
+
+            <!-- Left Content -->
+            <div class="w-full lg:w-1/2 lg:pr-10">
+                <div class="relative max-w-lg mx-auto leading-6 text-center text-gray-700 border-gray-200 lg:text-left">
+                    <h1 class="m-0 text-3xl font-bold leading-tight text-left text-gray-900 border-solid sm:text-4xl md:text-5xl">
+                        Sign up for our
+                        <span class="block text-left text-purple-700" data-primary="purple-700">newsletter</span>
+                    </h1>
+                    <p class="pr-5 mx-0 my-5 text-base text-lef lg:my-8 xl:text-lg">
+                        Components and layouts to help you rapidly build the next great idea. Built to convert your visitors into customers.
+                    </p>
+                    <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" >
+                        <div class="relative flex items-center max-w-md leading-6 text-center lg:mx-0">
+                                <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
+                                <input type="email" name="EMAIL" placeholder="Your E-mail Address" class="w-full py-4 pr-0 m-0 overflow-visible font-medium duration-300 border-2 border-gray-200 rounded-full outline-none sm:py-5 sm:pr-48 cursor-text pl-7 focus:outline-none focus-within:border-purple-700 hover:border-gray-400" data-rounded="rounded-full">
+                                <button id="mc-embedded-subscribe" class="absolute right-0 h-12 px-8 mr-3 text-white bg-purple-700 rounded-full" data-rounded="rounded-full" data-primary="purple-700">Get Started</button>
+                        </div>
+                    </form>
+                    <div class="mt-12 leading-6 border-solid lg:mt-12">
+                        <p class="m-0 text-sm tracking-wider">
+                            By signing up, you agree to the <a href="/terms-and-conditions" class="font-bold">Terms and Conditions</a>.
+                        </p>
                     </div>
                 </div>
-            <div class="mt-8 leading-6 text-purple-500">
-                 By signing up, you agree to the <a href="/terms-and-conditions" class="font-bold">Terms and Conditions</a>.
             </div>
-        </form>
+
+            <!-- Right Image -->
+            <div class="relative w-full mt-20 lg:w-1/2 lg:mt-0 ">
+                <img src="{{URL::asset('themes/bimbala/images/demo.bimbala.jpg')}}" class="relative z-10 p-0 mt-10 transform shadow-2xl rounded-xl lg:scale-110" data-rounded="rounded-xl" data-rounded-max="rounded-full">
+
+                <div class="absolute top-0 right-0 w-full h-full mt-4 -mr-5 transform scale-125 rotate-45">
+                    <svg class="absolute top-0 w-full h-full transform fill-current lg:scale-x-150 text-purple-50" data-primary="purple-600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.5,-76.5C55.9,-68.2,65.2,-55.6,71.9,-42.1C78.5,-28.6,82.7,-14.3,81.3,-0.8C79.8,12.7,72.8,25.3,64.7,36.3C56.5,47.2,47.2,56.3,36.2,63.3C25.2,70.2,12.6,75,-1.1,76.9C-14.8,78.9,-29.7,78,-43.7,72.8C-57.7,67.6,-70.9,58.1,-79.3,45.2C-87.7,32.4,-91.2,16.2,-90.7,0.3C-90.3,-15.7,-85.9,-31.4,-76.4,-42.3C-66.9,-53.1,-52.3,-59.2,-38.7,-66.9C-25.1,-74.5,-12.6,-83.7,1.5,-86.3C15.6,-88.8,31.1,-84.8,43.5,-76.5Z" transform="translate(100 100)" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
     </div>
- </section>
-{{-- Weekly mails --}}
+</section>
+{{--End of Weekly mails --}}
 
 {{-- Features with images --}}
 <section class="py-20 bg-white">
@@ -99,7 +120,7 @@
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none  text-indigo-600 uppercase">Gather your feedback</p>
+                <p class="mb-2 text-sm font-semibold leading-none  text-purple-600 uppercase">Gather your feedback</p>
                 <h3 class="mt-2 text-2xl sm: md:text-4xl">An easy way to collect and organize feedback</h3>
                 <p class="mt-5 text-lg text md:">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
             </div>
@@ -109,7 +130,7 @@
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/upvote.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none  text-indigo-600 uppercase">know your data</p>
+                <p class="mb-2 text-sm font-semibold leading-none  text-purple-600 uppercase">know your data</p>
                 <h3 class="mt-2 text-2xl sm: md:text-4xl">Analyze and use the users' feedback</h3>
                 <p class="my-3 text-lg">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
                 <p>
@@ -125,7 +146,7 @@
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/roadmap.jpg') }}" loading="lazy" alt="Better decision making">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none  text-indigo-600 uppercase">Better decisions</p>
+                <p class="mb-2 text-sm font-semibold leading-none  text-purple-600 uppercase">Better decisions</p>
                 <h3 class="mt-2 text-2xl sm: md:text-4xl">Better decision making</h3>
                 <p class="mt-5 text-lg text-gray-700 text md:">Asking your community is on of the best ways to know if you are going in the right path.</p>
             </div>

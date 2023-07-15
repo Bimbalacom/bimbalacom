@@ -4,7 +4,7 @@ return [
     (object)[
         'title' => 'SEO friendly & fast',
         'description' => 'Simple and effection pages, making them fast and search engine friendly.',
-        'image' => '/themes/bimbala/images/features/seo.svg'
+        'image' => '/themes/bimbala/images/features/cloud.svg'
     ],
     (object)[
         'title' => 'User Roles',
@@ -23,7 +23,7 @@ return [
     ],
     (object)[
         'title' => 'Functional API',
-        'description' => 'Ready-to-consume API for your application.',
+        'description' => 'Leverage our API and have total control of integrating Bimbala into your process.',
         'image' => '/themes/bimbala/images/features/api.svg'
     ],
     (object)[
@@ -31,20 +31,6 @@ return [
         'description' => 'Use a free domain under (sub).bimbala.com and start gathering feedback in minutes.',
         'image' => '/themes/bimbala/images/features/home.svg'
     ],
-    (object)[
-        'title' => 'Functional API',
-        'description' => 'Ready-to-consume API for your application.',
-        'image' => '/themes/bimbala/images/features/api.svg'
-    ],
-    (object)[
-        'title' => 'Functional API',
-        'description' => 'Ready-to-consume API for your application.',
-        'image' => '/themes/bimbala/images/features/api.svg'
-    ],
-    (object)[
-        'title' => 'Functional API',
-        'description' => 'Ready-to-consume API for your application.',
-        'image' => '/themes/bimbala/images/features/api.svg'
-    ]
+    
     
 ];
