@@ -126,19 +126,17 @@
             </div>
         </div>
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
-            <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
+            <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/upvote.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
             </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none  text-purple-600 uppercase">know your data</p>
-                <h3 class="mt-2 text-2xl sm: md:text-4xl">Analyze and use the users' feedback</h3>
-                <p class="my-3 text-lg">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
-                <p>
-                    <ul class="list-disc ml-5">
-                        <li>Real time input from users</li>
-                        <li>Data-Driven work approach</li>
-                    </ul>
-            </p>
+            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
+                <p class="mb-2 text-sm font-semibold leading-none text-left text-purple-600 uppercase">know your data</p>
+                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Analyze and use the users' feedback</h3>
+                <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
+                <p><ul>
+                    <li>Real time input from users</li>
+                    <li>Data-Driven work approach</li>
+                </ul></p>
             </div>
         </div>
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
