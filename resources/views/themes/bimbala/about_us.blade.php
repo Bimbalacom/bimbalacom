@@ -20,12 +20,12 @@
                     </p>
                     <h3 class="relative text-3xl tracking-tight sm:text-4xl mt-4">Community</h3>
                     <p>
-                        Understanding our <a href="/discord">community</a> will be the key to our success. We are always open to feedback and suggestions.
+                        Understanding our <a href="/discord" class="text-purple-900 font-bold">community</a> will be the key to our success. We are always open to feedback and suggestions.
                         Every individual, team and organization has a different company setup. Sometimes they are internal and are not always accessible to others. That is why we are always trying to be flexible and adapt to the needs of our customers.
                     </p>
                      <h3 class="relative text-3xl tracking-tight sm:text-4xl mt-4">Privacy</h3>
                     <p>
-                        We respect your privacy. None of the data is sold, and we don’t use it for advertisement. For more information, please read our <a href="/privacy-policy">Privacy Policy</a>.
+                        We respect your privacy. None of the data is sold, and we don’t use it for advertisement. For more information, please read our <a href="/privacy-policy" class="font-semibold">Privacy Policy</a>.
                     </p>
                 </div>
             </div>
