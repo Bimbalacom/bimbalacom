@@ -26,7 +26,7 @@ Route::get('/team', static function () {
             ]]);
 })->name('team');
 Route::get('/about-us', static function () {
-    return view('theme::about_us', ['seo' => ['seo_title' => 'About Us', 'seo_description' => 'Read our amazing company history. It all became as a joke and now we grow strong.',
+    return view('theme::about_us', ['seo' => ['seo_title' => 'About Us', 'seo_description' => 'Here you can read part of our internal / external culture and what we believe in.',
     ]]);
 })->name('about-us');
 // Route::get('/try-it', static function () {
