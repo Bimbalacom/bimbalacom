@@ -69,13 +69,13 @@
     <main class="flex-grow overflow-x-hidden">
         @unless (Request::is(['/', 'login', 'announcement*', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*']))
             <div class="bg-gray-900">
-                <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
+                <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between">
                     <div class="max-w-xl">
                         <h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">{{ $seo['seo_title']}}</h2>
                         <p class="mt-5 text-xl text-gray-300">{{ $seo['seo_description'] }}</p>
                     </div>
-                    @if(Request::is(['blog', 'use-case', 'about-us']))
-                    <div class="mt-10 w-full max-w-xs">
+                    @if(Request::is(['blog', 'use-case', 'about-us', 'apps', 'integrations']))
+                    <div class="mt-3 w-full max-w-md">
                         <p class="mb-3 block text-base font-medium text-gray-300">Subscribe to our e-mails</p>
                         <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="sm:flex">
                             <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
