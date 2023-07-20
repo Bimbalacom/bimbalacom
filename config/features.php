@@ -3,7 +3,7 @@
 return [
     (object)[
         'title' => 'SEO friendly & fast',
-        'description' => 'Simple and effection pages, making them fast and search engine friendly.',
+        'description' => 'Simple and effective pages, making them fast and search engine friendly.',
         'image' => '/themes/bimbala/images/homepage/features/cloud.svg'
     ],
     (object)[
