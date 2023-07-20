@@ -75,3 +75,4 @@
            {{-- <a href="{{ route('register') }}" class="flex-shrink-0 w-auto text-base font-semibold leading-5 text-left text-blue-50 capitalize bg-transparent md:text-sm md:py-3 md:px-8 md:font-medium md:text-center md:text-white md:bg-purple-900 md:mx-0 rounded">
                 Sign up
             </a> --}}
+        </div>
