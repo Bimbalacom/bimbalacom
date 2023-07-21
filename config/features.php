@@ -13,7 +13,7 @@ return [
     ], 
     (object)[
         'title' => 'Integrations',
-        'description' => 'With the help of our integration or Zapier, you can use your data as you wish.',
+        'description' => 'With the help of our Integrations or Zapier, you can use your data as you wish.',
         'image' => '/themes/bimbala/images/homepage/features/integrations.svg'
     ],
     (object)[
