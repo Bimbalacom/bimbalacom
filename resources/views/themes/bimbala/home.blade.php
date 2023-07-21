@@ -2,7 +2,6 @@
 
 @section('content')
 
-{{-- Start header --}}
     <div class=" bg-gray-900">
         <div class="w-full z-30 flex flex-col px-10 pt-20 pb-32 mx-auto md:flex-row sm:pt-24 sm:pb-32 md:pt-32 md:pb-40 max-w-7xl">
             <div class="flex flex-col items-start justify-center w-full space-y-8 md:w-1/2 sm:pr-8 xl:pr-20">
@@ -24,26 +23,26 @@
     
 {{--End header--}}
 {{-- FEATURES SECTION --}}
-    <section class="box-border relative w-full font-sans leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
+<section class="box-border relative w-full leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
     <div class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
         <div class="relative pb-10">
-            <h2 class="w-full m-0 font-sans text-4xl font-black leading-loose tracking-wide text-center text-gray-700 border-0 border-gray-200 sm:text-5xl">
-                Amazing Features
+            <h2 class="w-full m-0 text-4xl font-black leading-loose tracking-wide text-center border-0 border-gray-200 sm:text-5xl">
+                Some of our features
             </h2>
-            <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-600 border-0 border-gray-200 lg:text-lg md:text-base">
-                Here are part of our features and future plans.
+            <p class="mx-auto mt-4 mb-0 text-sm font-medium leading-relaxed text-center text-gray-600 border-0 border-gray-200 lg:text-lg md:text-base">
+                Here are some of the features our users love.
             </p>
         </div>
         <div class="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
         @foreach(config('features') as $feature)
-            <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
-                <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
-                    <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
+            <div class="col-span-3 bg-gray-50 rounded-3xl">
+                <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:">
+                    <div class="flex-shrink-0 p-3 border border-gray-200 rounded-full">
                        <img src="{{ $feature->image }}" class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7" loading="lazy" alt="{{ $feature->title }} - {{ $feature->description }}"  width="28" height="28">
                     </div>
-                    <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
-                        <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">{{ $feature->title }}</h6>
-                        <p class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-600 border-solid sm:mt-4">
+                    <div class="mt-4 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                        <h6 class="box-border text-2xl text-left font-bold leading-none tracking-wide  border-solid">{{ $feature->title }}</h6>
+                        <p class="box-border mx-0 mt-1 text-left mb-0 font-medium leading-loose text-gray-600 border-solid sm:mt-4">
                             {{ $feature->description }}
                         </p>
                     </div>
@@ -51,86 +50,113 @@
             </div>
         @endforeach
         </div>
-        <br/>
-        <p class="mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-600 border-0 border-gray-200 lg:text-lg md:text-base">
-            * Still in beta, every month we provide a major update's
-        </p>
     </div>
     {{-- Blobs --}}
     {{-- Blob Left --}}
-        <div class="absolute top-0 left-0 -ml-56 opacity-25 w-96 h-96">
-            <svg class="text-pink-500 opacity-50 fill-current w-88 h-88" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25.5,-24.7C35.8,-15.2,48.9,-7.6,50.6,1.7C52.3,11,42.6,22,32.3,31.2C22,40.4,11,47.8,-1.9,49.8C-14.9,51.7,-29.7,48.1,-41.1,38.9C-52.5,29.7,-60.5,14.9,-60.3,0.3C-60,-14.3,-51.5,-28.6,-40,-38.1C-28.6,-47.6,-14.3,-52.3,-3.4,-48.9C7.6,-45.5,15.2,-34.2,25.5,-24.7Z" transform="translate(100 100)"></path>
-            </svg>
-        </div>
-    </section>
+    <div class="absolute top-0 left-0 -ml-56 opacity-25 w-96 h-96">
+        <svg class="text-pink-500 opacity-50 fill-current w-88 h-88" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.5,-24.7C35.8,-15.2,48.9,-7.6,50.6,1.7C52.3,11,42.6,22,32.3,31.2C22,40.4,11,47.8,-1.9,49.8C-14.9,51.7,-29.7,48.1,-41.1,38.9C-52.5,29.7,-60.5,14.9,-60.3,0.3C-60,-14.3,-51.5,-28.6,-40,-38.1C-28.6,-47.6,-14.3,-52.3,-3.4,-48.9C7.6,-45.5,15.2,-34.2,25.5,-24.7Z" transform="translate(100 100)"></path>
+        </svg>
+    </div>
+</section>
 
 {{-- Weekly mails --}}
-<section class="bg-white relative">
-    <div class="absolute inset-0 transform skew-y-1 bg-purple-900"></div>
-        <div class="relative container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 space-y-16">
-            <!-- Heading -->
-             <div class="relative w-full px-4 leading-6 text-center xl:flex-grow-0 xl:flex-shrink-0 lg:flex-grow-0 lg:flex-shrink-0">
-                <h2 class="box-border px-10 mx-0 mt-0 mb-10 font-sans text-2xl font-bold leading-tight text-white md:px-0 sm:text-3xl md:text-4xl">
-                    Sign up for our newsletter
-                </h2>
-            <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="box-border text-center text-indigo-900">
-                <div class="flex flex-wrap justify-center leading-6 text-indigo-900">
-                    <div class="box-border relative py-1 pr-1 text-center border-purple-500 rounded-full sm:border-2">
-                    <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
-                    <input type="email" name="EMAIL" placeholder="Your email" class="inline-block w-full h-16 px-6 py-0 mb-6 overflow-visible text-xl font-semibold text-white placeholder-purple-300 align-top bg-transparent border-2 border-purple-500 rounded-full sm:w-auto sm:border-0 sm:mb-0 focus:outline-none md:text-left">
-                        <button   id="mc-embedded-subscribe"  class="inline-block w-full h-16 px-10 py-0 m-0 overflow-visible text-xl font-semibold text-white normal-case align-middle bg-green-400 border border-transparent border-solid rounded-full cursor-pointer select-none sm:w-auto focus:outline-none focus:shadow-xs">
-                            Sign Up
-                        </button>
+<section class="w-ful">
+    
+</section><section class="py-16 overflow-hidden">
+    <div class="px-8 mx-auto max-w-7xl lg:px-12 xl:px-16 ">
+        <div class="flex flex-col lg:flex-row ">
+
+            <!-- Left Content -->
+            <div class="w-full lg:w-1/2 lg:pr-10">
+                <div class="relative max-w-lg mx-auto leading-6 text-center text-gray-700 border-gray-200 lg:text-left">
+                    <h1 class="m-0 text-3xl font-bold leading-tight text-left text-gray-900 border-solid sm:text-4xl md:text-5xl">
+                        Sign up for our
+                        <span class="block text-left text-purple-700" data-primary="purple-700">newsletter</span>
+                    </h1>
+                    <p class="pr-5 mx-0 my-5 text-base text-lef lg:my-8 xl:text-lg">
+                        Subscribe to the newsletter to get product updates
+                    </p>
+                    <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" >
+                        <div class="relative flex items-center max-w-md leading-6 text-center lg:mx-0">
+                                <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
+                                <input type="email" name="EMAIL" placeholder="Your E-mail" class="w-full py-4 pr-0 m-0 overflow-visible font-medium duration-300 border-2 border-gray-200 rounded-full outline-none sm:py-5 sm:pr-48 cursor-text pl-7 focus:outline-none focus-within:border-purple-700 hover:border-gray-400" data-rounded="rounded-full">
+                                <button id="mc-embedded-subscribe" class="absolute right-0 h-12 px-8 mr-3 text-white bg-purple-700 rounded-full" data-rounded="rounded-full" data-primary="purple-700">Get Started</button>
+                        </div>
+                    </form>
+                    <div class="mt-12 leading-6 border-solid lg:mt-12">
+                        <p class="m-0 text-sm tracking-wider">
+                            By signing up, you agree to the <a href="/terms-and-conditions" class="font-bold">Terms and Conditions</a>.
+                        </p>
                     </div>
                 </div>
-            <div class="mt-8 leading-6 text-purple-500">
-                 By signing up, you agree to the <a href="/terms-and-conditions" class="font-bold">Terms and Conditions</a>.
             </div>
-        </form>
+
+            <!-- Right Image -->
+            <div class="relative w-full mt-20 lg:w-1/2 lg:mt-0 ">
+                <img src="{{URL::asset('themes/bimbala/images/demo.bimbala.jpg')}}" class="relative z-10 p-0 mt-10 transform shadow-2xl rounded-xl lg:scale-110" data-rounded="rounded-xl" data-rounded-max="rounded-full">
+
+                <div class="absolute top-0 right-0 w-full h-full mt-4 -mr-5 transform scale-125 rotate-45">
+                    <svg class="absolute top-0 w-full h-full transform fill-current lg:scale-x-150 text-purple-50" data-primary="purple-600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.5,-76.5C55.9,-68.2,65.2,-55.6,71.9,-42.1C78.5,-28.6,82.7,-14.3,81.3,-0.8C79.8,12.7,72.8,25.3,64.7,36.3C56.5,47.2,47.2,56.3,36.2,63.3C25.2,70.2,12.6,75,-1.1,76.9C-14.8,78.9,-29.7,78,-43.7,72.8C-57.7,67.6,-70.9,58.1,-79.3,45.2C-87.7,32.4,-91.2,16.2,-90.7,0.3C-90.3,-15.7,-85.9,-31.4,-76.4,-42.3C-66.9,-53.1,-52.3,-59.2,-38.7,-66.9C-25.1,-74.5,-12.6,-83.7,1.5,-86.3C15.6,-88.8,31.1,-84.8,43.5,-76.5Z" transform="translate(100 100)" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
     </div>
- </section>
-{{-- Weekly mails --}}
+</section>
+{{--End of Weekly mails --}}
 
 {{-- Features with images --}}
 <section class="py-20 bg-white">
     <div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
         <div class="relative">
             <h2 class="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl"> Level Up Your Support</h2>
-            <p class="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">Helping your clients while, giving the needed tools for your support / marketing teams.</p>
+            <p class="w-full py-8 mx-auto -mt-2 text-lg text-center intro sm:max-w-3xl">Helping your clients while, giving the needed tools for your support / marketing teams.</p>
         </div>
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
-            <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
+            <div class="flex items-center mb-8 sm:w-1/2 md:w-6/12 sm:order-last">
+                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/features/organize-feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
             </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Gather your feedback</p>
-                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">An easy way to collect and organize feedback</h3>
-                <p class="mt-5 text-lg text-gray-700 text md:text-left">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
+            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pr-16">
+                <p class="mb-2 text-sm font-semibold leading-none  text-purple-600 uppercase">Gather your feedback</p>
+                <h3 class="mt-2 text-2xl md:text-4xl">An easy way to collect and organize feedback</h3>
+                <p class="mt-5 text-lg text md:">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
             </div>
         </div>
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
-            <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/upvote.jpg') }}" loading="lazy" alt="Make an optimized dedicated support portal">
-            </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
-                <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">know your data</p>
+                <div class="flex items-center mb-8 sm:w-1/2 md:w-6/12">
+                    <div class="relative w-full">
+                        <img src="{{ asset('themes/bimbala/images/features/collecting-feedback.png') }}" class="relative z-10 p-0 transform rounded-xl lg:scale-110" data-rounded="rounded-xl" data-rounded-max="rounded-full"  loading="lazy" alt="Make an optimized dedicated support portal">
+
+                        <div class="absolute top-0 right-0 w-full h-full mt-4 -mr-5 transform scale-125 rotate-45">
+                            <svg class="absolute top-0 w-full h-full transform fill-current lg:scale-x-150 text-purple-50" data-primary="purple-600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M43.5,-76.5C55.9,-68.2,65.2,-55.6,71.9,-42.1C78.5,-28.6,82.7,-14.3,81.3,-0.8C79.8,12.7,72.8,25.3,64.7,36.3C56.5,47.2,47.2,56.3,36.2,63.3C25.2,70.2,12.6,75,-1.1,76.9C-14.8,78.9,-29.7,78,-43.7,72.8C-57.7,67.6,-70.9,58.1,-79.3,45.2C-87.7,32.4,-91.2,16.2,-90.7,0.3C-90.3,-15.7,-85.9,-31.4,-76.4,-42.3C-66.9,-53.1,-52.3,-59.2,-38.7,-66.9C-25.1,-74.5,-12.6,-83.7,1.5,-86.3C15.6,-88.8,31.1,-84.8,43.5,-76.5Z" transform="translate(100 100)" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pl-16">
+                <p class="mb-2 text-sm font-semibold leading-none text-left text-purple-600 uppercase">know your data</p>
                 <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Analyze and use the users' feedback</h3>
                 <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
-                <p><ul>
+                <p>
+                    <ul class="list-disc ml-5">
                     <li>Real time input from users</li>
                     <li>Data-Driven work approach</li>
-                </ul></p>
+                </ul>
+            </p>
             </div>
         </div>
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
-            <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/roadmap.jpg') }}" loading="lazy" alt="Better decision making">
+            <div class="flex items-center mb-8 sm:w-1/2 md:w-6/12 sm:order-last">
+                <img class="rounded-lg" src="{{ asset('themes/bimbala/images/features/better-desicion-making.jpg') }}" loading="lazy" alt="Better decision making">
             </div>
-            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none text-left text-indigo-600 uppercase">Better decisions</p>
-                <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Better decision making</h3>
-                <p class="mt-5 text-lg text-gray-700 text md:text-left">Asking your community is on of the best ways to know if you are going in the right path.</p>
+            <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pr-16">
+                <p class="mb-2 text-sm font-semibold leading-none  text-purple-600 uppercase">Better decisions</p>
+                <h3 class="mt-2 text-2xl md:text-4xl">Better decision making</h3>
+                <p class="mt-5 text-lg text-gray-700">Asking your community is on of the best ways to know if you are going in the right path.</p>
             </div>
         </div>
     </div>
@@ -139,8 +165,8 @@
 {{-- Integrations --}}
 <section class="py-12 sm:py-16 bg-white text-gray-700">
     <div class="max-w-7xl px-10 mx-auto sm:text-center">
-        <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps.</h3>
-        <p class="mt-4 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check out</a>  who we are integrated with 👇</p>
+        <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps</h3>
+        <p class="mt-4 text-base sm:text-xl lg:text-2xl">We have integrate with 10+ other popular software.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check them out</a>  👇</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
             <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading="lazy" alt="Google Tag Manager" width="64" height="64">
@@ -158,9 +184,9 @@
                 <p class="mt-2 text-sm">Customer Relations</p>
             </div>
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zendesk.svg') }}" loading="lazy" alt="Zendesk" width="64" height="64">
-                <p class="font-bold mt-4">Zendesk</p>
-                <p class="mt-2 text-sm">Customer Messaging</p>
+            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zapier.svg') }}" loading="lazy" alt="Zapier" width="64" height="64">
+                <p class="font-bold mt-4">Zapier</p>
+                <p class="mt-2 text-sm">Task Automation</p>
             </div>
         </div>
     </div>
