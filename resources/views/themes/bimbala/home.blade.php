@@ -24,7 +24,7 @@
 {{--End header--}}
 
 {{-- Features with images --}}
-<section class="relative box-border w-full border-0 border-solid leading-6 p-16 text-gray-700">
+<section class="relative box-border w-full border-0 border-solid leading-6 p-16">
   <div class="mx-auto box-border flex max-w-7xl flex-col items-center border-solid md:px-8 py-16 leading-6 md:items-stretch md:justify-center xl:px-16">
     <div class="relative pb-4 md:pb-10">
       <h2 class="m-0 w-full border-0 border-gray-200 text-center text-4xl font-black leading-loose tracking-wide sm:text-5xl">Key features</h2>
@@ -37,45 +37,45 @@
         }"
       class="p-3 md:p-6 w-full"
     >
-      <div class="md:mt-20 lg:pt-0 lg:flex lg:flex-row">
+      <div class="text-gray-700 md:mt-20 lg:pt-0 lg:flex lg:flex-row">
         <ul class="relative z-10 whitespace-nowrap lg:mx-0 lg:block lg:whitespace-normal flex justify-center">
           <li @click="openTab = 1" :class="{ ' bg-purple-700/10': openTab === 1 }" class="group relative mr-1 rounded-full px-2 md:px-4 py-1 hover:bg-purple-700/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-purple-700/5">
             <h3>
-              <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold text-gray-700 hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 1}">
+              <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold  hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 1}">
                 <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
                 Roadmap
               </button>
             </h3>
-            <p class="mt-2 text-sm font-medium leading-loose text-gray-700 group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 1}">It is your shared source of truth that outlines the vision, direction, priorities, and progress of a product over time.</p>
+            <p class="mt-2 text-sm font-medium leading-loose group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 1}">It is your shared source of truth that outlines the vision, direction, priorities, and progress of a product over time.</p>
           </li>
 
           <li @click="openTab = 2" :class="{ 'bg-purple-700/10': openTab === 2 }" class="group relative mr-1 rounded-full px-2 md:px-4 py-1 hover:bg-purple-700/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-purple-700/5">
             <h3>
-              <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold text-gray-700 hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 2}">
+              <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 2}">
                 <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
                 FAQ
               </button>
             </h3>
-            <p class="mt-2 text-sm font-medium leading-loose text-gray-700 group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 2}">Is the collections of the most common questions and brief, easy-to-understand answers about a particular product, service, or topic.</p>
+            <p class="mt-2 text-sm font-medium leading-loose group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 2}">Is the collections of the most common questions and brief, easy-to-understand answers about a particular product, service, or topic.</p>
           </li>
 
           <li @click="openTab = 3" :class="{ 'bg-purple-700/10': openTab === 3 }" class="group relative mr-1 rounded-full px-2 md:px-4 py-1 hover:bg-purple-700/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-purple-700/5">
             <h3>
-              <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold text-gray-700 hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 3}">
+              <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 3}">
                 <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
                 Upvotes
               </button>
             </h3>
-            <p class="mt-2 text-sm font-medium leading-loose text-gray-700 group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 3}">Allow them to submit their ideas for new features and participate in voting on all feedback. You'll gain valuable insights into what to prioritize for your next developments.</p>
+            <p class="mt-2 text-sm font-medium leading-loose group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 3}">Allow them to submit their ideas for new features and participate in voting on all feedback. You'll gain valuable insights into what to prioritize for your next developments.</p>
           </li>
           {{-- <li @click="openTab = 4" :class="{ 'bg-purple-700/10': openTab === 4 }" class="group relative mr-1 rounded-full px-2 md:px-4 py-1 hover:bg-purple-700/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-purple-700/5">
             <h3>
-              <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold text-gray-700 hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 4}">
+              <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 4}">
                 <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
                 Changelog
               </button>
             </h3>
-            <p class="mt-2 text-sm font-medium leading-loose text-gray-700 group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 4}">Documented record of all the changes that a software undergoes. Changes made are then chronologically recorded for users to easily spot the evolution of the product.</p>
+            <p class="mt-2 text-sm font-medium leading-loose group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 4}">Documented record of all the changes that a software undergoes. Changes made are then chronologically recorded for users to easily spot the evolution of the product.</p>
           </li>  --}}
         </ul>
         <div class="md:h-96 lg:w-2/4 w-full">
