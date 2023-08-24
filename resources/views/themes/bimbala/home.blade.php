@@ -24,8 +24,8 @@
 {{--End header--}}
 
 {{-- Features with images --}}
-<section class="relative box-border w-full border-0 border-solid leading-6 p-16">
-  <div class="mx-auto box-border flex max-w-7xl flex-col items-center border-solid md:px-8 py-16 leading-6 md:items-stretch md:justify-center xl:px-16">
+<section class="relative box-border w-full border-0 border-solid leading-6 md:px-8 p-16">
+  <div class="mx-auto box-border flex max-w-7xl flex-col items-center border-solid md:px-8 p-16 leading-6 md:items-stretch md:justify-center xl:px-16">
     <div class="relative pb-4 md:pb-10">
       <h2 class="m-0 w-full border-0 border-gray-200 text-center text-4xl font-black leading-loose tracking-wide sm:text-5xl">Key features</h2>
     </div>
