@@ -24,10 +24,10 @@
 {{--End header--}}
 
 {{-- Features with images --}}
-<section class="relative box-border w-full border-0 border-solid leading-6 md:px-8 p-16">
-  <div class="mx-auto box-border flex max-w-7xl flex-col items-center border-solid md:px-8 p-16 leading-6 md:items-stretch md:justify-center xl:px-16">
-    <div class="relative pb-4 md:pb-10">
-      <h2 class="m-0 w-full border-0 border-gray-200 text-center text-4xl font-black leading-loose tracking-wide sm:text-5xl">Key features</h2>
+<section class="relative box-border w-full border-0 border-solid leading-6 md:px-8">
+  <div class="mx-auto box-border flex max-w-7xl flex-col items-center border-solid md:px-8 leading-6 md:items-stretch md:justify-center xl:px-16">
+    <div class="relative">
+      <h2 class="my-6 md:my-16 lg:my-20 w-full border-0 border-gray-200 text-center text-4xl font-bold leading-loose tracking-wide sm:text-5xl">Key Features</h2>
     </div>
     <div
       x-data="{
@@ -37,7 +37,7 @@
         }"
       class="p-3 md:p-6 w-full"
     >
-      <div class="text-gray-700 md:mt-20 lg:pt-0 lg:flex lg:flex-row">
+      <div class="text-gray-700 lg:pt-0 lg:flex lg:flex-row">
         <ul class="relative z-10 whitespace-nowrap lg:mx-0 lg:block lg:whitespace-normal flex justify-center">
           <li @click="openTab = 1" :class="{ ' bg-purple-700/10': openTab === 1 }" class="group relative mr-1 rounded-full px-2 md:px-4 py-1 hover:bg-purple-700/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-purple-700/5">
             <h3>
@@ -80,22 +80,22 @@
         </ul>
         <div class="md:h-96 lg:w-2/4 w-full">
           <div x-show="openTab === 1">
-            <div class="mt-2 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
+            <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
               <img alt="" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/roadmap.webp') }}" />
             </div>
           </div>
           <div x-show="openTab === 2">
-            <div class="mt-2 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
+            <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
               <img alt="" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/faq.webp') }}" />
             </div>
           </div>
           <div x-show="openTab === 3">
-            <div class="mt-2 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
+            <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
               <img alt="" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/upvotes.webp') }}" />
             </div>
           </div>
             {{-- <div x-show="openTab === 4">
-            <div class="mt-2 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[67.8125rem]">
+            <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[67.8125rem]">
               <img alt="" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/changelog.png') }}" />
             </div>
           </div> --}}
