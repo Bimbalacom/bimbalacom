@@ -2,6 +2,10 @@ FROM php:8.0-cli-alpine as builder
 
 ARG APP_ENV="production"
 
+# Setting UID/GID to 1000:1000
+RUN sed -i 's/^root:x:0:0:/root:x:1000:1000:/' /etc/passwd
+
+
 # Everything is at one place
 # Commenting out for future use.
 # ENV PHP_INI_DIR /usr/local/etc/php
