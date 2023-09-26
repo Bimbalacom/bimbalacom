@@ -11,9 +11,10 @@ WORKDIR /app
 COPY composer.* /app/
 COPY package.json package-lock.json /app/
 
-RUN docker-php-ext-install pdo_mysql && \
-    wget https://getcomposer.org/composer-2.phar -O /usr/bin/composer && \
-    chmod +x /usr/bin/composer && \
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+RUN chmod +x /usr/bin/composer && \
     composer install \
     --ignore-platform-reqs \
     --no-ansi \
@@ -94,7 +95,9 @@ COPY php/fpm-pool.conf /usr/local/etc/php/php-fpm.d/www.conf
 WORKDIR /app/bimbalacom
 
 COPY --from=builder /app /app/bimbalacom
-COPY --from=builder /usr/bin/composer /usr/bin/composer
+
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 COPY . /app/bimbalacom
 
