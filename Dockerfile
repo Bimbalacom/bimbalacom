@@ -108,6 +108,9 @@ RUN php artisan horizon:publish
 RUN chown -R www-data:www-data /app/bimbalacom
 RUN chmod -R 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache /app/bimbalacom/public
 
+# Making the newly created directories have the same configuration (permissions and owners)
+RUN chmod -R g+s /app/bimbalacom
+
 # Run the Laravel Task Scheduler
 RUN echo "* * * * * cd /app/bimbalacom && php artisan schedule:run >> /var/log/bimbalacom-schedule 2>&1" > /etc/crontabs/root
 
