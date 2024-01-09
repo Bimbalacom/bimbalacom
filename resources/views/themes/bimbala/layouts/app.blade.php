@@ -104,6 +104,8 @@
         @yield('content')
     </main>
 
+    @include('theme::partials.cookie')
+
     @include('theme::partials.footer')
 
     {{-- Full Screen Loader --}}
