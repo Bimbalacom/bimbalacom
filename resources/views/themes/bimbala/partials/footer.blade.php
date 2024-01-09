@@ -136,7 +136,7 @@
                 </li>
             </ul>
             <p class="block m-0 text-base">
-            &copy; 2020 - {{ date('Y') }} {{ setting('site.title', 'Bimbala Ltd') }}, Ltd. All rights reserved.
+            &copy; {{ date('Y') }} {{ setting('site.title', 'Bimbala Ltd') }}, Ltd. All rights reserved.
             </p>
         </div>
     </div>
