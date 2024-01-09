@@ -106,7 +106,7 @@
 </section>
 {{-- End of Features with images --}}
 
-{{-- Pricing --}}
+
 {{-- FEATURES SECTION --}}
 <section class="box-border relative w-full leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
     <div class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
@@ -141,6 +141,9 @@
         </svg>
     </div>
 </section>
+
+{{-- Clients --}}
+@include('theme::partials.clients')
 
 {{-- Weekly mails --}}
 <section class="w-ful">
