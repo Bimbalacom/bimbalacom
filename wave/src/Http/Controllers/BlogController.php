@@ -51,7 +51,7 @@ class BlogController extends \App\Http\Controllers\Controller
             'seo_title' => $post->seo_title,
             'seo_description' => $post->meta_description,
             'keywords' => $post->meta_keywords,
-            'image' => url($post->image)
+            'image' => url($post->image())
         ];
 
         $schema = $this->generetePostSchema($post)->toScript().$this->generateBreadCrumbSchema(Category::where('slug', '=', $category)->firstOrFail(), $post)->toScript();
