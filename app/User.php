@@ -6,6 +6,9 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use \Storage;
 
+/**
+ * @mixin IdeHelperUser
+ */
 class User extends \Wave\User
 {
 

@@ -5,10 +5,13 @@ namespace Wave;
 use Illuminate\Database\Eloquent\Model;
 
 
+/**
+ * @mixin IdeHelperKeyValue
+ */
 class KeyValue extends Model
 {
 	protected $table = 'wave_key_values';
- 
+
  	public $timestamps = false;
  	/**
      * The attributes that are mass assignable.
