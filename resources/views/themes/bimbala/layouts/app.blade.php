@@ -25,22 +25,28 @@
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="msapplication-config" content="{{ asset('browserconfig.xml') }}">
 
-        {{-- Social Share Open Graph Meta Tags --}}
-    @if(isset($seo['seo_title'], $seo['seo_description'], $seo->image))
+    {{-- Social Share Open Graph Meta Tags --}}
+    @if(isset($seo['seo_title'], $seo['seo_description']))
         <meta property="og:title" content="{{ $seo['seo_title'] }}">
-        <meta property="og:url" content="{{ \Illuminate\Http\Request::url() }}">
-        <meta property="og:image" content="{{ $seo->image }}">
-        <meta property="og:type" content="@if(isset($seo->type)){{ $seo->type }}@else{{ 'article' }}@endif">
+        <meta property="og:url" content="{{ request()->url() }}">
+        @if(isset($seo['image']))
+            <meta property="og:image" content="{{ $seo['image'] }}">
+        @endif
+        <meta property="og:type" content="website">
         <meta property="og:description" content="{{ $seo['seo_description'] }}">
         <meta property="og:site_name" content="{{ setting('site.title') }}">
 
         <meta itemprop="name" content="{{ $seo['seo_title'] }}">
         <meta itemprop="description" content="{{ $seo['seo_description'] }}">
-        <meta itemprop="image" content="{{ $seo->image }}">
+        @if(isset($seo['image']))
+            <meta itemprop="image" content="{{ $seo['image'] }}">
+        @endif
 
-        @if(isset($seo->image_w) && isset($seo->image_h))
-        <meta property="og:image:width" content="{{ $seo->image_w }}">
-        <meta property="og:image:height" content="{{ $seo->image_h }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ $seo['seo_title'] }}">
+        <meta name="twitter:description" content="{{ $seo['seo_description'] }}">
+        @if(isset($seo['image']))
+            <meta name="twitter:image" content="{{ $seo['image'] }}">
         @endif
     @endif
     {!! \Spatie\SchemaOrg\Schema::organization()->url(route('wave.home'))->name('Bimbala')->toScript() !!}
@@ -57,7 +63,7 @@
         <meta name="description" content="{{ setting('site.description', 'Bimbala is a SaaS helping companies upgrade their support team. Integration of roadmaps, knowledge boards and etc. made easy. Make your customers see you work for them and make them part of your business!') }}">
     @endif
 
-    <meta name="keywords" content="{{ setting('site.keywords', 'product development, customer feedback, customers, integrations, bimbala, SaaS, support, roadmap, knowledge board, FAQ, feedback-based product') }}">
+    <meta name="keywords" content="{{ $seo['keywords'] ?? setting('site.keywords', 'product development, customer feedback, customers, integrations, bimbala, SaaS, support, roadmap, knowledge board, FAQ, feedback-based product') }}">
     <meta name="google-site-verification" content="173vXOSU7DHgNz9UkFqBkQ1_yThKQPBGvoZrIKoEm6U" />
     {{-- Styles --}}
     <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="stylesheet" rel="preload" as="style">

@@ -44,11 +44,14 @@ class BlogController extends \App\Http\Controllers\Controller
 
     public function post($category, $slug){
 
+        /** @var Post $post */
     	$post = Post::where('slug', '=', $slug)->whereStatus(Post::STATUS_PUBLISHED)->firstOrFail();
 
         $seo = [
-            'seo_title' => $post->title,
-            'seo_description' => $post->seo_description,
+            'seo_title' => $post->seo_title,
+            'seo_description' => $post->meta_description,
+            'keywords' => $post->meta_keywords,
+            'image' => url($post->image)
         ];
 
         $schema = $this->generetePostSchema($post)->toScript().$this->generateBreadCrumbSchema(Category::where('slug', '=', $category)->firstOrFail(), $post)->toScript();
