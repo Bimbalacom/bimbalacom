@@ -32,6 +32,9 @@
         @if(isset($seo['image']))
             <meta property="og:image" content="{{ $seo['image'] }}">
         @endif
+        @if(isset($seo['author']))
+        <meta name="author" content="{{ $seo['author'] }}">
+        @endif
         <meta property="og:type" content="website">
         <meta property="og:description" content="{{ $seo['seo_description'] }}">
         <meta property="og:site_name" content="{{ setting('site.title') }}">
@@ -70,28 +73,33 @@
 </head>
 <body>
 
-    @include('theme::partials.header')
+@include('theme::partials.header')
 
-    <main class="flex-grow overflow-x-hidden">
-        @unless (Request::is(['/', 'login', 'announcement*', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*']))
-            <div class="bg-gray-900">
-                <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between">
-                    <div class="max-w-xl">
-                        <h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">{{ $seo['seo_title']}}</h2>
-                        <p class="mt-5 text-xl text-gray-300">{{ $seo['seo_description'] }}</p>
-                    </div>
-                    @if(Request::is(['blog', 'use-case', 'about-us', 'apps', 'integrations']))
+<main class="flex-grow overflow-x-hidden">
+    @unless (Request::is(['/', 'login', 'announcement*', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*']))
+        <div class="bg-gray-900">
+            <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">{{ $seo['seo_title']}}</h2>
+                    <p class="mt-5 text-xl text-gray-300">{{ $seo['seo_description'] }}</p>
+                    @yield('titlebar-content.right')
+                </div>
+                @if(Request::is(['blog', 'use-case', 'about-us', 'apps', 'integrations']))
                     <div class="mt-3 w-full max-w-md">
                         <p class="mb-3 block text-base font-medium text-gray-300">Subscribe to our e-mails</p>
-                        <form action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="sm:flex">
+                        <form
+                            action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            target="_blank" novalidate class="sm:flex">
                             <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
-                            <label for="email"  name="EMAIL" class="sr-only">Email address</label>
-                            <input id="email" name="EMAIL" name="email-address" type="email" autocomplete="email" required
-                                class="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs rounded-md"
-                                placeholder="Enter your email">
+                            <label for="email" name="EMAIL" class="sr-only">Email address</label>
+                            <input id="email" name="EMAIL" name="email-address" type="email" autocomplete="email"
+                                   required
+                                   class="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs rounded-md"
+                                   placeholder="Enter your email">
                             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                                 <button type="submit"
-                                    class="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        class="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                     Notify me
                                 </button>
                             </div>
@@ -102,32 +110,39 @@
                                 Privacy Policy.
                             </a>
                         </p>
-                     </div>
-                     @endif
-                </div>
+                    </div>
+                @else
+                    @yield('titlebar-content.left')
+                @endif
             </div>
-        @endif
-        @yield('content')
-    </main>
-
-    @include('theme::partials.footer')
-
-    {{-- Full Screen Loader --}}
-    <div id="fullscreenLoader" class="fixed inset-0 top-0 left-0 z-50 flex flex-col items-center justify-center hidden w-full h-full bg-gray-900 opacity-50">
-        <svg class="w-5 h-5 mr-3 -ml-1 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-        </svg>
-        <p id="fullscreenLoaderMessage" class="mt-4 text-sm font-medium text-white uppercase"></p>
-    </div>
-    {{-- End Full Loader --}}
-
-
-    @include('theme::partials.toast')
-    @if(session('message'))
-        <script>setTimeout(function(){ popToast("{{ session('message_type') }}", "{{ session('message') }}"); }, 10);</script>
+        </div>
     @endif
-    @waveCheckout
+    @yield('content')
+</main>
+
+@include('theme::partials.footer')
+
+{{-- Full Screen Loader --}}
+<div id="fullscreenLoader"
+     class="fixed inset-0 top-0 left-0 z-50 flex flex-col items-center justify-center hidden w-full h-full bg-gray-900 opacity-50">
+    <svg class="w-5 h-5 mr-3 -ml-1 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    <p id="fullscreenLoaderMessage" class="mt-4 text-sm font-medium text-white uppercase"></p>
+</div>
+{{-- End Full Loader --}}
+
+
+@include('theme::partials.toast')
+@if(session('message'))
+    <script>setTimeout(function () {
+            popToast("{{ session('message_type') }}", "{{ session('message') }}");
+        }, 10);</script>
+@endif
+@waveCheckout
 
 </body>
 </html>
