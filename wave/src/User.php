@@ -13,6 +13,9 @@ use \Storage;
 use Wave\Announcement;
 use Wave\ApiToken;
 
+/**
+ * @mixin IdeHelperUser
+ */
 class User extends \TCG\Voyager\Models\User implements JWTSubject
 {
     use Notifiable, Impersonate;
