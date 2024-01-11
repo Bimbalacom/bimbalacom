@@ -19,7 +19,7 @@
 @endsection
 
 @section('content')
-    <section class="w-full py-12 px-48 bg-white lg:py-12 grid grid-cols-12 gap-y-48 gap-x-24">
+        <section class="w-full py-12 px-48 bg-white lg:py-12 grid grid-cols-12 gap-y-48 gap-x-24">
         <div class="col-span-12">
             <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Why using forms, when upvote gives you tons of rated customer feedback all in one place?</h3>
         </div>
@@ -40,7 +40,7 @@
             <p class="text-xl">The faithful customers are worth their weight in gold. That is why should take care about their needs and make them feel valued.</p>
             <ul class="list-disc list-inside leading-loose">
                 <li>Get a sight over users' pain points and discuss ideas with them, showing that you work on their requests</li>
-                <li>Let the other users vote for an idea, that is alreay posted, expressing their feelings</li>
+                <li>Let the other users vote for an idea, that is already posted, expressing their feelings</li>
                 <li>Boost your product</li>
             </ul>
         </div>
