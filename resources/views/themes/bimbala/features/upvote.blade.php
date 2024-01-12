@@ -14,6 +14,7 @@
         <img
             class="object-cover"
             src="{{ asset('themes/bimbala/images/features/cropped/upvote.webp') }}"
+            alt="The upvote feature's screenshot"
         />
     </div>
 @endsection
@@ -24,7 +25,7 @@
             <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Why using forms, when upvote gives you tons of rated customer feedback all in one place?</h3>
         </div>
         <div class="col-span-6 text-center pl-24 grid justify-items-start">
-            <img src="{{ asset('themes/bimbala/images/features/cropped/upvotes/upvotes_list.jpg') }}" class="max-h-80">
+            <img src="{{ asset('themes/bimbala/images/features/cropped/upvotes/upvotes_list.webp') }}" class="max-h-80" alt="List of upvote items" />
         </div>
         <div class="col-span-6 grid gap-y-2 pr-24 place-content-around">
             <p class="font-bold text-3xl">User feedback collection, organization and voting made easy</p>
@@ -45,7 +46,7 @@
             </ul>
         </div>
         <div class="col-span-6 text-center pr-24 grid justify-items-end">
-            <img src="{{ asset('themes/bimbala/images/features/cropped/upvotes/item_preview.png') }}" class="max-h-[28rem] ">
+            <img src="{{ asset('themes/bimbala/images/features/cropped/upvotes/item_preview.webp') }}" class="max-h-[28rem]" alt="Preview of an upvote item" />
         </div>
     </section>
 @endsection
