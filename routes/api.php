@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GetDomainSearchResultsController;
 use Illuminate\Http\Request;
 
 /*
@@ -17,5 +18,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return auth()->user();
 });
+
+Route::prefix('webhooks')->group(function (){
+    Route::webhooks('tenants', 'configured-tenant');
+});
+Route::get('/search', GetDomainSearchResultsController::class);
 
 Wave::api();

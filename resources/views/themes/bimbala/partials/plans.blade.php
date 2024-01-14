@@ -13,7 +13,11 @@
 
                 <div class="px-10 mt-5">
                     <span class="font-mono text-5xl font-bold">${{ $plan->price }}</span>
-                    <span class="text-lg font-bold text-gray-500">per month</span>
+                    <span class="text-lg font-bold text-gray-500">per {{
+                        str_contains($lcPlanName = Str::lower($plan->name), 'year') || str_contains($lcPlanName, 'annual')
+                            ? 'year'
+                            : 'month'
+                    }}</span>
                 </div>
 
                 <div class="px-10 mt-6 pb-9">

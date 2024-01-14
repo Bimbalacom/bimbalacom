@@ -11,9 +11,10 @@ WORKDIR /app
 COPY composer.* /app/
 COPY package.json package-lock.json /app/
 
-RUN docker-php-ext-install pdo_mysql && \
-    wget https://getcomposer.org/composer-2.phar -O /usr/bin/composer && \
-    chmod +x /usr/bin/composer && \
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+RUN chmod +x /usr/bin/composer && \
     composer install \
     --ignore-platform-reqs \
     --no-ansi \
@@ -66,12 +67,12 @@ RUN apk add autoconf && pecl install -o -f redis \
     &&  docker-php-ext-enable redis && apk del autoconf
 
 
-RUN docker-php-ext-install pdo_mysql bcmath mbstring zip exif pcntl xml
-RUN docker-php-ext-configure gd
+RUN docker-php-ext-install pdo_mysql bcmath mbstring exif pcntl xml zip
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 RUN docker-php-ext-install gd
 
 # Clear instalation cache
-RUN rm -rf /var/lib/apt/lists/*
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/* /usr/share/man/*
 
 # Enabling OPcache and JIT. Will be moved to php.ini
 # set recommended PHP.ini settings
@@ -89,11 +90,14 @@ RUN mkdir -p /var/log/php; \
 
 # Copying PHP conf file
 COPY php/php.ini /usr/local/etc/php/php.ini
+COPY php/fpm-pool.conf /usr/local/etc/php/php-fpm.d/www.conf
 
 WORKDIR /app/bimbalacom
 
 COPY --from=builder /app /app/bimbalacom
-COPY --from=builder /usr/bin/composer /usr/bin/composer
+
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 COPY . /app/bimbalacom
 
@@ -102,7 +106,10 @@ RUN composer dump-autoload --optimize --classmap-authoritative
 RUN php artisan horizon:publish
 
 RUN chown -R www-data:www-data /app/bimbalacom
-RUN chmod -R 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache
+RUN chmod -R 755 /app/bimbalacom/storage  /app/bimbalacom/bootstrap/cache /app/bimbalacom/public
+
+# Making the newly created directories have the same configuration (permissions and owners)
+RUN chmod -R g+s /app/bimbalacom
 
 # Run the Laravel Task Scheduler
 RUN echo "* * * * * cd /app/bimbalacom && php artisan schedule:run >> /var/log/bimbalacom-schedule 2>&1" > /etc/crontabs/root

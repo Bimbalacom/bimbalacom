@@ -26,7 +26,7 @@ class SettingsController extends Controller
             'name' => 'required|string',
             'email' => 'sometimes|required|email|unique:users,email,' . Auth::user()->id,
             'username' => 'sometimes|required|unique:users,username,' . Auth::user()->id,
-            'avatar' => 'sometimes|image'
+            'avatar' => 'sometimes|base64image'
         ]);
 
     	$authed_user = auth()->user();
@@ -94,7 +94,7 @@ class SettingsController extends Controller
         $request->validate([
             'key_name' => 'required'
         ]);
-    
+
         $apiKey = auth()->user()->createApiKey(str_slug($request->key_name));
         if(isset($apiKey->id)){
             return back()->with(['message' => 'Successfully created new API Key', 'message_type' => 'success']);
