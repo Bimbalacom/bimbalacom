@@ -12,10 +12,10 @@
                 </div>
             </div>
             <div class="relative flex flex-col w-full px-4 mt-10 leading-6 text-left md:flex-row lg:w-5/12 xl:w-1/2 justifty-end">
-                <a href="https://board.bimbala.com/" class="inline-flex items-center justify-center w-full h-16 px-10 py-0 mb-8 text-xl font-semibold text-center text-white no-underline align-middle bg-green-400 border border-transparent border-solid rounded-full cursor-pointer select-none md:mb-0 md:mr-8 md:w-auto lg:px-7 xl:px-10 hover:bg-green-500 focus:shadow-xs focus:no-underline">
+                <a href="https://board.bimbala.com/" class="inline-flex items-center justify-center w-full h-16 px-10 py-0 mb-8 text-xl font-semibold md:mb-0 md:mr-8 md:w-auto lg:px-7 xl:px-10 text-white text-center bg-purple-600 border border-transparent border-solid rounded-md select-none sm:mb-0 sm:w-auto hover:bg-purple-700 hover:border-purple-700 hover:text-white">
                     Our Board
                 </a>
-                <a href="{{ route('register') }}" class="inline-flex items-center justify-center w-full h-16 px-10 py-0 text-xl font-semibold text-center text-white no-underline align-middle bg-transparent border-2 border-purple-600 border-solid rounded-full cursor-pointer select-none md:w-auto lg:px-7 xl:px-10 hover:border-white hover:text-white focus:shadow-xs focus:no-underline">
+                <a href="{{ route('register') }}" class="inline-flex items-center justify-center w-full h-16 px-10 py-0 text-xl font-semibold text-center text-white no-underline align-middle bg-transparent border-2 border-white border-solid rounded-full cursor-pointer select-none md:w-auto lg:px-7 xl:px-10 hover:border-white hover:bg-white hover:text-purple-700 focus:shadow-xs focus:no-underline">
                     Get started
                 </a>
             </div>
