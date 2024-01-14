@@ -5,10 +5,13 @@ namespace Wave;
 use Illuminate\Database\Eloquent\Model;
 
 
+/**
+ * @mixin IdeHelperApiKey
+ */
 class ApiKey extends Model
 {
 	protected $table = 'api_keys';
- 
+
  	/**
      * The attributes that are mass assignable.
      *

@@ -1,128 +1,86 @@
+@include('theme::partials.cta')
 <!-- Footer -->
 <footer>
-<section class="pt-6 w-full bg-gray-900 ">
+<section class="w-full bg-gray-900 text-base text-white no-underline">
     <div class="px-6 mx-auto max-w-7xl xl:px-12">
-        <div class="box-border flex flex-wrap pt-20 pb-0 text-base leading-tight text-white md:pb-12">
+        <div class="box-border flex flex-wrap pt-20 pb-0 leading-tight md:pb-12">
             <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
-                <div class="box-border text-base text-white">
-                @if(Voyager::image(theme('footer_logo')))
-                    <img class="h-10" src="{{ Voyager::image(theme('footer_logo')) }}" alt="Company name">
-                @else
-                    <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">Bimbala</h2>
-                @endif
-                  <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="{{ route('wave.home') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Home</a>
-                        </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="https://board.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Our board</a>
-                        </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="{{ route('wave.pricing') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Pricing</a>
-                        </li>
-                         <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="{{ route('apps') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Apps</a>
-                        </li>{{--
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Integrations</a>
-                        </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Changelog</a>
-                        </li> --}}
-                    </ul>
+                <div class="box-border">
+                    <a href="{{ route('wave.home') }}" class="relative flex items-center">
+                        <img class="h-8 w-8" src="../../bimbala/img/logo-small.png" alt="Bimbala's logo" width="32" height="32">
+                        <h2 class="mx-2 text-lg md:text-xl">Bimbala</h2>
+                    </a>
                 </div>
             </div>
             <div width="6,3" class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
-                <div class="box-border text-base text-white">
-                    <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
+                <div class="box-border ">
+                    <h2 class="mb-8 text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Product
                     </h2>
-                    <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="{{ route('use-case') }}"
-                                class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Use Cases</a>
+                    <ul class="p-0 m-0 leading-tight list-none">
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('wave.pricing') }}" class="leading-tight hover:text-gray-400">Pricing</a>
                         </li>
-                    {{--   <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Developer Inspector</a>
+                         <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('apps') }}" class="leading-tight hover:text-gray-400">Apps</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Theme Configuration</a>
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('use-case') }}" class="leading-tight hover:text-gray-400">Use Cases</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Template Customization</a>
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="https://board.bimbala.com/roadmap" class="leading-tight hover:text-gray-400">Roadmap</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Developer API</a>
-                    --}} </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="{{ route('integrations') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Integrations</a>
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('integrations') }}" class="leading-tight hover:text-gray-400">Integrations</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div width="6,3" class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
-                <div class="box-border text-base text-white">
-                    <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
+                <div class="box-border ">
+                    <h2 class="mb-8 text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Company
                     </h2>
-                    <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="{{ route('about-us') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">About Us</a>
+                    <ul class="p-0 m-0 leading-tight list-none">
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="https://board.bimbala.com/" class="leading-tight hover:text-gray-400">Our board</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="{{ route('team') }}" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Our Team</a>
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('about-us') }}" class="leading-tight hover:text-gray-400">About Us</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="https://bimbala-2.creator-spring.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Merchandise</a>
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('team') }}" class="leading-tight hover:text-gray-400">Our Team</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="https://uptime.bimbala.com/" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Uptime</a>
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="https://bimbala-2.creator-spring.com/" class="leading-tight hover:text-gray-400">Merchandise</a>
                         </li>
-                         <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="/security" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Security</a>
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="https://uptime.bimbala.com/" class="leading-tight hover:text-gray-400">System Status</a>
                         </li>
-                          <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="/legal" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Legal</a>
-                        </li>
-                       {{-- <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Technology</a>
-                        </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Security</a>
-                        </li>--}}
                     </ul>
                 </div>
             </div>
             <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
-                <div class="box-border text-base text-white">
-                    <h2 class="mb-8 font-sans text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
-                        Support
+                <div class="box-border ">
+                    <h2 class="mb-8 text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
+                        Resources
                     </h2>
-                {{--     <ul class="p-0 m-0 text-base leading-tight list-none">
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Getting started</a>
+                     <ul class="p-0 m-0 leading-tight list-none">
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('wave.blog') }}" class="leading-tight hover:text-gray-400">Blog</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Suggest a feature</a>
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="/security" class="leading-tight  hover:text-gray-400">Security</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Help center</a>
+                          <li class="box-border py-2 md:mb-1">
+                            <a href="/legal" class="leading-tight hover:text-gray-400">Legal</a>
                         </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Server status</a>
-                        </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Report a bug</a>
-                        </li>
-                        <li class="box-border py-2 text-sm font-normal text-left text-white md:text-base md:mb-1">
-                            <a href="#_" class="text-base leading-tight no-underline bg-transparent cursor-pointer hover:text-gray-400">Press Kit</a>
-                        </li>
-                    </ul>--}}
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col items-center justify-between w-full py-12 text-xs leading-none text-white border-t border-gray-800 lg:flex-row">
+        <div class="flex flex-col items-center justify-between w-full py-12 text-xs leading-none  border-t border-gray-800 lg:flex-row">
             <div class="flex self-start flex-grow-0 flex-shrink-0 w-full leading-none lg:w-auto">
                 <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0">
                     <a href="https://www.facebook.com/bimbalacom" class="text-gray-400 hover:text-gray-200">
@@ -131,10 +89,10 @@
                             <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
-                    <a href="https://twitter.com/bimbalacom/" class="text-gray-400 hover:text-gray-200">
-                        <span class="sr-only">Twitter</span>
+                    <a href="https://x.com/bimbalacom/" class="text-gray-400 hover:text-gray-200">
+                        <span class="sr-only">X</span>
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path>
                         </svg>
                     </a>
                     <a href="https://github.com/bimbalacom" class="text-gray-400 hover:text-gray-200">
@@ -163,22 +121,22 @@
                      </a>
                 </span>
             </div>
-            <ul class="flex my-6 text-sm text-white list-none lg:flex-grow-0 lg:flex-shrink-0 lg:my-0">
-                <li class="box-border block font-semibold text-left">
-                    <a href="/privacy-policy" class="pr-5 mr-5 text-white no-underline bg-transparent border-r border-gray-700 cursor-pointer">Privacy Policy</a>
+            <ul class="text-base text-left flex my-6 list-none lg:flex-grow-0 lg:flex-shrink-0 lg:my-0">
+                <li class="box-border block">
+                    <a href="/privacy-policy" class="pr-5 mr-5 border-r border-gray-700">Privacy Policy</a>
                 </li>
-                <li class="box-border block font-semibold text-left">
-                    <a href="/gdpr" class="pr-5 mr-5 text-white no-underline bg-transparent border-r border-gray-700 cursor-pointer">GDPR</a>
+                <li class="box-border block">
+                    <a href="/gdpr" class="pr-5 mr-5 border-r border-gray-700">GDPR</a>
                 </li>
-                <li class="box-border block font-semibold text-left">
-                    <a href="/terms-and-conditions" class="pr-5 mr-5 text-white no-underline bg-transparent border-r border-gray-700 cursor-pointer">Terms and Conditions</a>
+                <li class="box-border block ">
+                    <a href="/terms-and-conditions" class="pr-5 mr-5 border-r border-gray-700">Terms and Conditions</a>
                 </li>
-                <li class="box-border block font-semibold text-left">
-                    <a href="/sitemap.xml" class="text-white no-underline bg-transparent cursor-pointer">Sitemap</a>
+                <li class="box-border block">
+                    <a href="/sitemap.xml">Sitemap</a>
                 </li>
             </ul>
-            <p class="block m-0 text-base font-semibold text-white">
-            &copy; 2020 - {{ date('Y') }} {{ setting('site.title', 'Bimbala Ltd') }}, Ltd. All rights reserved.
+            <p class="block m-0 text-base">
+            &copy; {{ date('Y') }} {{ setting('site.title', 'Bimbala Ltd') }}, Ltd. All rights reserved.
             </p>
         </div>
     </div>
@@ -208,19 +166,20 @@
 
 @endif
 
+@if(App::environment('production'))
 <!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.bimbala.com/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-
+    <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//analytics.bimbala.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+    </script>
+    <!-- End Matomo Code -->
+@endif

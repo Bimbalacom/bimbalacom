@@ -1,5 +1,7 @@
 import Alpine from 'alpinejs'
 import axios from 'axios';
+import SpotlightCallbackListener from "./alpine/spotlightCallbackListener";``
+import SpotlightExistenceCheckerCallbackListener from "./alpine/spotlightCallbackListenerExistenceChecker";
 
 window.Alpine = Alpine;
 window.axios = axios;
@@ -127,6 +129,9 @@ document.addEventListener('alpine:init', () => {
 
     });
 
+    Alpine.data('spotlight', SpotlightCallbackListener);
+    Alpine.data('spotlightExistenceChecker', SpotlightExistenceCheckerCallbackListener);
+
 });
 
 Alpine.start();
@@ -178,7 +183,7 @@ window.popToast = function(type, message){
     // After 4 seconds hide the toast
     setTimeout(function(){
         Alpine.store('toast').update({ type, message, show: false });
-        
+
         setTimeout(function(){
             document.getElementById('toast_bar').classList.remove('w-0');
             document.getElementById('toast_bar').classList.add('w-full');

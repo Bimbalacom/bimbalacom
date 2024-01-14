@@ -14,7 +14,11 @@
     let checkoutBtns = document.getElementsByClassName("checkout");
     for( var i=0; i < checkoutBtns.length; i++ ){
         checkoutBtns[i].addEventListener('click', function(){
+            @if(setting('billing.card_upfront') || Auth::check())
             waveCheckout(this.dataset.plan)
+            @else
+            window.location = "{{ url('/register') }}"
+            @endif
         }, false);
     }
 
@@ -28,7 +32,7 @@
         cancelBtns[i].addEventListener('click', waveCancel, false);
     }
 
-
+    @if(setting('billing.card_upfront') || Auth::check())
     function waveCheckout(plan_id) {
         if(vendor_id){
             let product = parseInt(plan_id);
@@ -55,5 +59,6 @@
             successCallback: "checkoutCancel",
         });
     }
+    @endif
 
 </script>

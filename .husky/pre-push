@@ -3,12 +3,21 @@
 
 set -e
 
-npm run prod
+container_id=$(docker ps -q -f name=dcmp-public);
 
-git status --porcelain | cut -c 3- | while read -r line; do
+if [ ! "$container_id" ]; then
+  echo "Docker Containers are not running. Use: 'docker compose up -d public'"
+  exit 1;
+fi
+
+eval "docker exec -d $container_id npm run production --workspaces";
+
+git restore --staged .
+
+git status --porcelain | cut -c 3- | grep -E "^.public/" | while read -r line; do
     git add "$line";
 done
 
-if [ -n "$(git status --porcelain)" ]; then
+if [ -n "$(git diff --name-only --cached)" ]; then
     git commit -m "Assets recompiled for production"
 fi

@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Models\Role;
 use Illuminate\Support\Str;
 
+/**
+ * @mixin IdeHelperPlan
+ */
 class Plan extends Model
 {
     public static function boot()

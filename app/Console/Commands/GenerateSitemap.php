@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Psr\Http\Message\UriInterface;
 use Spatie\Sitemap\SitemapGenerator;
+use function in_array;
 
 class GenerateSitemap extends Command
 {
@@ -35,8 +36,12 @@ class GenerateSitemap extends Command
                 // All pages will be crawled, except the contact page.
                 // Links present on the contact page won't be added to the
                 // sitemap unless they are present on a crawlable page.
+                $blackList = [
+                    '/discord',
+                    '/register'
+                ];
 
-                return strpos($url->getPath(), '/discord') === false;
+                return !in_array($url->getPath(), $blackList);
             })
             ->writeToFile(public_path('sitemap.xml'));
     }

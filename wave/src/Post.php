@@ -4,6 +4,9 @@ namespace Wave;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @mixin IdeHelperPost
+ */
 class Post extends Model
 {
     public const STATUS_PUBLISHED = 'PUBLISHED';

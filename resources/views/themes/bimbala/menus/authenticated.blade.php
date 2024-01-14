@@ -1,5 +1,5 @@
 <!-- Mobile menu button -->
-<div @click="mobile = !mobile" class="flex md:hidden">
+<div @click="mobile = !mobile" class="flex absolute right-32 md:hidden md:static lg:static ">
                 <button type="button" class="text-gray-200 hover:text-gray-100 focus:outline-none focus:text-gray-100" aria-label="toggle menu">
                     <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                         <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
@@ -10,17 +10,17 @@
         </div>
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <div :class="{ 'hidden' : !mobile, 'flex': mobile }" class="left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute">
+        <div :class="{ 'hidden' : !mobile, 'flex': mobile }" class="left-0 z-10 items-center w-full font-semibold select-none md:flex md:justify-center lg:absolute">
             <div>
                 <div class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
-                    <a href="{{ route('wave.home') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Home</a>
-                    <a href="{{ route('wave.pricing') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Pricing</a>
-                    <a href="{{ route('wave.blog') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Blog</a>
-                    <a href="{{ route('contact') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Contact Us</a>
+                    <a href="{{ route('wave.home') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Home</a>
+                    <a href="{{ route('wave.pricing') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Pricing</a>
+                    <a href="{{ route('wave.blog') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Blog</a>
+                    <a href="{{ route('contact') }}" class="py-3 text-white hover:text-gray-100 hover:underline">Contact Us</a>
                 </div>
             </div>
         </div>
-        <div class="flex sm:ml-6 sm:items-center">
+        <div class="flex sm:ml-6 sm:items-center z-20 absolute top-6 right-6 md:static lg:static">
 
             @if( auth()->user()->onTrial() )
                 <div class="relative items-center justify-center hidden h-full md:flex">
@@ -31,7 +31,7 @@
             @include('theme::partials.notifications')
 
             <!-- Profile dropdown -->
-            <div @click.away="open = false" class="relative flex items-center h-full ml-3" x-data="{ open: false }">
+            <div @click.away="open = false" class="relative flex items-center h-full md:ml-3 ml-10" x-data="{ open: false }">
                 <div>
                     <button @click="open = !open" class="flex text-sm transition duration-150 ease-in-out border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300" id="user-menu" aria-label="User menu" aria-haspopup="true" x-bind:aria-expanded="open" aria-expanded="true">
                         <img class="w-8 h-8 rounded-full" src="{{ auth()->user()->avatar() . '?' . time() }}" alt="{{ auth()->user()->name }}'s Avatar">
@@ -59,7 +59,7 @@
                             </span>
                         </a>
                         @impersonating
-                                <a href="{{ route('impersonate.leave') }}" class="block px-4 py-2 text-sm leading-5 text-gray-700 text-blue-900 border-t border-gray-100 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:bg-blue-200">Leave impersonation</a>
+                                <a href="{{ route('impersonate.leave') }}" class="block px-4 py-2 text-sm leading-5 text-blue-900 border-t border-gray-100 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:bg-blue-200">Leave impersonation</a>
                         @endImpersonating
                         <div class="border-t border-gray-100"></div>
                         <div class="py-1">
