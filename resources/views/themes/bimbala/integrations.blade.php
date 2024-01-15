@@ -2,7 +2,7 @@
 
 @section('content')
     {{-- Content --}}
-    <section class="w-full py-12 bg-white lg:py-24">
+    <section class="w-full py-12 lg:py-24">
     {{-- Integrations --}}
             <div class="max-w-7xl px-10 mx-auto sm:text-center">
                 <p class="mt-4 text-gray-600 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> Check out with who we are integrated  👇</p>

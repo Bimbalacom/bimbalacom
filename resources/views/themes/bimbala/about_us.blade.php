@@ -2,7 +2,7 @@
 
 @section('content')
     {{--Contact--}}
-    <section class="max-w-6xl mx-auto relative ">
+    <section class="max-w-6xl mx-auto relative">
         <div class="px-12 pt-12 pb-20">
             <div class="space-y-12 text-justify">
                 <div class="mb-20 space-y-5 sm:mx-auto sm:space-y-4">
