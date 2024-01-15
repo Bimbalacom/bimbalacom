@@ -81,6 +81,9 @@
             <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between">
                 <div class="max-w-xl">
                     <h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">{{ $seo['seo_title']}}</h2>
+                    @if($seo['seo_title'] !== $seo['seo_description'] && !empty($seo['seo_description']))
+                        <p class="mt-5 text-xl text-gray-300">{{ $seo['seo_description'] }}</p>
+                    @endif
                     @yield('titlebar-content.right')
                 </div>
                 @if(Request::is(['blog', 'use-case', 'about-us', 'apps', 'integrations']))

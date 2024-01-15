@@ -22,7 +22,7 @@ class BlogController extends \App\Http\Controllers\Controller
         })->toArray())->toScript().$this->generateBreadCrumbSchema()->toScript();
     	$seo = [
     		'seo_title' => 'Blog',
-            'seo_description' => 'Our Blog',
+            'seo_description' => 'Blog',
        	];
     	return response()->view('theme::blog.index', compact('posts', 'categories', 'seo', 'schema'))->header('Link', '<'.route('wave.blog').'>; rel="cannonical"');
     }
