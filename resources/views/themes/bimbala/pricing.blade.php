@@ -14,14 +14,14 @@
 
 		<p class="mt-6 text-center">
 			Want to migrate from another platform? Email
-			<a class="text-purple-900 font-bold" href="mailto:contact@bimbala.com">contact@bimbala.com</a>
+			<a class="text-purple-900 font-bold" href="mailto:contact@bimbala.com">contact[at]bimbala.com</a>
       	</p>
     </div>
 
 
-<section class="pb-24">
+<section class="py-20">
 	<div class="container mx-auto px-8">
-		<h2 class="mb-4 text-xl font-bold md:text-3xl">Features</h2>
+		<h2 class="text-xl font-bold md:text-3xl">Features</h2>
 		<table class="w-full">
 			<thead>
 				<tr>
@@ -31,134 +31,134 @@
 					</th>
 				</tr>
 			</thead>
-			<tbody class="space-y-6 text-center divide-y divide-gray-900">
+			<tbody class="text-center divide-y divide-gray-900 space-y-6">
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">Unlimited team members</h3>
                         <span class="text-xm font-normal">Don’t worry the portal has a seat for each of your team members. 👨🏼‍💼</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">Product roadmap </h3>
                         <span class="text-xm font-normal">For those who want to make their pipeline fully transparent. Be sure - it is worth trying. 🏗️</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">Roadmap Prioritization</h3>
                         <span class="text-xm font-normal">The plans always change, so we will not stop you from being agile. 🔃</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">FAQ</h3>
                         <span class="text-xm font-normal">A fundamental part of autonomous customer support. 💭</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">Change log</h3>
                         <span class="text-xm font-normal">Let the users know what awesome work you’ve done. 🗒️</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">Custom subdomain</h3>
                         <span class="text-xm font-normal">Bimbala portal personalized for you 🏡</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">API Access</h3>
                         <span class="text-xm font-normal">We are happy to share data with other services. 🧑🏻‍💻</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
-						<h3 class="py-3">Over <a class="text-purple-900 font-bold" href="{{ route('integrations') }}">20+ integrations</a></h3>
+					<th scope="row" class="text-left py-2">
+						<h3 class="py-3">Over <a class="text-purple-700 font-bold" href="{{ route('integrations') }}">20+ integrations</a></h3>
                         <span class="text-xm font-normal">Your convenience is important. ☕</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">User permissions</h3>
                         <span class="text-xm font-normal">The granular control is always a must. 🛠️</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">Desktop application</h3>
                         <span class="text-xm font-normal">For the hard work outside the browser 🖥️ 🛠️</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">Mobile application</h3>
                         <span class="text-xm font-normal">Commuting is a great time to do some work too 📱</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row" class="text-left">
+					<th scope="row" class="text-left py-2">
 						<h3 class="py-3">Email & Chat Support</h3>
                         <span class="text-xm font-normal">After all, we will always be there for you and happy to help! ✉️</span>
 					</th>
-					<td>
+					<td class="py-2">
 						<svg class="w-4 h-4 mx-auto text-green-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<path d="M0 11l2-2 5 5L18 3l2 2L7 18z"></path>
 						</svg>
