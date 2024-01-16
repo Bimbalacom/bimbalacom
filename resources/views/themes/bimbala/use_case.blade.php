@@ -2,7 +2,7 @@
 
 @section('content')
 {{-- Content --}}
-<section class="w-full py-12 bg-white lg:py-24">
+<section class="w-full py-12 lg:py-24">
   <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
     <div class="grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
       <div class="mb-6 mr-4">

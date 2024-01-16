@@ -108,47 +108,41 @@
 
 
 {{-- FEATURES SECTION --}}
-<section class="box-border relative w-full leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
-    <div class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
-        <div class="relative pb-10">
-            <h4 class="w-full font-bold text-2xl tracking-wide text-center sm:text-2xl">
-                We also provide
-            </h4>
-        </div>
-        <div class="z-10 grid text-bold gap-5 md:grid-cols-6 lg:grid-cols-9">
-        @foreach(config('features') as $feature)
-            <div class="col-span-3 bg-gray-50 rounded-3xl">
-                <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:">
-                    <div class="flex-shrink-0 p-3 border border-gray-200 rounded-full">
-                       <img src="{{ $feature->image }}" class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7" loading="lazy" alt="{{ $feature->title }} - {{ $feature->description }}"  width="28" height="28">
-                    </div>
-                    <div class="mt-4 border-0 border-gray-200 sm:mt-2 sm:ml-4">
-                        <h6 class="box-border text-2xl text-left font-bold leading-none tracking-wide  border-solid">{{ $feature->title }}</h6>
-                        <p class="box-border mx-0 mt-1 text-left mb-0 font-medium leading-loose text-gray-600 border-solid sm:mt-4">
-                            {{ $feature->description }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-        </div>
+<section class="relative box-border w-full border-0 border-solid border-gray-200 bg-white leading-6 text-gray-700">
+  <div class="mx-auto box-border flex max-w-7xl flex-col items-center border-solid px-8 py-20 leading-6 md:items-stretch md:justify-center md:py-24 xl:px-16">
+    <div class="relative pb-10">
+      <h4 class="w-full text-center text-2xl font-bold tracking-wide sm:text-2xl">We also provide</h4>
     </div>
-    {{-- Blobs --}}
-    {{-- Blob Left --}}
-    <div class="absolute top-0 left-0 -ml-56 opacity-25 w-96 h-96">
-        <svg class="text-pink-500 opacity-50 fill-current w-88 h-88" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.5,-24.7C35.8,-15.2,48.9,-7.6,50.6,1.7C52.3,11,42.6,22,32.3,31.2C22,40.4,11,47.8,-1.9,49.8C-14.9,51.7,-29.7,48.1,-41.1,38.9C-52.5,29.7,-60.5,14.9,-60.3,0.3C-60,-14.3,-51.5,-28.6,-40,-38.1C-28.6,-47.6,-14.3,-52.3,-3.4,-48.9C7.6,-45.5,15.2,-34.2,25.5,-24.7Z" transform="translate(100 100)"></path>
-        </svg>
+    <div class="text-bold z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
+      @foreach(config('features') as $feature)
+      <div class="col-span-3 rounded-3xl bg-gray-50">
+        <div class="sm: mx-4 box-border flex h-full flex-col items-start border-solid px-2 py-8 text-center leading-6 sm:flex-row sm:items-start">
+          <div class="flex-shrink-0 rounded-full border border-gray-200 p-3">
+            <img src="{{ $feature->image }}" class="h-7 w-7 stroke-current text-center align-middle leading-6 text-gray-700" loading="lazy" alt="{{ $feature->title }} - {{ $feature->description }}" width="28" height="28" />
+          </div>
+          <div class="mt-4 border-0 border-gray-200 sm:ml-4 sm:mt-2">
+            <h6 class="box-border border-solid text-left text-2xl font-bold leading-none tracking-wide">{{ $feature->title }}</h6>
+            <p class="mx-0 mb-0 mt-1 box-border border-solid text-left font-medium leading-loose text-gray-600 sm:mt-4">{{ $feature->description }}</p>
+          </div>
+        </div>
+      </div>
+      @endforeach
     </div>
+  </div>
+  {{-- Blobs --}} {{-- Blob Left --}}
+  <div class="absolute left-0 top-0 -ml-56 h-96 w-96 opacity-25">
+    <svg class="w-88 h-88 fill-current text-pink-500 opacity-50" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M25.5,-24.7C35.8,-15.2,48.9,-7.6,50.6,1.7C52.3,11,42.6,22,32.3,31.2C22,40.4,11,47.8,-1.9,49.8C-14.9,51.7,-29.7,48.1,-41.1,38.9C-52.5,29.7,-60.5,14.9,-60.3,0.3C-60,-14.3,-51.5,-28.6,-40,-38.1C-28.6,-47.6,-14.3,-52.3,-3.4,-48.9C7.6,-45.5,15.2,-34.2,25.5,-24.7Z" transform="translate(100 100)"></path>
+    </svg>
+  </div>
 </section>
+
 
 {{-- Clients --}}
 @include('theme::partials.clients')
 
 {{-- Weekly mails --}}
-<section class="w-ful">
-    
-</section><section class="py-16 overflow-hidden">
+<section class="py-16 overflow-hidden">
     <div class="px-8 mx-auto max-w-7xl lg:px-12 xl:px-16 ">
         <div class="flex flex-col lg:flex-row ">
 
@@ -194,7 +188,7 @@
 {{--End of Weekly mails --}}
 
 {{-- Features with images --}}
-<section class="py-20 bg-white">
+<section class="py-16">
     <div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
         <div class="relative">
             <h2 class="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl"> Level Up Your Support</h2>
@@ -205,7 +199,7 @@
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/features/organize-feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none  text-purple-600 uppercase">Gather your feedback</p>
+                <p class="mb-2 text-sm font-semibold leading-none  text-purple-700 uppercase">Gather your feedback</p>
                 <h3 class="mt-2 text-2xl md:text-4xl">An easy way to collect and organize feedback</h3>
                 <p class="mt-5 text-lg text md:">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
             </div>
@@ -223,7 +217,7 @@
                     </div>
                 </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pl-16">
-                <p class="mb-2 text-sm font-semibold leading-none text-left text-purple-600 uppercase">know your data</p>
+                <p class="mb-2 text-sm font-semibold leading-none text-left text-purple-700 uppercase">know your data</p>
                 <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Analyze and use the users' feedback</h3>
                 <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
                 <p>
@@ -239,7 +233,7 @@
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/features/better-desicion-making.jpg') }}" loading="lazy" alt="Better decision making">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none  text-purple-600 uppercase">Better decisions</p>
+                <p class="mb-2 text-sm font-semibold leading-none  text-purple-700 uppercase">Better decisions</p>
                 <h3 class="mt-2 text-2xl md:text-4xl">Better decision making</h3>
                 <p class="mt-5 text-lg text-gray-700">Asking your community is on of the best ways to know if you are going in the right path.</p>
             </div>
@@ -248,7 +242,7 @@
 </section>
 {{-- End Features with images --}}
 {{-- Integrations --}}
-<section class="py-12 sm:py-16 bg-white text-gray-700">
+<section class="py-12 sm:py-16 text-gray-700">
     <div class="max-w-7xl px-10 mx-auto sm:text-center">
         <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps</h3>
         <p class="mt-4 text-base sm:text-xl lg:text-2xl">We have integrate with 10+ other popular software.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check them out</a>  👇</p>

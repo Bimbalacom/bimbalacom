@@ -2,7 +2,7 @@
 
 @section('content')
 {{--Team--}}
-<section class="w-full py-12 bg-white lg:py-24">
+<section class="w-full py-12 lg:py-24">
     <div class="max-w-6xl px-12 mx-auto text-center">
         <div class="grid grid-cols-1 gap-10 sm:grid-cols-2">
             <div class="w-full border border-gray-200 rounded-lg shadow-sm">
