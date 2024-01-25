@@ -38,7 +38,7 @@
     </div>
     <div class="col-span-6 grid gap-y-2 pl-24 place-content-around">
         <p class="font-bold text-3xl">Build a loyal user base</p>
-        <p class="text-xl">Impress your customers making them familiar with how you do your job</p>
+        <p class="text-xl">Impress your customers making them familiar with how you do your job.</p>
         <ul class="list-disc list-inside leading-loose">
             <li>Be transparent about your company's workflow and what the process is. This will prove your quality of work and will help you build brand identity</li>
             <li>Easy integration of Bimbala with other task management tools</li>
