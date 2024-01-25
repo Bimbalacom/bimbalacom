@@ -34,7 +34,7 @@ class FeaturesController extends Controller
             'seo' => [
                 'seo_title' => 'Upvote',
                 'seo_description' => 'Let your users give you product improvement suggestions, bringing their feedback to a next level',
-                'keywords' => 'upvote, product improvement, customer feedback, feedback organization, feedback voting, customer relationships, user requests, user ideas, user suggestions'
+                'keywords' => 'upvote, product improvement, customer feedback, feedback organization, feedback voting, customer relationships, user requests, user ideas, user suggestions, support automation'
             ]
         ]);
     }
@@ -49,7 +49,8 @@ class FeaturesController extends Controller
         return view('theme::features.faq', [
             'seo' => [
                 'seo_title' => 'FAQ',
-                'seo_description' => 'Provide answers to all common questions'
+                'seo_description' => 'Provide answers to all common questions',
+                'keywords' => 'FAQ, frequently asked questions, frequently asked questions portal, collapsible FAQ, FAQ panel, support automation'
             ]
         ]);
     }
