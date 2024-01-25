@@ -26,14 +26,14 @@
                             <!-- Feature -->
                             <a
                                 href="{{route('wave.features.roadmap')}}"
-                                class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75 active:ring-indigo-500/25"
+                                class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-2xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75 active:ring-indigo-500/25"
                             >
                                 <img
-                                    class="object-cover"
+                                    class="object-cover rounded-3xl"
                                     src="{{ asset('themes/bimbala/images/features/cropped/roadmap.webp') }}"
                                 />
                                 <div
-                                    class="absolute inset-0 flex flex-col justify-between bg-gradient-to-b from-transparent via-black/10 to-black"
+                                    class="absolute inset-0 flex flex-col justify-between bg-[length:101%_100%] bg-gradient-to-b from-transparent via-black/10 to-black"
                                 >
                                     <div class="flex flex-1 items-end justify-between gap-2 px-4 py-5">
                                         <div class="space-y-1">
@@ -52,7 +52,7 @@
                                 class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-2xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75"
                             >
                                 <img
-                                    class="object-fit"
+                                    class="object-cover rounded-3xl"
                                     src="{{ asset('themes/bimbala/images/features/cropped/upvote.webp') }}"
                                 />
                                 <div
@@ -76,7 +76,7 @@
                                 class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-2xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75 active:ring-indigo-500/25 lg:col-span-2"
                             >
                                 <img
-                                    class="h-full w-full"
+                                    class="h-full w-full rounded-3xl"
                                     src="{{ asset('themes/bimbala/images/features/cropped/faq.webp') }}"
                                 />
                                 <div
