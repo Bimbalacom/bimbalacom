@@ -62,8 +62,9 @@ class FeaturesController extends Controller
     {
         return view('theme::features.roadmap', [
             'seo' => [
-                'seo_title' => 'Roadmap',
-                'seo_description' => 'Show your users their opinion matters'
+                'seo_title' => 'Product Roadmap',
+                'seo_description' => 'Show your users their opinion matters, visualizing the progress on their requests',
+                'keywords' => 'roadmap, product roadmap product improvement, product transparency, customer feedback, feedback organization, customer relationships, user requests, user ideas, user suggestions, product building, board, kanban'
             ]
         ]);
     }
