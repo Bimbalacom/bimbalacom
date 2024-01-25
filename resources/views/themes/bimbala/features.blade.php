@@ -92,29 +92,6 @@
                                 </div>
                             </a>
                             <!-- END Feature -->
-
-                            <!-- Feature -->
-{{--                            <a
-                                href="javascript:void(0)"
-                                class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-2xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75 active:ring-indigo-500/25"
-                            >
-                                <img
-                                    class="object-cover"
-                                    src="https://images.unsplash.com/photo-1514539079130-25950c84af65?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2Njc2ODgwOA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800"
-                                />
-                                <div
-                                    class="absolute inset-0 flex flex-col justify-between bg-gradient-to-b from-transparent via-black/10 to-black"
-                                >
-                                    <div class="flex flex-1 items-end justify-between gap-2 px-4 py-5">
-                                        <div class="space-y-1">
-                                            <h3 class="text-xl font-semibold text-white">
-                                                Changelog (Beta)
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>--}}
-                            <!-- END Feature -->
                         </nav>
                     </section>
                     <!-- END Popular Features -->
