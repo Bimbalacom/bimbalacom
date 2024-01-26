@@ -34,7 +34,7 @@ class GenerateSitemap extends Command
         SitemapGenerator::create(config('app.url'))
             ->shouldCrawl(function (UriInterface $url) {
                 $blackList = [
-                    '/',
+                    '',
                     '/sitemap.xml',
                     '/discord',
                     '/register'
