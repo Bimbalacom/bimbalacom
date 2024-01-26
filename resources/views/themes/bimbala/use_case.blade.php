@@ -13,7 +13,7 @@
     <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       <div>
         <dt class="font-semibold">Prioritize customer feedback</dt>
-        <dd class="text-muted-foreground mt-1">LConsolidate all user feedback into a single location, address, prioritize, and create a roadmap for product development.</dd>
+        <dd class="text-muted-foreground mt-1">Consolidate all user feedback into a single location, address, prioritize, and create a roadmap for product development.</dd>
       </div>
       <div>
         <dt class="font-semibold">Keep a changelog</dt>
