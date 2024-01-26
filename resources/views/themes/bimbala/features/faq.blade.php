@@ -20,14 +20,14 @@
 @endsection
 
 @section('content')
-    <section class="w-full py-12 px-48 bg-white lg:py-12 grid grid-cols-12 gap-y-48 gap-x-24">
+    <section class="w-full mx-auto py-12 lg:py-12 grid grid-cols-12 gap-24 xl:max-w-7xl">
         <div class="col-span-12">
             <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Unload your support team from answering the same questions over and over again</h3>
         </div>
-        <div class="col-span-6 text-center pl-24 grid justify-items-start">
-            <img src="{{ asset('themes/bimbala/images/features/faq_helping.svg') }}" class="max-h-[28rem]"/>
+        <div class="col-span-6 text-center grid justify-items-start">
+            <img src="{{ asset('themes/bimbala/images/features/faq_helping.svg') }}" class="max-h-[28rem]" alt="Caring about users"/>
         </div>
-        <div class="col-span-6 grid gap-y-2 pr-24 place-content-around">
+        <div class="col-span-6 grid gap-y-2 place-content-around">
             <p class="font-bold text-3xl">Demonstrate reliability</p>
             <p class="text-xl">Caring about users' troubles is valuable and will make them come back to you.</p>
             <ul class="list-disc list-inside leading-loose">
@@ -36,7 +36,7 @@
                 <li>Adopting FAQ enhances user satisfaction by offering a self-help resource and minimizes frustration by addressing common concerns promptly</li>
             </ul>
         </div>
-        <div class="col-span-6 grid gap-y-2 pl-24 place-content-around">
+        <div class="col-span-6 grid gap-y-2 place-content-around">
             <p class="font-bold text-3xl">Automate question answering</p>
             <p class="text-xl">Your customers' curiosity should be satisfied, but you should probably save yourself the monotonous job of answering the same question from different users.</p>
             <ul class="list-disc list-inside leading-loose">

@@ -20,11 +20,11 @@
 @endsection
 
 @section('content')
-<section class="w-full py-12 px-48 bg-white lg:py-12 grid grid-cols-12 gap-y-48 gap-x-24">
+<section class="w-full mx-auto py-12 lg:py-12 grid grid-cols-12 gap-24 xl:max-w-7xl">
     <div class="col-span-12">
         <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Provide transparency over your product evolvement</h3>
     </div>
-    <div class="col-span-6 text-center pl-24 grid justify-items-start">
+    <div class="col-span-6 text-center pl-24 grid xl:px-16 justify-items-start">
         <img src="{{ asset('themes/bimbala/images/features/cropped/roadmap/roadmap_conversion.webp') }}" class="max-h-80 border" alt="List of upvote items" />
     </div>
     <div class="col-span-6 grid gap-y-2 pr-24 place-content-around">
@@ -46,7 +46,7 @@
         </ul>
     </div>
     <div class="col-span-6 text-center pr-24 grid justify-items-end">
-        <img src="{{ asset('themes/bimbala/images/features/workflow.svg') }}" class="max-h-[28rem]"/>
+        <img src="{{ asset('themes/bimbala/images/features/workflow.svg') }}" class="max-h-[28rem]" alt="Transparent about company's workflow" />
     </div>
 </section>
 @endsection

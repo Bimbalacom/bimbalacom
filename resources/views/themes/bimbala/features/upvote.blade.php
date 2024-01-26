@@ -20,7 +20,7 @@
 @endsection
 
 @section('content')
-<section class="w-full py-12 px-48 bg-white lg:py-12 grid grid-cols-12 gap-y-48 gap-x-24">
+<section class="w-full mx-auto py-12 lg:py-12 grid grid-cols-12 gap-24 xl:max-w-7xl">
     <div class="col-span-12">
         <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Why using forms, when upvote gives you tons of rated customer feedback all in one place?</h3>
     </div>
