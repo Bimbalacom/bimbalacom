@@ -173,7 +173,7 @@
 
             <!-- Right Image -->
             <div class="relative w-full mt-20 lg:w-1/2 lg:mt-0 ">
-                <img src="{{URL::asset('themes/bimbala/images/demo.bimbala.jpg')}}" class="relative z-10 p-0 mt-10 transform shadow-2xl rounded-xl lg:scale-110" data-rounded="rounded-xl" data-rounded-max="rounded-full">
+                <img src="{{URL::asset('themes/bimbala/images/demo.bimbala.jpg')}}" class="relative z-10 p-0 mt-10 transform shadow-2xl rounded-xl lg:scale-110" data-rounded="rounded-xl" data-rounded-max="rounded-full" class="lazyload" alt="Upvote demo image">
 
                 <div class="absolute top-0 right-0 w-full h-full mt-4 -mr-5 transform scale-125 rotate-45">
                     <svg class="absolute top-0 w-full h-full transform fill-current lg:scale-x-150 text-purple-50" data-primary="purple-600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -199,7 +199,7 @@
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/features/organize-feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
             </div>
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pr-16">
-                <p class="mb-2 text-sm font-semibold leading-none  text-purple-700 uppercase">Gather your feedback</p>
+                <p class="mb-2 text-sm font-semibold leading-none text-purple-700 uppercase">Gather your feedback</p>
                 <h3 class="mt-2 text-2xl md:text-4xl">An easy way to collect and organize feedback</h3>
                 <p class="mt-5 text-lg text md:">Gathering feedback is a big hassle. You receive it from everywhere and it gets lost in woords. That is why Bimbala is here to help and adapt to your way of thinking.</p>
             </div>
@@ -219,7 +219,7 @@
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pl-16">
                 <p class="mb-2 text-sm font-semibold leading-none text-left text-purple-700 uppercase">know your data</p>
                 <h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Analyze and use the users' feedback</h3>
-                <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others. </p>
+                <p class="my-3 text-lg text-gray-700 text md:text-left">Prioritize your product roadmap with data directly from your feedback board. Share your roadmap with others.</p>
                 <p>
                     <ul class="list-disc ml-5">
                     <li>Real time input from users</li>
