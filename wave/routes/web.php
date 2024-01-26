@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FeaturesController;
 use App\Http\Controllers\PortalSettingsController;
 Route::impersonate();
 
@@ -86,8 +87,16 @@ Route::group(['middleware' => 'auth'], function(){
     Route::post('switch-plans', '\Wave\Http\Controllers\SubscriptionController@switchPlans')->name('wave.switch-plans');
 });
 
-Route::group(['middleware' => 'admin.user'], function(){
+Route::group(['middleware' => 'admin.user'], static function(){
     Route::view('admin/do', 'wave::do');
+});
+
+/***** Features pages *****/
+Route::prefix('features')->group(function (){
+    Route::get('/', [FeaturesController::class, 'index'])->name('wave.features');
+    Route::get('upvote', [FeaturesController::class, 'upvote'])->name('wave.features.upvote');
+    Route::get('faq', [FeaturesController::class, 'faq'])->name('wave.features.faq');
+    Route::get('roadmap', [FeaturesController::class, 'roadmap'])->name('wave.features.roadmap');
 });
 
 /***** Pages *****/
