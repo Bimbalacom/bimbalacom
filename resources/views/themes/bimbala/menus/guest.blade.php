@@ -13,8 +13,8 @@
         <div :class="{ 'hidden' : !mobile, 'flex': mobile }" class="left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute">
             <div class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
                <a href="{{ route('wave.home') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Home</a>
+               <a href="{{ route('wave.features') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Features</a>
                <a href="{{ route('wave.pricing') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Pricing</a>
-               <a href="{{ route('wave.blog') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Blog</a>
                {{-- Temporary until the mega menu is active --}}
                <a href="{{ route('contact') }}" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Contact us</a>
                 {{-- <div x-data="{ isOpen: false }" @mouseenter="isOpen = true" @mouseleave="isOpen = false" class="relative py-3">
