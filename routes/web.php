@@ -22,7 +22,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 // Bimbala included
 Route::get('/team', static function () {
-    return view('theme::team', ['seo' => ['seo_title' => 'Our Team', 'seo_description' => 'Check out our awesome team which consists of 2 crazy jacks-of-all-trades men. You can easily connect with them.',
+    return view('theme::team', ['seo' => ['seo_title' => 'Our Team', 'seo_description' => 'Check out our awesome team. You can easily connect with them.',
             ]]);
 })->name('team');
 Route::get('/about-us', static function () {
