@@ -8,7 +8,7 @@
         <!-- Page Container -->
         <div
             id="page-container"
-            class="mx-auto flex w-full min-w-[320px] flex-col bg-slate-900"
+            class="mx-auto flex w-full min-w-[320px] flex-col"
         >
             <!-- Page Content -->
             <main id="page-content" class="flex max-w-full flex-auto flex-col">
@@ -18,7 +18,7 @@
                     <!-- Popular Features -->
                     <section class="space-y-6">
                         <div class="flex items-center justify-between">
-                            <h2 class="text-xl font-semibold text-slate-200">
+                            <h2 class="text-xl font-semibold">
                                 Popular Features
                             </h2>
                         </div>

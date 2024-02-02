@@ -10,7 +10,7 @@
 @endsection
 
 @section('titlebar-content.left')
-    <div class="mt-3 w-full max-w-md">
+    <div class="mt-9 w-full max-w-md">
         <img
             class="object-cover"
             src="{{ asset('themes/bimbala/images/features/cropped/faq.webp') }}"
@@ -20,14 +20,14 @@
 @endsection
 
 @section('content')
-    <section class="w-full py-12 px-48 bg-white lg:py-12 grid grid-cols-12 gap-y-48 gap-x-24">
-        <div class="col-span-12">
+    <section class="w-full mx-auto py-12 lg:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 xl:max-w-7xl">
+        <div class="md:col-span-2">
             <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Unload your support team from answering the same questions over and over again</h3>
         </div>
-        <div class="col-span-6 text-center pl-24 grid justify-items-start">
-            <img src="{{ asset('themes/bimbala/images/features/faq_helping.svg') }}" class="max-h-[28rem]"/>
+        <div>
+            <img src="{{ asset('themes/bimbala/images/features/faq_helping.svg') }}" class="max-h-[28rem]" alt="Caring about users"/>
         </div>
-        <div class="col-span-6 grid gap-y-2 pr-24 place-content-around">
+        <div >
             <p class="font-bold text-3xl">Demonstrate reliability</p>
             <p class="text-xl">Caring about users' troubles is valuable and will make them come back to you.</p>
             <ul class="list-disc list-inside leading-loose">
@@ -36,7 +36,7 @@
                 <li>Adopting FAQ enhances user satisfaction by offering a self-help resource and minimizes frustration by addressing common concerns promptly</li>
             </ul>
         </div>
-        <div class="col-span-6 grid gap-y-2 pl-24 place-content-around">
+        <div >
             <p class="font-bold text-3xl">Automate question answering</p>
             <p class="text-xl">Your customers' curiosity should be satisfied, but you should probably save yourself the monotonous job of answering the same question from different users.</p>
             <ul class="list-disc list-inside leading-loose">
@@ -45,8 +45,8 @@
                 <li>Bring up the important spots of your product</li>
             </ul>
         </div>
-        <div class="col-span-6 text-center pr-24 grid justify-items-end">
-            <img src="{{ asset('themes/bimbala/images/features/cropped/faq/faq_add.webp') }}" class="max-h-80 border" alt="List of upvote items" />
+        <div>
+            <img src="{{ asset('themes/bimbala/images/features/cropped/faq/faq_add.webp') }}" class="max-h-80 mx-auto border" alt="List of upvote items" />
         </div>
     </section>
 @endsection
