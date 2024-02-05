@@ -68,7 +68,7 @@
             </h3>
             <p class="mt-2 text-sm font-medium leading-loose group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 3}">Allow them to submit their ideas for new features and participate in voting on all feedback. You'll gain valuable insights into what to prioritize for your next developments.</p>
           </li>
-          {{-- <li @click="openTab = 4" :class="{ 'bg-purple-700/10': openTab === 4 }" class="group relative mr-1 rounded-full px-2 md:px-4 py-1 hover:bg-purple-700/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-purple-700/5">
+          <li @click="openTab = 4" :class="{ 'bg-purple-700/10': openTab === 4 }" class="group relative mr-1 rounded-full px-2 md:px-4 py-1 hover:bg-purple-700/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-purple-700/5">
             <h3>
               <button class="font-display ui-not-focus-visible:outline-none md:text-2xl font-bold hover:text-purple-700" type="button" :class="{ 'text-purple-700' : openTab == 4}">
                 <span class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"></span>
@@ -76,29 +76,29 @@
               </button>
             </h3>
             <p class="mt-2 text-sm font-medium leading-loose group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 4}">Documented record of all the changes that a software undergoes. Changes made are then chronologically recorded for users to easily spot the evolution of the product.</p>
-          </li>  --}}
+          </li> 
         </ul>
         <div class="md:h-96 lg:w-2/4 w-full">
           <div x-show="openTab === 1">
             <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
-              <img alt="" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/roadmap.webp') }}" />
+                  <img alt="Roadmap demonstation image" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/roadmap.webp') }}" loading="lazy" />
+                </div>
+              </div>
+              <div x-show="openTab === 2">
+                <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
+                  <img alt="FAQ demonstation image" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/faq.webp') }}" loading="lazy" />
+                </div>
+              </div>
+              <div x-show="openTab === 3">
+                <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
+                  <img alt="Upvote demonstation image" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/upvotes.webp') }}" loading="lazy" />
+                </div>
+              </div>
+                <div x-show="openTab === 4">
+                <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
+                  <img alt="Changelog demonstation image" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/changelog.webp') }}" loading="lazy" />
             </div>
           </div>
-          <div x-show="openTab === 2">
-            <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
-              <img alt="" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/faq.webp') }}" />
-            </div>
-          </div>
-          <div x-show="openTab === 3">
-            <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
-              <img alt="" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/upvotes.webp') }}" />
-            </div>
-          </div>
-            {{-- <div x-show="openTab === 4">
-            <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[67.8125rem]">
-              <img alt="" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/changelog.png') }}" />
-            </div>
-          </div> --}}
         </div>
       </div>
     </div>
