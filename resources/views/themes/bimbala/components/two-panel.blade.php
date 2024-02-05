@@ -13,7 +13,7 @@
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pr-16">
                 <p class="mb-2 text-sm font-semibold leading-none text-purple-700 uppercase">Gather your feedback</p>
                 <h3 class="mt-2 text-2xl md:text-4xl">An easy way to collect and organize feedback</h3>
-                <p class="mt-5 text-lg text md:">{{ $description }}</p>
+                <p class="mt-5 text-lg">{{ $description }}</p>
             </div>
         </div>
     </div>
