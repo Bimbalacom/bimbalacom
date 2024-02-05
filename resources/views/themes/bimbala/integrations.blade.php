@@ -8,40 +8,40 @@
                 <p class="mt-4 text-gray-600 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> Check out with who we are integrated  👇</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
                     {{--First row --}}
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\google-tag-manager.svg', 'title' => 'Google Tag Manager', 'description' => 'Web Tag Manager'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\google-tag-manager.svg', 'title' => 'Google Tag Manager', 'category' => 'Web Tag Manager', 'description' => 'Web Tag Manager'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\mailchimp.svg', 'title' => 'Mailchimp', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\mailchimp.svg', 'title' => 'Mailchimp', 'category' => 'Customer Relations', 'description' => 'WMarketing, Automation & Email Platform'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\hubspot.svg', 'title' => 'Hubspot', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\hubspot.svg', 'title' => 'Hubspot', 'category' => 'Customer Relations', 'description' => 'Inbound Marketing, Sales, and Service Software'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\zendesk.svg', 'title' => 'Zendesk', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\zendesk.svg', 'title' => 'Zendesk', 'category' => 'Customer Relations', 'description' => 'Customer Service Software & Sales CRM'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\disqus.svg', 'title' => 'Disqus', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\disqus.svg', 'title' => 'Disqus', 'category' => 'Customer Relations', 'description' => 'Blog comment hosting service'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\plausible-analytics.svg', 'title' => 'Plausible Analytics', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\plausible-analytics.svg', 'title' => 'Plausible Analytics', 'category' => 'Customer Relations', 'description' => 'Оpen-source and privacy-friendly alternative to Google Analytics'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\google_analytics.svg', 'title' => 'Google Analytics', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\google_analytics.svg', 'title' => 'Google Analytics', 'category' => 'Customer Relations', 'description' => 'Inbound Marketing, Sales, and Service Software'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\facebook-messanger.svg', 'title' => 'Facebook Messenger', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\facebook-messanger.svg', 'title' => 'Facebook Messenger', 'category' => 'Customer Relations', 'description' => 'Messaging app and platform'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\crisp.svg', 'title' => 'Crisp', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\crisp.svg', 'title' => 'Crisp', 'category' => 'Customer Relations', 'description' => 'Messaging Platform For Startups'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\tawkto.png', 'title' => 'TawkTo', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\tawkto.png', 'title' => 'TawkTo', 'category' => 'Customer Relations', 'description' => '100% FREE live chat software for your website'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\tidio.svg', 'title' => 'Tidio', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\tidio.svg', 'title' => 'Tidio', 'category' => 'Customer Relations', 'description' => 'Inbound Marketing, Sales, and Service Software'])
                     @endcomponent
 
-                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\matomo.svg', 'title' => 'Matomo', 'description' => 'Customer Relations'])
+                    @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\matomo.svg', 'title' => 'Matomo', 'category' => 'Customer Relations', 'description' => 'Google Analytics alternative that protects your data and your customers privacy'])
                     @endcomponent
                     
                 </div>
