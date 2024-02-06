@@ -187,8 +187,15 @@
 </section>
 {{--End of Weekly mails --}}
 
-@component('theme::components.two-panel', ['title' => 'Welcome to Bimbala', 'subtitle' => 'Discover the power of feedback', 'image' => 'images/feedback.png', 'description' => 'Bimbala is an easy-to-use platform that allows you to collect and organize feedback from your clients. With Bimbala, you can gather valuable insights and make data-driven decisions to improve your products and services.'])
-@endcomponent
+@component('theme::components.two-panel', [
+  'title' => 'Welcome to Bimbala',
+  'subtitle' => 'Discover the power of feedback',
+  'image' => 'themes/bimbala/images/features/collecting-feedback.png',
+  'description' => 'Bimbala is an easy-to-use platform that allows you to collect and organize feedback from your clients. With Bimbala, you can gather valuable insights and make data-driven decisions to improve your products and services.'
+])
+@endcomponent 
+
+
 {{-- Features with images --}}
     <section class="py-16">
     <div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
