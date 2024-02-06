@@ -25,10 +25,11 @@
 
 {{-- Features with images --}}
 <section class="relative box-border w-full border-0 border-solid leading-6 md:px-8">
-  <div class="mx-auto box-border flex max-w-7xl flex-col items-center border-solid md:px-8 leading-6 md:items-stretch md:justify-center xl:px-16">
-    <div class="relative">
-      <h2 class="my-6 md:my-16 lg:my-20 w-full border-0 border-gray-200 text-center text-4xl font-bold leading-loose tracking-wide sm:text-5xl">Key Features</h2>
-    </div>
+  <div class="mx-auto mb-6 box-border flex max-w-7xl flex-col items-center border-solid md:px-8 leading-6 md:items-stretch md:justify-center xl:px-16">
+    @component('theme::components.title', [
+      'title' => 'Key Features',
+      'description' => 'Part of the features that make Bimbala a great tool for your business.'])
+    @endcomponent
     <div
       x-data="{
             openTab: 1,
@@ -190,10 +191,10 @@
 {{-- Features with images --}}
 <section class="py-16">
     <div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
-        <div class="relative">
-            <h2 class="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl"> Level Up Your Support</h2>
-            <p class="w-full py-8 mx-auto -mt-2 text-lg text-center intro sm:max-w-3xl">Helping your clients while, giving the needed tools for your support / marketing teams.</p>
-        </div>
+          @component('theme::components.title', [
+            'title' => 'Level Up Your Support',
+            'description' => 'Helping your clients while, giving the needed tools for your support / marketing teams.'])
+          @endcomponent
         <div class="flex flex-col mb-12 animated fadeIn sm:flex-row">
             <div class="flex items-center mb-8 sm:w-1/2 md:w-6/12 sm:order-last">
                 <img class="rounded-lg" src="{{ asset('themes/bimbala/images/features/organize-feedback.jpg') }}" loading="lazy" alt="Gathering your client feedback">
@@ -244,7 +245,7 @@
 {{-- Integrations --}}
 <section class="py-12 sm:py-16 text-gray-700">
     <div class="max-w-7xl px-10 mx-auto sm:text-center">
-        <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps</h3>
+        <h3 class="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl">Connect with Your Favorite Apps</h3>
         <p class="mt-4 text-base sm:text-xl lg:text-2xl">We have integrate with 10+ other popular software.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check them out</a>  👇</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
             <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
