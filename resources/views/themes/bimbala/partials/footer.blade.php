@@ -188,4 +188,13 @@
     <!-- Crisp -->
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8382cdf3-f8a1-4d6a-8f2a-a807f51bfb95";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <!-- End Crisp -->
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "5kue80nmru");
+    </script>
+     <!-- End of Microsoft Clarity -->
 @endif
