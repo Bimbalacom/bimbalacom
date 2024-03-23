@@ -22,7 +22,7 @@
 @section('content')
 <section class="w-full mx-auto py-12 lg:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 xl:max-w-7xl">
     <div class="md:col-span-2">
-        <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Why use forms when upvote gives you tons of rated customer feedback all in one place?</h3>
+        <h2 class="text-2xl text-center sm:text-xl md:text-4xl">Why use forms when upvote gives you tons of rated customer feedback all in one place?</h2>
     </div>
     <div class="">
         <img src="{{ asset('themes/bimbala/images/features/cropped/upvotes/upvotes_list.webp') }}" class="max-h-80 mx-auto" alt="List of upvote items" />

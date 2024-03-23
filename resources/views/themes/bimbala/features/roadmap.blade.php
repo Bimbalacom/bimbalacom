@@ -22,7 +22,7 @@
 @section('content')
 <section class="w-full mx-auto py-12 lg:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 xl:max-w-7xl">
     <div class="md:col-span-2">
-        <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Provide transparency over your product evolvement</h3>
+        <h2 class="text-2xl text-center sm:text-xl md:text-4xl">Provide transparency over your product evolvement</h2>
     </div>
     <div>
         <img src="{{ asset('themes/bimbala/images/features/cropped/roadmap/roadmap_conversion.webp') }}" class="max-h-80 border" alt="List of upvote items" />
