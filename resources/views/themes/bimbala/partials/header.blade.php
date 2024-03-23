@@ -18,7 +18,7 @@
         <div class="relative z-20 flex items-center justify-between">
             <a href="{{ route('wave.home') }}" class="relative flex items-center">
                     <img class="h-8 w-8" src="../../bimbala/img/logo-small.png" alt="Bimbala's logo" width="32" height="32">
-                    <h2 class="mx-2 text-lg font-semibold text-white md:text-xl">Bimbala</h2>
+                    <h1 class="mx-2 text-lg font-semibold text-white md:text-xl">Bimbala</h1>
                 </a>
                 {{-- This is the homepage nav when a user is not logged in --}}
                 @if(auth()->guest())
@@ -29,5 +29,5 @@
                 @endif
         </div>
     </nav>
-</section>   
+</section>
 </header>

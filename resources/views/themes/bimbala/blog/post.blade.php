@@ -13,10 +13,10 @@
         <meta class="uk-margin-remove-adjacent" property="datePublished" content="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">
 
         <div class="max-w-4xl mx-auto mt-6">
-                <h1 class="text-center">
-                    <span class="block text-3xl leading-8 font-extrabold tracking-tight sm:text-5xl">{{ $post->title}}</span>
+                <div class="text-center">
+                    <h1 class="block text-3xl leading-8 font-extrabold tracking-tight sm:text-5xl">{{ $post->title}}</h1>
                     <span class="mt-4 block text-base text-indigo-600 font-semibold tracking-wide uppercase"><a href="{{ route('wave.blog.category', $post->category->slug) }}" rel="category">{{ $post->category->name }}</a></span>
-                </h1>
+                </div>
         </div>
 
         <div class="relative">
@@ -29,7 +29,7 @@
                     datetime="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">{{
                     Carbon\Carbon::parse($post->created_at)->toFormattedDateString() }}</time></span>
         </div>
- 
+
     </article>
     <div class="max-w-4xl mx-auto mt-6 pb-20"><div id="disqus_thread"></div>
         <script>

@@ -5,7 +5,7 @@
     <section class="w-full py-12 lg:py-24">
     {{-- Integrations --}}
             <div class="max-w-7xl px-10 mx-auto sm:text-center">
-                <p class="mt-4 text-gray-600 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> Check out with who we are integrated  👇</p>
+                <h2 class="mt-4 text-gray-600 text-base sm:text-xl lg:text-2xl">We're flexible.<br class="lg:hidden hidden sm:block"> Check out with who we are integrated  👇</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
                     {{--First row --}}
                     <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">

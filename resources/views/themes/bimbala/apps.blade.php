@@ -8,7 +8,7 @@
     <div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
         <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div class="flex flex-col text-center justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pl-16">
-                <h3 class="my-4 text-2xl sm:text-left md:text-4xl">Desktop application</h3>
+                <h2 class="my-4 text-2xl sm:text-left md:text-4xl">Desktop application</h2>
                 <p class="mt-5 text-lg text-gray-700 text md:text-left">
                   <a href="https://github.com/Bimbalacom/Desktop/releases/latest">
                     <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
@@ -46,7 +46,7 @@
             </div>
             {{-- Mobile part --}}
             <div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-6/12 sm:pl-16">
-                <h3 class="my-4 text-2xl sm:text-left md:text-4xl">Mobile</h3>
+                <h2 class="my-4 text-2xl sm:text-left md:text-4xl">Mobile</h2>
                 <p class="mt-5 text-lg text-gray-700 text md:text-left">
                   <a href="https://github.com/Bimbalacom/Mobile/releases/latest">
                     <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
@@ -87,13 +87,13 @@
 
     <div class="relative w-full mt-6 overflow-hidden md:mt-1 md:w-9/12">
         <div class="w-full space-y-6" x-show="section == 'gather'" x-transition:enter="top-0 left-0 w-full h-full absolute transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-full" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-full">
-        <svg class="w-12 h-12 text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>    
+        <svg class="w-12 h-12 text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
         <h3 class="text-2xl font-bold leading-7">Gathering feedback</h3>
             <p class="text-base font-normal leading-none text-gray-700 md:text-lg">Starting every journey from the beginning is exciting, but understanding your clients is even better. This kind of adventure needs a great companion and be sure you have picked the right one.</p>
          </div>
 
         <div class="space-y-6" x-show="section == 'understand'" x-transition:enter="top-0 left-0 w-full h-full absolute transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-full" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-full">
-        <svg class="w-12 h-12 text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>    
+        <svg class="w-12 h-12 text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
         <h3 class="text-2xl font-bold leading-7">Understand your clients</h3>
             <p class="text-base font-normal leading-none text-gray-700 md:text-lg">Use our powerful dashboard to see what your customers want.</p>
           </div>

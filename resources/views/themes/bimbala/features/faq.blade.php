@@ -22,7 +22,7 @@
 @section('content')
     <section class="w-full mx-auto py-12 lg:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 xl:max-w-7xl">
         <div class="md:col-span-2">
-            <h3 class="text-2xl text-center sm:text-xl md:text-4xl">Unload your support team from answering the same questions over and over again</h3>
+            <h2 class="text-2xl text-center sm:text-xl md:text-4xl">Unload your support team from answering the same questions over and over again</h2>
         </div>
         <div>
             <img src="{{ asset('themes/bimbala/images/features/faq_helping.svg') }}" class="max-h-[28rem]" alt="Caring about users"/>
