@@ -8,8 +8,8 @@
                 <h1 class="text-4xl font-bold text-white lg:text-6xl xl:text-6xl">{{ theme('home_headline') }}</h1>
                 <p class="text-base text-blue-200 lg:text-xl">{{ theme('home_subheadline') }} {{-- -  {{ theme('home_description') }} --}}</p>
                 <div class="flex flex-col items-center w-full mb-10 sm:flex-row sm:mb-20">
-                    <a href="{{ theme('home_cta_url') }}" class="w-full px-8 py-3 text-lg text-center bg-purple-900 text-white transition duration-150 ease-in-out sm:w-auto focus:outline-none rounded">Demo </a>
-                    <a href="https://calendly.com/bimbalacom/30min" class="w-full px-8 py-3 mt-5 ml-3 text-lg text-center text-white transition duration-150 ease-in-out bg-transparent border border-white sm:ml-6 sm:w-auto sm:mt-0 focus:outline-none hover:bg-white hover:text-blue-700 rounded">Book a demo</a>
+                    <a href="{{ theme('home_cta_url') }}" class="w-full px-8 py-3 text-lg text-center bg-purple-900 text-white transition duration-150 ease-in-out sm:w-auto focus:outline-none rounded">{{ theme('home_cta') }}</a>
+                    <a href="https://board.bimbala.com" class="w-full px-8 py-3 mt-5 ml-3 text-lg text-center text-white transition duration-150 ease-in-out bg-transparent border border-white sm:ml-6 sm:w-auto sm:mt-0 focus:outline-none hover:bg-white hover:text-blue-700 rounded">Demo</a>
                 </div>
             </div>
             <div class="relative flex items-center justify-center w-full mt-10 md:mt-0 md:w-1/2">
@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    
+
 {{--End header--}}
 
 {{-- Features with images --}}
@@ -76,7 +76,7 @@
               </button>
             </h3>
             <p class="mt-2 text-sm font-medium leading-loose group-hover:text-purple-700 lg:block hidden" :class="{ 'text-purple-700' : openTab == 4}">Documented record of all the changes that a software undergoes. Changes made are then chronologically recorded for users to easily spot the evolution of the product.</p>
-          </li> 
+          </li>
         </ul>
         <div class="md:h-96 lg:w-2/4 w-full">
           <div x-show="openTab === 1">
