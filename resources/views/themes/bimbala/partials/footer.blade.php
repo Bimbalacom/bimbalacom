@@ -19,6 +19,9 @@
                     </h2>
                     <ul class="p-0 m-0 leading-tight list-none">
                         <li class="box-border py-2 md:mb-1">
+                            <a href="https://calendly.com/bimbalacom/30min" class="leading-tight hover:text-gray-400">Book a demo</a>
+                        </li>
+                        <li class="box-border py-2 md:mb-1">
                             <a href="{{ route('wave.pricing') }}" class="leading-tight hover:text-gray-400">Pricing</a>
                         </li>
                          <li class="box-border py-2 md:mb-1">
