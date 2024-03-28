@@ -138,8 +138,8 @@
 </section>
 
 
-{{-- Clients --}}
-@include('theme::partials.clients')
+<!-- {{-- Clients --}}
+@include('theme::partials.clients') -->
 
 {{-- Weekly mails --}}
 <section class="py-16 overflow-hidden">
