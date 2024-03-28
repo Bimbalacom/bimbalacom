@@ -88,7 +88,7 @@
                 </div>
                 @if(Request::is(['blog', 'use-case', 'about-us', 'apps', 'integrations']))
                     <div class="mt-3 w-full max-w-md">
-                        <p class="mb-3 block text-base font-medium text-gray-300">Subscribe to our e-mails</p>
+                        <p class="mb-3 block text-base font-medium text-gray-300">Stay ahead of the game with insider tips and resources!</p>
                         <form
                             action="https://bimbala.us17.list-manage.com/subscribe/post?u=118b625f8f6bac41ebe6c7be3&amp;id=e974cbc9ee"
                             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
