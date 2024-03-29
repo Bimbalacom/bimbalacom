@@ -247,26 +247,17 @@
         <h3 class="font-bold text-3xl sm:text-3xl lg:text-4xl mt-3">Connect with Your Favorite Apps</h3>
         <p class="mt-4 text-base sm:text-xl lg:text-2xl">We have integrate with 10+ other popular software.<br class="lg:hidden hidden sm:block"> <a href="{{ route('integrations') }}" class="text-purple-900 font-bold">Check them out</a>  👇</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\google-tag-manager.svg') }}" loading="lazy" alt="Google Tag Manager" width="64" height="64">
-                <p class="font-bold mt-4">Google Tag Manager</p>
-                <p class="mt-2 text-sm">Web Tag Manager</p>
-            </div>
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\mailchimp.svg') }}" loading="lazy" alt="Mailchimp" width="64" height="64">
-                <p class="font-bold mt-4">Mailchimp</p>
-                <p class="mt2 text-sm">Email Marketing</p>
-            </div>
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\hubspot.svg') }}" loading="lazy" alt="Hubspot" width="64" height="64">
-                <p class="font-bold mt-4">Hubspot</p>
-                <p class="mt-2 text-sm">Customer Relations</p>
-            </div>
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
-            <img class="w-16 h-auto" src="{{ asset('themes\bimbala\images\integrations\zapier.svg') }}" loading="lazy" alt="Zapier" width="64" height="64">
-                <p class="font-bold mt-4">Zapier</p>
-                <p class="mt-2 text-sm">Task Automation</p>
-            </div>
+          @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\google-tag-manager.svg', 'title' => 'Google Tag Manager', 'category' => 'Web Tag Manager', 'description' => 'Web Tag Manager'])
+          @endcomponent
+
+          @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\mailchimp.svg', 'title' => 'Mailchimp', 'category' => 'Customer Relations', 'description' => 'WMarketing, Automation & Email Platform'])
+          @endcomponent
+
+          @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\hubspot.svg', 'title' => 'Hubspot', 'category' => 'Customer Relations', 'description' => 'Inbound Marketing, Sales, and Service Software'])
+          @endcomponent
+
+          @component('theme::components.integration-card', ['image' => 'themes\bimbala\images\integrations\zendesk.svg', 'title' => 'Zendesk', 'category' => 'Customer Relations', 'description' => 'Customer Service Software & Sales CRM'])
+          @endcomponent
         </div>
     </div>
 </section>
