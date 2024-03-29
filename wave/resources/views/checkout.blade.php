@@ -1,5 +1,5 @@
-<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-<script>
+<script src="https://cdn.paddle.com/paddle/paddle.js" defer></script>
+<script defer>
 
     window.vendor_id = parseInt('{{ config("wave.paddle.vendor") }}');
 
