@@ -111,7 +111,7 @@
 <section class="relative box-border w-full border-0 border-solid border-gray-200 bg-white leading-6 text-gray-700">
   <div class="mx-auto box-border flex max-w-7xl flex-col items-center border-solid px-8 py-20 leading-6 md:items-stretch md:justify-center md:py-24 xl:px-16">
     <div class="relative pb-10">
-      <h4 class="w-full text-center text-2xl font-bold tracking-wide sm:text-2xl">We also provide</h4>
+      <h2 class="w-full text-center text-2xl font-bold tracking-wide sm:text-2xl">We also provide</h2>
     </div>
     <div class="text-bold z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
       @foreach(config('features') as $feature)
@@ -121,7 +121,7 @@
             <img src="{{ $feature->image }}" class="h-7 w-7 stroke-current text-center align-middle leading-6 text-gray-700" loading="lazy" alt="{{ $feature->title }} - {{ $feature->description }}" width="28" height="28" />
           </div>
           <div class="mt-4 border-0 border-gray-200 sm:ml-4 sm:mt-2">
-            <h6 class="box-border border-solid text-left text-2xl font-bold leading-none tracking-wide">{{ $feature->title }}</h6>
+            <h3 class="box-border border-solid text-left text-2xl font-bold leading-none tracking-wide">{{ $feature->title }}</h3>
             <p class="mx-0 mb-0 mt-1 box-border border-solid text-left font-medium leading-loose text-gray-600 sm:mt-4">{{ $feature->description }}</p>
           </div>
         </div>
