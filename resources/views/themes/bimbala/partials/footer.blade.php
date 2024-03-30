@@ -7,7 +7,19 @@
             <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
                 <div class="box-border">
                     <a href="{{ route('wave.home') }}" class="relative flex items-center">
-                        <img class="h-8 w-8" src="../../bimbala/img/logo-small.png" alt="Bimbala's logo" width="32" height="32">
+                        <img class="h-8 w-8"
+                             src="{{URL::asset('bimbala/img/logo/logo-sm.webp')}}"
+                             srcset="
+                               {{ asset('bimbala/img/logo/logo-xs.webp') }} 320w,
+                               {{ asset('bimbala/img/logo/logo-sm.webp') }} 375w,
+                               {{ asset('bimbala/img/logo/logo-md.webp') }} 768w,
+                               {{ asset('bimbala/img/logo/logo-lg.webp') }} 1024w,
+                               {{ asset('bimbala/img/logo/logo-xl.webp') }} 1500w,
+                               {{ asset('bimbala/img/logo/logo-2xl.webp') }} 2000w,
+                           "
+                            alt="Bimbala's logo"
+                             width="32"
+                             height="32">
                         <h2 class="mx-2 text-lg md:text-xl">Bimbala</h2>
                     </a>
                 </div>

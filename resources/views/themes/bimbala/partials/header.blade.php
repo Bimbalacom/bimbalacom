@@ -16,8 +16,18 @@
 
     <nav x-data="{ mobile: false }" class="relative z-40 px-10 py-6 mx-auto md:pb-6 max-w-7xl md:flex md:justify-between md:items-center">
         <div class="relative z-20 flex items-center justify-between">
-            <a href="{{ route('wave.home') }}" class="relative flex items-center">
-                    <img class="h-8 w-8" src="../../bimbala/img/logo-small.png" alt="Bimbala's logo" width="32" height="32">
+            <a href="{{ route('wave.home') }}" class="relative flex items-center">`
+                    <img class="h-8 w-8"
+                         src="{{URL::asset('bimbala/img/logo/logo-sm.webp')}}"
+                         srcset="
+                           {{ asset('bimbala/img/logo/logo-xs.webp') }} 320w,
+                           {{ asset('bimbala/img/logo/logo-sm.webp') }} 375w,
+                           {{ asset('bimbala/img/logo/logo-md.webp') }} 768w,
+                           {{ asset('bimbala/img/logo/logo-lg.webp') }} 1024w,
+                           {{ asset('bimbala/img/logo/logo-xl.webp') }} 1500w,
+                           {{ asset('bimbala/img/logo/logo-2xl.webp') }} 2000w,
+                       "
+                         alt="Bimbala's logo" width="32" height="32">
                     <h1 class="mx-2 text-lg font-semibold text-white md:text-xl">Bimbala</h1>
                 </a>
                 {{-- This is the homepage nav when a user is not logged in --}}
