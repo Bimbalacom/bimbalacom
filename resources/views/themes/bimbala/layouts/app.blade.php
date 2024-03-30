@@ -71,7 +71,7 @@
     <meta name="keywords" content="{{ $seo['keywords'] ?? setting('site.keywords', 'product development, customer feedback, customers, integrations, bimbala, SaaS, support, roadmap, knowledge board, FAQ, feedback-based product') }}">
     <meta name="google-site-verification" content="173vXOSU7DHgNz9UkFqBkQ1_yThKQPBGvoZrIKoEm6U" />
     {{-- Styles --}}
-    <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="preload" as="style" fetchpriority="low" onload="this.rel='stylesheet'">
 </head>
 <body>
 
