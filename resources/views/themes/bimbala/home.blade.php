@@ -15,7 +15,23 @@
             <div class="relative flex items-center justify-center w-full mt-10 md:mt-0 md:w-1/2">
                 <svg class="absolute top-0 right-0 z-0 hidden w-32 h-32 -mt-12 -mr-12 text-blue-300 fill-current md:block" viewBox="0 0 91 91" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill-rule="evenodd"><g fill-rule="nonzero"><g><g><circle cx="3.261" cy="3.445" r="2.72"></circle><circle cx="15.296" cy="3.445" r="2.719"></circle><circle cx="27.333" cy="3.445" r="2.72"></circle><circle cx="39.369" cy="3.445" r="2.72"></circle><circle cx="51.405" cy="3.445" r="2.72"></circle><circle cx="63.441" cy="3.445" r="2.72"></circle><circle cx="75.479" cy="3.445" r="2.72"></circle><circle cx="87.514" cy="3.445" r="2.719"></circle></g><g transform="translate(0 12)"><circle cx="3.261" cy="3.525" r="2.72"></circle><circle cx="15.296" cy="3.525" r="2.719"></circle><circle cx="27.333" cy="3.525" r="2.72"></circle><circle cx="39.369" cy="3.525" r="2.72"></circle><circle cx="51.405" cy="3.525" r="2.72"></circle><circle cx="63.441" cy="3.525" r="2.72"></circle><circle cx="75.479" cy="3.525" r="2.72"></circle><circle cx="87.514" cy="3.525" r="2.719"></circle></g><g transform="translate(0 24)"><circle cx="3.261" cy="3.605" r="2.72"></circle><circle cx="15.296" cy="3.605" r="2.719"></circle><circle cx="27.333" cy="3.605" r="2.72"></circle><circle cx="39.369" cy="3.605" r="2.72"></circle><circle cx="51.405" cy="3.605" r="2.72"></circle><circle cx="63.441" cy="3.605" r="2.72"></circle><circle cx="75.479" cy="3.605" r="2.72"></circle><circle cx="87.514" cy="3.605" r="2.719"></circle></g><g transform="translate(0 36)"><circle cx="3.261" cy="3.686" r="2.72"></circle><circle cx="15.296" cy="3.686" r="2.719"></circle><circle cx="27.333" cy="3.686" r="2.72"></circle><circle cx="39.369" cy="3.686" r="2.72"></circle><circle cx="51.405" cy="3.686" r="2.72"></circle><circle cx="63.441" cy="3.686" r="2.72"></circle><circle cx="75.479" cy="3.686" r="2.72"></circle><circle cx="87.514" cy="3.686" r="2.719"></circle></g><g transform="translate(0 49)"><circle cx="3.261" cy="2.767" r="2.72"></circle><circle cx="15.296" cy="2.767" r="2.719"></circle><circle cx="27.333" cy="2.767" r="2.72"></circle><circle cx="39.369" cy="2.767" r="2.72"></circle><circle cx="51.405" cy="2.767" r="2.72"></circle><circle cx="63.441" cy="2.767" r="2.72"></circle><circle cx="75.479" cy="2.767" r="2.72"></circle><circle cx="87.514" cy="2.767" r="2.719"></circle></g><g transform="translate(0 61)"><circle cx="3.261" cy="2.846" r="2.72"></circle><circle cx="15.296" cy="2.846" r="2.719"></circle><circle cx="27.333" cy="2.846" r="2.72"></circle><circle cx="39.369" cy="2.846" r="2.72"></circle><circle cx="51.405" cy="2.846" r="2.72"></circle><circle cx="63.441" cy="2.846" r="2.72"></circle><circle cx="75.479" cy="2.846" r="2.72"></circle><circle cx="87.514" cy="2.846" r="2.719"></circle></g><g transform="translate(0 73)"><circle cx="3.261" cy="2.926" r="2.72"></circle><circle cx="15.296" cy="2.926" r="2.719"></circle><circle cx="27.333" cy="2.926" r="2.72"></circle><circle cx="39.369" cy="2.926" r="2.72"></circle><circle cx="51.405" cy="2.926" r="2.72"></circle><circle cx="63.441" cy="2.926" r="2.72"></circle><circle cx="75.479" cy="2.926" r="2.72"></circle><circle cx="87.514" cy="2.926" r="2.719"></circle></g><g transform="translate(0 85)"><circle cx="3.261" cy="3.006" r="2.72"></circle><circle cx="15.296" cy="3.006" r="2.719"></circle><circle cx="27.333" cy="3.006" r="2.72"></circle><circle cx="39.369" cy="3.006" r="2.72"></circle><circle cx="51.405" cy="3.006" r="2.72"></circle><circle cx="63.441" cy="3.006" r="2.72"></circle><circle cx="75.479" cy="3.006" r="2.72"></circle><circle cx="87.514" cy="3.006" r="2.719"></circle></g></g></g></g></svg>
                 <div class="relative cursor-pointer group">
-                    <img src="{{URL::asset('themes/bimbala/images/hero-photo.webp')}}" class="rounded-lg" fetchpriority="high" alt="{{ theme('home_subheadline') }}"  width="600" height="400">
+                    <img
+                        src="{{URL::asset('themes/bimbala/images/hero-photo/hero-photo-sm.webp')}}"
+                        srcset="
+                           {{ asset('themes/bimbala/images/hero-photo/hero-photo-xs.webp') }} 320w,
+                           {{ asset('themes/bimbala/images/hero-photo/hero-photo-sm.webp') }} 375w,
+                           {{ asset('themes/bimbala/images/hero-photo/hero-photo-md.webp') }} 768w,
+                           {{ asset('themes/bimbala/images/hero-photo/hero-photo-lg.webp') }} 1024w,
+                           {{ asset('themes/bimbala/images/hero-photo/hero-photo-lg.webp') }} 1024w,
+                           {{ asset('themes/bimbala/images/hero-photo/hero-photo-xl.webp') }} 1500w,
+                           {{ asset('themes/bimbala/images/hero-photo/hero-photo-2xl.webp') }} 2000w,
+                       "
+                        class="rounded-lg"
+                        fetchpriority="high"
+                        alt="{{ theme('home_subheadline') }}"
+                        width="600"
+                        height="400"
+                    />
                 </div>
             </div>
         </div>
@@ -81,7 +97,20 @@
         <div class="md:h-96 lg:w-2/4 w-full">
           <div x-show="openTab === 1">
             <div class="mt-4 md:mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 lg:mt-0 lg:w-[45rem]">
-                  <img alt="Roadmap demonstation image" class="w-full" src="{{ asset('themes/bimbala/images/features/full-res/roadmap.webp') }}" loading="lazy" />
+                  <img alt="Roadmap demonstation image" class="w-full"
+                       src="{{ asset('themes/bimbala/images/features/full-res/roadmap/roadmap-sm.webp') }}"
+                       srcset="
+                           {{ asset('themes/bimbala/images/features/full-res/roadmap/roadmap-xs.webp') }} 320w,
+                           {{ asset('themes/bimbala/images/features/full-res/roadmap/roadmap-sm.webp') }} 375w,
+                           {{ asset('themes/bimbala/images/features/full-res/roadmap/roadmap-md.webp') }} 768w,
+                           {{ asset('themes/bimbala/images/features/full-res/roadmap/roadmap-lg.webp') }} 1024w,
+                           {{ asset('themes/bimbala/images/features/full-res/roadmap/roadmap-lg.webp') }} 1024w,
+                           {{ asset('themes/bimbala/images/features/full-res/roadmap/roadmap-xl.webp') }} 1500w,
+                           {{ asset('themes/bimbala/images/features/full-res/roadmap/roadmap-2xl.webp') }} 2000w,
+                       "
+                       loading="lazy"
+                       width="100%"
+                  />
                 </div>
               </div>
               <div x-show="openTab === 2">
