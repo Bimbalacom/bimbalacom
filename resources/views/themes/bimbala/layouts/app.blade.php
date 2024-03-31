@@ -15,6 +15,8 @@
     <meta name="facebook-domain-verification" content="i8nvt9l8tdw2jqc1t55cdoq3c6znvi" />
     <meta name="msvalidate.01" content="C0A3EBD94A574266297F779F912F41C6" />
     <link rel="canonical" href="{{ url('/') }}" />
+    <link rel="preconnect" href="https://client.crisp.chat">
+    <link rel="preconnect" href="https://analytics.bimbala.com">
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('themes/bimbala/images/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('themes/bimbala/images/favicon-32x32.png') }}">
@@ -69,7 +71,7 @@
     <meta name="keywords" content="{{ $seo['keywords'] ?? setting('site.keywords', 'product development, customer feedback, customers, integrations, bimbala, SaaS, support, roadmap, knowledge board, FAQ, feedback-based product') }}">
     <meta name="google-site-verification" content="173vXOSU7DHgNz9UkFqBkQ1_yThKQPBGvoZrIKoEm6U" />
     {{-- Styles --}}
-    <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="stylesheet" rel="preload" as="style">
+    <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="preload" as="style" fetchpriority="low" onload="this.rel='stylesheet'">
 </head>
 <body>
 

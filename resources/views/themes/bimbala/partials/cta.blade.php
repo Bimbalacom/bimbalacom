@@ -1,6 +1,6 @@
 
 {{-- CTA --}}
-<section class="relative block pt-16 overflow-hidden leading-6 text-left text-white bg-purple-900 bg-no-repeat bg-cover sm:pt-20 md:pt-24">
+<section class="relative block pt-16 overflow-hidden leading-6 text-left text-white bg-purple-950 bg-no-repeat bg-cover sm:pt-20 md:pt-24">
     <div class="w-full max-w-5xl px-8 mx-auto leading-6 text-left xl:px-0">
         <div class="flex flex-wrap items-center justify-center flex-1 text-center text-white lg:text-left">
             <div class="relative w-full px-4 leading-6 text-left lg:w-7/12 xl:w-1/2">
@@ -28,7 +28,7 @@
                     <div class="relative z-10 w-3 h-3 bg-gray-700 rounded-full"></div>
                 </div>
 
-                <img src="{{URL::asset('themes/bimbala/images/demo.bimbala.jpg')}}" alt="Designed with your client in mind" class=" max-w-full text-white align-middle border-none" loading="lazy">
+                <img src="{{ URL::asset('themes/bimbala/images/demo.bimbala.webp') }}" alt="Designed with your client in mind" class="max-w-full text-white align-middle border-none w-100" loading="lazy">
             </div>
         </div>
     </div>
