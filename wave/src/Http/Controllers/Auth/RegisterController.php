@@ -169,10 +169,10 @@ class RegisterController extends \App\Http\Controllers\Controller
         Notification::route('mail', $user->email)->notify(new VerifyEmail($user));
     }
 
-    public function showRegistrationForm()
+    public function showRegistrationForm(Request $request)
     {
         if(setting('billing.card_upfront')){
-            return redirect()->route('wave.pricing');
+            return redirect()->route('wave.pricing')->with('origin', $request->url());
         }
         return view('theme::auth.register');
     }

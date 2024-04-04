@@ -1,7 +1,16 @@
 @extends('theme::layouts.app')
 
 @section('content')
-
+    @if(Session::get('origin') === route('register'))
+    <div class="py-4 text-center bg-indigo-500 lg:px-4">
+        <div class="flex items-center p-2 leading-none text-indigo-100 sm:bg-indigo-800 sm:rounded-full sm:inline-flex"
+             role="alert">
+            <span class="flex px-2 py-1 mr-3 text-xs font-bold uppercase bg-indigo-500 rounded-full">Notice</span>
+            <span class="flex-auto mr-2 font-semibold text-left">Please pick a plan
+                before proceeding to registration.</span>
+        </div>
+    </div>
+    @endif
     <div class="py-20">
         <div class="sm:mx-auto sm:w-full sm:max-w-5xl">
 
