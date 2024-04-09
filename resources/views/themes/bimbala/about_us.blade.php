@@ -45,6 +45,19 @@
             <div class="col-span-4 w-full h-full"></div>--}}
 
 
+                <!-- Stack 3 -->
+                <div class="col-span-4 w-full h-full">
+                    <div class="w-full h-full bg-gray-800 rounded-md p-2 md:pl-4">
+                        <h1 class="text-white text-2xl font-bold py-2">01.08.2023</h1>
+                        <p class="text-gray-200 sm:text-md text-sm">Our product arrived on the market. 🛍️</p>
+                    </div>
+                </div>
+                <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
+                    <div class="h-full w-1 bg-white border-2 border-gray-400"></div>
+                    <div class="absolute w-8 h-8 rounded-full bg-white z-10 text-center border-2 border-gray-400"></div>
+                </div>
+                <div class="col-span-4 w-full h-full"></div>
+
                 <!-- Stack 2 -->
                 <div class="col-span-4 w-full h-full "></div>
                 <div class="relative col-span-1 w-full h-full flex justify-center items-center ">
