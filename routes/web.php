@@ -11,6 +11,7 @@
 |
 */
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ToolsController;
 
 // Authentication routes
 Auth::routes();
@@ -47,11 +48,7 @@ Route::get('/apps', static function () {
     ]]);
 })->name('apps');
 Route::prefix('tools')->name('tools.')->group(function () {
-    Route::get('responsive-images', static function () {
-        return view('theme::tools.responsive-images', ['seo' => [
-            'seo_title' => 'Resonsive images', 'seo_description' => 'Responsive images generation made easily.',
-        ]]);
-    })->name('responsive-images');
+    Route::get('responsive-images', [ToolsController::class, 'responsiveImages'])->name('responsive-images');
 });
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
 
