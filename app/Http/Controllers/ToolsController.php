@@ -10,6 +10,15 @@ use Illuminate\Http\Request;
 
 class ToolsController extends Controller
 {
+    public function index(): Factory|View|Application
+    {
+        return view('theme::tools', ['seo' => [
+            'seo_title' => 'Free tools',
+            'seo_description' => 'Our free for use online tools.',
+            'seo_keywords' => 'responsive images, tools, online, web, changelog, generator, free'
+        ]]);
+    }
+
     public function responsiveImages(): Factory|View|Application
     {
         return view('theme::tools.responsive-images', ['seo' => [
