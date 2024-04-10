@@ -24,6 +24,8 @@
                                     class="object-cover rounded-b-3xl"
                                     src="{{ asset('themes/bimbala/images/tools/responsive-images.webp') }}"
                                     alt="Same image in different sizes"
+                                    width="100%"
+                                    height="100%"
                                 />
                                 <div
                                     class="absolute inset-0 flex flex-col justify-between bg-gradient-to-b from-transparent via-black/10 to-black"
