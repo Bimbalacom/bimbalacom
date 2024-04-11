@@ -11,6 +11,7 @@
 |
 */
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FeaturesController;
 use App\Http\Controllers\ToolsController;
 
 // Authentication routes
@@ -52,6 +53,15 @@ Route::prefix('tools')->name('tools.')->group(function () {
     Route::get('responsive-images', [ToolsController::class, 'responsiveImages'])->name('responsive-images');
 });
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
+
+
+/***** Features pages *****/
+Route::prefix('features')->name('features.')->group(function (){
+    Route::get('/', [FeaturesController::class, 'index'])->name('index');
+    Route::get('upvote', [FeaturesController::class, 'upvote'])->name('upvote');
+    Route::get('faq', [FeaturesController::class, 'faq'])->name('faq');
+    Route::get('roadmap', [FeaturesController::class, 'roadmap'])->name('roadmap');
+});
 
 Route::get('/contact', [ContactController::class, 'serveThePage'])->name('contact');
 Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact-send');

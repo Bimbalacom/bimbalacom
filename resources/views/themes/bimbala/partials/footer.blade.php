@@ -40,7 +40,7 @@
                             <a href="{{ route('apps') }}" class="leading-tight hover:text-gray-400">Apps</a>
                         </li>
                         <li class="box-border py-2 md:mb-1">
-                            <a href="{{ route('wave.features') }}" class="leading-tight hover:text-gray-400">Features</a>
+                            <a href="{{ route('features.index') }}" class="leading-tight hover:text-gray-400">Features</a>
                         </li>
                         <li class="box-border py-2 md:mb-1">
                             <a href="{{ route('use-case') }}" class="leading-tight hover:text-gray-400">Use Cases</a>

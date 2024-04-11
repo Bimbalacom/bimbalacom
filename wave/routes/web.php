@@ -91,13 +91,5 @@ Route::group(['middleware' => 'admin.user'], static function(){
     Route::view('admin/do', 'wave::do');
 });
 
-/***** Features pages *****/
-Route::prefix('features')->group(function (){
-    Route::get('/', [FeaturesController::class, 'index'])->name('wave.features');
-    Route::get('upvote', [FeaturesController::class, 'upvote'])->name('wave.features.upvote');
-    Route::get('faq', [FeaturesController::class, 'faq'])->name('wave.features.faq');
-    Route::get('roadmap', [FeaturesController::class, 'roadmap'])->name('wave.features.roadmap');
-});
-
 /***** Pages *****/
 Route::get('{page}', '\Wave\Http\Controllers\PageController@page');

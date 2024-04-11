@@ -32,7 +32,7 @@
         <p class="text-xl">A board made for you and improvement suggestions for your product. The best ideas always go first.</p>
         <ul class="list-disc list-inside leading-loose">
             <li>Comments feature for each item</li>
-            <li>Convert the best requests to workable <a href="{{ route('wave.features.roadmap') }}" class="text-gray-500 hover:text-gray-400 font-bold">product roadmap tickets</a></li>
+            <li>Convert the best requests to workable <a href="{{ route('features.roadmap') }}" class="text-gray-500 hover:text-gray-400 font-bold">product roadmap tickets</a></li>
             <li>Make your own categories</li>
         </ul>
     </div>

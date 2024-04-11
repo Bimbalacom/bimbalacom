@@ -32,7 +32,7 @@
         <p class="text-xl">The advance on your user's feedback should not be a black box. Keep your users informed about when their expectations will come true.</p>
         <ul class="list-disc list-inside leading-loose">
             <li>Let your users know when will their feature arrive</li>{{-- TODO: Hint for the changelog and add a link to its page when it's built --}}
-            <li>Easy moving of <a href="{{ route('wave.features.upvote') }}" class="text-gray-500 hover:text-gray-400 font-bold">upvote items</a> to the product roadmap</li>
+            <li>Easy moving of <a href="{{ route('features.upvote') }}" class="text-gray-500 hover:text-gray-400 font-bold">upvote items</a> to the product roadmap</li>
             <li>Show what your priorities are</li>
         </ul>
     </div>

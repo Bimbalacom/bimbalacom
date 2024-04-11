@@ -25,7 +25,7 @@
                         <nav class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
                             <!-- Feature -->
                             <a
-                                href="{{route('wave.features.roadmap')}}"
+                                href="{{route('features.roadmap')}}"
                                 class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-2xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75 active:ring-indigo-500/25"
                             >
                                 <img
@@ -48,7 +48,7 @@
 
                             <!-- Feature -->
                             <a
-                                href="{{route('wave.features.upvote')}}"
+                                href="{{route('features.upvote')}}"
                                 class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-2xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75"
                             >
                                 <img
@@ -72,7 +72,7 @@
 
                             <!-- Feature -->
                             <a
-                                href="{{route('wave.features.faq')}}"
+                                href="{{route('features.faq')}}"
                                 class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-2xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75 active:ring-indigo-500/25 lg:col-span-2"
                             >
                                 <img
