@@ -14,7 +14,11 @@
     <meta name="url" content="{{ url('/') }}">
     <meta name="facebook-domain-verification" content="i8nvt9l8tdw2jqc1t55cdoq3c6znvi" />
     <meta name="msvalidate.01" content="C0A3EBD94A574266297F779F912F41C6" />
-    <link rel="canonical" href="{{ url('/') }}" />
+    @if(isset($seo['canonical_url']))
+        <link rel="canonical" href="{{ $seo['canonical_url'] }}" />
+    @else
+        <link rel="canonical" href="{{ url()->current() }}" />
+    @endif
     <link rel="preconnect" href="https://client.crisp.chat">
     <link rel="preconnect" href="https://analytics.bimbala.com">
 

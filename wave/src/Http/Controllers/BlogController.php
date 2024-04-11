@@ -24,7 +24,7 @@ class BlogController extends \App\Http\Controllers\Controller
     		'seo_title' => 'Blog',
             'seo_description' => 'Blog',
        	];
-    	return response()->view('theme::blog.index', compact('posts', 'categories', 'seo', 'schema'))->header('Link', '<'.route('wave.blog').'>; rel="cannonical"');
+    	return response()->view('theme::blog.index', compact('posts', 'categories', 'seo', 'schema'));
     }
 
     public function category($slug, Request $request){
