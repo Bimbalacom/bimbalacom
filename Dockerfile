@@ -1,4 +1,4 @@
-FROM php:8.0-cli-alpine as builder
+FROM php:8.1-cli-alpine as builder
 
 ARG APP_ENV="production"
 
@@ -25,7 +25,7 @@ RUN chmod +x /usr/bin/composer && \
 
 
 
-FROM php:8.0-fpm-alpine
+FROM php:8.1-fpm-alpine
 
 ## Essential: Set the timezone
 RUN apk add --no-cache tzdata
