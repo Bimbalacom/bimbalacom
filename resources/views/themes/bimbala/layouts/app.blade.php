@@ -82,7 +82,7 @@
 @include('theme::partials.header')
 
 <main class="flex-grow overflow-x-hidden">
-    @unless (Request::is(['/', 'login', 'announcement*', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*']))
+    @unless (Request::is(['/', 'login', 'announcement*', 'pricing', 'register', 'dashboard', 'account/*', 'password/*', '@*', 'blog/*', '/tools/*']))
         <div class="bg-gray-900">
             <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between">
                 <div class="max-w-xl">

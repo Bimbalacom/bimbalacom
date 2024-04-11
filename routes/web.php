@@ -11,6 +11,7 @@
 |
 */
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ToolsController;
 
 // Authentication routes
 Auth::routes();
@@ -46,6 +47,10 @@ Route::get('/apps', static function () {
         'seo_title' => 'Apps', 'seo_description' => 'Our applications are fast and simple. Doing what you love, where you want it.',
     ]]);
 })->name('apps');
+Route::prefix('tools')->name('tools.')->group(function () {
+    Route::get('/', [ToolsController::class, 'index'])->name('index');
+    Route::get('responsive-images', [ToolsController::class, 'responsiveImages'])->name('responsive-images');
+});
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
 
 Route::get('/contact', [ContactController::class, 'serveThePage'])->name('contact');
