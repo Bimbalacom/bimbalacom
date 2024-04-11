@@ -58,7 +58,7 @@ RUN apk add --no-cache \
     $PHPIZE_DEPS
 
 RUN if [ "$APP_ENV" = "production" ] ; then\
-    RUN docker-php-ext-enable opcache;\
+      docker-php-ext-enable opcache;\
     fi
 
 # Installing Redis Extension
