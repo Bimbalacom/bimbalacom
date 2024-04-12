@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\FeaturesController;
 use App\Http\Controllers\PortalSettingsController;
+use Illuminate\Support\Facades\Route;
+
 Route::impersonate();
 
 Route::get('/', '\Wave\Http\Controllers\HomeController@index')->name('wave.home');
@@ -11,8 +13,8 @@ Route::get('@{username}', '\Wave\Http\Controllers\ProfileController@index')->nam
 Route::view('docs/{page?}', 'docs::index')->where('page', '(.*)');
 
 // Additional Auth Routes
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('wave.logout');
-Route::get('user/verify/{verification_code}', 'Auth\RegisterController@verify')->name('verify');
+Route::get('logout', '\Wave\Http\Controllers\Auth\LoginController@logout')->name('wave.logout');
+Route::get('user/verify/{verification_code}', '\Wave\Http\Controllers\Auth\RegisterController@verify')->name('verify');
 Route::post('register/user', '\Wave\Http\Controllers\Auth\RegisterController@complete')->name('wave.register-user-info');
 
 Route::get('blog', '\Wave\Http\Controllers\BlogController@index')->name('wave.blog');
@@ -21,12 +23,14 @@ Route::get('blog/{category}/{post}', '\Wave\Http\Controllers\BlogController@post
 
 Route::view('install', 'wave::install')->name('wave.install');
 
+/***** Pages *****/
+Route::get('p/{page}', '\Wave\Http\Controllers\PageController@page');
+
 /***** Pricing Page *****/
 Route::view('pricing', 'theme::pricing')->name('wave.pricing');
 
 /***** Billing Routes *****/
-Route::post('/billing/webhook', '\Wave\Http\Controllers\WebhookController@handleWebhook');
-Route::post('paddle/webhook', '\Wave\Http\Controllers\SubscriptionController@hook');
+Route::post('paddle/webhook', '\Wave\Http\Controllers\WebhookController');
 Route::post('checkout', '\Wave\Http\Controllers\SubscriptionController@checkout')->name('checkout');
 
 Route::get('test', '\Wave\Http\Controllers\SubscriptionController@test');
@@ -56,30 +60,7 @@ Route::group(['middleware' => 'auth'], function(){
 
     /********** Checkout/Billing Routes ***********/
     Route::post('cancel', '\Wave\Http\Controllers\SubscriptionController@cancel')->name('wave.cancel');
-    Route::get('checkout/welcome',  function (\Illuminate\Http\Request $request) {
-        if(Auth::user()->name){
-            return redirect()->to('checkout/portal?'.Arr::query($request->input()));
-        }
-        return view('theme::welcome.index', [
-            'seo' => [
-                'seo_title' => 'Welсome to Bimbala!',
-                'seo_description' => 'Thanks for subscribing and welcome aboard.',
-            ]
-        ]);
-    });
-    Route::get('checkout/portal', [PortalSettingsController::class, 'index']);
-    Route::post('checkout/portal', [PortalSettingsController::class, 'store'])->name('create-portal');
-    Route::get('checkout/finish', function (\Illuminate\Http\Request $request) {
-        if(!Auth::user()->subdomain_url) {
-            return redirect()->to('checkout/portal?'.Arr::query($request->input()));
-        }
-        return view('theme::welcome.finish', [
-            'seo' => [
-                'seo_title' => 'Your portal is successfully configured!',
-                'seo_description' => 'We are initializing your Bimbala portal...',
-            ]
-        ]);
-    });
+    Route::view('checkout/welcome', 'theme::welcome');
 
     Route::post('subscribe', '\Wave\Http\Controllers\SubscriptionController@subscribe')->name('wave.subscribe');
 	Route::view('trial_over', 'theme::trial_over')->name('wave.trial_over');
@@ -87,9 +68,6 @@ Route::group(['middleware' => 'auth'], function(){
     Route::post('switch-plans', '\Wave\Http\Controllers\SubscriptionController@switchPlans')->name('wave.switch-plans');
 });
 
-Route::group(['middleware' => 'admin.user'], static function(){
+Route::group(['middleware' => 'admin.user'], function(){
     Route::view('admin/do', 'wave::do');
 });
-
-/***** Pages *****/
-Route::get('{page}', '\Wave\Http\Controllers\PageController@page');

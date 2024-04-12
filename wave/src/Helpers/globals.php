@@ -4,6 +4,7 @@ if (!class_exists(WaveKeyValueConvertible::class)) {
     class WaveKeyValueConvertible
     {
         public function toObject() {
+
             $array = (array)$this;
 
             if (is_array($this)) {
@@ -12,10 +13,8 @@ if (!class_exists(WaveKeyValueConvertible::class)) {
 
             return $this;
         }
-
     }
 }
-
 
 if (!class_exists(WaveKeyValueHelper::class)) {
     class WaveKeyValueHelper extends WaveKeyValueConvertible
