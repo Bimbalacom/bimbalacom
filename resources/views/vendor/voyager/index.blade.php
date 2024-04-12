@@ -7,7 +7,7 @@
     <div class="page-content">
         @include('voyager::alerts')
 
-        @include('wave::admin-boxes')
+        {{--@include('wave::admin-boxes')--}}
 
 
         <div class="analytics-container">
