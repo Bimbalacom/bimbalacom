@@ -88,9 +88,12 @@
                             <a href="{{ route('wave.blog') }}" class="leading-tight hover:text-gray-400">Blog</a>
                         </li>
                         <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('tools.index') }}" class="leading-tight hover:text-gray-400">Tools</a>
+                        </li>
+                        <li class="box-border py-2 md:mb-1">
                             <a href="/security" class="leading-tight  hover:text-gray-400">Security</a>
                         </li>
-                          <li class="box-border py-2 md:mb-1">
+                        <li class="box-border py-2 md:mb-1">
                             <a href="/legal" class="leading-tight hover:text-gray-400">Legal</a>
                         </li>
                     </ul>
