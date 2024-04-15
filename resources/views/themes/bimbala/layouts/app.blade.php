@@ -75,6 +75,17 @@
     <meta name="keywords" content="{{ $seo['keywords'] ?? setting('site.keywords', 'product development, customer feedback, customers, integrations, bimbala, SaaS, support, roadmap, knowledge board, FAQ, feedback-based product') }}">
     <meta name="google-site-verification" content="173vXOSU7DHgNz9UkFqBkQ1_yThKQPBGvoZrIKoEm6U" />
     {{-- Styles --}}
+    <link rel="preload" as="image" href="{{URL::asset('themes/bimbala/images/hero-photo/hero-photo-sm.webp')}}"
+          imagesrcset="
+               {{ asset('themes/bimbala/images/hero-photo/hero-photo-xs.webp') }} 320w,
+               {{ asset('themes/bimbala/images/hero-photo/hero-photo-sm.webp') }} 375w,
+               {{ asset('themes/bimbala/images/hero-photo/hero-photo-md.webp') }} 768w,
+               {{ asset('themes/bimbala/images/hero-photo/hero-photo-lg.webp') }} 1024w,
+               {{ asset('themes/bimbala/images/hero-photo/hero-photo-lg.webp') }} 1024w,
+               {{ asset('themes/bimbala/images/hero-photo/hero-photo-xl.webp') }} 1500w,
+               {{ asset('themes/bimbala/images/hero-photo/hero-photo-2xl.webp') }} 2000w,
+           "
+          imagesizes="(max-height: 768px) 80vw, 30vw">
     <link href="{{ mix('css/app.css', 'themes/' . $theme->folder) }}" rel="preload" as="style" fetchpriority="low" onload="this.rel='stylesheet'">
 </head>
 <body>

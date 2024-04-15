@@ -26,6 +26,7 @@
                            {{ asset('themes/bimbala/images/hero-photo/hero-photo-xl.webp') }} 1500w,
                            {{ asset('themes/bimbala/images/hero-photo/hero-photo-2xl.webp') }} 2000w,
                        "
+                        sizes="(max-height: 768px) 80vw, 30vw"
                         class="rounded-lg"
                         fetchpriority="high"
                         alt="{{ theme('home_subheadline') }}"
