@@ -2,6 +2,7 @@
 
 namespace Wave\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Spatie\SchemaOrg\BlogPosting;
 use Spatie\SchemaOrg\BreadcrumbList;
@@ -9,7 +10,7 @@ use Spatie\SchemaOrg\Schema;
 use Wave\Post;
 use Wave\Category;
 
-class BlogController extends \App\Http\Controllers\Controller
+class BlogController extends Controller
 {
     public function index(Request $request){
 

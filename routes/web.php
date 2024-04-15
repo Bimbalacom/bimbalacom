@@ -13,11 +13,15 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FeaturesController;
 use App\Http\Controllers\ToolsController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
+use Wave\Facades\Wave;
 
 // Authentication routes
 Auth::routes();
 
-
+// Voyager Admin routes
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
@@ -66,5 +70,5 @@ Route::prefix('features')->name('features.')->group(function (){
 Route::get('/contact', [ContactController::class, 'serveThePage'])->name('contact');
 Route::post('/contact', [ContactController::class, 'sendEmail'])->name('contact-send');
 
-// Include Wave Routes
+// Wave routes
 Wave::routes();

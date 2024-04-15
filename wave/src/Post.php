@@ -3,6 +3,7 @@
 namespace Wave;
 
 use Illuminate\Database\Eloquent\Model;
+use TCG\Voyager\Facades\Voyager;
 
 /**
  * @mixin IdeHelperPost
@@ -20,7 +21,7 @@ class Post extends Model
     }
 
     public function image(){
-    	return \Voyager::image($this->image);
+    	return Voyager::image($this->image);
     }
 
     public function category(){

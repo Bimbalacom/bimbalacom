@@ -2,31 +2,50 @@
 
 namespace Wave\Http\Controllers;
 
-use \App\Http\Requests;
-use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Http\Request;
+use TCG\Voyager\Models\Role;
+use Wave\PaddleSubscription;
+use Illuminate\Support\Carbon;
+use App\Http\Controllers\Controller;
+use Wave\Http\Middleware\VerifyWebhook;
 
-class WebhookController
+class WebhookController extends Controller
 {
-
-	public function handleCustomerSubscriptionDeleted(array $payload)
+    public function __construct()
     {
-
-        // $user = $this->getUserByStripeId($payload['data']['object']['customer']);
-
-        // if ($user) {
-        //     $user->subscriptions->filter(function ($subscription) use ($payload) {
-        //         return $subscription->stripe_id === $payload['data']['object']['id'];
-        //     })->each(function ($subscription) {
-        //         $subscription->markAsCancelled();
-        //     });
-
-        //     $cancelled_id = \TCG\Voyager\Models\Role::where('name', '=', 'cancelled')->first()->id;
-        //     $user->role_id = $cancelled_id;
-        // 	$user->save();
-        // }
-
-	    // return new Response('Webhook Handled', 200);
-
+        if (config('wave.paddle.public_key')) {
+            $this->middleware(VerifyWebhook::class);
+        }
     }
 
+    public function __invoke(Request $request)
+    {
+        $method = match ($request->get('alert_name', null)) {
+            'subscription_cancelled',
+            'subscription_payment_failed' => 'subscriptionCancelled',
+            default => null,
+        };
+
+        if (method_exists($this, $method)) {
+            try {
+                $this->{$method}($request);
+            } catch (\Exception $e) {
+                return response('Webhook failed');
+            }
+        }
+
+        return response('Webhook handled');
+    }
+
+    protected function subscriptionCancelled(Request $request)
+    {
+        $subscription = PaddleSubscription::where('subscription_id', $request->subscription_id)->firstOrFail();
+        $subscription->cancelled_at = Carbon::now();
+        $subscription->status = 'cancelled';
+        $subscription->save();
+        $user = config('wave.user_model')::find($subscription->user_id);
+        $cancelledRole = Role::where('name', '=', 'cancelled')->first();
+        $user->role_id = $cancelledRole->id;
+        $user->save();
+    }
 }

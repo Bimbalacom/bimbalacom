@@ -1,31 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
-         bootstrap="vendor/autoload.php"
-         colors="true"
->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd" bootstrap="vendor/autoload.php" colors="true" cacheDirectory=".phpunit.cache">
+    xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
     <testsuites>
+        bootstrap="vendor/autoload.php"
         <testsuite name="Unit">
+            colors="true"
             <directory suffix="Test.php">./tests/Unit</directory>
+            >
         </testsuite>
+        <testsuites>
+            <testsuite name="Feature">
+                <testsuite name="Unit">
+                    <directory suffix="Test.php">./tests/Feature</directory>
+                    <directory suffix="Test.php">./tests/Unit</directory>
+                </testsuite>
+            </testsuite>
+        </testsuites>
         <testsuite name="Feature">
+            <coverage/>
             <directory suffix="Test.php">./tests/Feature</directory>
+            <php>
         </testsuite>
+        <env name="APP_ENV" value="testing"/>
     </testsuites>
+    <env name="BCRYPT_ROUNDS" value="4"/>
     <coverage processUncoveredFiles="true">
+        <env name="CACHE_DRIVER" value="array"/>
         <include>
+            <env name="DB_CONNECTION" value="mysql"/>
             <directory suffix=".php">./app</directory>
+            <env name="DB_DATABASE" value="wave_testing"/>
         </include>
+        <env name="MAIL_MAILER" value="array"/>
     </coverage>
+    <env name="QUEUE_CONNECTION" value="sync"/>
     <php>
-        <server name="APP_ENV" value="testing"/>
-        <server name="BCRYPT_ROUNDS" value="4"/>
-        <server name="CACHE_DRIVER" value="array"/>
-        <server name="DB_CONNECTION" value="mysql"/>
-        <server name="DB_DATABASE" value="wave_testing"/>
-        <server name="MAIL_MAILER" value="array"/>
-        <server name="QUEUE_CONNECTION" value="sync"/>
-        <server name="SESSION_DRIVER" value="array"/>
-        <server name="TELESCOPE_ENABLED" value="false"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="APP_ENV" value="testing"/>
+        <env name="TELESCOPE_ENABLED" value="false"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
     </php>
+    <env name="CACHE_DRIVER" value="array"/>
+    <source>
+        <env name="DB_CONNECTION" value="mysql"/>
+        <include>
+            <env name="DB_DATABASE" value="wave_testing"/>
+            <directory suffix=".php">./app</directory>
+            <env name="MAIL_MAILER" value="array"/>
+        </include>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+    </source>
 </phpunit>
