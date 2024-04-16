@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FeaturesController;
+use Wave\Http\Controllers\WebhookController;
 use App\Http\Controllers\PortalSettingsController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,14 +23,11 @@ Route::get('blog/{category}/{post}', '\Wave\Http\Controllers\BlogController@post
 
 Route::view('install', 'wave::install')->name('wave.install');
 
-/***** Pages *****/
-Route::get('p/{page}', '\Wave\Http\Controllers\PageController@page');
-
 /***** Pricing Page *****/
 Route::view('pricing', 'theme::pricing')->name('wave.pricing');
 
 /***** Billing Routes *****/
-Route::post('paddle/webhook', '\Wave\Http\Controllers\WebhookController');
+Route::post('paddle/webhook', WebhookController::class);
 Route::post('checkout', '\Wave\Http\Controllers\SubscriptionController@checkout')->name('checkout');
 
 Route::get('test', '\Wave\Http\Controllers\SubscriptionController@test');
@@ -60,7 +57,30 @@ Route::group(['middleware' => 'auth'], function(){
 
     /********** Checkout/Billing Routes ***********/
     Route::post('cancel', '\Wave\Http\Controllers\SubscriptionController@cancel')->name('wave.cancel');
-    Route::view('checkout/welcome', 'theme::welcome');
+    Route::get('checkout/welcome',  function (\Illuminate\Http\Request $request) {
+        if(Auth::user()->name){
+            return redirect()->to('checkout/portal?'.Arr::query($request->input()));
+        }
+        return view('theme::welcome.index', [
+            'seo' => [
+                'seo_title' => 'Welсome to Bimbala!',
+                'seo_description' => 'Thanks for subscribing and welcome aboard.',
+            ]
+        ]);
+    });
+    Route::get('checkout/portal', [PortalSettingsController::class, 'index']);
+    Route::post('checkout/portal', [PortalSettingsController::class, 'store'])->name('create-portal');
+    Route::get('checkout/finish', function (\Illuminate\Http\Request $request) {
+        if(!Auth::user()->subdomain_url) {
+            return redirect()->to('checkout/portal?'.Arr::query($request->input()));
+        }
+        return view('theme::welcome.finish', [
+            'seo' => [
+                'seo_title' => 'Your portal is successfully configured!',
+                'seo_description' => 'We are initializing your Bimbala portal...',
+            ]
+        ]);
+    });
 
     Route::post('subscribe', '\Wave\Http\Controllers\SubscriptionController@subscribe')->name('wave.subscribe');
 	Route::view('trial_over', 'theme::trial_over')->name('wave.trial_over');
@@ -68,6 +88,9 @@ Route::group(['middleware' => 'auth'], function(){
     Route::post('switch-plans', '\Wave\Http\Controllers\SubscriptionController@switchPlans')->name('wave.switch-plans');
 });
 
-Route::group(['middleware' => 'admin.user'], function(){
+Route::group(['middleware' => 'admin.user'], static function(){
     Route::view('admin/do', 'wave::do');
 });
+
+/***** Pages *****/
+Route::get('{page}', '\Wave\Http\Controllers\PageController@page');
