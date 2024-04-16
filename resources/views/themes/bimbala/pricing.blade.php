@@ -1,4 +1,10 @@
 @extends('theme::layouts.app')
+@php
+    $seo = [
+        'seo_title' => 'Pricing Plans',
+        'seo_description' => 'Pricing plans with included features comparison and frequently asked questions.',
+    ];
+@endphp
 
 @section('content')
     @if(Session::get('origin') === route('register'))

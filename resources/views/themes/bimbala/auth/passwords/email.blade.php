@@ -1,5 +1,12 @@
 @extends('theme::layouts.app')
 
+@php
+    $seo = [
+        'seo_title' => 'Reset password',
+        'seo_description' => 'Reset your password for your Bimbala account here.',
+    ];
+@endphp
+
 @section('content')
 
 <div class="flex flex-col justify-center py-20 sm:px-6 lg:px-8">

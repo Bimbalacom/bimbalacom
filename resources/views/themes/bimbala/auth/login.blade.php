@@ -1,4 +1,10 @@
 @extends('theme::layouts.app')
+@php
+    $seo = [
+        'seo_title' => 'Login',
+        'seo_description' => 'Log into your account with your email and password.',
+    ];
+@endphp
 
 @section('content')
 
