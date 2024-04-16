@@ -31,6 +31,7 @@
                                 <img
                                     class="object-cover rounded-b-3xl"
                                     src="{{ asset('themes/bimbala/images/features/cropped/roadmap.webp') }}"
+                                    alt="Roadmap demonstation animation"
                                 />
                                 <div
                                     class="absolute inset-0 flex flex-col justify-between bg-gradient-to-b from-transparent via-black/10 to-black"
@@ -54,6 +55,7 @@
                                 <img
                                     class="object-cover rounded-b-3xl"
                                     src="{{ asset('themes/bimbala/images/features/cropped/upvote.webp') }}"
+                                    alt="Upvote feature screenshot"
                                 />
                                 <div
                                     class="absolute inset-0 flex flex-col justify-between bg-gradient-to-b from-transparent via-black/10 to-black"
@@ -78,6 +80,7 @@
                                 <img
                                     class="h-full w-full rounded-b-3xl"
                                     src="{{ asset('themes/bimbala/images/features/cropped/faq.webp') }}"
+                                    alt="FAQ feature screenshot"
                                 />
                                 <div
                                     class="absolute inset-0 flex flex-col justify-between bg-gradient-to-b from-transparent via-black/10 to-black"
