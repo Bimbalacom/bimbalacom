@@ -48,7 +48,7 @@
                 <!-- Stack 3 -->
                 <div class="col-span-4 w-full h-full">
                     <div class="w-full h-full bg-gray-800 rounded-md p-2 md:pl-4">
-                        <h1 class="text-white text-2xl font-bold py-2">01.08.2023</h1>
+                        <h3 class="text-white text-2xl font-bold py-2">01.08.2023</h3>
                         <p class="text-gray-200 sm:text-md text-sm">Our product arrived on the market. 🛍️</p>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-span-4 w-full h-full">
                     <div class="w-full h-full bg-gray-800 rounded-md p-2 md:pl-4">
-                        <h1 class="text-white text-2xl font-bold py-2">16.10.2021</h1>
+                        <h3 class="text-white text-2xl font-bold py-2">16.10.2021</h3>
                         <p class="text-gray-200 sm:text-md text-sm">
                             After a long product and website development we started our first alpha testers seeking 🔎
                         </p>
@@ -76,7 +76,7 @@
                 <!-- Stack 1 -->
                 <div class="col-span-4 w-full h-full">
                     <div class="w-full h-full bg-gray-800 rounded-md p-2 md:pl-4">
-                        <h1 class="text-white text-2xl font-bold py-2">31.07.2020</h1>
+                        <h3 class="text-white text-2xl font-bold py-2">31.07.2020</h3>
                         <p class="text-gray-200 sm:text-md text-sm">It all began with a coffee afternoon meeting between two students...
                             Later in local pub the waitress drew the lots and set the name of this company. That is how Bimbala was born!🎉
                         </p>

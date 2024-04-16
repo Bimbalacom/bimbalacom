@@ -179,10 +179,10 @@
             <!-- Left Content -->
             <div class="w-full lg:w-1/2 lg:pr-10">
                 <div class="relative max-w-lg mx-auto leading-6 text-center text-gray-700 border-gray-200 lg:text-left">
-                    <h1 class="m-0 text-3xl font-bold leading-tight text-left text-gray-900 border-solid sm:text-4xl md:text-5xl">
+                    <h2 class="m-0 text-3xl font-bold leading-tight text-left text-gray-900 border-solid sm:text-4xl md:text-5xl">
                         Sign up for our
                         <span class="block text-left text-purple-700" data-primary="purple-700">newsletter</span>
-                    </h1>
+                    </h2>
                     <p class="pr-5 mx-0 my-5 text-base text-lef lg:my-8 xl:text-lg">
                         Subscribe to the newsletter to get product updates
                     </p>

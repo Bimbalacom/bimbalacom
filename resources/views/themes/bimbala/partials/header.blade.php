@@ -28,7 +28,7 @@
                            {{ asset('bimbala/img/logo/logo-2xl.webp') }} 2000w,
                        "
                          alt="Bimbala's logo" width="32" height="32">
-                    <h1 class="mx-2 text-lg font-semibold text-white md:text-xl">Bimbala</h1>
+                    <h2 class="mx-2 text-lg font-semibold text-white md:text-xl">Bimbala</h2>
                 </a>
                 {{-- This is the homepage nav when a user is not logged in --}}
                 @if(auth()->guest())
