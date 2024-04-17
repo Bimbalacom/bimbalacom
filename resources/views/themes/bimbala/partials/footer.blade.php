@@ -4,7 +4,7 @@
 <section class="w-full bg-gray-900 text-base text-white no-underline">
     <div class="px-6 mx-auto max-w-7xl xl:px-12">
         <div class="box-border flex flex-wrap pt-20 pb-0 leading-tight md:pb-12">
-            <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
+            <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/5">
                 <div class="box-border">
                     <a href="{{ route('wave.home') }}" class="relative flex items-center">
                         <img class="h-8 w-8"
@@ -24,7 +24,7 @@
                     </a>
                 </div>
             </div>
-            <div width="6,3" class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
+            <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/5">
                 <div class="box-border ">
                     <h2 class="mb-8 text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Product
@@ -54,7 +54,7 @@
                     </ul>
                 </div>
             </div>
-            <div width="6,3" class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
+            <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/5">
                 <div class="box-border ">
                     <h2 class="mb-8 text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Company
@@ -78,7 +78,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/4">
+            <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/5">
                 <div class="box-border ">
                     <h2 class="mb-8 text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
                         Resources
@@ -95,6 +95,18 @@
                         </li>
                         <li class="box-border py-2 md:mb-1">
                             <a href="/legal" class="leading-tight hover:text-gray-400">Legal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-initial w-1/2 px-2 pb-12 leading-tight md:w-1/5">
+                <div class="box-border ">
+                    <h2 class="mb-8 text-xl font-bold tracking-wide text-gray-100 md:text-2xl">
+                        Compare
+                    </h2>
+                     <ul class="p-0 m-0 leading-tight list-none">
+                        <li class="box-border py-2 md:mb-1">
+                            <a href="{{ route('comparison.canny') }}" class="leading-tight hover:text-gray-400">Canny</a>
                         </li>
                     </ul>
                 </div>
