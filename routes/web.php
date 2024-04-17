@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use App\Http\Controllers\ComparisonController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FeaturesController;
 use App\Http\Controllers\ToolsController;
@@ -43,6 +45,10 @@ Route::get('/integrations', static function () {
     return view('theme::integrations', ['seo' => ['seo_title' => 'Integrations', 'seo_description' => 'Everyone loves to work as a team. Here are part of our officially supported friends.',
     ]]);
 })->name('integrations');
+
+Route::prefix('comparison')->name('comparison.')->group(function () {
+    Route::get('canny', [ComparisonController::class, 'canny'])->name('canny');
+});
 Route::get('/use-case', static function () {
     return view('theme::use_case', ['seo' => ['seo_title' => 'Use Cases', 'seo_description' => 'Here we provide examples of the best ways to use our system. If you have more ideas please share them with us.',
     ]]);
