@@ -39,17 +39,13 @@ class ComparisonController extends Controller
      * @param string|null $url
      * @return BreadcrumbList
      */
-    private function generateBreadCrumbSchema(string $name = null, string $url = null): BreadcrumbList
+    private function generateBreadCrumbSchema(string $name, string $url): BreadcrumbList
     {
         $listElements = [
-            Schema::listItem()->position(1)->url(route('comparison.index'))->name('Comparison')
-                ->setProperty('item', route('comparison.index'))
-        ];
-        if($name !== null){
-            $listElements[] = Schema::listItem()->position(2)
+            Schema::listItem()->position(1)
                 ->url($url)->name($name)
-                ->setProperty('item', $url);
-        }
+                ->setProperty('item', $url)
+        ];
 
         return Schema::breadcrumbList()
             ->name('Comparison Breadcrumbs')
