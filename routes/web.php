@@ -61,6 +61,7 @@ Route::get('/apps', static function () {
 Route::prefix('tools')->name('tools.')->group(function () {
     Route::get('/', [ToolsController::class, 'index'])->name('index');
     Route::get('responsive-images', [ToolsController::class, 'responsiveImages'])->name('responsive-images');
+    Route::get('keep-a-log', [ToolsController::class, 'keepALog'])->name('keep-a-log');
 });
 Route::redirect('/discord','https://discord.gg/tADx7aJusB');
 
