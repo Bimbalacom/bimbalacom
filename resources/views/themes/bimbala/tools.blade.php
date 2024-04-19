@@ -39,6 +39,29 @@
                                     </div>
                                 </div>
                             </a>
+                            <a
+                                href="{{route('tools.keep-a-log')}}"
+                                class="group aspect-h-10 aspect-w-16 relative overflow-hidden rounded-2xl bg-black/25 transition hover:ring-4 hover:ring-indigo-500/50 active:opacity-75 active:ring-indigo-500/25"
+                            >
+                                <img
+                                    class="object-cover rounded-b-3xl"
+                                    src="{{ asset('themes/bimbala/images/tools/keep-a-log.webp') }}"
+                                    alt="Generate a changelog"
+                                    width="100%"
+                                    height="100%"
+                                />
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-between bg-gradient-to-b from-transparent via-black/10 to-black"
+                                >
+                                    <div class="flex flex-1 items-end justify-between gap-2 px-4 py-5">
+                                        <div class="space-y-1">
+                                            <h2 class="text-xl font-semibold text-white">
+                                                Keep a log - changelog generator
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- END Tool -->
                         </nav>
                     </section>
