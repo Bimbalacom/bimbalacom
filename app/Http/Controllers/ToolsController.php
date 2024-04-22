@@ -27,4 +27,13 @@ class ToolsController extends Controller
             'keywords' => 'responsive images, image generator, image resonsive, image breakpoints, free, online generator, image tools, srcset, sm, xs, md, lg, 2xl, google lighthouse report'
         ]]);
     }
+
+    public function keepALog(): Factory|\Illuminate\Foundation\Application|View|Application
+    {
+        return view('theme::tools.keep-a-log', ['seo' => [
+            'seo_title' => 'Keep a log',
+            'seo_description' => 'Keep a log of what has been changed in your product.',
+            'keywords' => 'keep a log, changelog, changelog generator, free, product tools, product management, what is new, added, removed, version, changed, versioning, markdown, md'
+        ]]);
+    }
 }
