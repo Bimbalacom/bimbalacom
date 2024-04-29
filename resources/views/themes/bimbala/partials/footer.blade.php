@@ -183,6 +183,7 @@
 
 <!-- Scripts -->
 <script src="{{ mix('js/app.js', 'themes/' . $theme->folder) }}" defer></script>
+<script src="https://www.google.com/recaptcha/api.js" defer async></script>
 
 @yield('javascript')
 
