@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\Recaptcha;
 use Illuminate\Foundation\Http\FormRequest;
 
 class SendEmailRequest extends FormRequest
@@ -12,9 +13,13 @@ class SendEmailRequest extends FormRequest
      *
      * @return array
      */
-    public function rules()
+    public function rules(): array
     {
         return [
+            'g-recaptcha-response'=> [
+                'required',
+                new Recaptcha(),
+            ],
             'name' => [
                 'required',
                 'string',

@@ -23,7 +23,7 @@
 
         <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
             <div class="px-4 py-8 bg-white border shadow border-gray-50 sm:rounded-lg sm:px-10">
-                <form action="#" method="POST">
+                <form action="#" method="POST" id="login-form">
                     @csrf
                     <div>
 
@@ -85,9 +85,9 @@
 
                     <div class="mt-6">
                         <span class="block w-full rounded-md shadow-sm">
-                            <button type="submit" class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out border border-transparent rounded-md bg-wave-600 hover:bg-wave-500 focus:outline-none focus:border-wave-700 focus:shadow-outline-wave active:bg-wave-700">
+                            <x-recaptcha-submit formId="login-form" action="login" class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out border border-transparent rounded-md bg-wave-600 hover:bg-wave-500 focus:outline-none focus:border-wave-700 focus:shadow-outline-wave active:bg-wave-700">
                                 Sign in
-                            </button>
+                            </x-recaptcha-submit>
                         </span>
                     </div>
                 </form>

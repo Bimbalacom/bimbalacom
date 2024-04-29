@@ -7,7 +7,9 @@
             <div class="grid grid-cols-6 sm:grid-cols-12 bg-white">
                 <div class="w-full border border-gray-200  shadow-sm col-span-6 sm:col-span-8 p-5">
                 <form
-                        class="flex flex-col justify-center items-center my-auto h-full p-10 grid grid-cols-1 sm:grid-cols-2 gap-6 relative" action="{{ route('contact-send') }}" method="POST">
+                        class="flex flex-col justify-center items-center my-auto h-full p-10 grid grid-cols-1 sm:grid-cols-2 gap-6 relative" action="{{ route('contact-send') }}" method="POST"
+                        id="contact-form"
+                >
                         @if(session('success'))
                             <p class="col-span-1 sm:col-span-2 p-1 bg-green-600 text-white rounded-full text-center">{{session('success')}}</p>
                         @endif
@@ -118,11 +120,11 @@
                         </label>
                         @csrf
                         <div class="block sm:col-start-2 text-right absolute bottom-5 right-7">
-                            <button type="submit" class="rounded-full bg-purple-700 text-white hover:bg-purple-900 p-3">
+                            <x-recaptcha-submit class="rounded-full bg-purple-700 text-white hover:bg-purple-900 p-3" formId="contact-form" action="contact">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 rotate-45 -skew-y-[15deg]" viewBox="0 0 20 20" fill="currentColor">
                                     <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
                                 </svg>
-                            </button>
+                            </x-recaptcha-submit>
                         </div>
                     </form>
                 </div>
