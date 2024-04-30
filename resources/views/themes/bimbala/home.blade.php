@@ -190,7 +190,7 @@
                         <div class="relative flex items-center max-w-md leading-6 text-center lg:mx-0">
                                 <input type="hidden" name="b_118b625f8f6bac41ebe6c7be3_e974cbc9ee" tabindex="-1" value="">
                                 <input type="email" name="EMAIL" placeholder="Your E-mail" class="w-full py-4 pr-0 m-0 overflow-visible font-medium duration-300 border-2 border-gray-200 rounded-full outline-none sm:py-5 sm:pr-48 cursor-text pl-7 focus:outline-none focus-within:border-purple-700 hover:border-gray-400" data-rounded="rounded-full">
-                                <button id="mc-embedded-subscribe" class="absolute right-0 h-12 px-8 mr-3 text-white bg-purple-700 rounded-full" data-rounded="rounded-full" data-primary="purple-700">Get Started</button>
+                            <x-recaptcha-submit formId="mc-embedded-subscribe-form" action="newsletter-subscription" id="mc-embedded-subscribe" class="absolute right-0 h-12 px-8 mr-3 text-white bg-purple-700 rounded-full" data-rounded="rounded-full" data-primary="purple-700">Get Started</x-recaptcha-submit>
                         </div>
                     </form>
                     <div class="mt-12 leading-6 border-solid lg:mt-12">
