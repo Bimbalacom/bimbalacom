@@ -72,8 +72,8 @@
 			<!-- End Post Loop Here -->
         </div>
     </div>
-	<!-- <div class="flex justify-center my-10">
+	<div class="flex justify-center my-10">
 		{{ $posts->links('theme::partials.pagination') }}
-	</ul> -->
+	</div>
 </div>
 @endsection
