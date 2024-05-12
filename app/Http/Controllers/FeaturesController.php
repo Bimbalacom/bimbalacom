@@ -7,6 +7,8 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Spatie\SchemaOrg\BreadcrumbList;
+use Spatie\SchemaOrg\Schema;
 
 class FeaturesController extends Controller
 {
@@ -20,7 +22,8 @@ class FeaturesController extends Controller
             'seo' => [
                 'seo_title' => 'Features',
                 'seo_description' => 'Check out our features'
-            ]
+            ],
+            'schema' => $this->generateBreadCrumbSchema()->toScript()
         ]);
     }
 
@@ -35,7 +38,8 @@ class FeaturesController extends Controller
                 'seo_title' => 'Upvote',
                 'seo_description' => 'Let your users give you product improvement suggestions, bringing their feedback to a next level',
                 'keywords' => 'upvote, product improvement, customer feedback, feedback organization, feedback voting, customer relationships, user requests, user ideas, user suggestions, support automation'
-            ]
+            ],
+            'schema' => $this->generateBreadCrumbSchema('Upvote', route('features.upvote'))->toScript()
         ]);
     }
 
@@ -51,7 +55,8 @@ class FeaturesController extends Controller
                 'seo_title' => 'FAQ',
                 'seo_description' => 'Provide answers to all common questions',
                 'keywords' => 'FAQ, frequently asked questions, frequently asked questions portal, collapsible FAQ, FAQ panel, support automation'
-            ]
+            ],
+            'schema' => $this->generateBreadCrumbSchema('FAQ', route('features.faq'))->toScript()
         ]);
     }
 
@@ -66,7 +71,30 @@ class FeaturesController extends Controller
                 'seo_title' => 'Product Roadmap',
                 'seo_description' => 'Show your users their opinion matters, visualizing the progress on their requests',
                 'keywords' => 'roadmap, product roadmap product improvement, product transparency, customer feedback, feedback organization, customer relationships, user requests, user ideas, user suggestions, product building, board, kanban'
-            ]
+            ],
+            'schema' => $this->generateBreadCrumbSchema('Roadmap', route('features.roadmap'))->toScript()
         ]);
+    }
+
+    /**
+     * @param string|null $featureName
+     * @param string|null $featureRoute
+     * @return BreadcrumbList
+     */
+    private function generateBreadCrumbSchema(string $featureName = null, string $featureRoute = null): BreadcrumbList
+    {
+        $indexRoute = route('features.index');
+        $listElements = [
+            Schema::listItem()->position(1)->url($indexRoute)->name('Features')
+                ->setProperty('item', $indexRoute)
+        ];
+        if($featureName !== null){
+            $listElements[] = Schema::listItem()->position(2)
+                ->url($featureRoute)->name($featureName)
+                ->setProperty('item', $featureRoute);
+        }
+
+        return Schema::breadcrumbList()
+            ->itemListElement($listElements);
     }
 }
