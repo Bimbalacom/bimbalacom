@@ -28,7 +28,7 @@
 
                 <div class="flex-shrink-0">
 					<a href="{{ $post->link() }}">
-                    	<img class="object-cover w-full h-48" src="{{ $post->image() }}" alt="">
+                    	<img class="object-cover w-full h-48" src="{{ $post->image() }}" alt="{{ $post->title }} - blog post cover image">
 					</a>
                 </div>
                 <div class="relative flex flex-col justify-between flex-1 p-6 bg-white">

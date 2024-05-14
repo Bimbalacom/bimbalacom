@@ -13,8 +13,12 @@
 			<p class="max-w-lg mx-auto mt-3 text-base text-center text-gray-600">{{ $user->profile('about') }}</p>
 		</div>
 
-		<div class="flex flex-col w-full p-10 overflow-hidden bg-white border rounded-lg lg:w-2/3 border-gray-150 lg:flex-2">
-			<p class="text-lg text-gray-600">Your application info about {{ $user->name }} here</p>
+		<div class="flex flex-col w-full p-10 overflow-hidden bg-white border rounded-lg lg:w-2/3 border-gray-150 lg:flex-2 justify-center">
+            @subscriber
+            @if($user->subdomain_url)
+			<p class="text-lg text-gray-600 text-center">Your portal is live at <a href="{{ $user->subdomain_url }}" target="_blank" class="text-indigo-600">{{ $user->subdomain_url }}</a>.</p>
+            @endif
+            @endsubscriber
 		</div>
 
 	</div>
