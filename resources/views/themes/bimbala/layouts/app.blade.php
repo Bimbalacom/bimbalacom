@@ -43,7 +43,7 @@
         @endif
         <meta property="og:type" content="website">
         <meta property="og:description" content="{{ $seo['seo_description'] }}">
-        <meta property="og:site_name" content="{{ setting('site.title') }}">
+        <meta property="og:site_name" content="{{ ( $seo['seo_title'] ?  $seo['seo_title']. ' | ' : ''). setting('site.title', 'Bimbala')}}">
 
         <meta itemprop="name" content="{{ $seo['seo_title'] }}">
         <meta itemprop="description" content="{{ $seo['seo_description'] }}">
