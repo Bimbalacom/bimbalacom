@@ -20,7 +20,10 @@
         </div>
 
         <div class="relative">
-            <img class="w-full h-auto rounded-lg" src="{{ $post->image() }}" alt="{{ $post->title }}" srcset="{{ $post->image() }}">
+            @php
+                $dimensions = getImageDimensions(Storage::disk(config('voyager.storage.disk'))->path($post->image));
+            @endphp
+            <img class="w-full h-auto rounded-lg" src="{{ $post->image() }}" alt="{{ $post->title }}" srcset="{{ $post->image() }}" width="{{ $dimensions['width'] }}" height="{{ $dimensions['height'] }}" />
         </div>
 
         <div class="text-base max-w-4xl mx-auto">

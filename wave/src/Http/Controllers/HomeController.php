@@ -4,6 +4,7 @@ namespace Wave\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Spatie\SchemaOrg\Schema;
 
 class HomeController extends Controller
 {
@@ -29,7 +30,9 @@ class HomeController extends Controller
             'type'          => 'website'
 
         ];
+        $schema = Schema::webSite()->url(url('/'))->name(setting('site.title'))->toScript()
+            .Schema::organization()->url(url('/'))->name(setting('site.title'))->toScript();
 
-        return view('theme::home', compact('seo'));
+        return view('theme::home', compact('seo', 'schema'));
     }
 }

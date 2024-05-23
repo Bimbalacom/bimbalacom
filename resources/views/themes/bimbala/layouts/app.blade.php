@@ -58,7 +58,7 @@
             <meta name="twitter:image" content="{{ $seo['image'] }}">
         @endif
     @endif
-    {!! \Spatie\SchemaOrg\Schema::organization()->url(route('wave.home'))->name('Bimbala')->toScript() !!}
+
     @if(isset($schema))
     {!! $schema !!}
     @endif

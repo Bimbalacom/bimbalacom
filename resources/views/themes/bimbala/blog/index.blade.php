@@ -19,16 +19,26 @@
         <div class="grid gap-5 mx-auto mt-12 sm:grid-cols-2 lg:grid-cols-3">
 			<!-- Loop Through Posts Here -->
             @foreach($posts as $post)
-			<article id="post-{{ $post->id }}" class="flex flex-col overflow-hidden rounded-lg shadow-lg" typeof="Article">
-
+			<article id="post-{{ $post->id }}" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
 				<meta property="name" content="{{ $post->title }}">
-				<meta property="author" typeof="Person" content="admin">
+				<meta name="author" content="admin">
 				<meta property="dateModified" content="{{ Carbon\Carbon::parse($post->updated_at)->toIso8601String() }}">
 				<meta class="uk-margin-remove-adjacent" property="datePublished" content="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">
 
                 <div class="flex-shrink-0">
 					<a href="{{ $post->link() }}">
-                    	<img class="object-cover w-full h-48" src="{{ $post->image() }}" alt="{{ $post->title }} - blog post cover image">
+                        @php
+                            $dimensions = $post->getThumbnailSizes[$post->thumbnail('medium', 'image')];
+                        @endphp
+                    	<img class="object-cover w-full h-48"
+                             src="{{ Voyager::image($post->thumbnail('medium', 'image')) }}"
+                             srcset="
+                             @foreach($post->getThumbnailSizes as $key => $value)
+                             {{ Voyager::image($key) }} {{ $value['width'] }}w,
+                             @endforeach
+                             "
+                             alt="{{ $post->title }} - blog post cover image"
+                             width="{{ $dimensions['width'] }}" height="{{ $dimensions['height'] }}" />
 					</a>
                 </div>
                 <div class="relative flex flex-col justify-between flex-1 p-6 bg-white">
