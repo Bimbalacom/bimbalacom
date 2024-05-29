@@ -19,8 +19,11 @@
     @else
         <link rel="canonical" href="{{ url()->current() }}" />
     @endif
-    <link rel="preconnect" href="https://client.crisp.chat">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://analytics.bimbala.com">
+    <link rel="preconnect" href="https://client.crisp.chat">
+
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('themes/bimbala/images/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('themes/bimbala/images/favicon-32x32.png') }}">

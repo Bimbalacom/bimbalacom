@@ -50,6 +50,6 @@ class Post extends Model
 
                 return $thumbnailSizes;
             },
-        );
+        )->shouldCache();
     }
 }
